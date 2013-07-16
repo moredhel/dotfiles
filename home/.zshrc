@@ -35,15 +35,13 @@ plugins=(torrent git pip command-not-found cp colored-man)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-PATH=/home/hamhut/bin:$PATH
 export EDITOR='vim'
 export VISUAL='vim'
-archbey2
 
 ncmpcppShow() { BUFFER="ncmpcpp"; zle accept-line; }
 zle -N ncmpcppShow
 bindkey '^[\' ncmpcppShow
 
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-source ~/.rvm/scripts/rvm
+PATH=$PATH:$HOME/.rvm/bin:PATH=$PATH:/home/hamhut/.gem/ruby/2.0.0/bin:$HOME/bin # Add RVM to PATH for scripting
+#source ~/.rvm/scripts/rvm

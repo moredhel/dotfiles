@@ -1,4 +1,5 @@
-call pathogen#incubate()
+execute pathogen#infect()
+"call pathogen()
 call pathogen#helptags()
 "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 syntax on

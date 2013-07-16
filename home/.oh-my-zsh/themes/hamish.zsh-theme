@@ -24,9 +24,10 @@ local user="%(!.%{$fg[green]%}.%{$fg[blue]%}%n%{$reset_color%}"
 local host="${host_repr[$(hostname)]:-$(hostname)}%{$reset_color%}"
 
 # Compacted $PWD
-local pwd="%{$fg[green]%}%c%{$reset_color%}"
+local pwd="%c"
 
-PROMPT="%{$fg_bold[green]%}%%%{$reset_color%}"
+#PROMPT="%{$fg_bold[blue]%}%%%{$reset_color%}"
+PROMPT=$'\e[1;36m\[${pwd}\]$ '
 
 # i would prefer 1 icon that shows the "most drastic" deviation from HEAD,
 # but lets see how this works out
@@ -41,7 +42,7 @@ return_code_disabled=""
 return_code=$return_code_enabled
 
 
-RPS1='${return_code}$(git_prompt_info)${pwd} ${user}@${host} ${time}'
+RPS1='${return_code}$(git_prompt_info) ${user} ${time}'
 
 if [ $UID -eq 0 ]; then u_colour="red"; else u_colour="green"; fi
 
