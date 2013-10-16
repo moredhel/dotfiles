@@ -1,0 +1,6692 @@
+info_begin
+format: 1
+mpd_version: 0.17.4
+fs_charset: UTF-8
+tag: Artist
+tag: ArtistSort
+tag: Album
+tag: AlbumArtist
+tag: AlbumArtistSort
+tag: Title
+tag: Track
+tag: Name
+tag: Genre
+tag: Date
+tag: Composer
+tag: Performer
+tag: Disc
+tag: MUSICBRAINZ_ARTISTID
+tag: MUSICBRAINZ_ALBUMID
+tag: MUSICBRAINZ_ALBUMARTISTID
+tag: MUSICBRAINZ_TRACKID
+info_end
+directory: Ektoplazm
+mtime: 1369240709
+begin: Ektoplazm
+directory: Atman Contruct - Elysian Terraform
+mtime: 1369069696
+begin: Ektoplazm/Atman Contruct - Elysian Terraform
+song_begin: 01 - Atman Construct - Aventurescence.mp3
+Time: 312
+Artist: Atman Construct
+Title: Aventurescence
+Album: Elysian Terraform
+Track: 1
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214680
+song_end
+song_begin: 02 - Atman Construct - Parallax View.mp3
+Time: 267
+Artist: Atman Construct
+Title: Parallax View
+Album: Elysian Terraform
+Track: 2
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214678
+song_end
+song_begin: 03 - Atman Construct - Solipsysm.mp3
+Time: 310
+Artist: Atman Construct
+Title: Solipsysm
+Album: Elysian Terraform
+Track: 3
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214678
+song_end
+end: Ektoplazm/Atman Contruct - Elysian Terraform
+directory: Crop Circle Jerk
+mtime: 1369069706
+begin: Ektoplazm/Crop Circle Jerk
+song_begin: 01 - Kixotek - Ouroboros (Fraggle Mix).mp3
+Time: 628
+Artist: Kixotek
+AlbumArtist: VA
+Title: Ouroboros (Fraggle Mix)
+Album: Crop Circle Jerk
+Track: 01
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214528
+song_end
+song_begin: 02 - Eat Static - Interceptor (UltraTom Remix).mp3
+Time: 241
+Artist: Eat Static
+AlbumArtist: VA
+Title: Interceptor (UltraTom Remix)
+Album: Crop Circle Jerk
+Track: 02
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214518
+song_end
+song_begin: 03 - Pentti & Enki - Sludge.mp3
+Time: 337
+Artist: Pentti & Enki
+AlbumArtist: VA
+Title: Sludge
+Album: Crop Circle Jerk
+Track: 03
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214528
+song_end
+song_begin: 04 - Robomate - Trendy Whores (Snyper Remix).mp3
+Time: 280
+Artist: Robomate
+AlbumArtist: VA
+Title: Trendy Whores (Snyper Remix)
+Album: Crop Circle Jerk
+Track: 04
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214526
+song_end
+song_begin: 05 - Melufantti - Ransu The Dog.mp3
+Time: 402
+Artist: Melufantti
+AlbumArtist: VA
+Title: Ransu The Dog
+Album: Crop Circle Jerk
+Track: 05
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214522
+song_end
+song_begin: 06 - Pavel Svimba - The End And Beyond.mp3
+Time: 370
+Artist: Pavel Svimba
+AlbumArtist: VA
+Title: The End And Beyond
+Album: Crop Circle Jerk
+Track: 06
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214524
+song_end
+song_begin: 07 - Electric Arc - Cherry Blossoms (2012 Coboi Bepop Mix).mp3
+Time: 519
+Artist: Electric Arc
+AlbumArtist: VA
+Title: Cherry Blossoms (2012 Coboi Bepop Mix)
+Album: Crop Circle Jerk
+Track: 07
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214520
+song_end
+song_begin: 08 - Tasp - Slight Tickling Sensation.mp3
+Time: 465
+Artist: Tasp
+AlbumArtist: VA
+Title: Slight Tickling Sensation
+Album: Crop Circle Jerk
+Track: 08
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214522
+song_end
+song_begin: 09 - Peroxide Mocha - Around the World.mp3
+Time: 666
+Artist: Peroxide Mocha
+AlbumArtist: VA
+Title: Around the World
+Album: Crop Circle Jerk
+Track: 09
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214524
+song_end
+song_begin: 10 - Fun Toy & Panda Towel feat. Vega Ebbersten - Fiona.mp3
+Time: 193
+Artist: Fun Toy & Panda Towel feat. Vega Ebbersten
+AlbumArtist: VA
+Title: Fiona
+Album: Crop Circle Jerk
+Track: 10
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214528
+song_end
+song_begin: 11 - Foxdye - Uphill To A Boring Horizon.mp3
+Time: 296
+Artist: Foxdye
+AlbumArtist: VA
+Title: Uphill To A Boring Horizon
+Album: Crop Circle Jerk
+Track: 11
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214520
+song_end
+end: Ektoplazm/Crop Circle Jerk
+directory: Drippy Creatures
+mtime: 1369069716
+begin: Ektoplazm/Drippy Creatures
+song_begin: 01 - Ellis Thomas - Chemical Circumstance.mp3
+Time: 511
+Artist: Ellis Thomas
+AlbumArtist: Ellis Thomas
+Title: Chemical Circumstance
+Album: Drippy Creatures
+Track: 01
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214480
+song_end
+song_begin: 02 - Ellis Thomas - Unbelievably Unknown.mp3
+Time: 443
+Artist: Ellis Thomas
+AlbumArtist: Ellis Thomas
+Title: Unbelievably Unknown
+Album: Drippy Creatures
+Track: 02
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214488
+song_end
+song_begin: 03 - Ellis Thomas - Passport.mp3
+Time: 480
+Artist: Ellis Thomas
+AlbumArtist: Ellis Thomas
+Title: Passport
+Album: Drippy Creatures
+Track: 03
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214480
+song_end
+song_begin: 04 - Ellis Thomas - Time For A Wiggle.mp3
+Time: 480
+Artist: Ellis Thomas
+AlbumArtist: Ellis Thomas
+Title: Time For A Wiggle
+Album: Drippy Creatures
+Track: 04
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214484
+song_end
+song_begin: 05 - Ellis Thomas - Radio Signals.mp3
+Time: 425
+Artist: Ellis Thomas
+AlbumArtist: Ellis Thomas
+Title: Radio Signals
+Album: Drippy Creatures
+Track: 05
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214484
+song_end
+song_begin: 06 - Ellis Thomas - Cinematic Trance.mp3
+Time: 461
+Artist: Ellis Thomas
+AlbumArtist: Ellis Thomas
+Title: Cinematic Trance
+Album: Drippy Creatures
+Track: 06
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214486
+song_end
+song_begin: 07 - Ellis Thomas - Electronic Music.mp3
+Time: 448
+Artist: Ellis Thomas
+AlbumArtist: Ellis Thomas
+Title: Electronic Music
+Album: Drippy Creatures
+Track: 07
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214482
+song_end
+song_begin: 08 - Ellis Thomas - Resident Exorcist.mp3
+Time: 494
+Artist: Ellis Thomas
+AlbumArtist: Ellis Thomas
+Title: Resident Exorcist
+Album: Drippy Creatures
+Track: 08
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214488
+song_end
+song_begin: 09 - Ellis Thomas - Speaker Damage.mp3
+Time: 494
+Artist: Ellis Thomas
+AlbumArtist: Ellis Thomas
+Title: Speaker Damage
+Album: Drippy Creatures
+Track: 09
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214486
+song_end
+end: Ektoplazm/Drippy Creatures
+directory: Easily Embarrassed - Different Dimensions
+mtime: 1369069722
+begin: Ektoplazm/Easily Embarrassed - Different Dimensions
+song_begin: 01 - Easily Embarrassed - Marble Shower.mp3
+Time: 398
+Artist: Easily Embarrassed
+AlbumArtist: Easily Embarrassed
+Title: Marble Shower
+Album: Different Dimensions
+Track: 1
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214642
+song_end
+song_begin: 02 - Easily Embarrassed - The Odds.mp3
+Time: 363
+Artist: Easily Embarrassed
+AlbumArtist: Easily Embarrassed
+Title: The Odds
+Album: Different Dimensions
+Track: 2
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214642
+song_end
+song_begin: 03 - Easily Embarrassed - Jester's Escape.mp3
+Time: 228
+Artist: Easily Embarrassed
+AlbumArtist: Easily Embarrassed
+Title: Jester's Escape
+Album: Different Dimensions
+Track: 3
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214640
+song_end
+song_begin: 04 - Easily Embarrassed - Mushroom Fever.mp3
+Time: 281
+Artist: Easily Embarrassed
+AlbumArtist: Easily Embarrassed
+Title: Mushroom Fever
+Album: Different Dimensions
+Track: 4
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214640
+song_end
+song_begin: 05 - Easily Embarrassed - Different Dimensions (Continuous Mix).mp3
+Time: 1243
+Artist: Easily Embarrassed
+AlbumArtist: Easily Embarrassed
+Title: Different Dimensions (Continuous Mix)
+Album: Different Dimensions
+Track: 5
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214644
+song_end
+song_begin: 06 - Easily Embarrassed - Jester's Escape (DJ Edit).mp3
+Time: 269
+Artist: Easily Embarrassed
+AlbumArtist: Easily Embarrassed
+Title: Jester's Escape (DJ Edit)
+Album: Different Dimensions
+Track: 6
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214640
+song_end
+end: Ektoplazm/Easily Embarrassed - Different Dimensions
+directory: Ekoplex - Creatures Of The Forest
+mtime: 1369069735
+begin: Ektoplazm/Ekoplex - Creatures Of The Forest
+song_begin: 01 - Ekoplex - Planted Tree.mp3
+Time: 437
+Artist: Ekoplex
+AlbumArtist: Ekoplex
+Title: Planted Tree
+Album: Creatures Of The Forest
+Track: 01
+Date: 2010
+Date: 2010
+Genre: Psytrance
+Composer: Ray Vincent
+mtime: 1366214470
+song_end
+song_begin: 02 - Ekoplex - Kodama.mp3
+Time: 369
+Artist: Ekoplex
+AlbumArtist: Ekoplex
+Title: Kodama
+Album: Creatures Of The Forest
+Track: 02
+Date: 2010
+Date: 2010
+Genre: Psytrance
+Composer: Ray Vincent
+mtime: 1366214476
+song_end
+song_begin: 03 - Ekoplex - Tree Of Life.mp3
+Time: 400
+Artist: Ekoplex
+AlbumArtist: Ekoplex
+Title: Tree Of Life
+Album: Creatures Of The Forest
+Track: 03
+Date: 2010
+Date: 2010
+Genre: Psytrance
+Composer: Ray Vincent
+mtime: 1366214470
+song_end
+song_begin: 04 - Ekoplex - Seeds.mp3
+Time: 440
+Artist: Ekoplex
+AlbumArtist: Ekoplex
+Title: Seeds
+Album: Creatures Of The Forest
+Track: 04
+Date: 2010
+Date: 2010
+Genre: Psytrance
+Composer: Ray Vincent
+mtime: 1366214478
+song_end
+song_begin: 05 - Ekoplex - Alchemistics.mp3
+Time: 454
+Artist: Ekoplex
+AlbumArtist: Ekoplex
+Title: Alchemistics
+Album: Creatures Of The Forest
+Track: 05
+Date: 2010
+Date: 2010
+Genre: Psytrance
+Composer: Ray Vincent
+mtime: 1366214474
+song_end
+song_begin: 06 - Ekoplex - Twisted Root.mp3
+Time: 460
+Artist: Ekoplex
+AlbumArtist: Ekoplex
+Title: Twisted Root
+Album: Creatures Of The Forest
+Track: 06
+Date: 2010
+Date: 2010
+Genre: Psytrance
+Composer: Ray Vincent
+mtime: 1366214478
+song_end
+song_begin: 07 - Ekoplex - Palaka.mp3
+Time: 397
+Artist: Ekoplex
+AlbumArtist: Ekoplex
+Title: Palaka
+Album: Creatures Of The Forest
+Track: 07
+Date: 2010
+Date: 2010
+Genre: Psytrance
+Composer: Ray Vincent
+mtime: 1366214476
+song_end
+song_begin: 08 - Ekoplex - Give Us The Creature.mp3
+Time: 445
+Artist: Ekoplex
+AlbumArtist: Ekoplex
+Title: Give Us The Creature
+Album: Creatures Of The Forest
+Track: 08
+Date: 2010
+Date: 2010
+Genre: Psytrance
+Composer: Ray Vincent
+mtime: 1366214472
+song_end
+song_begin: 09 - Ekoplex - Neuro Highway.mp3
+Time: 428
+Artist: Ekoplex
+AlbumArtist: Ekoplex
+Title: Neuro Highway
+Album: Creatures Of The Forest
+Track: 09
+Date: 2010
+Date: 2010
+Genre: Psytrance
+Composer: Ray Vincent
+mtime: 1366214472
+song_end
+song_begin: 10 - Ekoplex - Inner Focus.mp3
+Time: 474
+Artist: Ekoplex
+AlbumArtist: Ekoplex
+Title: Inner Focus
+Album: Creatures Of The Forest
+Track: 10
+Date: 2010
+Date: 2010
+Genre: Psytrance
+Composer: Ray Vincent
+mtime: 1366214472
+song_end
+end: Ektoplazm/Ekoplex - Creatures Of The Forest
+directory: Electrocado - The Hass Effect
+mtime: 1369069746
+begin: Ektoplazm/Electrocado - The Hass Effect
+song_begin: 01 - Electrocado - Derping Hamstain.mp3
+Time: 160
+Artist: Electrocado
+AlbumArtist: Electrocado
+Title: Derping Hamstain
+Album: The Hass Effect
+Track: 01
+Date: 2011
+Date: 2011
+Genre: Psytrance
+mtime: 1366214630
+song_end
+song_begin: 02 - Electrocado - The Lo-Fi Blues.mp3
+Time: 404
+Artist: Electrocado
+AlbumArtist: Electrocado
+Title: The Lo-Fi Blues
+Album: The Hass Effect
+Track: 02
+Date: 2011
+Date: 2011
+Genre: Psytrance
+mtime: 1366214634
+song_end
+song_begin: 03 - Electrocado - Wolfenstein.mp3
+Time: 461
+Artist: Electrocado
+AlbumArtist: Electrocado
+Title: Wolfenstein
+Album: The Hass Effect
+Track: 03
+Date: 2011
+Date: 2011
+Genre: Psytrance
+mtime: 1366214636
+song_end
+song_begin: 04 - Electrocado - Loose Lugs.mp3
+Time: 482
+Artist: Electrocado
+AlbumArtist: Electrocado
+Title: Loose Lugs
+Album: The Hass Effect
+Track: 04
+Date: 2011
+Date: 2011
+Genre: Psytrance
+mtime: 1366214636
+song_end
+song_begin: 05 - Electrocado - Frequency Chef.mp3
+Time: 399
+Artist: Electrocado
+AlbumArtist: Electrocado
+Title: Frequency Chef
+Album: The Hass Effect
+Track: 05
+Date: 2011
+Date: 2011
+Genre: Psytrance
+mtime: 1366214630
+song_end
+song_begin: 06 - Electrocado - Haas To Be Hass.mp3
+Time: 329
+Artist: Electrocado
+AlbumArtist: Electrocado
+Title: Haas To Be Hass
+Album: The Hass Effect
+Track: 06
+Date: 2011
+Date: 2011
+Genre: Psytrance
+mtime: 1366214638
+song_end
+song_begin: 07 - Electrocado - Plectrum.mp3
+Time: 621
+Artist: Electrocado
+AlbumArtist: Electrocado
+Title: Plectrum
+Album: The Hass Effect
+Track: 07
+Date: 2011
+Date: 2011
+Genre: Psytrance
+mtime: 1366214638
+song_end
+song_begin: 08 - Electrocado - The Jolly Frog.mp3
+Time: 374
+Artist: Electrocado
+AlbumArtist: Electrocado
+Title: The Jolly Frog
+Album: The Hass Effect
+Track: 08
+Date: 2011
+Date: 2011
+Genre: Psytrance
+mtime: 1366214630
+song_end
+song_begin: 09 - Electrocado - The Lugubrious Frog.mp3
+Time: 155
+Artist: Electrocado
+AlbumArtist: Electrocado
+Title: The Lugubrious Frog
+Album: The Hass Effect
+Track: 09
+Date: 2011
+Date: 2011
+Genre: Psytrance
+mtime: 1366214630
+song_end
+song_begin: 10 - Electrocado - Rick Wairheimer.mp3
+Time: 499
+Artist: Electrocado
+AlbumArtist: Electrocado
+Title: Rick Wairheimer
+Album: The Hass Effect
+Track: 10
+Date: 2011
+Date: 2011
+Genre: Psytrance
+mtime: 1366214634
+song_end
+song_begin: 11 - Electrocado - The Crotch Thruster.mp3
+Time: 398
+Artist: Electrocado
+AlbumArtist: Electrocado
+Title: The Crotch Thruster
+Album: The Hass Effect
+Track: 11
+Date: 2011
+Date: 2011
+Genre: Psytrance
+mtime: 1366214632
+song_end
+end: Ektoplazm/Electrocado - The Hass Effect
+directory: Entanglement
+mtime: 1366214594
+begin: Ektoplazm/Entanglement
+song_begin: 01 - Circuit Bent vs Mr. Bill vs Tom Cosm - Incompusmentus.mp3
+Time: 357
+Artist: Circuit Bent vs Mr. Bill vs Tom Cosm
+AlbumArtist: VA
+Title: Incompusmentus
+Album: Entanglement
+Track: 01
+Date: 2011
+Genre: Ambient
+mtime: 1366214594
+song_end
+song_begin: 02 - Circuit Bent vs Mr. Bill - Salt Water.mp3
+Time: 445
+Artist: Circuit Bent vs Mr. Bill
+AlbumArtist: VA
+Title: Salt Water
+Album: Entanglement
+Track: 02
+Date: 2011
+Genre: Ambient
+mtime: 1366214592
+song_end
+song_begin: 03 - Circuit Bent vs Mr. Bill vs Sun In Aquarius - Tangle.mp3
+Time: 384
+Artist: Circuit Bent vs Mr. Bill vs Sun In Aquarius
+AlbumArtist: VA
+Title: Tangle
+Album: Entanglement
+Track: 03
+Date: 2011
+Genre: Ambient
+mtime: 1366214592
+song_end
+song_begin: 04 - Circuit Bent vs Mr. Bill vs Tom Cosm - Coke & Caviar.mp3
+Time: 377
+Artist: Circuit Bent vs Mr. Bill vs Tom Cosm
+AlbumArtist: VA
+Title: Coke & Caviar
+Album: Entanglement
+Track: 04
+Date: 2011
+Genre: Ambient
+mtime: 1366214594
+song_end
+end: Ektoplazm/Entanglement
+directory: Fragmnts
+mtime: 1366214518
+begin: Ektoplazm/Fragmnts
+song_begin: 01 - Mind Tree - Owl And The Penguin (Theophany Remix).mp3
+Time: 397
+Artist: Mind Tree
+AlbumArtist: VA
+Title: Owl And The Penguin (Theophany Remix)
+Album: Fragmnts
+Track: 01
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214514
+song_end
+song_begin: 02 - Fine Cut Bodies - Amendment XVIII.mp3
+Time: 304
+Artist: Fine Cut Bodies
+AlbumArtist: VA
+Title: Amendment XVIII
+Album: Fragmnts
+Track: 02
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214516
+song_end
+song_begin: 03 - Circuit Bent - Flutterby.mp3
+Time: 322
+Artist: Circuit Bent
+AlbumArtist: VA
+Title: Flutterby
+Album: Fragmnts
+Track: 03
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214516
+song_end
+song_begin: 04 - Auma & Desiseq - Chute.mp3
+Time: 391
+Artist: Auma & Desiseq
+AlbumArtist: VA
+Title: Chute
+Album: Fragmnts
+Track: 04
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214518
+song_end
+song_begin: 05 - Woulg - End.mp3
+Time: 242
+Artist: Woulg
+AlbumArtist: VA
+Title: End
+Album: Fragmnts
+Track: 05
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214512
+song_end
+song_begin: 06 - The Cogent Project - Movement And Weakness.mp3
+Time: 211
+Artist: The Cogent Project
+AlbumArtist: VA
+Title: Movement And Weakness
+Album: Fragmnts
+Track: 06
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214512
+song_end
+song_begin: 07 - Quanta - The Passage.mp3
+Time: 380
+Artist: Quanta
+AlbumArtist: VA
+Title: The Passage
+Album: Fragmnts
+Track: 07
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214514
+song_end
+song_begin: 08 - Whitebear - Primal Stomp.mp3
+Time: 408
+Artist: Whitebear
+AlbumArtist: VA
+Title: Primal Stomp
+Album: Fragmnts
+Track: 08
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214512
+song_end
+song_begin: 09 - Super Galactic Expansive - Metacognition.mp3
+Time: 245
+Artist: Super Galactic Expansive
+AlbumArtist: VA
+Title: Metacognition
+Album: Fragmnts
+Track: 09
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214510
+song_end
+song_begin: 10 - Interlaken - Genghis.mp3
+Time: 389
+Artist: Interlaken
+AlbumArtist: VA
+Title: Genghis
+Album: Fragmnts
+Track: 10
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214518
+song_end
+end: Ektoplazm/Fragmnts
+directory: Globular
+mtime: 1366214604
+begin: Ektoplazm/Globular
+song_begin: 01 - Globular - Feeding Back Forwards.mp3
+Time: 579
+Artist: Globular
+AlbumArtist: Globular
+Title: Feeding Back Forwards
+Album: A Self-Fulfilling Prophecy
+Track: 01
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214600
+song_end
+song_begin: 02 - Globular - A Singular Synergy.mp3
+Time: 637
+Artist: Globular
+AlbumArtist: Globular
+Title: A Singular Synergy
+Album: A Self-Fulfilling Prophecy
+Track: 02
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214604
+song_end
+song_begin: 03 - Globular - Subversion.mp3
+Time: 509
+Artist: Globular
+AlbumArtist: Globular
+Title: Subversion
+Album: A Self-Fulfilling Prophecy
+Track: 03
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214600
+song_end
+song_begin: 04 - Globular - This, Here, Now.mp3
+Time: 500
+Artist: Globular
+AlbumArtist: Globular
+Title: This, Here, Now
+Album: A Self-Fulfilling Prophecy
+Track: 04
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214602
+song_end
+song_begin: 05 - Globular - The Loon.mp3
+Time: 577
+Artist: Globular
+AlbumArtist: Globular
+Title: The Loon
+Album: A Self-Fulfilling Prophecy
+Track: 05
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214596
+song_end
+song_begin: 06 - Globular - A Highly Sprung Spring.mp3
+Time: 689
+Artist: Globular
+AlbumArtist: Globular
+Title: A Highly Sprung Spring
+Album: A Self-Fulfilling Prophecy
+Track: 06
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214606
+song_end
+song_begin: 07 - Globular - To The Other Side Of Fractal Phase Space.mp3
+Time: 602
+Artist: Globular
+AlbumArtist: Globular
+Title: To The Other Side Of Fractal Phase Space
+Album: A Self-Fulfilling Prophecy
+Track: 07
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214596
+song_end
+song_begin: 08 - Globular - From Mind, There Spills Forth Light.mp3
+Time: 632
+Artist: Globular
+AlbumArtist: Globular
+Title: From Mind, There Spills Forth Light
+Album: A Self-Fulfilling Prophecy
+Track: 08
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214598
+song_end
+end: Ektoplazm/Globular
+directory: Integer - Ventilation
+mtime: 1366214590
+begin: Ektoplazm/Integer - Ventilation
+song_begin: 01 - Integer - Ventilation.mp3
+Time: 463
+Artist: Integer
+AlbumArtist: Integer
+Title: Ventilation
+Album: Ventilation
+Track: 01
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214590
+song_end
+song_begin: 02 - Integer - Gurgle Dub.mp3
+Time: 371
+Artist: Integer
+AlbumArtist: Integer
+Title: Gurgle Dub
+Album: Ventilation
+Track: 02
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214586
+song_end
+song_begin: 03 - Integer - Knife & Spoon Dub.mp3
+Time: 431
+Artist: Integer
+AlbumArtist: Integer
+Title: Knife & Spoon Dub
+Album: Ventilation
+Track: 03
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214586
+song_end
+song_begin: 04 - Integer - South & West.mp3
+Time: 546
+Artist: Integer
+AlbumArtist: Integer
+Title: South & West
+Album: Ventilation
+Track: 04
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214590
+song_end
+song_begin: 05 - Integer - Ventilation (Operon Remix).mp3
+Time: 493
+Artist: Integer
+AlbumArtist: Integer
+Title: Ventilation (Operon Remix)
+Album: Ventilation
+Track: 05
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214588
+song_end
+end: Ektoplazm/Integer - Ventilation
+directory: Koan-The Signs Entanglement
+mtime: 1366214510
+begin: Ektoplazm/Koan-The Signs Entanglement
+song_begin: 01 - Koan - At The Sunset (Early Mix).mp3
+Time: 180
+Artist: Koan
+AlbumArtist: Koan
+Title: At The Sunset (Early Mix)
+Album: The Signs: Entanglement
+Track: 01
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214506
+song_end
+song_begin: 02 - Koan - Entanglement.mp3
+Time: 328
+Artist: Koan
+AlbumArtist: Koan
+Title: Entanglement
+Album: The Signs: Entanglement
+Track: 02
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214496
+song_end
+song_begin: 03 - Koan - Cave Entrance.mp3
+Time: 143
+Artist: Koan
+AlbumArtist: Koan
+Title: Cave Entrance
+Album: The Signs: Entanglement
+Track: 03
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214506
+song_end
+song_begin: 04 - Koan - Return To The Pearl Island.mp3
+Time: 65
+Artist: Koan
+AlbumArtist: Koan
+Title: Return To The Pearl Island
+Album: The Signs: Entanglement
+Track: 04
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214504
+song_end
+song_begin: 05 - Koan - Evening Flight With Souram.mp3
+Time: 136
+Artist: Koan
+AlbumArtist: Koan
+Title: Evening Flight With Souram
+Album: The Signs: Entanglement
+Track: 05
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214504
+song_end
+song_begin: 06 - Koan - Secret Map Of Cortes.mp3
+Time: 196
+Artist: Koan
+AlbumArtist: Koan
+Title: Secret Map Of Cortes
+Album: The Signs: Entanglement
+Track: 06
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214506
+song_end
+song_begin: 07 - Koan - By The Crystalline Cliffs.mp3
+Time: 100
+Artist: Koan
+AlbumArtist: Koan
+Title: By The Crystalline Cliffs
+Album: The Signs: Entanglement
+Track: 07
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214498
+song_end
+song_begin: 08 - Koan - On The Red Flatland.mp3
+Time: 83
+Artist: Koan
+AlbumArtist: Koan
+Title: On The Red Flatland
+Album: The Signs: Entanglement
+Track: 08
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214494
+song_end
+song_begin: 09 - Koan - Shanu's Vision.mp3
+Time: 82
+Artist: Koan
+AlbumArtist: Koan
+Title: Shanu's Vision
+Album: The Signs: Entanglement
+Track: 09
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214500
+song_end
+song_begin: 10 - Koan - The Chase.mp3
+Time: 199
+Artist: Koan
+AlbumArtist: Koan
+Title: The Chase
+Album: The Signs: Entanglement
+Track: 10
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214508
+song_end
+song_begin: 11 - Koan - Vaiteri's Trial.mp3
+Time: 68
+Artist: Koan
+AlbumArtist: Koan
+Title: Vaiteri's Trial
+Album: The Signs: Entanglement
+Track: 11
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214506
+song_end
+song_begin: 12 - Koan - The Return Of The Conquistadors.mp3
+Time: 373
+Artist: Koan
+AlbumArtist: Koan
+Title: The Return Of The Conquistadors
+Album: The Signs: Entanglement
+Track: 12
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214504
+song_end
+song_begin: 13 - Koan - Aerial Cricket.mp3
+Time: 276
+Artist: Koan
+AlbumArtist: Koan
+Title: Aerial Cricket
+Album: The Signs: Entanglement
+Track: 13
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214494
+song_end
+song_begin: 14 - Koan - Big Trouble In Rio Grande.mp3
+Time: 126
+Artist: Koan
+AlbumArtist: Koan
+Title: Big Trouble In Rio Grande
+Album: The Signs: Entanglement
+Track: 14
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214500
+song_end
+song_begin: 15 - Koan - Diego The Pirate's Broken Circle.mp3
+Time: 144
+Artist: Koan
+AlbumArtist: Koan
+Title: Diego The Pirate's Broken Circle
+Album: The Signs: Entanglement
+Track: 15
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214500
+song_end
+song_begin: 16 - Koan - Shadows Around The Corner.mp3
+Time: 48
+Artist: Koan
+AlbumArtist: Koan
+Title: Shadows Around The Corner
+Album: The Signs: Entanglement
+Track: 16
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214500
+song_end
+song_begin: 17 - Koan - Night-Time Talk With Coyote.mp3
+Time: 174
+Artist: Koan
+AlbumArtist: Koan
+Title: Night-Time Talk With Coyote
+Album: The Signs: Entanglement
+Track: 17
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214496
+song_end
+song_begin: 18 - Koan - Meeting At Mercedos.mp3
+Time: 198
+Artist: Koan
+AlbumArtist: Koan
+Title: Meeting At Mercedos
+Album: The Signs: Entanglement
+Track: 18
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214510
+song_end
+song_begin: 19 - Koan - House In The Wilderness Part 1 (Meeting With Jose).mp3
+Time: 286
+Artist: Koan
+AlbumArtist: Koan
+Title: House In The Wilderness Part 1 (Meeting With Jose)
+Album: The Signs: Entanglement
+Track: 19
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214508
+song_end
+song_begin: 20 - Koan - After The Taste Of Rose The Gypsy's Brew.mp3
+Time: 106
+Artist: Koan
+AlbumArtist: Koan
+Title: After The Taste Of Rose The Gypsy's Brew
+Album: The Signs: Entanglement
+Track: 20
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214510
+song_end
+song_begin: 21 - Koan - A Firefly Wearing A Blue Hat With A Small Lamp.mp3
+Time: 296
+Artist: Koan
+AlbumArtist: Koan
+Title: A Firefly Wearing A Blue Hat With A Small Lamp
+Album: The Signs: Entanglement
+Track: 21
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214494
+song_end
+song_begin: 22 - Koan - Inside Oko-Shika.mp3
+Time: 142
+Artist: Koan
+AlbumArtist: Koan
+Title: Inside Oko-Shika
+Album: The Signs: Entanglement
+Track: 22
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214510
+song_end
+song_begin: 23 - Koan - House In The Wilderness Part 2 (Night Flights Over Sonora Desert).mp3
+Time: 351
+Artist: Koan
+AlbumArtist: Koan
+Title: House In The Wilderness Part 2 (Night Flights Over Sonora Desert)
+Album: The Signs: Entanglement
+Track: 23
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214502
+song_end
+song_begin: 24 - Koan - Meeting With Don Ernesto's Shades.mp3
+Time: 103
+Artist: Koan
+AlbumArtist: Koan
+Title: Meeting With Don Ernesto's Shades
+Album: The Signs: Entanglement
+Track: 24
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214502
+song_end
+song_begin: 25 - Koan - Santiago's Passes.mp3
+Time: 106
+Artist: Koan
+AlbumArtist: Koan
+Title: Santiago's Passes
+Album: The Signs: Entanglement
+Track: 25
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214502
+song_end
+song_begin: 26 - Koan - Trapped.mp3
+Time: 133
+Artist: Koan
+AlbumArtist: Koan
+Title: Trapped
+Album: The Signs: Entanglement
+Track: 26
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214496
+song_end
+song_begin: 27 - Koan - Boarding Action.mp3
+Time: 79
+Artist: Koan
+AlbumArtist: Koan
+Title: Boarding Action
+Album: The Signs: Entanglement
+Track: 27
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214502
+song_end
+song_begin: 28 - Koan - Under The Waterfall.mp3
+Time: 170
+Artist: Koan
+AlbumArtist: Koan
+Title: Under The Waterfall
+Album: The Signs: Entanglement
+Track: 28
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214508
+song_end
+song_begin: 29 - Koan - Night Rendezvous With Mercedes.mp3
+Time: 297
+Artist: Koan
+AlbumArtist: Koan
+Title: Night Rendezvous With Mercedes
+Album: The Signs: Entanglement
+Track: 29
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214494
+song_end
+song_begin: 30 - Koan - Lone Wagon (feat. Tatyana Kalmykova).mp3
+Time: 337
+Artist: Koan
+AlbumArtist: Koan
+Title: Lone Wagon (feat. Tatyana Kalmykova)
+Album: The Signs: Entanglement
+Track: 30
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214508
+song_end
+song_begin: 31 - Koan - At The Dwarf's Cave.mp3
+Time: 97
+Artist: Koan
+AlbumArtist: Koan
+Title: At The Dwarf's Cave
+Album: The Signs: Entanglement
+Track: 31
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214504
+song_end
+song_begin: 32 - Koan - Riding A Crocodile.mp3
+Time: 109
+Artist: Koan
+AlbumArtist: Koan
+Title: Riding A Crocodile
+Album: The Signs: Entanglement
+Track: 32
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214504
+song_end
+song_begin: 33 - Koan - Nebula.mp3
+Time: 146
+Artist: Koan
+AlbumArtist: Koan
+Title: Nebula
+Album: The Signs: Entanglement
+Track: 33
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214506
+song_end
+song_begin: 34 - Koan - Exposure.mp3
+Time: 577
+Artist: Koan
+AlbumArtist: Koan
+Title: Exposure
+Album: The Signs: Entanglement
+Track: 34
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214498
+song_end
+song_begin: 35 - Koan - Jaguar Fights Don Ernesto.mp3
+Time: 347
+Artist: Koan
+AlbumArtist: Koan
+Title: Jaguar Fights Don Ernesto
+Album: The Signs: Entanglement
+Track: 35
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214500
+song_end
+song_begin: 36 - Koan - Sabotage (feat. Tatyana Kalmykova).mp3
+Time: 298
+Artist: Koan
+AlbumArtist: Koan
+Title: Sabotage (feat. Tatyana Kalmykova)
+Album: The Signs: Entanglement
+Track: 36
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214498
+song_end
+song_begin: 37 - Koan - Return.mp3
+Time: 124
+Artist: Koan
+AlbumArtist: Koan
+Title: Return
+Album: The Signs: Entanglement
+Track: 37
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214504
+song_end
+song_begin: 38 - Koan - Shanu And The Bear.mp3
+Time: 77
+Artist: Koan
+AlbumArtist: Koan
+Title: Shanu And The Bear
+Album: The Signs: Entanglement
+Track: 38
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214504
+song_end
+song_begin: 39 - Koan - Liberation.mp3
+Time: 111
+Artist: Koan
+AlbumArtist: Koan
+Title: Liberation
+Album: The Signs: Entanglement
+Track: 39
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214494
+song_end
+song_begin: 40 - Koan - At Dawn (Later Mix).mp3
+Time: 166
+Artist: Koan
+AlbumArtist: Koan
+Title: At Dawn (Later Mix)
+Album: The Signs: Entanglement
+Track: 40
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1366214500
+song_end
+end: Ektoplazm/Koan-The Signs Entanglement
+directory: Mindex
+mtime: 1366214718
+begin: Ektoplazm/Mindex
+song_begin: 01 - Mindex - Forgotten Dream.mp3
+Time: 261
+Artist: Mindex
+AlbumArtist: Mindex
+Title: Forgotten Dream
+Album: The Neverland
+Track: 01
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214716
+song_end
+song_begin: 02 - Mindex - Weasel.mp3
+Time: 279
+Artist: Mindex
+AlbumArtist: Mindex
+Title: Weasel
+Album: The Neverland
+Track: 02
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214716
+song_end
+song_begin: 03 - Mindex - Air.mp3
+Time: 236
+Artist: Mindex
+AlbumArtist: Mindex
+Title: Air
+Album: The Neverland
+Track: 03
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214712
+song_end
+song_begin: 04 - Mindex - Maritime.mp3
+Time: 378
+Artist: Mindex
+AlbumArtist: Mindex
+Title: Maritime
+Album: The Neverland
+Track: 04
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214716
+song_end
+song_begin: 05 - Mindex - Jagga-Jah.mp3
+Time: 291
+Artist: Mindex
+AlbumArtist: Mindex
+Title: Jagga-Jah
+Album: The Neverland
+Track: 05
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214718
+song_end
+song_begin: 06 - Mindex - Morning Joint.mp3
+Time: 228
+Artist: Mindex
+AlbumArtist: Mindex
+Title: Morning Joint
+Album: The Neverland
+Track: 06
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214714
+song_end
+song_begin: 07 - Mindex - Fairy And Dwarf (feat. Ira Ratry).mp3
+Time: 220
+Artist: Mindex
+AlbumArtist: Mindex
+Title: Fairy And Dwarf (feat. Ira Ratry)
+Album: The Neverland
+Track: 07
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214718
+song_end
+song_begin: 08 - Mindex - Crystals.mp3
+Time: 211
+Artist: Mindex
+AlbumArtist: Mindex
+Title: Crystals
+Album: The Neverland
+Track: 08
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214714
+song_end
+song_begin: 09 - Mindex - Snow Queen.mp3
+Time: 309
+Artist: Mindex
+AlbumArtist: Mindex
+Title: Snow Queen
+Album: The Neverland
+Track: 09
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214712
+song_end
+song_begin: 10 - Mindex - Across The Universe (feat. Spinner).mp3
+Time: 336
+Artist: Mindex
+AlbumArtist: Mindex
+Title: Across The Universe (feat. Spinner)
+Album: The Neverland
+Track: 10
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214714
+song_end
+end: Ektoplazm/Mindex
+directory: Psyderchill
+mtime: 1368023957
+begin: Ektoplazm/Psyderchill
+song_begin: 01 - Upavas - Realms Of Jupiter.mp3
+Time: 384
+Artist: Upavas
+AlbumArtist: VA
+Title: Realms Of Jupiter
+Album: Psyderchill
+Track: 01
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1368023935
+song_end
+song_begin: 02 - Spunje - Folding Strings.mp3
+Time: 473
+Artist: Spunje
+AlbumArtist: VA
+Title: Folding Strings
+Album: Psyderchill
+Track: 02
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1368023893
+song_end
+song_begin: 03 - Kaaz - Visitors Of Gaia.mp3
+Time: 277
+Artist: Kaaz
+AlbumArtist: VA
+Title: Visitors Of Gaia
+Album: Psyderchill
+Track: 03
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1368023968
+song_end
+song_begin: 04 - SeaMoon - A Deep Breath.mp3
+Time: 433
+Artist: SeaMoon
+AlbumArtist: VA
+Title: A Deep Breath
+Album: Psyderchill
+Track: 04
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1368023823
+song_end
+song_begin: 05 - Manjushri - Soulfly.mp3
+Time: 569
+Artist: Manjushri
+AlbumArtist: VA
+Title: Soulfly
+Album: Psyderchill
+Track: 05
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1368023957
+song_end
+song_begin: 06 - Bandarlog - Like We Know.mp3
+Time: 327
+Artist: Bandarlog
+AlbumArtist: VA
+Title: Like We Know
+Album: Psyderchill
+Track: 06
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1368023920
+song_end
+song_begin: 07 - Harmonic Frequency - Eostrae.mp3
+Time: 501
+Artist: Harmonic Frequency
+AlbumArtist: VA
+Title: Eostrae
+Album: Psyderchill
+Track: 07
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1368023875
+song_end
+song_begin: 08 - Psyrius - Endless.mp3
+Time: 478
+Artist: Psyrius
+AlbumArtist: VA
+Title: Endless
+Album: Psyderchill
+Track: 08
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1368023856
+song_end
+song_begin: 09 - Scopes - Life.mp3
+Time: 383
+Artist: Scopes
+AlbumArtist: VA
+Title: Life
+Album: Psyderchill
+Track: 09
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1368023908
+song_end
+song_begin: 10 - Bliepertronix - Bipolar Eclipse.mp3
+Time: 364
+Artist: Bliepertronix
+AlbumArtist: VA
+Title: Bipolar Eclipse
+Album: Psyderchill
+Track: 10
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1368023837
+song_end
+playlist_begin: Tmp.m3u
+mtime: 1368023823
+playlist_end
+end: Ektoplazm/Psyderchill
+directory: Psyderchill 2
+mtime: 1368024125
+begin: Ektoplazm/Psyderchill 2
+song_begin: 01 - Irukanji feat. Jazzy Flute - Out From Little Box (Original Version).mp3
+Time: 382
+Artist: Irukanji feat. Jazzy Flute
+AlbumArtist: VA
+Title: Out From Little Box (Original Version)
+Album: Psyderchill 2
+Track: 01
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1368024021
+song_end
+song_begin: 02 - Sergio Walgood - Timeshift Lapse.mp3
+Time: 478
+Artist: Sergio Walgood
+AlbumArtist: VA
+Title: Timeshift Lapse
+Album: Psyderchill 2
+Track: 02
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1368024107
+song_end
+song_begin: 03 - High-End - Earth Language.mp3
+Time: 456
+Artist: High-End
+AlbumArtist: VA
+Title: Earth Language
+Album: Psyderchill 2
+Track: 03
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1368024088
+song_end
+song_begin: 04 - Euphorica - Glowing Orbs.mp3
+Time: 462
+Artist: Euphorica
+AlbumArtist: VA
+Title: Glowing Orbs
+Album: Psyderchill 2
+Track: 04
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1368024125
+song_end
+song_begin: 05 - Seamoon - Digital Delirium.mp3
+Time: 428
+Artist: Seamoon
+AlbumArtist: VA
+Title: Digital Delirium
+Album: Psyderchill 2
+Track: 05
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1368023984
+song_end
+song_begin: 06 - Scopes - Scrambled Eggs.mp3
+Time: 424
+Artist: Scopes
+AlbumArtist: VA
+Title: Scrambled Eggs
+Album: Psyderchill 2
+Track: 06
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1368024053
+song_end
+song_begin: 07 - Harmonic Frequency - Fractions Of Time.mp3
+Time: 451
+Artist: Harmonic Frequency
+AlbumArtist: VA
+Title: Fractions Of Time
+Album: Psyderchill 2
+Track: 07
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1368024070
+song_end
+song_begin: 08 - Stereofeld - Life On Mars.mp3
+Time: 542
+Artist: Stereofeld
+AlbumArtist: VA
+Title: Life On Mars
+Album: Psyderchill 2
+Track: 08
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1368024005
+song_end
+song_begin: 09 - Dubtrak - Embracing The Rain.mp3
+Time: 284
+Artist: Dubtrak
+AlbumArtist: VA
+Title: Embracing The Rain
+Album: Psyderchill 2
+Track: 09
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1368024136
+song_end
+song_begin: 10 - Tara Putra - Interplanetary Dub Express.mp3
+Time: 411
+Artist: Tara Putra
+AlbumArtist: VA
+Title: Interplanetary Dub Express
+Album: Psyderchill 2
+Track: 10
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1368024037
+song_end
+end: Ektoplazm/Psyderchill 2
+directory: Room Nine Unlimited - Full Moon
+mtime: 1366214654
+begin: Ektoplazm/Room Nine Unlimited - Full Moon
+song_begin: 01 - Room Nine Unlimited - Fenix (On A Rainy Day).mp3
+Time: 488
+Artist: Room Nine Unlimited
+AlbumArtist: Room Nine Unlimited
+Title: Fenix (On A Rainy Day)
+Album: Full Moon
+Track: 01
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214654
+song_end
+song_begin: 02 - Room Nine Unlimited - Sliver.mp3
+Time: 490
+Artist: Room Nine Unlimited
+AlbumArtist: Room Nine Unlimited
+Title: Sliver
+Album: Full Moon
+Track: 02
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214652
+song_end
+song_begin: 03 - Room Nine Unlimited - Brave Thomas.mp3
+Time: 394
+Artist: Room Nine Unlimited
+AlbumArtist: Room Nine Unlimited
+Title: Brave Thomas
+Album: Full Moon
+Track: 03
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214648
+song_end
+song_begin: 04 - Room Nine Unlimited - Sticky Tricky Noise.mp3
+Time: 497
+Artist: Room Nine Unlimited
+AlbumArtist: Room Nine Unlimited
+Title: Sticky Tricky Noise
+Album: Full Moon
+Track: 04
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214650
+song_end
+song_begin: 05 - Room Nine Unlimited - Lord Nerd.mp3
+Time: 407
+Artist: Room Nine Unlimited
+AlbumArtist: Room Nine Unlimited
+Title: Lord Nerd
+Album: Full Moon
+Track: 05
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214646
+song_end
+song_begin: 06 - Room Nine Unlimited - Owl Cat.mp3
+Time: 435
+Artist: Room Nine Unlimited
+AlbumArtist: Room Nine Unlimited
+Title: Owl Cat
+Album: Full Moon
+Track: 06
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214646
+song_end
+song_begin: 07 - Room Nine Unlimited & Kuba Walda - Qwerty.mp3
+Time: 463
+Artist: Room Nine Unlimited & Kuba Walda
+AlbumArtist: Room Nine Unlimited
+Title: Qwerty
+Album: Full Moon
+Track: 07
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214648
+song_end
+song_begin: 08 - Room Nine Unlimited - Honey Burp.mp3
+Time: 572
+Artist: Room Nine Unlimited
+AlbumArtist: Room Nine Unlimited
+Title: Honey Burp
+Album: Full Moon
+Track: 08
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214652
+song_end
+song_begin: 09 - Room Nine Unlimited - 009 License To Live.mp3
+Time: 444
+Artist: Room Nine Unlimited
+AlbumArtist: Room Nine Unlimited
+Title: 009 License To Live
+Album: Full Moon
+Track: 09
+Date: 2012
+Date: 2012
+Genre: Psytrance
+mtime: 1366214654
+song_end
+end: Ektoplazm/Room Nine Unlimited - Full Moon
+directory: Space Forming 1
+mtime: 1368024291
+begin: Ektoplazm/Space Forming 1
+song_begin: 01 - Algesis - Praying Mantis.mp3
+Time: 234
+Artist: Algesis
+AlbumArtist: VA
+Title: Praying Mantis
+Album: Space Forming
+Track: 01
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1368024222
+song_end
+song_begin: 02 - Zi - Blue Home.mp3
+Time: 357
+Artist: Zi
+AlbumArtist: VA
+Title: Blue Home
+Album: Space Forming
+Track: 02
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1368024236
+song_end
+song_begin: 03 - Den Wave - Sweet.mp3
+Time: 554
+Artist: Den Wave
+AlbumArtist: VA
+Title: Sweet
+Album: Space Forming
+Track: 03
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1368024257
+song_end
+song_begin: 04 - Simon G - Night Shore Walk.mp3
+Time: 303
+Artist: Simon G
+AlbumArtist: VA
+Title: Night Shore Walk
+Album: Space Forming
+Track: 04
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1368024269
+song_end
+song_begin: 05 - Globular - Paranormaloid.mp3
+Time: 564
+Artist: Globular
+AlbumArtist: VA
+Title: Paranormaloid
+Album: Space Forming
+Track: 05
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1368024291
+song_end
+song_begin: 06 - MentalImage - Running, Forgetting....mp3
+Time: 365
+Artist: MentalImage
+AlbumArtist: VA
+Title: Running, Forgetting...
+Album: Space Forming
+Track: 06
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1368024305
+song_end
+song_begin: 07 - Wrong Mantra - Hemp Street 303 (Winter Edit).mp3
+Time: 260
+Artist: Wrong Mantra
+AlbumArtist: VA
+Title: Hemp Street 303 (Winter Edit)
+Album: Space Forming
+Track: 07
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1368024146
+song_end
+song_begin: 08 - GoaMech - Egyptian DendroToxiDrone.mp3
+Time: 288
+Artist: GoaMech
+AlbumArtist: VA
+Title: Egyptian DendroToxiDrone
+Album: Space Forming
+Track: 08
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1368024157
+song_end
+song_begin: 09 - Wylhelm - Trip Complete.mp3
+Time: 490
+Artist: Wylhelm
+AlbumArtist: VA
+Title: Trip Complete
+Album: Space Forming
+Track: 09
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1368024176
+song_end
+song_begin: 10 - Tara Putra - Mashala Dub.mp3
+Time: 495
+Artist: Tara Putra
+AlbumArtist: VA
+Title: Mashala Dub
+Album: Space Forming
+Track: 10
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1368024195
+song_end
+song_begin: 11 - Sport & Music - 7 01.mp3
+Time: 424
+Artist: Sport & Music
+AlbumArtist: VA
+Title: 7 01
+Album: Space Forming
+Track: 11
+Date: 2010
+Date: 2010
+Genre: Downtempo
+mtime: 1368024212
+song_end
+end: Ektoplazm/Space Forming 1
+directory: Space Forming 2
+mtime: 1369078594
+begin: Ektoplazm/Space Forming 2
+song_begin: 01 - Disia - ...I Still Don`t Know Who I Am.mp3
+Time: 224
+Artist: Disia
+Title: ...I Still Don`t Know Who I Am
+Album: Space Forming Vol.2
+Track: 01
+Date: 2010
+Genre: Psychedelic
+mtime: 1369078594
+song_end
+song_begin: 02 - Den Wave - Earth.mp3
+Time: 630
+Artist: Den Wave
+Title: Earth
+Album: Space Forming Vol.2
+Track: 02
+Date: 2010
+Genre: Psychedelic
+mtime: 1369078594
+song_end
+song_begin: 03 - Hello Mellow - A Passage In Time.mp3
+Time: 328
+Artist: Hello Mellow
+Title: A Passage In Time
+Album: Space Forming Vol.2
+Track: 03
+Date: 2010
+Genre: Psychedelic
+mtime: 1369078594
+song_end
+song_begin: 04 - Tara Putra - Error in Babylon.mp3
+Time: 470
+Artist: Tara Putra
+Title: Error in Babylon
+Album: Space Forming Vol.2
+Track: 04
+Date: 2010
+Genre: Psychedelic
+mtime: 1369078594
+song_end
+song_begin: 05 - Globular - Squabbling Gods.mp3
+Time: 571
+Artist: Globular
+Title: Squabbling Gods
+Album: Space Forming Vol.2
+Track: 05
+Date: 2010
+Genre: Psychedelic
+mtime: 1369078594
+song_end
+song_begin: 06 - Unusual Cosmic Process - Mission X.mp3
+Time: 594
+Artist: Unusual Cosmic Process
+Title: Mission X
+Album: Space Forming Vol.2
+Track: 06
+Date: 2010
+Genre: Psychedelic
+mtime: 1369078594
+song_end
+song_begin: 07 - Divided Harmonics - Exorcism (Wrong Mantra remix).mp3
+Time: 605
+Artist: Divided Harmonics
+Title: Exorcism (Wrong Mantra remix)
+Album: Space Forming Vol.2
+Track: 07
+Date: 2010
+Genre: Psychedelic
+mtime: 1369078594
+song_end
+song_begin: 08 - Wylhelm - Bem Sol.mp3
+Time: 416
+Artist: Wylhelm
+Title: Bem Sol
+Album: Space Forming Vol.2
+Track: 08
+Date: 2010
+Genre: Psychedelic
+mtime: 1369078594
+song_end
+song_begin: 09 - In Orbit - On A Train To East Malwern.mp3
+Time: 378
+Artist: In Orbit
+Title: On A Train To East Malwern
+Album: Space Forming Vol.2
+Track: 09
+Date: 2010
+Genre: Psychedelic
+mtime: 1369078594
+song_end
+song_begin: 10 - Hyperwind - OneFreeMan.mp3
+Time: 567
+Artist: Hyperwind
+Title: OneFreeMan
+Album: Space Forming Vol.2
+Track: 10
+Date: 2010
+Genre: Psychedelic
+mtime: 1369078594
+song_end
+song_begin: 11 - Sport & Music - Pazzle (Original mix).mp3
+Time: 242
+Artist: Sport & Music
+Title: Pazzle (Original mix)
+Album: Space Forming Vol.2
+Track: 11
+Date: 2010
+Genre: Psychedelic
+mtime: 1369078594
+song_end
+end: Ektoplazm/Space Forming 2
+directory: Space Forming 3
+mtime: 1369078629
+begin: Ektoplazm/Space Forming 3
+song_begin: 01 - Delicious Insects - Squids And Rainbows.mp3
+Time: 432
+Artist: Delicious Insects
+Title: Squids And Rainbows
+Album: Space Forming Vol.3
+Track: 01
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 02 - In Orbit - Gabys Lullaby.mp3
+Time: 517
+Artist: In Orbit
+Title: Gabys Lullaby
+Album: Space Forming Vol.3
+Track: 02
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 03 - Unusual Cosmic Process - Wake Up! (Dream Mix).mp3
+Time: 530
+Artist: Unusual Cosmic Process
+Title: Wake Up! (Dream Mix)
+Album: Space Forming Vol.3
+Track: 03
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 04 - Leoboris - Merciful Damage.mp3
+Time: 364
+Artist: Leoboris
+Title: Merciful Damage
+Album: Space Forming Vol.3
+Track: 04
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 05 - Paraz1t - Lesdub.mp3
+Time: 423
+Artist: Paraz1t
+Title: Lesdub
+Album: Space Forming Vol.3
+Track: 05
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 06 - Hello Mellow - Petrichor.mp3
+Time: 332
+Artist: Hello Mellow
+Title: Petrichor
+Album: Space Forming Vol.3
+Track: 06
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 07 - Virvel - Gåte.mp3
+Time: 485
+Artist: Virvel
+Title: Gåte
+Album: Space Forming Vol.3
+Track: 07
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 08 - Maitre Soda - Spirit World.mp3
+Time: 278
+Artist: Maitre Soda
+Title: Spirit World
+Album: Space Forming Vol.3
+Track: 08
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 09 - ArmagedDance - Atmosphere (MentalImage Remix).mp3
+Time: 606
+Artist: ArmagedDance
+Title: Atmosphere (MentalImage Remix)
+Album: Space Forming Vol.3
+Track: 09
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 10 - Globular - C - Happy.mp3
+Time: 383
+Artist: Globular
+Title: C - Happy
+Album: Space Forming Vol.3
+Track: 10
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 11 - Unusual Cosmic Process - Smooth Turbulence (Break Beat Edit).mp3
+Time: 597
+Artist: Unusual Cosmic Process
+Title: Smooth Turbulence (Break Beat Edit)
+Album: Space Forming Vol.3
+Track: 11
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 12 - Sasha Ri - Nowhere Inside Out.mp3
+Time: 400
+Artist: Sasha Ri
+Title: Nowhere Inside Out
+Album: Space Forming Vol.3
+Track: 12
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 13 - Wylhelm - Mushi.mp3
+Time: 371
+Artist: Wylhelm
+Title: Mushi
+Album: Space Forming Vol.3
+Track: 13
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 14 - Hello Mellow - Amanita.mp3
+Time: 358
+Artist: Hello Mellow
+Title: Amanita
+Album: Space Forming Vol.3
+Track: 14
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 15 - Acidkit - Breakin A Bad Code.mp3
+Time: 338
+Artist: Acidkit
+Title: Breakin A Bad Code
+Album: Space Forming Vol.3
+Track: 15
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 16 - Hyperwind - Purple Lake.mp3
+Time: 470
+Artist: Hyperwind
+Title: Purple Lake
+Album: Space Forming Vol.3
+Track: 16
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 17 - Stanislav Egorov - Mystery.mp3
+Time: 373
+Artist: Stanislav Egorov
+Title: Mystery
+Album: Space Forming Vol.3
+Track: 17
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 18 - Victor Crain - Vida Espiritual.mp3
+Time: 253
+Artist: Victor Crain
+Title: Vida Espiritual
+Album: Space Forming Vol.3
+Track: 18
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 19 - 8219 - Janet.mp3
+Time: 317
+Artist: 8219
+Title: Janet
+Album: Space Forming Vol.3
+Track: 19
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 20 - Zoltan Sultan - The Lost Empire.mp3
+Time: 294
+Artist: Zoltan Sultan
+Title: The Lost Empire
+Album: Space Forming Vol.3
+Track: 20
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 21 - Sunspot - Desert Dreams.mp3
+Time: 286
+Artist: Sunspot
+Title: Desert Dreams
+Album: Space Forming Vol.3
+Track: 21
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 22 - Tara Putra - Between The Sphere.mp3
+Time: 360
+Artist: Tara Putra
+Title: Between The Sphere
+Album: Space Forming Vol.3
+Track: 22
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+song_begin: 23 - Wrong Mantra - Illusive Duality.mp3
+Time: 477
+Artist: Wrong Mantra
+Title: Illusive Duality
+Album: Space Forming Vol.3
+Track: 23
+Date: 2011
+Genre: Psychedelic
+mtime: 1369078629
+song_end
+end: Ektoplazm/Space Forming 3
+directory: Special Places
+mtime: 1366214710
+begin: Ektoplazm/Special Places
+song_begin: 01 - K.D. Expression - Alpae-3717.mp3
+Time: 285
+Artist: K.D. Expression
+AlbumArtist: VA
+Title: Alpae-3717
+Album: Special Places
+Track: 01
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214706
+song_end
+song_begin: 02 - Cygna - Camaras De Lamento.mp3
+Time: 434
+Artist: Cygna
+AlbumArtist: VA
+Title: Camaras De Lamento
+Album: Special Places
+Track: 02
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214706
+song_end
+song_begin: 03 - Chronos - Dandelions As Memory.mp3
+Time: 536
+Artist: Chronos
+AlbumArtist: VA
+Title: Dandelions As Memory
+Album: Special Places
+Track: 03
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214710
+song_end
+song_begin: 04 - Irukanji feat. JazzyFlute - Out From Little Box (AstroPilot Edit).mp3
+Time: 386
+Artist: Irukanji feat. JazzyFlute
+AlbumArtist: VA
+Title: Out From Little Box (AstroPilot Edit)
+Album: Special Places
+Track: 04
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214708
+song_end
+song_begin: 05 - Ambient Intelligent Application - Via Lactea (AstroPilot Edit).mp3
+Time: 493
+Artist: Ambient Intelligent Application
+AlbumArtist: VA
+Title: Via Lactea (AstroPilot Edit)
+Album: Special Places
+Track: 05
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214704
+song_end
+song_begin: 06 - Rabitza - Port.mp3
+Time: 373
+Artist: Rabitza
+AlbumArtist: VA
+Title: Port
+Album: Special Places
+Track: 06
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214712
+song_end
+song_begin: 07 - AstroPilot - Svoboda.mp3
+Time: 313
+Artist: AstroPilot
+AlbumArtist: VA
+Title: Svoboda
+Album: Special Places
+Track: 07
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214702
+song_end
+song_begin: 08 - Access To Arasaka - AUG.mp3
+Time: 332
+Artist: Access To Arasaka
+AlbumArtist: VA
+Title: AUG
+Album: Special Places
+Track: 08
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214708
+song_end
+song_begin: 09 - Field Rotation - Disappear.mp3
+Time: 435
+Artist: Field Rotation
+AlbumArtist: VA
+Title: Disappear
+Album: Special Places
+Track: 09
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214710
+song_end
+song_begin: 09 - Nexar - Jewel (AstroPilot Edit).mp3
+Time: 322
+Artist: Nexar
+AlbumArtist: VA
+Title: Jewel (AstroPilot Edit)
+Album: Special Places
+Track: 09
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214704
+song_end
+song_begin: 10 - 36 - A Final Thought.mp3
+Time: 293
+Artist: 36
+AlbumArtist: VA
+Title: A Final Thought
+Album: Special Places
+Track: 10
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214702
+song_end
+song_begin: 11 - Eguana - A Moment Of Madness.mp3
+Time: 351
+Artist: Eguana
+AlbumArtist: VA
+Title: A Moment Of Madness
+Album: Special Places
+Track: 11
+Date: 2012
+Date: 2012
+Genre: Downtempo
+mtime: 1366214702
+song_end
+end: Ektoplazm/Special Places
+directory: SubConciousMind - Intermezzo Extended
+mtime: 1366214688
+begin: Ektoplazm/SubConciousMind - Intermezzo Extended
+song_begin: 01 - SubConsciousMind - Unpredictalizer.mp3
+Time: 520
+Artist: SubConsciousMind
+AlbumArtist: SubConsciousMind
+Title: Unpredictalizer
+Album: Intermezzo Extended
+Track: 01
+Date: 2009
+Genre: Psytrance
+Composer: Raphael Huber
+mtime: 1366214686
+song_end
+song_begin: 02 - SubConsciousMind - Essenz.mp3
+Time: 581
+Artist: SubConsciousMind
+AlbumArtist: SubConsciousMind
+Title: Essenz
+Album: Intermezzo Extended
+Track: 02
+Date: 2009
+Genre: Psytrance
+Composer: Raphael Huber
+mtime: 1366214688
+song_end
+song_begin: 03 - SubConsciousMind - Hector The Dark.mp3
+Time: 648
+Artist: SubConsciousMind
+AlbumArtist: SubConsciousMind
+Title: Hector The Dark
+Album: Intermezzo Extended
+Track: 03
+Date: 2009
+Genre: Psytrance
+Composer: Raphael Huber
+mtime: 1366214690
+song_end
+song_begin: 04 - SubConsciousMind - MyMusic.mp3
+Time: 584
+Artist: SubConsciousMind
+AlbumArtist: SubConsciousMind
+Title: MyMusic
+Album: Intermezzo Extended
+Track: 04
+Date: 2009
+Genre: Psytrance
+Composer: Raphael Huber
+mtime: 1366214682
+song_end
+song_begin: 05 - SubConsciousMind - (Out-In)Side.mp3
+Time: 576
+Artist: SubConsciousMind
+AlbumArtist: SubConsciousMind
+Title: (Out-In)Side
+Album: Intermezzo Extended
+Track: 05
+Date: 2009
+Genre: Psytrance
+Composer: Raphael Huber
+mtime: 1366214686
+song_end
+song_begin: 06 - SubConsciousMind - Past Be Past.mp3
+Time: 705
+Artist: SubConsciousMind
+AlbumArtist: SubConsciousMind
+Title: Past Be Past
+Album: Intermezzo Extended
+Track: 06
+Date: 2009
+Genre: Psytrance
+Composer: Raphael Huber
+mtime: 1366214682
+song_end
+song_begin: 07 - SubConsciousMind - iRemberem oGa.mp3
+Time: 605
+Artist: SubConsciousMind
+AlbumArtist: SubConsciousMind
+Title: iRemberem oGa
+Album: Intermezzo Extended
+Track: 07
+Date: 2009
+Genre: Psytrance
+Composer: Raphael Huber
+mtime: 1366214684
+song_end
+end: Ektoplazm/SubConciousMind - Intermezzo Extended
+directory: Three Drops To Evolution
+mtime: 1366214610
+begin: Ektoplazm/Three Drops To Evolution
+song_begin: 01 - Zaigonen - The Connection (Intro).mp3
+Time: 215
+Artist: Zaigonen
+AlbumArtist: VA
+Title: The Connection (Intro)
+Album: Three Drops To Evolution
+Track: 01
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214608
+song_end
+song_begin: 02 - Soluble Sounds - Psillypsybinge.mp3
+Time: 430
+Artist: Soluble Sounds
+AlbumArtist: VA
+Title: Psillypsybinge
+Album: Three Drops To Evolution
+Track: 02
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214610
+song_end
+song_begin: 03 - Brujo's Bowl - Everythings Special.mp3
+Time: 396
+Artist: Brujo's Bowl
+AlbumArtist: VA
+Title: Everythings Special
+Album: Three Drops To Evolution
+Track: 03
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214608
+song_end
+song_begin: 04 - Wolfen Technologies - Caveman.mp3
+Time: 380
+Artist: Wolfen Technologies
+AlbumArtist: VA
+Title: Caveman
+Album: Three Drops To Evolution
+Track: 04
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214606
+song_end
+song_begin: 05 - Brujo's Bowl - Najd's Squelch.mp3
+Time: 492
+Artist: Brujo's Bowl
+AlbumArtist: VA
+Title: Najd's Squelch
+Album: Three Drops To Evolution
+Track: 05
+Date: 2011
+Date: 2011
+Genre: Downtempo
+mtime: 1366214610
+song_end
+end: Ektoplazm/Three Drops To Evolution
+end: Ektoplazm
+directory: General
+mtime: 1369242314
+begin: General
+directory: Goa
+mtime: 1369078417
+begin: General/Goa
+song_begin: 01 - Space Hypnose - Alien Forest.mp3
+Time: 483
+Artist: Space Hypnose
+Title: Alien Forest
+Album: VA - Goa 2012
+Track: 01
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 02 - Echotek - The Storm Still Rage.mp3
+Time: 493
+Artist: Echotek
+Title: The Storm Still Rage
+Album: VA - Goa 2012
+Track: 02
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 03 - Static Movement vs Space Hypnose - Existence.mp3
+Time: 461
+Artist: Static Movement vs Space Hypnose
+Title: Existence
+Album: VA - Goa 2012
+Track: 03
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 04 - Sirion - As You Are.mp3
+Time: 543
+Artist: Sirion
+Title: As You Are
+Album: VA - Goa 2012
+Track: 04
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 05 - Ilai - Burning Mountain.mp3
+Time: 490
+Artist: Ilai
+Title: Burning Mountain
+Album: VA - Goa 2012
+Track: 05
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 06 - Digicult vs U-Recken - The Optimist.mp3
+Time: 495
+Artist: Digicult vs U-Recken
+Title: The Optimist
+Album: VA - Goa 2012
+Track: 06
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 07 - Champa - New Stars Are Born.mp3
+Time: 459
+Artist: Champa
+Title: New Stars Are Born
+Album: VA - Goa 2012
+Track: 07
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 08 - Chichke & Multitech - Megiddo.mp3
+Time: 475
+Artist: Chichke & Multitech
+Title: Megiddo
+Album: VA - Goa 2012
+Track: 08
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 09 - Tropical Bleyage - Reborn.mp3
+Time: 479
+Artist: Tropical Bleyage
+Title: Reborn
+Album: VA - Goa 2012
+Track: 09
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 10 - Kingpink & Mr. Suspect - 21 Gramms.mp3
+Time: 484
+Artist: Kingpink & Mr. Suspect
+Title: 21 Gramms
+Album: VA - Goa 2012
+Track: 10
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 11 - Hi Profile - I Am Innocent.mp3
+Time: 523
+Artist: Hi Profile
+Title: I Am Innocent
+Album: VA - Goa 2012
+Track: 11
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 12 - Time In Motion & Flexus - Twisted Mind.mp3
+Time: 518
+Artist: Time In Motion & Flexus
+Title: Twisted Mind
+Album: VA - Goa 2012
+Track: 12
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 13 - Darma vs Numb - Armada.mp3
+Time: 489
+Artist: Darma vs Numb
+Title: Armada
+Album: VA - Goa 2012
+Track: 13
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 14 - Terahert - Inner Sky.mp3
+Time: 447
+Artist: Terahert
+Title: Inner Sky
+Album: VA - Goa 2012
+Track: 14
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 15 - Sonic Sense - How Does It Feel (Dual Vision Remix).mp3
+Time: 477
+Artist: Sonic Sense
+Title: How Does It Feel (Dual Vision Remix)
+Album: VA - Goa 2012
+Track: 15
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 16 - Drukverdeler & DJ Bim - Luscious.mp3
+Time: 468
+Artist: Drukverdeler & DJ Bim
+Title: Luscious
+Album: VA - Goa 2012
+Track: 16
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 17 - A Plus A - Almighty Anoubis.mp3
+Time: 403
+Artist: A Plus A
+Title: Almighty Anoubis
+Album: VA - Goa 2012
+Track: 17
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+song_begin: 18 - The Chromatic - Darkside.mp3
+Time: 458
+Artist: The Chromatic
+Title: Darkside
+Album: VA - Goa 2012
+Track: 18
+Date: 2013
+Genre: Goa
+mtime: 1369078417
+song_end
+end: General/Goa
+directory: High Skies - Sounds of Earth
+mtime: 1369078476
+begin: General/High Skies - Sounds of Earth
+song_begin: 01 - High Skies - Au Debut du Voyage.mp3
+Time: 88
+Artist: High Skies
+AlbumArtist: High Skies
+Title: Au Debut du Voyage
+Album: Sounds of Earth
+Track: 01
+Date: 2010
+Genre: Ambient
+mtime: 1369078476
+song_end
+song_begin: 02 - High Skies - The Shape of Things to Come.mp3
+Time: 366
+Artist: High Skies
+AlbumArtist: High Skies
+Title: The Shape of Things to Come
+Album: Sounds of Earth
+Track: 02
+Date: 2010
+Genre: Ambient
+mtime: 1369078476
+song_end
+song_begin: 03 - High Skies - Voyage en Argent.mp3
+Time: 139
+Artist: High Skies
+AlbumArtist: High Skies
+Title: Voyage en Argent
+Album: Sounds of Earth
+Track: 03
+Date: 2010
+Genre: Ambient
+mtime: 1369078476
+song_end
+song_begin: 04 - High Skies - Forecast Fire.mp3
+Time: 242
+Artist: High Skies
+AlbumArtist: High Skies
+Title: Forecast Fire
+Album: Sounds of Earth
+Track: 04
+Date: 2010
+Genre: Ambient
+mtime: 1369078476
+song_end
+song_begin: 05 - High Skies - The Earth at Night.mp3
+Time: 184
+Artist: High Skies
+AlbumArtist: High Skies
+Title: The Earth at Night
+Album: Sounds of Earth
+Track: 05
+Date: 2010
+Genre: Ambient
+mtime: 1369078476
+song_end
+song_begin: 06 - High Skies - Sounds of Earth.mp3
+Time: 317
+Artist: High Skies
+AlbumArtist: High Skies
+Title: Sounds of Earth
+Album: Sounds of Earth
+Track: 06
+Date: 2010
+Genre: Ambient
+mtime: 1369078476
+song_end
+end: General/High Skies - Sounds of Earth
+directory: London Elektricity - Yikes - 2011
+mtime: 1369078522
+begin: General/London Elektricity - Yikes - 2011
+song_begin: 01 - London Elektricity - Elektricity Will Keep Me Warm (featuring Elsa Esmeralda).mp3
+Time: 210
+Artist: London Elektricity
+Title: Elektricity Will Keep Me Warm (featuring Elsa Esmeralda)
+Album: Yikes
+Track: 01
+Date: 2011
+Genre: Drum & Bass
+mtime: 1369078522
+song_end
+song_begin: 02 - London Elektricity - Meteorites (featuring Elsa Esmeralda).mp3
+Time: 369
+Artist: London Elektricity
+Title: Meteorites (featuring Elsa Esmeralda)
+Album: Yikes
+Track: 02
+Date: 2011
+Genre: Drum & Bass
+mtime: 1369078522
+song_end
+song_begin: 03 - London Elektricity - Had a Little Fight.mp3
+Time: 361
+Artist: London Elektricity
+Title: Had a Little Fight
+Album: Yikes
+Track: 03
+Date: 2011
+Genre: Drum & Bass
+mtime: 1369078522
+song_end
+song_begin: 04 - London Elektricity - The Plan That Cannot Fail.mp3
+Time: 372
+Artist: London Elektricity
+Title: The Plan That Cannot Fail
+Album: Yikes
+Track: 04
+Date: 2011
+Genre: Drum & Bass
+mtime: 1369078522
+song_end
+song_begin: 05 - London Elektricity - Yikes.mp3
+Time: 414
+Artist: London Elektricity
+Title: Yikes
+Album: Yikes
+Track: 05
+Date: 2011
+Genre: Drum & Bass
+mtime: 1369078522
+song_end
+song_begin: 06 - London Elektricity - Fault Lines (featuring Elsa Esmeralda).mp3
+Time: 272
+Artist: London Elektricity
+Title: Fault Lines (featuring Elsa Esmeralda)
+Album: Yikes
+Track: 06
+Date: 2011
+Genre: Drum & Bass
+mtime: 1369078522
+song_end
+song_begin: 07 - London Elektricity - U Gotta B Crazy.mp3
+Time: 273
+Artist: London Elektricity
+Title: U Gotta B Crazy
+Album: Yikes
+Track: 07
+Date: 2011
+Genre: Drum & Bass
+mtime: 1369078522
+song_end
+song_begin: 08 - London Elektricity - Love The Silence (featuring Elsa Esmeralda).mp3
+Time: 355
+Artist: London Elektricity
+Title: Love The Silence (featuring Elsa Esmeralda)
+Album: Yikes
+Track: 08
+Date: 2011
+Genre: Drum & Bass
+mtime: 1369078522
+song_end
+song_begin: 09 - London Elektricity - Flesh Music.mp3
+Time: 315
+Artist: London Elektricity
+Title: Flesh Music
+Album: Yikes
+Track: 09
+Date: 2011
+Genre: Drum & Bass
+mtime: 1369078522
+song_end
+song_begin: 10 - London Elektricity - Invisible Worlds (featuring Elsa Esmeralda).mp3
+Time: 405
+Artist: London Elektricity
+Title: Invisible Worlds (featuring Elsa Esmeralda)
+Album: Yikes
+Track: 10
+Date: 2011
+Genre: Drum & Bass
+mtime: 1369078522
+song_end
+end: General/London Elektricity - Yikes - 2011
+directory: Skazi
+mtime: 1369078559
+begin: General/Skazi
+song_begin: 02 - Skazi - Track 2.mp3
+Time: 494
+Artist: Skazi
+Title: Track 2
+Album: (2012) Skazi
+Track: 02
+Genre: Psytrance
+mtime: 1369078559
+song_end
+song_begin: 03 - Skazi - Track 3.mp3
+Time: 434
+Artist: Skazi
+Title: Track 3
+Album: (2012) Skazi
+Track: 03
+Genre: Psytrance
+mtime: 1369078559
+song_end
+song_begin: 04 - Skazi - Track 4.mp3
+Time: 417
+Artist: Skazi
+Title: Track 4
+Album: (2012) Skazi
+Track: 04
+Genre: Psytrance
+mtime: 1369078559
+song_end
+song_begin: 05 - Skazi - Track 5.mp3
+Time: 417
+Artist: Skazi
+Title: Track 5
+Album: (2012) Skazi
+Track: 05
+Genre: Psytrance
+mtime: 1369078559
+song_end
+song_begin: 06 - Skazi - Track 6.mp3
+Time: 500
+Artist: Skazi
+Title: Track 6
+Album: (2012) Skazi
+Track: 06
+Genre: Psytrance
+mtime: 1369078559
+song_end
+song_begin: 07 - Skazi - Track 7.mp3
+Time: 499
+Artist: Skazi
+Title: Track 7
+Album: (2012) Skazi
+Track: 07
+Genre: Psytrance
+mtime: 1369078559
+song_end
+song_begin: 08 - Skazi - Track 8.mp3
+Time: 471
+Artist: Skazi
+Title: Track 8
+Album: (2012) Skazi
+Track: 08
+Genre: Psytrance
+mtime: 1369078559
+song_end
+song_begin: 09 - Skazi - Track 9.mp3
+Time: 230
+Artist: Skazi
+Title: Track 9
+Album: (2012) Skazi
+Track: 09
+Genre: Psytrance
+mtime: 1369078559
+song_end
+song_begin: 10 - Skazi - Track 10.mp3
+Time: 394
+Artist: Skazi
+Title: Track 10
+Album: (2012) Skazi
+Track: 10
+Genre: Psytrance
+mtime: 1369078559
+song_end
+song_begin: 12 - Skazi - Track 12.mp3
+Time: 185
+Artist: Skazi
+Title: Track 12
+Album: (2012) Skazi
+Track: 12
+Genre: Psytrance
+mtime: 1369078559
+song_end
+end: General/Skazi
+end: General
+directory: Tom's Music
+mtime: 1369069196
+begin: Tom's Music
+directory: 006
+mtime: 1367515881
+begin: Tom's Music/006
+directory: Unknown album
+mtime: 1369077201
+begin: Tom's Music/006/Unknown album
+song_begin: 01 - The Journey - Orange World.mp3
+Time: 595
+Artist: The Journey
+Title: Orange World
+Track: 01
+Genre: Ambient
+mtime: 1369077201
+song_end
+song_begin: 02 - The Journey - New Dawn.mp3
+Time: 732
+Artist: The Journey
+Title: New Dawn
+Track: 02
+Genre: Ambient
+mtime: 1369077201
+song_end
+song_begin: 03 - The Journey - Hymn.mp3
+Time: 459
+Artist: The Journey
+Title: Hymn
+Track: 03
+Genre: Ambient
+mtime: 1369077201
+song_end
+song_begin: 04 - The Journey - Spring.mp3
+Time: 491
+Artist: The Journey
+Title: Spring
+Track: 04
+Genre: Ambient
+mtime: 1369077201
+song_end
+song_begin: 05 - Resonate - Transformation.mp3
+Time: 685
+Artist: Resonate
+Title: Transformation
+Track: 05
+Genre: Ambient
+mtime: 1369077201
+song_end
+end: Tom's Music/006/Unknown album
+end: Tom's Music/006
+directory: 6k Chillstep Pack
+mtime: 1369077124
+begin: Tom's Music/6k Chillstep Pack
+song_begin: 01 - Adam Taylor - Oh My Soul.mp3
+Time: 188
+Artist: Adam Taylor
+Title: Oh My Soul
+Album: Chillstep Pack
+Track: 01
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 02 - Andy Duguid ft. Leah - Wasted (Affecting Noise Chillstep Remix).mp3
+Time: 269
+Artist: Andy Duguid ft. Leah
+Title: Wasted (Affecting Noise Chillstep Remix)
+Album: Chillstep Pack
+Track: 02
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 03 - Babylon (Pairadimez Remix) - Babylon (Pairadimez Remix).mp3
+Time: 192
+Artist: Babylon (Pairadimez Remix)
+Title: Babylon (Pairadimez Remix)
+Album: Chillstep Pack
+Track: 03
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 04 - Balkansky-Are We(sollabong rmx) - Are We(sollabong rmx).mp3
+Time: 305
+Artist: Balkansky-Are We(sollabong rmx)
+Title: Are We(sollabong rmx)
+Album: Chillstep Pack
+Track: 04
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 05 - Benjamin Francis Leftwich - Butterfly Culture (JacM Chillstep Remix) - Butterfly Culture.mp3
+Time: 313
+Artist: Benjamin Francis Leftwich - Butterfly Culture (JacM Chillstep Remix)
+Title: Butterfly Culture
+Album: Chillstep Pack
+Track: 05
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 06 - Birdy - Shelter (Owsey Remix).mp3
+Time: 393
+Artist: Birdy
+Title: Shelter (Owsey Remix)
+Album: Chillstep Pack
+Track: 06
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 07 - Birdy - Skinny Love (Owsey Remix).mp3
+Time: 285
+Artist: Birdy
+Title: Skinny Love (Owsey Remix)
+Album: Chillstep Pack
+Track: 07
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 08 - Stateless - Bloodstream.mp3
+Time: 401
+Artist: Stateless
+Title: Bloodstream
+Album: Chillstep Pack
+Track: 08
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 09 - Blu Mar Ten - All Or Nothing (JacM Remix).mp3
+Time: 380
+Artist: Blu Mar Ten
+Title: All Or Nothing (JacM Remix)
+Album: Chillstep Pack
+Track: 09
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 10 - Boards of Canada - Olson (Wrm remix).mp3
+Time: 389
+Artist: Boards of Canada
+Title: Olson (Wrm remix)
+Album: Chillstep Pack
+Track: 10
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 11 - BOB MARLEY - Sun Is Shining ( Toni The MmG ReStructure Mix).mp3
+Time: 459
+Artist: BOB MARLEY
+Title: Sun Is Shining ( Toni The MmG ReStructure Mix)
+Album: Chillstep Pack
+Track: 11
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 12 - Collect Call (Adventure Club Dubstep Remix) - Collect Call (Adventure Club Dubstep Remix).mp3
+Time: 302
+Artist: Collect Call (Adventure Club Dubstep Remix)
+Title: Collect Call (Adventure Club Dubstep Remix)
+Album: Chillstep Pack
+Track: 12
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 13 - Dan Egdell - Level Headed (Resonation Remix).mp3
+Time: 240
+Artist: Dan Egdell
+Title: Level Headed (Resonation Remix)
+Album: Chillstep Pack
+Track: 13
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 14 - Deadmau5 - Strobe (Mr FijiWiji Remix).mp3
+Time: 261
+Artist: Deadmau5
+Title: Strobe (Mr FijiWiji Remix)
+Album: Chillstep Pack
+Track: 14
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 15 - Destiny (Fresh Direct's Chillstep Re - stiny (Fresh Direct's Chillstep Re.mp3
+Time: 281
+Artist: Destiny (Fresh Direct's Chillstep Re
+Title: stiny (Fresh Direct's Chillstep Re
+Album: Chillstep Pack
+Track: 15
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 16 - Dido & A.R Rahman - If I Rise (ENiGMA Dubz Mix MASTER).mp3
+Time: 310
+Artist: Dido & A.R Rahman
+Title: If I Rise (ENiGMA Dubz Mix MASTER)
+Album: Chillstep Pack
+Track: 16
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 17 - Digital Farm Animals - Don't Get out of Bed.mp3
+Time: 229
+Artist: Digital Farm Animals
+Title: Don't Get out of Bed
+Album: Chillstep Pack
+Track: 17
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 18 - Digital Farm Animals - Perfect Pictures.mp3
+Time: 277
+Artist: Digital Farm Animals
+Title: Perfect Pictures
+Album: Chillstep Pack
+Track: 18
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 19 - Elektrik Storm - Drowning.mp3
+Time: 233
+Artist: Elektrik Storm
+Title: Drowning
+Album: Chillstep Pack
+Track: 19
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 20 - ENiGMA Dubz - Dream.mp3
+Time: 346
+Artist: ENiGMA Dubz
+Title: Dream
+Album: Chillstep Pack
+Track: 20
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 21 - Enix - dont go away.mp3
+Time: 168
+Artist: Enix
+Title: dont go away
+Album: Chillstep Pack
+Track: 21
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 22 - Entraik - String Theory.mp3
+Time: 267
+Artist: Entraik
+Title: String Theory
+Album: Chillstep Pack
+Track: 22
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 23 - EvenS - News.mp3
+Time: 222
+Artist: EvenS
+Title: News
+Album: Chillstep Pack
+Track: 23
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 24 - EvenS - One Click.mp3
+Time: 197
+Artist: EvenS
+Title: One Click
+Album: Chillstep Pack
+Track: 24
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 25 - EvenS - Say Something.mp3
+Time: 144
+Artist: EvenS
+Title: Say Something
+Album: Chillstep Pack
+Track: 25
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 26 - Fall & Bronagh Monahan - Through The Night.mp3
+Time: 253
+Artist: Fall & Bronagh Monahan
+Title: Through The Night
+Album: Chillstep Pack
+Track: 26
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 27 - Fall - Wings.mp3
+Time: 276
+Artist: Fall
+Title: Wings
+Album: Chillstep Pack
+Track: 27
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 28 - Florence And The Machine - Cosmic Love (Seven Lions Remix).mp3
+Time: 281
+Artist: Florence And The Machine
+Title: Cosmic Love (Seven Lions Remix)
+Album: Chillstep Pack
+Track: 28
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 29 - Fracture Design - A Winter's Tale (Free Tune).mp3
+Time: 463
+Artist: Fracture Design
+Title: A Winter's Tale (Free Tune)
+Album: Chillstep Pack
+Track: 29
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 30 - Gotye feat. Kimbra - Somebody That I Used To Know (Owsey Remix).mp3
+Time: 355
+Artist: Gotye feat. Kimbra
+Title: Somebody That I Used To Know (Owsey Remix)
+Album: Chillstep Pack
+Track: 30
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 31 - Hadron - Hadron.mp3
+Time: 302
+Artist: Hadron
+Title: Hadron
+Album: Chillstep Pack
+Track: 31
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 32 - Hiatus & Shura - First.mp3
+Time: 255
+Artist: Hiatus & Shura
+Title: First
+Album: Chillstep Pack
+Track: 32
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 33 - Hike - Homeworld.mp3
+Time: 356
+Artist: Hike
+Title: Homeworld
+Album: Chillstep Pack
+Track: 33
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 34 - Ianborg & LTR - Paradox.mp3
+Time: 226
+Artist: Ianborg & LTR
+Title: Paradox
+Album: Chillstep Pack
+Track: 34
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 35 - Kaiben - The Road.mp3
+Time: 377
+Artist: Kaiben
+Title: The Road
+Album: Chillstep Pack
+Track: 35
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 36 - Lucy Rose - Middle of the Bed (SizzleBird Remix).mp3
+Time: 217
+Artist: Lucy Rose
+Title: Middle of the Bed (SizzleBird Remix)
+Album: Chillstep Pack
+Track: 36
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 37 - Luke Leighfield & Jose Vanders - Blindsided (Cillo Remix).mp3
+Time: 368
+Artist: Luke Leighfield & Jose Vanders
+Title: Blindsided (Cillo Remix)
+Album: Chillstep Pack
+Track: 37
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 38 - Metric - Empty ( SizzleBird Remix ).mp3
+Time: 250
+Artist: Metric
+Title: Empty ( SizzleBird Remix )
+Album: Chillstep Pack
+Track: 38
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 39 - MitiS - Identity.mp3
+Time: 284
+Artist: MitiS
+Title: Identity
+Album: Chillstep Pack
+Track: 39
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 40 - MitiS - Please Go.m4a
+Time: 295
+Track: 40
+Artist: MitiS
+Album: Chillstep Pack
+Date: 2011
+Genre: Chillstep
+Title: Please Go
+mtime: 1369077124
+song_end
+song_begin: 41 - MNSN - Yearning.mp3
+Time: 273
+Artist: MNSN
+Title: Yearning
+Album: Chillstep Pack
+Track: 41
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 42 - Myk - By The Sea.mp3
+Time: 250
+Artist: Myk
+Title: By The Sea
+Album: Chillstep Pack
+Track: 42
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 43 - Myk - Real Lies.mp3
+Time: 221
+Artist: Myk
+Title: Real Lies
+Album: Chillstep Pack
+Track: 43
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 44 - Neutralize - On My Own.mp3
+Time: 227
+Artist: Neutralize
+Title: On My Own
+Album: Chillstep Pack
+Track: 44
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 45 - nExow - Runaway.mp3
+Time: 317
+Artist: nExow
+Title: Runaway
+Album: Chillstep Pack
+Track: 45
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 46 - nExow - Save Me.mp3
+Time: 302
+Artist: nExow
+Title: Save Me
+Album: Chillstep Pack
+Track: 46
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 47 - nExow - Spring Wind.mp3
+Time: 281
+Artist: nExow
+Title: Spring Wind
+Album: Chillstep Pack
+Track: 47
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 48 - Nhumo - From Scare to Courage.mp3
+Time: 331
+Artist: Nhumo
+Title: From Scare to Courage
+Album: Chillstep Pack
+Track: 48
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 49 - Nhumo - Waiting for Heaven.mp3
+Time: 314
+Artist: Nhumo
+Title: Waiting for Heaven
+Album: Chillstep Pack
+Track: 49
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 50 - Numbers (Ianborg Remix) - mbers (Ianborg Remix).mp3
+Time: 270
+Artist: Numbers (Ianborg Remix)
+Title: mbers (Ianborg Remix)
+Album: Chillstep Pack
+Track: 50
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 51 - Owsey & CoMa - Stay With Me (Jernalism Remix).mp3
+Time: 236
+Artist: Owsey & CoMa
+Title: Stay With Me (Jernalism Remix)
+Album: Chillstep Pack
+Track: 51
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 52 - PhillySoundSystem - Manu Chao - King of Bongos Refix.mp3
+Time: 264
+Artist: PhillySoundSystem
+Title: Manu Chao - King of Bongos Refix
+Album: Chillstep Pack
+Track: 52
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 53 - Rameses B - Game Of Thrones.mp3
+Time: 258
+Artist: Rameses B
+Title: Game Of Thrones
+Album: Chillstep Pack
+Track: 53
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 54 - Rameses B - Memoir (LTR remix) mp3.mp3
+Time: 280
+Artist: Rameses B
+Title: Memoir (LTR remix) mp3
+Album: Chillstep Pack
+Track: 54
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 55 - Rameses B - North.mp3
+Time: 295
+Artist: Rameses B
+Title: North
+Album: Chillstep Pack
+Track: 55
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 56 - Reperkussion - Inside Out (Premix).mp3
+Time: 213
+Artist: Reperkussion
+Title: Inside Out (Premix)
+Album: Chillstep Pack
+Track: 56
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 57 - Sia - My Love (SizzleBird Remix).mp3
+Time: 240
+Artist: Sia
+Title: My Love (SizzleBird Remix)
+Album: Chillstep Pack
+Track: 57
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 58 - Sizzlebird - Kristina's Smile.mp3
+Time: 219
+Artist: Sizzlebird
+Title: Kristina's Smile
+Album: Chillstep Pack
+Track: 58
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 59 - Smoothiesforme - Forbidden(JacM Chillstep Remix).mp3
+Time: 291
+Artist: Smoothiesforme
+Title: Forbidden(JacM Chillstep Remix)
+Album: Chillstep Pack
+Track: 59
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 60 - Stolen Dog (Ollie Macfarlane Remix) - olen Dog (Ollie Macfarlane Remix).mp3
+Time: 282
+Artist: Stolen Dog (Ollie Macfarlane Remix)
+Title: olen Dog (Ollie Macfarlane Remix)
+Album: Chillstep Pack
+Track: 60
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 61 - Subjam - Life Form.mp3
+Time: 206
+Artist: Subjam
+Title: Life Form
+Album: Chillstep Pack
+Track: 61
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 62 - To Build A Home - GregCookeMusic Remix.mp3
+Time: 233
+Artist: To Build A Home
+Title: GregCookeMusic Remix
+Album: Chillstep Pack
+Track: 62
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 63 - Two Door - Cinema Club (Das Kapital Rerub).mp3
+Time: 304
+Artist: Two Door
+Title: Cinema Club (Das Kapital Rerub)
+Album: Chillstep Pack
+Track: 63
+Date: 2011/12
+Genre: Chillstep
+Performer: Das Kapital
+Performer: Das Kapital
+Performer: Das Kapital
+Performer: Das Kapital
+Performer: Das Kapital
+Performer: Das Kapital
+mtime: 1369077124
+song_end
+song_begin: 64 - VARGO - Relax ( Toni The MmG ReStructure Mix).mp3
+Time: 373
+Artist: VARGO
+Title: Relax ( Toni The MmG ReStructure Mix)
+Album: Chillstep Pack
+Track: 64
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 65 - Vose - Unite.mp3
+Time: 419
+Artist: Vose
+Title: Unite
+Album: Chillstep Pack
+Track: 65
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 66 - Vose - Vision.mp3
+Time: 275
+Artist: Vose
+Title: Vision
+Album: Chillstep Pack
+Track: 66
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 67 - William Fitzsimmons & Priscilla Ahn - I Don t Feel It Anymore (JacM Chillstep Remix)(1).mp3
+Time: 345
+Artist: William Fitzsimmons & Priscilla Ahn
+Title: I Don t Feel It Anymore (JacM Chillstep Remix)(1)
+Album: Chillstep Pack
+Track: 67
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+song_begin: 68 - yH feat. Haley Midzor - Scars (Mr FijiWiji Remix).mp3
+Time: 278
+Artist: yH feat. Haley Midzor
+Title: Scars (Mr FijiWiji Remix)
+Album: Chillstep Pack
+Track: 68
+Date: 2011/12
+Genre: Chillstep
+mtime: 1369077124
+song_end
+end: Tom's Music/6k Chillstep Pack
+directory: Bonobo - Days To Come [2006]
+mtime: 1369077269
+begin: Tom's Music/Bonobo - Days To Come [2006]
+song_begin: 01 - Bonobo - Intro.mp3
+Time: 54
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Intro
+Album: Days To Come
+Track: 01
+Date: 2006
+Genre: Electronic
+mtime: 1369077269
+song_end
+song_begin: 02 - Bonobo - Days To Come (Feat. Bajka).mp3
+Time: 230
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Days To Come (Feat. Bajka)
+Album: Days To Come
+Track: 02
+Date: 2006
+Genre: Electronic
+mtime: 1369077269
+song_end
+song_begin: 03 - Bonobo - Between The Lines (Feat. Bajka).mp3
+Time: 277
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Between The Lines (Feat. Bajka)
+Album: Days To Come
+Track: 03
+Date: 2006
+Genre: Electronic
+mtime: 1369077269
+song_end
+song_begin: 04 - Bonobo - The Fever.mp3
+Time: 262
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: The Fever
+Album: Days To Come
+Track: 04
+Date: 2006
+Genre: Electronic
+mtime: 1369077269
+song_end
+song_begin: 05 - Bonobo - Ketto.mp3
+Time: 307
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Ketto
+Album: Days To Come
+Track: 05
+Date: 2006
+Genre: Electronic
+mtime: 1369077269
+song_end
+song_begin: 06 - Bonobo - Nightlite (Feat. Bajka).mp3
+Time: 310
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Nightlite (Feat. Bajka)
+Album: Days To Come
+Track: 06
+Date: 2006
+Genre: Electronic
+mtime: 1369077269
+song_end
+song_begin: 07 - Bonobo - Transmission94 (Parts 1 & 2).mp3
+Time: 478
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Transmission94 (Parts 1 & 2)
+Album: Days To Come
+Track: 07
+Date: 2006
+Genre: Electronic
+mtime: 1369077269
+song_end
+song_begin: 08 - Bonobo - On Your Marks.mp3
+Time: 249
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: On Your Marks
+Album: Days To Come
+Track: 08
+Date: 2006
+Genre: Electronic
+mtime: 1369077269
+song_end
+song_begin: 09 - Bonobo - If You Stayed Over (Feat. Fink).mp3
+Time: 324
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: If You Stayed Over (Feat. Fink)
+Album: Days To Come
+Track: 09
+Date: 2006
+Genre: Electronic
+mtime: 1369077269
+song_end
+song_begin: 10 - Bonobo - Walk In The Sjy (Feat. Bajka).mp3
+Time: 275
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Walk In The Sjy (Feat. Bajka)
+Album: Days To Come
+Track: 10
+Date: 2006
+Genre: Electronic
+mtime: 1369077269
+song_end
+song_begin: 11 - Bonobo - Recurring.mp3
+Time: 307
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Recurring
+Album: Days To Come
+Track: 11
+Date: 2006
+Genre: Electronic
+mtime: 1369077269
+song_end
+playlist_begin: Bonobo - Days To Come.m3u
+mtime: 1367515955
+playlist_end
+end: Tom's Music/Bonobo - Days To Come [2006]
+directory: Bonobo - The North Borders [2013]
+mtime: 1369077365
+begin: Tom's Music/Bonobo - The North Borders [2013]
+song_begin: 01 - Bonobo - First Fires (Ft. Grey Reverend).mp3
+Time: 279
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: First Fires (Ft. Grey Reverend)
+Album: The North Borders
+Track: 01
+Date: 2013
+Genre: Electronic
+mtime: 1369077364
+song_end
+song_begin: 02 - Bonobo - Emkay.mp3
+Time: 326
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Emkay
+Album: The North Borders
+Track: 02
+Date: 2013
+Genre: Electronic
+mtime: 1369077364
+song_end
+song_begin: 03 - Bonobo - Cirrus.mp3
+Time: 349
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Cirrus
+Album: The North Borders
+Track: 03
+Date: 2013
+Genre: Electronic
+mtime: 1369077364
+song_end
+song_begin: 04 - Bonobo - Heaven For The Sinner (Ft. Erykah Badu).mp3
+Time: 250
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Heaven For The Sinner (Ft. Erykah Badu)
+Album: The North Borders
+Track: 04
+Date: 2013
+Genre: Electronic
+mtime: 1369077364
+song_end
+song_begin: 05 - Bonobo - Sapphire.mp3
+Time: 288
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Sapphire
+Album: The North Borders
+Track: 05
+Date: 2013
+Genre: Electronic
+mtime: 1369077364
+song_end
+song_begin: 06 - Bonobo - Jets.mp3
+Time: 275
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Jets
+Album: The North Borders
+Track: 06
+Date: 2013
+Genre: Electronic
+mtime: 1369077364
+song_end
+song_begin: 07 - Bonobo - Towers (Ft. Szjerdene).mp3
+Time: 217
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Towers (Ft. Szjerdene)
+Album: The North Borders
+Track: 07
+Date: 2013
+Genre: Electronic
+mtime: 1369077364
+song_end
+song_begin: 08 - Bonobo - Don't Wait.mp3
+Time: 318
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Don't Wait
+Album: The North Borders
+Track: 08
+Date: 2013
+Genre: Electronic
+mtime: 1369077364
+song_end
+song_begin: 09 - Bonobo - Know You.mp3
+Time: 245
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Know You
+Album: The North Borders
+Track: 09
+Date: 2013
+Genre: Electronic
+mtime: 1369077365
+song_end
+song_begin: 10 - Bonobo - Antenna.mp3
+Time: 213
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Antenna
+Album: The North Borders
+Track: 10
+Date: 2013
+Genre: Electronic
+mtime: 1369077365
+song_end
+song_begin: 11 - Bonobo - Ten Tigers.mp3
+Time: 244
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Ten Tigers
+Album: The North Borders
+Track: 11
+Date: 2013
+Genre: Electronic
+mtime: 1369077365
+song_end
+song_begin: 12 - Bonobo - Transits (Ft. Szjerdene).mp3
+Time: 261
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Transits (Ft. Szjerdene)
+Album: The North Borders
+Track: 12
+Date: 2013
+Genre: Electronic
+mtime: 1369077365
+song_end
+song_begin: 13 - Bonobo - Pieces (Ft. Cornelia).mp3
+Time: 268
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Pieces (Ft. Cornelia)
+Album: The North Borders
+Track: 13
+Date: 2013
+Genre: Electronic
+mtime: 1369077365
+song_end
+end: Tom's Music/Bonobo - The North Borders [2013]
+directory: Bonobo - [2010] Black Sands
+mtime: 1369077240
+begin: Tom's Music/Bonobo - [2010] Black Sands
+song_begin: 01 - Bonobo - Prelude.mp3
+Time: 78
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Prelude
+Album: Black Sands
+Track: 01
+Date: 2010
+Genre: Electronic
+mtime: 1369077240
+song_end
+song_begin: 02 - Bonobo - Kiara.mp3
+Time: 230
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Kiara
+Album: Black Sands
+Track: 02
+Date: 2010
+Genre: Electronic
+mtime: 1369077240
+song_end
+song_begin: 03 - Bonobo - Kong.mp3
+Time: 238
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Kong
+Album: Black Sands
+Track: 03
+Date: 2010
+Genre: Electronic
+mtime: 1369077240
+song_end
+song_begin: 04 - Bonobo - Eyesdown (ft. Andreya Triana).mp3
+Time: 326
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Eyesdown (ft. Andreya Triana)
+Album: Black Sands
+Track: 04
+Date: 2010
+Genre: Electronic
+mtime: 1369077240
+song_end
+song_begin: 05 - Bonobo - El Toro.mp3
+Time: 224
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: El Toro
+Album: Black Sands
+Track: 05
+Date: 2010
+Genre: Electronic
+mtime: 1369077240
+song_end
+song_begin: 06 - Bonobo - We Could Forever.mp3
+Time: 260
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: We Could Forever
+Album: Black Sands
+Track: 06
+Date: 2010
+Genre: Electronic
+mtime: 1369077240
+song_end
+song_begin: 07 - Bonobo - 1009.mp3
+Time: 271
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: 1009
+Album: Black Sands
+Track: 07
+Date: 2010
+Genre: Electronic
+mtime: 1369077240
+song_end
+song_begin: 08 - Bonobo - All In Forms.mp3
+Time: 292
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: All In Forms
+Album: Black Sands
+Track: 08
+Date: 2010
+Genre: Electronic
+mtime: 1369077240
+song_end
+song_begin: 09 - Bonobo - The Keeper (ft. Andreya Triana).mp3
+Time: 289
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: The Keeper (ft. Andreya Triana)
+Album: Black Sands
+Track: 09
+Date: 2010
+Genre: Electronic
+mtime: 1369077240
+song_end
+song_begin: 10 - Bonobo - Stay The Same (ft. Andreya Triana).mp3
+Time: 285
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Stay The Same (ft. Andreya Triana)
+Album: Black Sands
+Track: 10
+Date: 2010
+Genre: Electronic
+mtime: 1369077240
+song_end
+song_begin: 11 - Bonobo - Animals.mp3
+Time: 405
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Animals
+Album: Black Sands
+Track: 11
+Date: 2010
+Genre: Electronic
+mtime: 1369077240
+song_end
+song_begin: 12 - Bonobo - Black Sands.mp3
+Time: 409
+Artist: Bonobo
+AlbumArtist: Bonobo
+Title: Black Sands
+Album: Black Sands
+Track: 12
+Date: 2010
+Genre: Electronic
+mtime: 1369077240
+song_end
+end: Tom's Music/Bonobo - [2010] Black Sands
+directory: Burial
+mtime: 1367515964
+begin: Tom's Music/Burial
+directory: Shell of Light
+mtime: 1369077412
+begin: Tom's Music/Burial/Shell of Light
+song_begin: 01 - Burial - Shell of Light (Shlohmo Remix).mp3
+Time: 297
+Artist: Burial
+Title: Shell of Light (Shlohmo Remix)
+Album: Shell of Light
+Track: 01
+Date: 2011
+Genre: Dubstep
+mtime: 1369077412
+song_end
+end: Tom's Music/Burial/Shell of Light
+end: Tom's Music/Burial
+directory: CMYK
+mtime: 1369077577
+begin: Tom's Music/CMYK
+directory: Black Chillstep
+mtime: 1369125930
+begin: Tom's Music/CMYK/Black Chillstep
+song_begin: 01 - Silent Hill - Promise (Question Remix).mp3
+Time: 315
+Artist: Silent Hill
+Title: Promise (Question Remix)
+Album: Black Chillstep
+Track: 01
+Date: 2011
+Genre: Electronic
+mtime: 1369125930
+song_end
+song_begin: 02 - Black Chillstep - Face Of God.mp3
+Time: 334
+Artist: Black Chillstep
+Title: Face Of God
+Album: Black Chillstep
+Track: 02
+Date: 2011
+mtime: 1369125930
+song_end
+song_begin: 03 - Ill-Esha - Black Ice (Original Mix).mp3
+Time: 371
+Artist: Ill-Esha
+Title: Black Ice (Original Mix)
+Album: Black Chillstep
+Track: 03
+Date: 2011
+Genre: Dubstep
+mtime: 1369125930
+song_end
+song_begin: 04 - Stellamara - Prituri Se Planinata (NiT GriT Remix).mp3
+Time: 354
+Artist: Stellamara
+Title: Prituri Se Planinata (NiT GriT Remix)
+Album: Black Chillstep
+Track: 04
+Date: 2011
+mtime: 1369125930
+song_end
+song_begin: 05 - Mindset - Truth.mp3
+Time: 360
+Artist: Mindset
+Title: Truth
+Album: Black Chillstep
+Track: 05
+Date: 2011
+Genre: Ambient
+mtime: 1369125930
+song_end
+song_begin: 06 - Dev - Dancing In The Dark(Proper Villains Remix).mp3
+Time: 267
+Artist: Dev
+Title: Dancing In The Dark(Proper Villains Remix)
+Album: Black Chillstep
+Track: 06
+Date: 2011
+Genre: Other
+mtime: 1369125930
+song_end
+song_begin: 07 - Jamie Woon - Wayfaring Stranger by Jamie Woon (Burial Remix).mp3
+Time: 380
+Artist: Jamie Woon
+Title: Wayfaring Stranger by Jamie Woon (Burial Remix)
+Album: Black Chillstep
+Track: 07
+Date: 2011
+Genre: Electronic
+mtime: 1369125930
+song_end
+song_begin: 08 - Rameses B - North.mp3
+Time: 295
+Artist: Rameses B
+Title: North
+Album: Black Chillstep
+Track: 08
+Date: 2011
+Genre: Dubstep
+mtime: 1369125930
+song_end
+song_begin: 09 - M83 - We Own the Sky (Datsik Remix).mp3
+Time: 257
+Artist: M83
+Title: We Own the Sky (Datsik Remix)
+Album: Black Chillstep
+Track: 09
+Date: 2011
+Genre: Dubstep
+mtime: 1369125930
+song_end
+song_begin: 10 - Gold Guns Girls (Elektrik Remix) - Gold Guns Girls (Elektrik Remix).mp3
+Time: 185
+Artist: Gold Guns Girls (Elektrik Remix)
+Title: Gold Guns Girls (Elektrik Remix)
+Album: Black Chillstep
+Track: 10
+Date: 2011
+mtime: 1369125930
+song_end
+song_begin: 11 - Ghosts Of Paraguay - Needing You (Kaiori Breathe Remix).mp3
+Time: 213
+Artist: Ghosts Of Paraguay
+Title: Needing You (Kaiori Breathe Remix)
+Album: Black Chillstep
+Track: 11
+Date: 2011
+Genre: Dubstep
+mtime: 1369125930
+song_end
+song_begin: 12 - Stumbleine - If you.mp3
+Time: 243
+Artist: Stumbleine
+Title: If you
+Album: Black Chillstep
+Track: 12
+Date: 2011
+mtime: 1369125930
+song_end
+song_begin: 13 - Black Chillstep - Now We Are Free.mp3
+Time: 293
+Artist: Black Chillstep
+Title: Now We Are Free
+Album: Black Chillstep
+Track: 13
+Date: 2011
+mtime: 1369125930
+song_end
+song_begin: 14 - On the run (Dan Donovan Remix) - the run (Dan Donovan Remix).mp3
+Time: 250
+Artist: On the run (Dan Donovan Remix)
+Title: the run (Dan Donovan Remix)
+Album: Black Chillstep
+Track: 14
+Date: 2011
+mtime: 1369125930
+song_end
+song_begin: 15 - The XX - Intro (Jelacee Dubstep Remix).mp3
+Time: 297
+Artist: The XX
+Title: Intro (Jelacee Dubstep Remix)
+Album: Black Chillstep
+Track: 15
+Date: 2011
+mtime: 1369125930
+song_end
+song_begin: 16 - Eskimo Boy (Draper Remix) - kimo Boy (Draper Remix).mp3
+Time: 275
+Artist: Eskimo Boy (Draper Remix)
+Title: kimo Boy (Draper Remix)
+Album: Black Chillstep
+Track: 16
+Date: 2011
+Genre: Liquidstep
+mtime: 1369125930
+song_end
+song_begin: 17 - Black Chillstep - Your Song (Blackmill Dubstep Remix).mp3
+Time: 281
+Artist: Black Chillstep
+Title: Your Song (Blackmill Dubstep Remix)
+Album: Black Chillstep
+Track: 17
+Date: 2011
+Genre: Dubstep
+mtime: 1369125930
+song_end
+song_begin: 18 - Plummet - Damaged (Blinding Lights Remix).mp3
+Time: 253
+Artist: Plummet
+Title: Damaged (Blinding Lights Remix)
+Album: Black Chillstep
+Track: 18
+Date: 2011
+Genre: Dubstep
+mtime: 1369125930
+song_end
+song_begin: 19 - Soulitude - ulitude.mp3
+Time: 235
+Artist: Soulitude
+Title: ulitude
+Album: Black Chillstep
+Track: 19
+Date: 2011
+Genre: Blues
+mtime: 1369125930
+song_end
+song_begin: 20 - Black Chillstep - Nocow- Echoes.mp3
+Time: 230
+Artist: Black Chillstep
+Title: Nocow- Echoes
+Album: Black Chillstep
+Track: 20
+Date: 2011
+Genre: Other
+mtime: 1369125930
+song_end
+song_begin: 21 - Bitchicus - Dub Hill.mp3
+Time: 271
+Artist: Bitchicus
+Title: Dub Hill
+Album: Black Chillstep
+Track: 21
+Date: 2011
+mtime: 1369125930
+song_end
+song_begin: 22 - Black Chillstep - Come Home.mp3
+Time: 266
+Artist: Black Chillstep
+Title: Come Home
+Album: Black Chillstep
+Track: 22
+Date: 2011
+mtime: 1369125930
+song_end
+song_begin: 23 - Stenchman - When the Sun Goes Down.mp3
+Time: 360
+Artist: Stenchman
+Title: When the Sun Goes Down
+Album: Black Chillstep
+Track: 23
+Date: 2011
+Genre: Dubstep
+mtime: 1369125930
+song_end
+song_begin: 24 - Defcon - Dream.mp3
+Time: 204
+Artist: Defcon
+Title: Dream
+Album: Black Chillstep
+Track: 24
+Date: 2011
+Genre: Blues
+mtime: 1369125930
+song_end
+song_begin: 25 - Black Chillstep - Real Eyes Realize Real Lies.mp3
+Time: 273
+Artist: Black Chillstep
+Title: Real Eyes Realize Real Lies
+Album: Black Chillstep
+Track: 25
+Date: 2011
+Genre: Electronic
+mtime: 1369125930
+song_end
+end: Tom's Music/CMYK/Black Chillstep
+directory: Cyan Chillstep
+mtime: 1369126208
+begin: Tom's Music/CMYK/Cyan Chillstep
+song_begin: 01 - Band Of Horses - The Funeral (Butch Clancy Remix).mp3
+Time: 305
+Artist: Band Of Horses
+Title: The Funeral (Butch Clancy Remix)
+Album: Cyan Chillstep
+Track: 01
+Date: 2011
+Genre: Other
+mtime: 1369126421
+song_end
+song_begin: 02 - The Walton Hoax - The Walton Hoax-Exit Strategy (Ghosts Of Paraguay Mix).mp3
+Time: 336
+Artist: The Walton Hoax
+Title: The Walton Hoax-Exit Strategy (Ghosts Of Paraguay Mix)
+Album: Cyan Chillstep
+Track: 02
+Date: 2011
+Genre: Dubstep
+mtime: 1369126421
+song_end
+song_begin: 03 - Gange-a-Midi - You Appear.mp3
+Time: 257
+Artist: Gange-a-Midi
+Title: You Appear
+Album: Cyan Chillstep
+Track: 03
+Date: 2011
+mtime: 1369126421
+song_end
+song_begin: 04 - Trentemller - Moan (ENiGMA Dubz Remix).mp3
+Time: 315
+Artist: Trentemller
+Title: Moan (ENiGMA Dubz Remix)
+Album: Cyan Chillstep
+Track: 04
+Date: 2011
+mtime: 1369126421
+song_end
+song_begin: 05 - Blackmill - Evil Beauty.mp3
+Time: 228
+Artist: Blackmill
+Title: Evil Beauty
+Album: Cyan Chillstep
+Track: 05
+Date: 2011
+Genre: Melodic Dubstep
+mtime: 1369126421
+song_end
+song_begin: 06 - Nhumo - Waiting for Heaven.mp3
+Time: 314
+Artist: Nhumo
+Title: Waiting for Heaven
+Album: Cyan Chillstep
+Track: 06
+Date: 2011
+mtime: 1369126421
+song_end
+song_begin: 07 - Kaiori Breathe & Tripwire; - Forgetting You.mp3
+Time: 271
+Artist: Kaiori Breathe & Tripwire;
+Title: Forgetting You
+Album: Cyan Chillstep
+Track: 07
+Date: 2011
+Genre: Other
+mtime: 1369126421
+song_end
+song_begin: 08 - Phaeleh - Nocturne.mp3
+Time: 275
+Artist: Phaeleh
+Title: Nocturne
+Album: Cyan Chillstep
+Track: 08
+Date: 2011
+Genre: Electronic
+mtime: 1369126421
+song_end
+song_begin: 09 - Arkasia - The Awakening.mp3
+Time: 333
+Artist: Arkasia
+Title: The Awakening
+Album: Cyan Chillstep
+Track: 09
+Date: 2011
+mtime: 1369126421
+song_end
+song_begin: 10 - Cyan Chillstep - Lubilu (Stumbleine Remix).mp3
+Time: 214
+Artist: Cyan Chillstep
+Title: Lubilu (Stumbleine Remix)
+Album: Cyan Chillstep
+Track: 10
+Date: 2011
+mtime: 1369126421
+song_end
+song_begin: 11 - Cyan Chillstep - Breathe (Vocal Mix).mp3
+Time: 390
+Artist: Cyan Chillstep
+Title: Breathe (Vocal Mix)
+Album: Cyan Chillstep
+Track: 11
+Date: 2011
+mtime: 1369126421
+song_end
+song_begin: 12 - Loz Contreras - Break You Down Ft Sanna.mp3
+Time: 301
+Artist: Loz Contreras
+Title: Break You Down Ft Sanna
+Album: Cyan Chillstep
+Track: 12
+Date: 2011
+Genre: Blues
+mtime: 1369126421
+song_end
+song_begin: 13 - Bon Iver - Skinny Love (Das Kapital Rerub).mp3
+Time: 288
+Artist: Bon Iver
+Title: Skinny Love (Das Kapital Rerub)
+Album: Cyan Chillstep
+Track: 13
+Date: 2011
+Genre: Electro Hop
+Performer: Das Kapital
+Performer: Das Kapital
+mtime: 1369126421
+song_end
+song_begin: 14 - CocoRosie - Werewolf (Omega Remix).mp3
+Time: 432
+Artist: CocoRosie
+Title: Werewolf (Omega Remix)
+Album: Cyan Chillstep
+Track: 14
+Date: 2011
+Genre: Dubstep
+mtime: 1369126421
+song_end
+song_begin: 15 - Lykke Li - Tonight (Mokhov Remix).mp3
+Time: 211
+Artist: Lykke Li
+Title: Tonight (Mokhov Remix)
+Album: Cyan Chillstep
+Track: 15
+Date: 2011
+mtime: 1369126421
+song_end
+song_begin: 16 - Delilah - Breathe (Cally D Remix).mp3
+Time: 253
+Artist: Delilah
+Title: Breathe (Cally D Remix)
+Album: Cyan Chillstep
+Track: 16
+Date: 2011
+Genre: Other
+mtime: 1369126421
+song_end
+song_begin: 17 - Nirvana - Something In The Way (Biscope Boot).mp3
+Time: 288
+Artist: Nirvana
+Title: Something In The Way (Biscope Boot)
+Album: Cyan Chillstep
+Track: 17
+Date: 2011
+Genre: Grunge
+mtime: 1369126421
+song_end
+song_begin: 18 - Flight Facilities - Crave You (Adventure Club Dubstep Remix).mp3
+Time: 237
+Artist: Flight Facilities
+Title: Crave You (Adventure Club Dubstep Remix)
+Album: Cyan Chillstep
+Track: 18
+Date: 2011
+Genre: Dubstep
+mtime: 1369126421
+song_end
+song_begin: 19 - Cassius - I Love U So (Millestone Mix).mp3
+Time: 222
+Artist: Cassius
+Title: I Love U So (Millestone Mix)
+Album: Cyan Chillstep
+Track: 19
+Date: 2011
+mtime: 1369126421
+song_end
+song_begin: 20 - Kaiori Breath & Tripwire - I'd do Anything (Ghosts Of Paraguay Future Cut).mp3
+Time: 295
+Artist: Kaiori Breath & Tripwire
+Title: I'd do Anything (Ghosts Of Paraguay Future Cut)
+Album: Cyan Chillstep
+Track: 20
+Date: 2011
+Genre: Garage
+mtime: 1369126421
+song_end
+song_begin: 21 - Jammo - Identity.mp3
+Time: 274
+Artist: Jammo
+Title: Identity
+Album: Cyan Chillstep
+Track: 21
+Date: 2011
+mtime: 1369126421
+song_end
+song_begin: 22 - Metric - Collect Call (Imij Remix).mp3
+Time: 344
+Artist: Metric
+Title: Collect Call (Imij Remix)
+Album: Cyan Chillstep
+Track: 22
+Date: 2011
+Genre: Dubstep
+mtime: 1369126421
+song_end
+song_begin: 23 - Quantic - Mishaps Happening (Flux Pavilion Remix).mp3
+Time: 362
+Artist: Quantic
+Title: Mishaps Happening (Flux Pavilion Remix)
+Album: Cyan Chillstep
+Track: 23
+Date: 2011
+Genre: Dubstep
+mtime: 1369126421
+song_end
+song_begin: 24 - George Lenton - Paper Crows FTL (George Lenton remix).mp3
+Time: 267
+Artist: George Lenton
+Title: Paper Crows FTL (George Lenton remix)
+Album: Cyan Chillstep
+Track: 24
+Date: 2011
+mtime: 1369126421
+song_end
+end: Tom's Music/CMYK/Cyan Chillstep
+directory: Magenta Chillstep
+mtime: 1369126394
+begin: Tom's Music/CMYK/Magenta Chillstep
+song_begin: 01 - Blue Foundation - Eyes On Fire (Zeds Dead Rmx).mp3
+Time: 320
+Artist: Blue Foundation
+Title: Eyes On Fire (Zeds Dead Rmx)
+Album: Magenta Chillstep
+Track: 01
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 02 - Temple Cloud - One Big Family (Ghosts Of Paraguay Dubstep Cut).mp3
+Time: 309
+Artist: Temple Cloud
+Title: One Big Family (Ghosts Of Paraguay Dubstep Cut)
+Album: Magenta Chillstep
+Track: 02
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 03 - NumberNin6 vs WilliamFitzsimmons - WhatYou'veDone.mp3
+Time: 229
+Artist: NumberNin6 vs WilliamFitzsimmons
+Title: WhatYou'veDone
+Album: Magenta Chillstep
+Track: 03
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 04 - Little Dragon - Twice (16 Bit Remix).mp3
+Time: 182
+Artist: Little Dragon
+Title: Twice (16 Bit Remix)
+Album: Magenta Chillstep
+Track: 04
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 05 - Cinematic Orchestra - To Build A Home Remix.mp3
+Time: 188
+Artist: Cinematic Orchestra
+Title: To Build A Home Remix
+Album: Magenta Chillstep
+Track: 05
+Date: 2011
+Genre: Blues
+mtime: 1369126434
+song_end
+song_begin: 06 - Motorcycle - As The Rush Comes (High Rankin Remix).mp3
+Time: 328
+Artist: Motorcycle
+Title: As The Rush Comes (High Rankin Remix)
+Album: Magenta Chillstep
+Track: 06
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 07 - Fever Ray - I'm Not Done (RD REMIX).mp3
+Time: 396
+Artist: Fever Ray
+Title: I'm Not Done (RD REMIX)
+Album: Magenta Chillstep
+Track: 07
+Date: 2011
+Genre: Electronic
+mtime: 1369126434
+song_end
+song_begin: 08 - Fracture Design - From The Bottom Of My Heart.mp3
+Time: 293
+Artist: Fracture Design
+Title: From The Bottom Of My Heart
+Album: Magenta Chillstep
+Track: 08
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 09 - Nhumo - The Blue Cave.mp3
+Time: 295
+Artist: Nhumo
+Title: The Blue Cave
+Album: Magenta Chillstep
+Track: 09
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 10 - TTP - Sunshine.mp3
+Time: 288
+Artist: TTP
+Title: Sunshine
+Album: Magenta Chillstep
+Track: 10
+Date: 2011
+Genre: Other
+mtime: 1369126434
+song_end
+song_begin: 11 - Richard The Third - Dragonfly feat. Zaki Ibrahim (Shorterz & Enigma Mix).mp3
+Time: 281
+Artist: Richard The Third
+Title: Dragonfly feat. Zaki Ibrahim (Shorterz & Enigma Mix)
+Album: Magenta Chillstep
+Track: 11
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 12 - Ghosts Of Paraguay - Hadron [OUT 25TH OCT] [EP 2].mp3
+Time: 302
+Artist: Ghosts Of Paraguay
+Title: Hadron [OUT 25TH OCT] [EP 2]
+Album: Magenta Chillstep
+Track: 12
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 13 - Kaiben - The Road.mp3
+Time: 377
+Artist: Kaiben
+Title: The Road
+Album: Magenta Chillstep
+Track: 13
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 14 - Shorterz & Enigma ft. Little Palm - Rag Doll (Original Mix).mp3
+Time: 311
+Artist: Shorterz & Enigma ft. Little Palm
+Title: Rag Doll (Original Mix)
+Album: Magenta Chillstep
+Track: 14
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 15 - Magenta Chillstep - Breathe Me (Widdler Remix).mp3
+Time: 335
+Artist: Magenta Chillstep
+Title: Breathe Me (Widdler Remix)
+Album: Magenta Chillstep
+Track: 15
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 16 - Sub Focus - Last Jungle (Preplex Dubstep Remix).mp3
+Time: 358
+Artist: Sub Focus
+Title: Last Jungle (Preplex Dubstep Remix)
+Album: Magenta Chillstep
+Track: 16
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 18 - MNSN - Yearning.mp3
+Time: 273
+Artist: MNSN
+Title: Yearning
+Album: Magenta Chillstep
+Track: 18
+Date: 2011
+Genre: Dream
+mtime: 1369126434
+song_end
+song_begin: 19 - Booka Shade - At The Window (Altimeter's High Altitude Mix).mp3
+Time: 253
+Artist: Booka Shade
+Title: At The Window (Altimeter's High Altitude Mix)
+Album: Magenta Chillstep
+Track: 19
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 20 - Thrice - Broken Lungs (Adventure Club Dubstep Remix)(1).mp3
+Time: 247
+Artist: Thrice
+Title: Broken Lungs (Adventure Club Dubstep Remix)(1)
+Album: Magenta Chillstep
+Track: 20
+Date: 2011
+Genre: Dubstep
+mtime: 1369126434
+song_end
+song_begin: 21 - Delta - Moonove [LTR REMIX].mp3
+Time: 231
+Artist: Delta
+Title: Moonove [LTR REMIX]
+Album: Magenta Chillstep
+Track: 21
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 22 - Ed Sheeran - The A-Team (KOAN Sound Remix).mp3
+Time: 278
+Artist: Ed Sheeran
+Title: The A-Team (KOAN Sound Remix)
+Album: Magenta Chillstep
+Track: 22
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 23 - Stenchman - Free Will.mp3
+Time: 4
+Artist: Stenchman
+Title: Free Will
+Album: Magenta Chillstep
+Track: 23
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 24 - NiT GriT - Babylon (Pairadimez aka iONik and r.e.g Remix).mp3
+Time: 192
+Artist: NiT GriT
+Title: Babylon (Pairadimez aka iONik and r.e.g Remix)
+Album: Magenta Chillstep
+Track: 24
+Date: 2011
+mtime: 1369126434
+song_end
+song_begin: 25 - Hike - Way Of The Samurai (Original Mix).mp3
+Time: 325
+Artist: Hike
+Title: Way Of The Samurai (Original Mix)
+Album: Magenta Chillstep
+Track: 25
+Date: 2011
+Genre: Blues
+mtime: 1369126434
+song_end
+end: Tom's Music/CMYK/Magenta Chillstep
+directory: Yellow Chillstep
+mtime: 1369126678
+begin: Tom's Music/CMYK/Yellow Chillstep
+song_begin: 01 - ENiGMA Dubz - Hard To Smile.mp3
+Time: 274
+Artist: ENiGMA Dubz
+Title: Hard To Smile
+Album: Yellow Chillstep
+Track: 01
+Date: 2011
+mtime: 1369126678
+song_end
+song_begin: 02 - Rameses B - Moving On.mp3
+Time: 264
+Artist: Rameses B
+Title: Moving On
+Album: Yellow Chillstep
+Track: 02
+Date: 2011
+Genre: Chilled Dubstep
+mtime: 1369126678
+song_end
+song_begin: 03 - Stumbleine - Ember (Sorrow Remix).mp3
+Time: 304
+Artist: Stumbleine
+Title: Ember (Sorrow Remix)
+Album: Yellow Chillstep
+Track: 03
+Date: 2011
+Genre: Deep
+mtime: 1369126678
+song_end
+song_begin: 04 - Into Dust (Inertia Remix) - to Dust (Inertia Remix).mp3
+Time: 340
+Artist: Into Dust (Inertia Remix)
+Title: to Dust (Inertia Remix)
+Album: Yellow Chillstep
+Track: 04
+Date: 2011
+mtime: 1369126678
+song_end
+song_begin: 05 - Morgan Page - The Longest Road feat. Lissie (Grifta Remix).mp3
+Time: 283
+Artist: Morgan Page
+Title: The Longest Road feat. Lissie (Grifta Remix)
+Album: Yellow Chillstep
+Track: 05
+Date: 2011
+Genre: Dubstep
+mtime: 1369126678
+song_end
+song_begin: 06 - Thomas Newman - American Beauty (Philth Dubstep Remix).mp3
+Time: 369
+Artist: Thomas Newman
+Title: American Beauty (Philth Dubstep Remix)
+Album: Yellow Chillstep
+Track: 06
+Date: 2011
+mtime: 1369126678
+song_end
+song_begin: 07 - Yellow Chillstep - Teenage Crime (3hundreds Remix).mp3
+Time: 317
+Artist: Yellow Chillstep
+Title: Teenage Crime (3hundreds Remix)
+Album: Yellow Chillstep
+Track: 07
+Date: 2011
+mtime: 1369126678
+song_end
+song_begin: 08 - We Don't Eat (Adventure Club Dubstep Remix) - Don't Eat (Adventure Club Dubstep Remix).mp3
+Time: 205
+Artist: We Don't Eat (Adventure Club Dubstep Remix)
+Title: Don't Eat (Adventure Club Dubstep Remix)
+Album: Yellow Chillstep
+Track: 08
+Date: 2011
+Genre: Dubstep
+mtime: 1369126678
+song_end
+song_begin: 09 - Forever - Kaza.mp3
+Time: 276
+Artist: Forever
+Title: Kaza
+Album: Yellow Chillstep
+Track: 09
+Date: 2011
+Genre: Dubstep
+mtime: 1369126678
+song_end
+song_begin: 10 - Yellow Chillstep - Astronought.mp3
+Time: 406
+Artist: Yellow Chillstep
+Title: Astronought
+Album: Yellow Chillstep
+Track: 10
+Date: 2011
+mtime: 1369126678
+song_end
+song_begin: 11 - Art of Noise - Moments In Love (Caspa Remix).mp3
+Time: 296
+Artist: Art of Noise
+Title: Moments In Love (Caspa Remix)
+Album: Yellow Chillstep
+Track: 11
+Date: 2011
+Genre: Dubstep
+mtime: 1369126678
+song_end
+song_begin: 12 - Yellow Chillstep - Soldier On (Ruskos F'kin Seagull Remix).mp3
+Time: 308
+Artist: Yellow Chillstep
+Title: Soldier On (Ruskos F'kin Seagull Remix)
+Album: Yellow Chillstep
+Track: 12
+Date: 2011
+Genre: Dubstep
+mtime: 1369126678
+song_end
+song_begin: 13 - The XX - Crystalised (Dark Sky Remix).mp3
+Time: 295
+Artist: The XX
+Title: Crystalised (Dark Sky Remix)
+Album: Yellow Chillstep
+Track: 13
+Date: 2011
+Genre: Dubstep
+mtime: 1369126678
+song_end
+song_begin: 14 - Yellow Chillstep - Japanese Transmission.mp3
+Time: 584
+Artist: Yellow Chillstep
+Title: Japanese Transmission
+Album: Yellow Chillstep
+Track: 14
+Date: 2011
+Genre: Dubstep
+mtime: 1369126678
+song_end
+song_begin: 15 - Ghosts of Paraguay - One Lost Love (Digital Ivy Remix).mp3
+Time: 341
+Artist: Ghosts of Paraguay
+Title: One Lost Love (Digital Ivy Remix)
+Album: Yellow Chillstep
+Track: 15
+Date: 2011
+mtime: 1369126678
+song_end
+song_begin: 16 - Yellow Chillstep - Beautiful Lies.m4a
+Time: 220
+AlbumArtist: Mt Eden
+Track: 16
+Artist: Yellow Chillstep
+Album: Yellow Chillstep
+Date: 2011
+Title: Beautiful Lies
+mtime: 1369126678
+song_end
+song_begin: 17 - Nhumo - Space Diver.mp3
+Time: 295
+Artist: Nhumo
+Title: Space Diver
+Album: Yellow Chillstep
+Track: 17
+Date: 2011
+mtime: 1369126678
+song_end
+song_begin: 18 - Mario M - Overcast.mp3
+Time: 200
+Artist: Mario M
+Title: Overcast
+Album: Yellow Chillstep
+Track: 18
+Date: 2011
+Genre: Blues
+mtime: 1369126678
+song_end
+song_begin: 19 - Vose - Vision.mp3
+Time: 275
+Artist: Vose
+Title: Vision
+Album: Yellow Chillstep
+Track: 19
+Date: 2011
+mtime: 1369126678
+song_end
+song_begin: 20 - Melancholy Melody (Eyes Remix) - Kate McGill.mp3
+Time: 318
+Artist: Melancholy Melody (Eyes Remix)
+Title: Kate McGill
+Album: Yellow Chillstep
+Track: 20
+Date: 2011
+mtime: 1369126678
+song_end
+song_begin: 21 - Massive Attack - Teardrop (Fusion Six Remix).mp3
+Time: 329
+Artist: Massive Attack
+Title: Teardrop (Fusion Six Remix)
+Album: Yellow Chillstep
+Track: 21
+Date: 2011
+mtime: 1369126678
+song_end
+song_begin: 22 - Rusko - 2NAQ (Dub Fiend's Chilled Remix).mp3
+Time: 329
+Artist: Rusko
+Title: 2NAQ (Dub Fiend's Chilled Remix)
+Album: Yellow Chillstep
+Track: 22
+Date: 2011
+Genre: Reggae
+mtime: 1369126678
+song_end
+song_begin: 23 - Zero 7 - Destiny (Kilbrew Dubstep Remix).mp3
+Time: 302
+Artist: Zero 7
+Title: Destiny (Kilbrew Dubstep Remix)
+Album: Yellow Chillstep
+Track: 23
+Date: 2011
+Genre: Blues
+mtime: 1369126678
+song_end
+song_begin: 24 - Benjamin Francis Leftwich - Pictures (GZUS Remix).mp3
+Time: 193
+Artist: Benjamin Francis Leftwich
+Title: Pictures (GZUS Remix)
+Album: Yellow Chillstep
+Track: 24
+Date: 2011
+Genre: Dubstep
+mtime: 1369126678
+song_end
+song_begin: 25 - The Widdler - Dopamine.mp3
+Time: 309
+Artist: The Widdler
+Title: Dopamine
+Album: Yellow Chillstep
+Track: 25
+Date: 2011
+Genre: Electronic
+mtime: 1369126678
+song_end
+end: Tom's Music/CMYK/Yellow Chillstep
+song_begin: 01 - Ideal Noise - Cyan Mix.mp3
+Time: 1212
+Artist: Ideal Noise
+Title: Cyan Mix
+Album: Cyan Chillstep
+Track: 01
+Date: 2012
+Genre: Chillstep
+mtime: 1369077577
+song_end
+end: Tom's Music/CMYK
+directory: Chillstep.info Community Pack
+mtime: 1369077513
+begin: Tom's Music/Chillstep.info Community Pack
+song_begin: 01 - Above & Beyond ft. Zoe Johnston - You Got To Go (Mario M Remix).mp3
+Time: 218
+Artist: Above & Beyond ft. Zoe Johnston
+Title: You Got To Go (Mario M Remix)
+Album: Chillstep Community
+Track: 01
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 02 - Angus & Julia Stone - Take You (SizzleBird Remix).mp3
+Time: 218
+Artist: Angus & Julia Stone
+Title: Take You (SizzleBird Remix)
+Album: Chillstep Community
+Track: 02
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 03 - Audience & Adrenaline - Only you.mp3
+Time: 216
+Artist: Audience & Adrenaline
+Title: Only you
+Album: Chillstep Community
+Track: 03
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 04 - Bassnectar ft. Mimi Page - Butterfly.mp3
+Time: 261
+Artist: Bassnectar ft. Mimi Page
+Title: Butterfly
+Album: Chillstep Community
+Track: 04
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 05 - Bronze Whale ft. Kandace Ferrel - Where You Should Be (Skream Cover).mp3
+Time: 270
+Artist: Bronze Whale ft. Kandace Ferrel
+Title: Where You Should Be (Skream Cover)
+Album: Chillstep Community
+Track: 05
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 06 - Cassie - Me & U (VILLAGE Bootleg Remix).mp3
+Time: 297
+Artist: Cassie
+Title: Me & U (VILLAGE Bootleg Remix)
+Album: Chillstep Community
+Track: 06
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 07 - CMA - Constant Changes.mp3
+Time: 341
+Artist: CMA
+Title: Constant Changes
+Album: Chillstep Community
+Track: 07
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 08 - CoMa - Wouldn't It Be Good If It Was True.mp3
+Time: 202
+Artist: CoMa
+Title: Wouldn't It Be Good If It Was True
+Album: Chillstep Community
+Track: 08
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 09 - Daughter - Love (Synkro Edit).mp3
+Time: 259
+Artist: Daughter
+Title: Love (Synkro Edit)
+Album: Chillstep Community
+Track: 09
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 10 - Double Z - The Nature Of All Tragedies.mp3
+Time: 360
+Artist: Double Z
+Title: The Nature Of All Tragedies
+Album: Chillstep Community
+Track: 10
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 11 - Dynastic Electric - Eyes Wide Open (Demure Remix).mp3
+Time: 194
+Artist: Dynastic Electric
+Title: Eyes Wide Open (Demure Remix)
+Album: Chillstep Community
+Track: 11
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 12 - Ellie Goulding - Hanging On (Spectrum Remix).mp3
+Time: 230
+Artist: Ellie Goulding
+Title: Hanging On (Spectrum Remix)
+Album: Chillstep Community
+Track: 12
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 13 - EvenS - Remind Me.mp3
+Time: 160
+Artist: EvenS
+Title: Remind Me
+Album: Chillstep Community
+Track: 13
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 14 - Ex Libras - I Am Home (Blynk Remix).mp3
+Time: 276
+Artist: Ex Libras
+Title: I Am Home (Blynk Remix)
+Album: Chillstep Community
+Track: 14
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 15 - Fairbank - Live a Lie.mp3
+Time: 307
+Artist: Fairbank
+Title: Live a Lie
+Album: Chillstep Community
+Track: 15
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 16 - Ficci - Imagine You Because.mp3
+Time: 284
+Artist: Ficci
+Title: Imagine You Because
+Album: Chillstep Community
+Track: 16
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 17 - Fracture Design - Wildlife.mp3
+Time: 259
+Artist: Fracture Design
+Title: Wildlife
+Album: Chillstep Community
+Track: 17
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 18 - Gange-a-Midi - You Appear.mp3
+Time: 257
+Artist: Gange-a-Midi
+Title: You Appear
+Album: Chillstep Community
+Track: 18
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 19 - GreatSkys - Infinite (Extended Version).mp3
+Time: 213
+Artist: GreatSkys
+Title: Infinite (Extended Version)
+Album: Chillstep Community
+Track: 19
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 20 - Hans Zimmer - Time (Soular Order Remix).mp3
+Time: 312
+Artist: Hans Zimmer
+Title: Time (Soular Order Remix)
+Album: Chillstep Community
+Track: 20
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 21 - I Am Legend OST - I'm Listening (Yinyues Remix).mp3
+Time: 225
+Artist: I Am Legend OST
+Title: I'm Listening (Yinyues Remix)
+Album: Chillstep Community
+Track: 21
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 22 - Jess Mills - End Credits (M3llo Remix).mp3
+Time: 219
+Artist: Jess Mills
+Title: End Credits (M3llo Remix)
+Album: Chillstep Community
+Track: 22
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 23 - Justin Thomas - Escapism.mp3
+Time: 285
+Artist: Justin Thomas
+Title: Escapism
+Album: Chillstep Community
+Track: 23
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 24 - Kaj - Time To Go.mp3
+Time: 371
+Artist: Kaj
+Title: Time To Go
+Album: Chillstep Community
+Track: 24
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 25 - LTR - Reves Voiles.mp3
+Time: 284
+Artist: LTR
+Title: Reves Voiles
+Album: Chillstep Community
+Track: 25
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 26 - Lunova Labs ft. Olivia Lee - La Vie.mp3
+Time: 240
+Artist: Lunova Labs ft. Olivia Lee
+Title: La Vie
+Album: Chillstep Community
+Track: 26
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 27 - M3ITIS - Pushing Through.mp3
+Time: 196
+Artist: M3ITIS
+Title: Pushing Through
+Album: Chillstep Community
+Track: 27
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 28 - Macro Ch!ll - Old Days.mp3
+Time: 346
+Artist: Macro Ch!ll
+Title: Old Days
+Album: Chillstep Community
+Track: 28
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 29 - Neutralize ft. Nori - Where You Should Be.mp3
+Time: 306
+Artist: Neutralize ft. Nori
+Title: Where You Should Be
+Album: Chillstep Community
+Track: 29
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 30 - nExow ft. Bijou Winters - Corrosion.mp3
+Time: 269
+Artist: nExow ft. Bijou Winters
+Title: Corrosion
+Album: Chillstep Community
+Track: 30
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 31 - Paloma Faith - Picking Up The Pieces (Ouch! Remix).mp3
+Time: 274
+Artist: Paloma Faith
+Title: Picking Up The Pieces (Ouch! Remix)
+Album: Chillstep Community
+Track: 31
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 32 - Pika - World.mp3
+Time: 264
+Artist: Pika
+Title: World
+Album: Chillstep Community
+Track: 32
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 33 - Pulse One - Lucidity.mp3
+Time: 199
+Artist: Pulse One
+Title: Lucidity
+Album: Chillstep Community
+Track: 33
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 34 - Rennie Foster - Devil's Water (Crypt remix).mp3
+Time: 220
+Artist: Rennie Foster
+Title: Devil's Water (Crypt remix)
+Album: Chillstep Community
+Track: 34
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 35 - Richard The Third ft. Zaki Ibrahim - Dragonfly (Shorterz & Enigma Mix).mp3
+Time: 281
+Artist: Richard The Third ft. Zaki Ibrahim
+Title: Dragonfly (Shorterz & Enigma Mix)
+Album: Chillstep Community
+Track: 35
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 36 - Rimshox - Reality Check.mp3
+Time: 254
+Artist: Rimshox
+Title: Reality Check
+Album: Chillstep Community
+Track: 36
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 37 - RIT & nExow - Last Goodbye.mp3
+Time: 277
+Artist: RIT & nExow
+Title: Last Goodbye
+Album: Chillstep Community
+Track: 37
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 38 - Sacred - One Love (Onderwish Remix).mp3
+Time: 327
+Artist: Sacred
+Title: One Love (Onderwish Remix)
+Album: Chillstep Community
+Track: 38
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 39 - Scullious ft.  JdR & Tiff Lacey - Meant To Be.mp3
+Time: 289
+Artist: Scullious ft.  JdR & Tiff Lacey
+Title: Meant To Be
+Album: Chillstep Community
+Track: 39
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 40 - Skye - Fresh Air (CodeBlue Remix).mp3
+Time: 265
+Artist: Skye
+Title: Fresh Air (CodeBlue Remix)
+Album: Chillstep Community
+Track: 40
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 41 - SkyFlair & Exal - Afterlife.mp3
+Time: 259
+Artist: SkyFlair & Exal
+Title: Afterlife
+Album: Chillstep Community
+Track: 41
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 42 - Takman ft. Doe Eyed - Little Red.mp3
+Time: 213
+Artist: Takman ft. Doe Eyed
+Title: Little Red
+Album: Chillstep Community
+Track: 42
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 43 - Temper Trap - Sweet Disposition (Alto Remix).mp3
+Time: 336
+Artist: Temper Trap
+Title: Sweet Disposition (Alto Remix)
+Album: Chillstep Community
+Track: 43
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 44 - Temporal & FREnchfire - Don't You Believe.mp3
+Time: 287
+Artist: Temporal & FREnchfire
+Title: Don't You Believe
+Album: Chillstep Community
+Track: 44
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 45 - TIGERjunes - Love Over Hate, Everytime.mp3
+Time: 215
+Artist: TIGERjunes
+Title: Love Over Hate, Everytime
+Album: Chillstep Community
+Track: 45
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 46 - Tomorrow - Kasbo.mp3
+Time: 301
+Artist: Tomorrow
+Title: Kasbo
+Album: Chillstep Community
+Track: 46
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 47 - The White Tiger - Memory.mp3
+Time: 316
+Artist: The White Tiger
+Title: Memory
+Album: Chillstep Community
+Track: 47
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 48 - William Fitzsimmons - Psychasthenia (Cross Them Out Remix).mp3
+Time: 277
+Artist: William Fitzsimmons
+Title: Psychasthenia (Cross Them Out Remix)
+Album: Chillstep Community
+Track: 48
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 49 - The XX - Angels (OdyC Remix).mp3
+Time: 256
+Artist: The XX
+Title: Angels (OdyC Remix)
+Album: Chillstep Community
+Track: 49
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+song_begin: 50 - Zedd - Spectrum (Toni The MmG Chill Mix).mp3
+Time: 408
+Artist: Zedd
+Title: Spectrum (Toni The MmG Chill Mix)
+Album: Chillstep Community
+Track: 50
+Date: 2012
+Genre: Chillstep
+mtime: 1369077513
+song_end
+end: Tom's Music/Chillstep.info Community Pack
+directory: Nicolas Jaar
+mtime: 1367516076
+begin: Tom's Music/Nicolas Jaar
+directory: Marks & Angles
+mtime: 1369077637
+begin: Tom's Music/Nicolas Jaar/Marks & Angles
+song_begin: 01 - Nicolas Jaar - Marks.mp3
+Time: 361
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Marks
+Album: Marks & Angles
+Track: 01
+Date: 2010
+Genre: House
+mtime: 1369077637
+song_end
+song_begin: 02 - Nicolas Jaar - Angles.mp3
+Time: 316
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Angles
+Album: Marks & Angles
+Track: 02
+Date: 2010
+Genre: House
+mtime: 1369077637
+song_end
+song_begin: 03 - Nicolas Jaar - Materials.mp3
+Time: 323
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Materials
+Album: Marks & Angles
+Track: 03
+Date: 2010
+Genre: House
+mtime: 1369077637
+song_end
+end: Tom's Music/Nicolas Jaar/Marks & Angles
+directory: Russian Dolls EP
+mtime: 1369077658
+begin: Tom's Music/Nicolas Jaar/Russian Dolls EP
+song_begin: 01 - Nicolas Jaar - Russian Dolls.mp3
+Time: 500
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Russian Dolls
+Album: Russian Dolls
+Track: 01
+Date: 2010
+Genre: House
+mtime: 1369077658
+song_end
+end: Tom's Music/Nicolas Jaar/Russian Dolls EP
+directory: Space Is Only Noise
+mtime: 1369077679
+begin: Tom's Music/Nicolas Jaar/Space Is Only Noise
+song_begin: 01 - Nicolas Jaar - Colomb.mp3
+Time: 203
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Colomb
+Album: Space Is Only Noise
+Track: 01
+Date: 2010
+Genre: Alternative
+mtime: 1369077679
+song_end
+song_begin: 02 - Nicolas Jaar - Sunflower.mp3
+Time: 49
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Sunflower
+Album: Space Is Only Noise
+Track: 02
+Date: 2010
+Genre: Alternative
+mtime: 1369077679
+song_end
+song_begin: 03 - Nicolas Jaar - Too Many Kids Finding Rain In The Dust.mp3
+Time: 209
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Too Many Kids Finding Rain In The Dust
+Album: Space Is Only Noise
+Track: 03
+Date: 2010
+Genre: Alternative
+mtime: 1369077679
+song_end
+song_begin: 04 - Nicolas Jaar - Keep Me There.mp3
+Time: 322
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Keep Me There
+Album: Space Is Only Noise
+Track: 04
+Date: 2010
+Genre: Alternative
+mtime: 1369077679
+song_end
+song_begin: 05 - Nicolas Jaar - I Got A Woman.mp3
+Time: 249
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: I Got A Woman
+Album: Space Is Only Noise
+Track: 05
+Date: 2010
+Genre: Alternative
+mtime: 1369077679
+song_end
+song_begin: 06 - Nicolas Jaar - Problems With The Sun.mp3
+Time: 232
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Problems With The Sun
+Album: Space Is Only Noise
+Track: 06
+Date: 2010
+Genre: Alternative
+mtime: 1369077679
+song_end
+song_begin: 07 - Nicolas Jaar - Space Is Only Noise If You Can See.mp3
+Time: 342
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Space Is Only Noise If You Can See
+Album: Space Is Only Noise
+Track: 07
+Date: 2010
+Genre: Alternative
+mtime: 1369077679
+song_end
+song_begin: 08 - Nicolas Jaar - Almost Fell.mp3
+Time: 152
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Almost Fell
+Album: Space Is Only Noise
+Track: 08
+Date: 2010
+Genre: Alternative
+mtime: 1369077679
+song_end
+song_begin: 09 - Nicolas Jaar - Balance Her In Between Your Eyes.mp3
+Time: 226
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Balance Her In Between Your Eyes
+Album: Space Is Only Noise
+Track: 09
+Date: 2010
+Genre: Alternative
+mtime: 1369077679
+song_end
+song_begin: 10 - Nicolas Jaar - Specters Of The Future.mp3
+Time: 119
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Specters Of The Future
+Album: Space Is Only Noise
+Track: 10
+Date: 2010
+Genre: Alternative
+mtime: 1369077679
+song_end
+song_begin: 11 - Nicolas Jaar - Trace.mp3
+Time: 23
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Trace
+Album: Space Is Only Noise
+Track: 11
+Date: 2010
+Genre: Alternative
+mtime: 1369077679
+song_end
+song_begin: 12 - Nicolas Jaar - Variations.mp3
+Time: 201
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Variations
+Album: Space Is Only Noise
+Track: 12
+Date: 2010
+Genre: Alternative
+mtime: 1369077679
+song_end
+end: Tom's Music/Nicolas Jaar/Space Is Only Noise
+directory: Time For Us Ep
+mtime: 1369077706
+begin: Tom's Music/Nicolas Jaar/Time For Us Ep
+song_begin: 01 - Nicolas Jaar - Time For Us.mp3
+Time: 460
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Time For Us
+Album: Time For Us Ep
+Track: 01
+Date: 2010
+Genre: House
+mtime: 1369077706
+song_end
+song_begin: 02 - Nicolas Jaar - Mi Mujer.mp3
+Time: 393
+Artist: Nicolas Jaar
+AlbumArtist: Nicolas Jaar
+Title: Mi Mujer
+Album: Time For Us Ep
+Track: 02
+Date: 2010
+Genre: House
+mtime: 1369077706
+song_end
+end: Tom's Music/Nicolas Jaar/Time For Us Ep
+end: Tom's Music/Nicolas Jaar
+directory: Pink Floyd
+mtime: 1367516078
+begin: Tom's Music/Pink Floyd
+directory: Meddle
+mtime: 1369069563
+begin: Tom's Music/Pink Floyd/Meddle
+song_begin: 01 - Pink Floyd - One of These Days.mp3
+Time: 359
+Artist: Pink Floyd
+AlbumArtist: Pink Floyd
+Title: One of These Days
+Album: Meddle
+Track: 01
+Date: 1971
+Genre: Progressive Rock
+mtime: 1369077737
+song_end
+song_begin: 02 - Pink Floyd - A Pillow of Winds.mp3
+Time: 311
+Artist: Pink Floyd
+AlbumArtist: Pink Floyd
+Title: A Pillow of Winds
+Album: Meddle
+Track: 02
+Date: 1971
+Genre: Progressive Rock
+mtime: 1369077737
+song_end
+song_begin: 03 - Pink Floyd - Fearless.mp3
+Time: 369
+Artist: Pink Floyd
+AlbumArtist: Pink Floyd
+Title: Fearless
+Album: Meddle
+Track: 03
+Date: 1971
+Genre: Progressive Rock
+mtime: 1369077737
+song_end
+song_begin: 04 - Pink Floyd - San Tropez.mp3
+Time: 224
+Artist: Pink Floyd
+AlbumArtist: Pink Floyd
+Title: San Tropez
+Album: Meddle
+Track: 04
+Date: 1971
+Genre: Progressive Rock
+mtime: 1369077737
+song_end
+song_begin: 05 - Pink Floyd - Seamus.mp3
+Time: 137
+Artist: Pink Floyd
+AlbumArtist: Pink Floyd
+Title: Seamus
+Album: Meddle
+Track: 05
+Date: 1971
+Genre: Progressive Rock
+mtime: 1369077737
+song_end
+song_begin: 06 - Pink Floyd - Echoes.mp3
+Time: 1412
+Artist: Pink Floyd
+AlbumArtist: Pink Floyd
+Title: Echoes
+Album: Meddle
+Track: 06
+Date: 1971
+Genre: Progressive Rock
+mtime: 1369077737
+song_end
+end: Tom's Music/Pink Floyd/Meddle
+end: Tom's Music/Pink Floyd
+directory: Sbtrkt
+mtime: 1367516085
+begin: Tom's Music/Sbtrkt
+directory: Unknown album
+mtime: 1369077837
+begin: Tom's Music/Sbtrkt/Unknown album
+song_begin: 01 - Sbtrkt - Heatwave.mp3
+Time: 178
+Artist: Sbtrkt
+Title: Heatwave
+Album: Unknown Album
+Track: 01
+Date: 20xx
+Genre: Decide
+mtime: 1369077837
+song_end
+song_begin: 02 - Sbtrkt - HoldOn.mp3
+Time: 211
+Artist: Sbtrkt
+Title: HoldOn
+Album: Unknown Album
+Track: 02
+Date: 20xx
+Genre: Decide
+mtime: 1369077837
+song_end
+song_begin: 03 - Sbtrkt - Wildfire.mp3
+Time: 205
+Artist: Sbtrkt
+Title: Wildfire
+Album: Unknown Album
+Track: 03
+Date: 20xx
+Genre: Decide
+mtime: 1369077837
+song_end
+song_begin: 04 - Sbtrkt - Sanctuary.mp3
+Time: 236
+Artist: Sbtrkt
+Title: Sanctuary
+Album: Unknown Album
+Track: 04
+Date: 20xx
+Genre: Decide
+mtime: 1369077837
+song_end
+song_begin: 05 - Sbtrkt - TrialsOfThePast.mp3
+Time: 269
+Artist: Sbtrkt
+Title: TrialsOfThePast
+Album: Unknown Album
+Track: 05
+Date: 20xx
+Genre: Decide
+mtime: 1369077837
+song_end
+song_begin: 06 - Sbtrkt - RightThingToDo.mp3
+Time: 207
+Artist: Sbtrkt
+Title: RightThingToDo
+Album: Unknown Album
+Track: 06
+Date: 20xx
+Genre: Decide
+mtime: 1369077837
+song_end
+song_begin: 07 - Sbtrkt - SomethingGoesRight.mp3
+Time: 304
+Artist: Sbtrkt
+Title: SomethingGoesRight
+Album: Unknown Album
+Track: 07
+Date: 20xx
+Genre: Decide
+mtime: 1369077837
+song_end
+song_begin: 08 - Sbtrkt - Pharoahs.mp3
+Time: 223
+Artist: Sbtrkt
+Title: Pharoahs
+Album: Unknown Album
+Track: 08
+Date: 20xx
+Genre: Decide
+mtime: 1369077837
+song_end
+song_begin: 09 - Sbtrkt - ReadySetLoop.mp3
+Time: 190
+Artist: Sbtrkt
+Title: ReadySetLoop
+Album: Unknown Album
+Track: 09
+Date: 20xx
+Genre: Decide
+mtime: 1369077837
+song_end
+song_begin: 10 - Sbtrkt - NeverNever.mp3
+Time: 241
+Artist: Sbtrkt
+Title: NeverNever
+Album: Unknown Album
+Track: 10
+Date: 20xx
+Genre: Decide
+mtime: 1369077837
+song_end
+song_begin: 11 - Sbtrkt - GoBang.mp3
+Time: 217
+Artist: Sbtrkt
+Title: GoBang
+Album: Unknown Album
+Track: 11
+Date: 20xx
+Genre: Decide
+mtime: 1369077837
+song_end
+end: Tom's Music/Sbtrkt/Unknown album
+end: Tom's Music/Sbtrkt
+directory: Shlohmo
+mtime: 1367516103
+begin: Tom's Music/Shlohmo
+directory: Bad Vibes
+mtime: 1369077865
+begin: Tom's Music/Shlohmo/Bad Vibes
+song_begin: 01 - Shlohmo - Big Feelings.mp3
+Time: 210
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Big Feelings
+Album: Bad Vibes
+Track: 01
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+song_begin: 02 - Shlohmo - Places.mp3
+Time: 302
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Places
+Album: Bad Vibes
+Track: 02
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+song_begin: 03 - Shlohmo - Anywhere But Here.mp3
+Time: 218
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Anywhere But Here
+Album: Bad Vibes
+Track: 03
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+song_begin: 04 - Shlohmo - It Was Whatever.mp3
+Time: 244
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: It Was Whatever
+Album: Bad Vibes
+Track: 04
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+song_begin: 05 - Shlohmo - Parties.mp3
+Time: 324
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Parties
+Album: Bad Vibes
+Track: 05
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+song_begin: 06 - Shlohmo - Just Us.mp3
+Time: 246
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Just Us
+Album: Bad Vibes
+Track: 06
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+song_begin: 07 - Shlohmo - Sink.mp3
+Time: 309
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Sink
+Album: Bad Vibes
+Track: 07
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+song_begin: 08 - Shlohmo - I Can't See You I'm Dead.mp3
+Time: 281
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: I Can't See You I'm Dead
+Album: Bad Vibes
+Track: 08
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+song_begin: 09 - Shlohmo - Trapped in a Burning House.mp3
+Time: 238
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Trapped in a Burning House
+Album: Bad Vibes
+Track: 09
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+song_begin: 10 - Shlohmo - Get Out.mp3
+Time: 277
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Get Out
+Album: Bad Vibes
+Track: 10
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+song_begin: 11 - Shlohmo - Your Stupid Face.mp3
+Time: 286
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Your Stupid Face
+Album: Bad Vibes
+Track: 11
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+song_begin: 12 - Shlohmo - Seriously.mp3
+Time: 190
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Seriously
+Album: Bad Vibes
+Track: 12
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+song_begin: 13 - Shlohmo - Same Time.mp3
+Time: 345
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Same Time
+Album: Bad Vibes
+Track: 13
+Date: 2011
+Genre: Experimental
+Composer: Shlohmo
+mtime: 1369077865
+song_end
+end: Tom's Music/Shlohmo/Bad Vibes
+directory: Places
+mtime: 1369077887
+begin: Tom's Music/Shlohmo/Places
+song_begin: 01 - Shlohmo - Places.mp3
+Time: 304
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Places
+Album: Places
+Track: 01
+Date: 2011
+Genre: Electronic
+mtime: 1369077887
+song_end
+song_begin: 02 - Shlohmo - Forgot I Was Here.mp3
+Time: 310
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Forgot I Was Here
+Album: Places
+Track: 02
+Date: 2011
+Genre: Electronic
+mtime: 1369077887
+song_end
+song_begin: 03 - Shlohmo - Things I Lost.mp3
+Time: 257
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Things I Lost
+Album: Places
+Track: 03
+Date: 2011
+Genre: Electronic
+mtime: 1369077887
+song_end
+song_begin: 04 - Shlohmo - Empty Pools.mp3
+Time: 308
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Empty Pools
+Album: Places
+Track: 04
+Date: 2011
+Genre: Electronic
+mtime: 1369077887
+song_end
+end: Tom's Music/Shlohmo/Places
+directory: Shlomoshun Deluxe
+mtime: 1369077912
+begin: Tom's Music/Shlohmo/Shlomoshun Deluxe
+song_begin: 01 - Shlohmo - Tomato Squeeze.mp3
+Time: 171
+Artist: Shlohmo
+Title: Tomato Squeeze
+Album: Shlomoshun Deluxe
+Track: 01
+Date: 2010
+Genre: Glitch
+mtime: 1369077912
+song_end
+song_begin: 02 - Shlohmo - 7AM.mp3
+Time: 142
+Artist: Shlohmo
+Title: 7AM
+Album: Shlomoshun Deluxe
+Track: 02
+Date: 2010
+Genre: Glitch
+mtime: 1369077912
+song_end
+song_begin: 03 - Shlohmo - Spoons.mp3
+Time: 257
+Artist: Shlohmo
+Title: Spoons
+Album: Shlomoshun Deluxe
+Track: 03
+Date: 2010
+Genre: Glitch
+mtime: 1369077912
+song_end
+song_begin: 04 - Shlohmo - Post Atmosphere.mp3
+Time: 172
+Artist: Shlohmo
+Title: Post Atmosphere
+Album: Shlomoshun Deluxe
+Track: 04
+Date: 2010
+Genre: Glitch
+mtime: 1369077912
+song_end
+song_begin: 05 - Shlohmo - Hot Boxing the Cockpit.mp3
+Time: 222
+Artist: Shlohmo
+Title: Hot Boxing the Cockpit
+Album: Shlomoshun Deluxe
+Track: 05
+Date: 2010
+Genre: Glitch
+mtime: 1369077912
+song_end
+song_begin: 06 - Shlohmo - Dead Pixel.mp3
+Time: 269
+Artist: Shlohmo
+Title: Dead Pixel
+Album: Shlomoshun Deluxe
+Track: 06
+Date: 2010
+Genre: Glitch
+mtime: 1369077912
+song_end
+song_begin: 07 - Shlohmo - Teeth.mp3
+Time: 295
+Artist: Shlohmo
+Title: Teeth
+Album: Shlomoshun Deluxe
+Track: 07
+Date: 2010
+Genre: Glitch
+mtime: 1369077912
+song_end
+song_begin: 08 - Shlohmo - Antigravity.mp3
+Time: 202
+Artist: Shlohmo
+Title: Antigravity
+Album: Shlomoshun Deluxe
+Track: 08
+Date: 2010
+Genre: Glitch
+mtime: 1369077912
+song_end
+song_begin: 09 - Shlohmo - Hot Boxing the Cockpit (Tokimonsta Remix).mp3
+Time: 212
+Artist: Shlohmo
+Title: Hot Boxing the Cockpit (Tokimonsta Remix)
+Album: Shlomoshun Deluxe
+Track: 09
+Date: 2010
+Genre: Glitch
+mtime: 1369077912
+song_end
+song_begin: 10 - Shlohmo - 7AM (Devonwho Remix).mp3
+Time: 141
+Artist: Shlohmo
+Title: 7AM (Devonwho Remix)
+Album: Shlomoshun Deluxe
+Track: 10
+Date: 2010
+Genre: Glitch
+mtime: 1369077912
+song_end
+song_begin: 11 - Shlohmo - Antigravity (Fulgeance Remix).mp3
+Time: 265
+Artist: Shlohmo
+Title: Antigravity (Fulgeance Remix)
+Album: Shlomoshun Deluxe
+Track: 11
+Date: 2010
+Genre: Glitch
+mtime: 1369077912
+song_end
+song_begin: 12 - Shlohmo - Antigravity (Low Limit Remix).mp3
+Time: 218
+Artist: Shlohmo
+Title: Antigravity (Low Limit Remix)
+Album: Shlomoshun Deluxe
+Track: 12
+Date: 2010
+Genre: Glitch
+mtime: 1369077912
+song_end
+end: Tom's Music/Shlohmo/Shlomoshun Deluxe
+directory: Vacation
+mtime: 1369077940
+begin: Tom's Music/Shlohmo/Vacation
+song_begin: 01 - Shlohmo - The Way U Do.mp3
+Time: 319
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: The Way U Do
+Album: Vacation
+Track: 01
+Date: 2012
+Genre: Electronic
+mtime: 1369077940
+song_end
+song_begin: 02 - Shlohmo - Wen Uuu.mp3
+Time: 234
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Wen Uuu
+Album: Vacation
+Track: 02
+Date: 2012
+Genre: Electronic
+mtime: 1369077940
+song_end
+song_begin: 03 - Shlohmo - Rained the Whole Time.mp3
+Time: 326
+Artist: Shlohmo
+AlbumArtist: Shlohmo
+Title: Rained the Whole Time
+Album: Vacation
+Track: 03
+Date: 2012
+Genre: Electronic
+mtime: 1369077940
+song_end
+end: Tom's Music/Shlohmo/Vacation
+end: Tom's Music/Shlohmo
+end: Tom's Music
+directory: unsorted
+mtime: 1369078166
+begin: unsorted
+song_begin: 01 - mix - Kinesis Mix.mp3
+Time: 3340
+Artist: mix
+Title: Kinesis Mix
+Album: (0000) Mix
+Track: 01
+Date: 2013
+Genre: Psytrance
+mtime: 1369078166
+song_end
+song_begin: 02 - Tara Putra - Trip to Ketu.mp3
+Time: 53
+Artist: Tara Putra
+Title: Trip to Ketu
+Album: Tara Putra - Unreleased
+Track: 02
+Date: 2013
+Genre: Psytrance
+mtime: 1369078166
+song_end
+end: unsorted
+directory: untaggable
+mtime: 1369078659
+begin: untaggable
+directory: vim!
+mtime: 1366214690
+begin: untaggable/vim!
+song_begin: backbackbackback.mod
+Time: 82
+Title: backbackbackback
+mtime: 1366214690
+song_end
+song_begin: call-me-persephone.xm
+Time: 308
+Title: Call Me Persephone
+mtime: 1366214690
+song_end
+song_begin: fu'led.xm
+Time: 150
+Title: fu'led
+mtime: 1366214690
+song_end
+song_begin: give-me-an-om.mod
+Time: 115
+Title: give me an om
+mtime: 1366214690
+song_end
+song_begin: post-caring.xm
+Time: 128
+Title: Post-caring
+mtime: 1366214690
+song_end
+end: untaggable/vim!
+song_begin: Night Time (Synkro Remix).wav
+Time: 317
+mtime: 1367515924
+song_end
+song_begin: The XX - Shelter (Lil Woody remix).wav
+Time: 227
+mtime: 1367515934
+song_end
+end: untaggable
