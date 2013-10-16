@@ -1,9 +1,0 @@
-[user]
-	name = Hamish Hutchings
-	email = hamhut1066@gmail.com
-[push]
-	default = simple
-[credential]
-	helper = cache
-[alias]
-	co = checkout
