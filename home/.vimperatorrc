@@ -1,0 +1,7 @@
+"3.7 (created: 2013/04/03 18:20:07)
+
+noremap j 3j
+noremap k 3k
+source! /home/hamhut/.vimperatorrc.local
+
+" vim: set ft=vimperator:
