@@ -1,7 +1,7 @@
 Hamhut1066's Dotfiles
 =====================
 
-__Configs that can be applied to any linux install__
+__Config for my Toshiba__
 
 _A (hopefully) up to date record of all my dotfiles!_
 
