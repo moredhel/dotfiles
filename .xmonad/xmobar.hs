@@ -5,7 +5,7 @@
 -- This is setup for dual 1920x1080 monitors, with the right monitor as primary
 -- This setup has been chonged to work an a laptop
 Config {
-    font = "xft:Fixed-8",
+    font = "xft:Fixed-6",
     bgColor = "#000110",
     fgColor = "#fffaaa",
     -- position = Static { xpos = 0, ypos = 0, width = 1152, height = 16 },
