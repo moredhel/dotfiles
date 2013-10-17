@@ -103,6 +103,6 @@ defnonblock 5
 #
  screen zsh
 # screen -t monkey ssh monkey
-# screen -t mail 8 mutt
-# screen -t daemon 9 tail -f /var/log/daemon.log
+screen -t weechat 0 weechat
+screen -t ncmpcpp 1 ncmpcpp
 
