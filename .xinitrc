@@ -33,6 +33,6 @@ xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
 #exec startxfce4
 (sleep 2 && exec urxvtc &)
 #exec startxfce4
-(sleep 2 && exec xfce4-session &)
+exec xfce4-session &
 exec xmonad
 #exec i3 -V -d all >> ~/.i3/logfile
