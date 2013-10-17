@@ -12,3 +12,4 @@ alias t="task"
 source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
 export PATH=$PATH:~/.cabal/bin:~/.xmonad/bin
+export EDITOR="vim"
