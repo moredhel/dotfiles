@@ -101,7 +101,7 @@ defnonblock 5
 #   in the next window, and then open mutt and tail in windows 8 and 9
 #   respectively.
 #
- screen zsh
+screen zsh
 # screen -t monkey ssh monkey
 screen -t weechat 0 weechat
 screen -t ncmpcpp 1 ncmpcpp
