@@ -39,6 +39,7 @@ defscrollback 1024
 # ------------------------------------------------------------------------------
 
 # Remove some stupid / dangerous key bindings
+bind ^r stuff "screen -X chdir \$PWD;screen^M"
 bind ^k
 #bind L
 bind ^\
