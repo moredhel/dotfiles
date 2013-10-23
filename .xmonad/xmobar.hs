@@ -8,7 +8,7 @@ Config {
     font = "xft:Fixed-5",
     bgColor = "#000110",
     fgColor = "#fffaaa",
-    -- position = Static { xpos = 0, ypos = 0, width = 1152, height = 16 },
+    position = Static { xpos = 0, ypos = 3, width = 1024, height = 16 },
     lowerOnStart = True,
     commands = [
         Run Weather "EGPH" ["-t","<tempC>C <skyCondition>","-L","64","-H","77","-n","#CEFFAC","-h","#FFB6B0","-l","#96CBFE"] 36000,
