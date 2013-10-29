@@ -17,6 +17,7 @@ import XMonad.Layout.ThreeColumns
 import XMonad.Layout.Spacing
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
+import XMonad.Util.Scratchpad
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
@@ -51,7 +52,7 @@ myWorkspaces = ["1:irc","2:web","3:code","4:media","5:torrent","6:fin","7:mail",
 -- 'className' and 'resource' are used below.
 --
 myManageHook = composeAll
-    [ className =? "Chromium"       --> doShift (myWorkspaces!!1)
+    ([ className =? "Chromium"       --> doShift (myWorkspaces!!1)
     , className =? "Google-chrome"  --> doShift (myWorkspaces!!1)
     , className =? "Dwb"  	    --> doShift (myWorkspaces!!1)
     , resource  =? "desktop_window" --> doIgnore
@@ -68,7 +69,7 @@ myManageHook = composeAll
     , className =? "Xchat"          --> doShift "5:media"
     , className =? "stalonetray"    --> doIgnore
     , stringProperty "WM_NAME" =? "File Operation Progress" --> doFloat
-    , isFullscreen --> (doF W.focusDown <+> doFullFloat)]
+    , isFullscreen --> (doF W.focusDown <+> doFullFloat)]) <+> manageScratchPad
 
 
 ------------------------------------------------------------------------
@@ -90,6 +91,14 @@ myLayout = avoidStruts
     noBorders (fullscreenFull Full)
 
 tiled = spacing 5 $ spiral (6/7)
+
+manageScratchPad :: ManageHook
+manageScratchPad = scratchpadManageHook (W.RationalRect l t w h)
+			where
+			  h = 0.8
+			  w = 0.8
+			  t = (1 - h) / 2
+			  l = (1 - w) / 2
 
 ------------------------------------------------------------------------
 -- Colors and borders
@@ -164,6 +173,9 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask , xK_a),
      spawn "mpc toggle")
 
+  , ((0 , xK_F1),
+     scratchPad)
+
 
   -- Mute volume.
   , ((modMask .|. controlMask, xK_m),
@@ -192,7 +204,6 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Eject CD tray.
   , ((0, 0x1008FF2C),
      spawn "eject -T")
-
   --------------------------------------------------------------------
   -- "Standard" xmonad key bindings
   --
@@ -279,6 +290,8 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   [((m .|. modMask, k), windows $ f i)
       | (i, k) <- zip (XMonad.workspaces conf) [xK_1 .. xK_9]
       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
+	where
+	  scratchPad = scratchpadSpawnActionTerminal myTerminal
 --  ++
 
   -- mod-{w,e,r}, Switch to physical/Xinerama screens 1, 2, or 3
