@@ -2,9 +2,16 @@
 -- Author: Vic Fryzel
 -- http://github.com/vicfryzel/xmonad-config
 
+import Control.Monad (liftM2)
+import System.IO
 import System.IO
 import System.Exit
 import XMonad
+import XMonad.Actions.WindowBringer
+-- try and get warping to work...
+import XMonad.Actions.Warp
+import XMonad.Actions.UpdatePointer
+import XMonad.Actions.CycleWS
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
@@ -16,7 +23,8 @@ import XMonad.Layout.Tabbed
 import XMonad.Layout.ThreeColumns
 import XMonad.Layout.Spacing
 import XMonad.Util.Run(spawnPipe)
-import XMonad.Util.EZConfig(additionalKeys)
+import XMonad.Util.EZConfig
+import XMonad.Util.NamedScratchpad
 import XMonad.Util.Scratchpad
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -30,12 +38,23 @@ import qualified Data.Map        as M
 myTerminal = "urxvt"
 
 
+scratchpads = [
+	NS "term" "urxvt -e tmux a -d" (title =? "tmux") (customFloating $ W.RationalRect (1/12) (1/12) (5/6) (5/6)),
+
+	NS "applaunch" "xfce4-appfinder -c" (title =? "Application Finder") defaultFloating ,
+
+	NS "notes" "gvim --role notes ~/Dropbox/notes.md" (role =? "notes") (customFloating $ W.RationalRect (0) (1/20) (2/4) (9/10))]
+
+		where role = stringProperty "WM_WINDOW_ROLE"
+
+
+
 ------------------------------------------------------------------------
 -- Workspaces
 -- The default number of workspaces (virtual screens) and their names.
 --
-myWorkspaces = ["1:irc","2:web","3:code","4:media","5:torrent","6:fin","7:mail", "8:vm","9:file"]
-
+myWorkspaces = ["1:term","2:web","3:notes","4:misc","5:torrent","6:fin","7:mail", "8:vm","9:file"] ++ 
+		map (\(a,x) -> (show x) ++ ":" ++ a) (zip ["0_o","0o0","\\o/","media"] [10..]) -- map show [9 .. 12] 
 
 ------------------------------------------------------------------------
 -- Window rules
@@ -52,12 +71,15 @@ myWorkspaces = ["1:irc","2:web","3:code","4:media","5:torrent","6:fin","7:mail",
 -- 'className' and 'resource' are used below.
 --
 myManageHook = composeAll
-    ([ className =? "Chromium"       --> doShift (myWorkspaces!!1)
-    , className =? "Google-chrome"  --> doShift (myWorkspaces!!1)
-    , className =? "Dwb"  	    --> doShift (myWorkspaces!!1)
+    ([ className =? "Chromium"       --> doShift (browser)
+    , className =? "Google-chrome"  --> doShift (browser)
+    , className =? "Dwb"  	    --> doShift (browser)
     , resource  =? "desktop_window" --> doIgnore
-    , className =? "Vlc"     	    --> doShift (myWorkspaces!!3)
-    , className =? "MPlayer"        --> doShift (myWorkspaces!!3)
+    , className =? "Vlc"     	    --> doShift (media)
+    , className =? "MPlayer"        --> doShift (media)
+    , className =? "Vlc"     	    --> viewShift (media)
+    , className =? "MPlayer"        --> viewShift (media)
+    , className =? "Deluge"        --> doShift (myWorkspaces!!4)
     -- , resource  =? "gpicview"       --> doFloat
     , className =? "MPlayer"        --> doFloat
     , className =? "Vlc"            --> doFloat
@@ -65,11 +87,21 @@ myManageHook = composeAll
     , className =? "VirtualBox"     --> doShift (myWorkspaces!!7)
     , className =? "Thunderbird"     --> doShift (myWorkspaces!!6)
     , className =? "Gnucash"     --> doShift (myWorkspaces!!5)
-    , className =? "Thunar"     --> doShift (myWorkspaces!!8)
+    , className =? "Thunar"     --> doShift (files)
+    , className =? "ROX-Filer"     --> doShift (files)
+    , className =? "ROX-Filer"     --> viewShift (files)
+    , className =? "MuPDF"     --> doShift (pdfview)
+    , className =? "MuPDF"     --> viewShift (pdfview)
     , className =? "Xchat"          --> doShift "5:media"
     , className =? "stalonetray"    --> doIgnore
     , stringProperty "WM_NAME" =? "File Operation Progress" --> doFloat
     , isFullscreen --> (doF W.focusDown <+> doFullFloat)]) <+> manageScratchPad
+	where
+	  viewShift = doF . liftM2 (.) W.greedyView W.shift
+	  browser = myWorkspaces!!1
+	  pdfview = myWorkspaces!!2
+	  media = myWorkspaces!!12
+	  files = myWorkspaces!!8
 
 
 ------------------------------------------------------------------------
@@ -83,14 +115,14 @@ myManageHook = composeAll
 -- which denotes layout choice.
 --
 myLayout = avoidStruts
-    tiled |||
+    myTiled |||
     Tall 1 (3/100) (1/2) |||
     Mirror (Tall 1 (3/100) (1/2)) |||
     tabbed shrinkText tabConfig |||
     Full |||
     noBorders (fullscreenFull Full)
 
-tiled = spacing 5 $ spiral (6/7)
+myTiled = spacing 5 $ Tall 1 (3/100) (1/2) -- (6/7)
 
 manageScratchPad :: ManageHook
 manageScratchPad = scratchpadManageHook (W.RationalRect l t w h)
@@ -148,7 +180,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
   -- Lock the screen using xscreensaver.
   , ((modMask .|. controlMask, xK_l),
-     spawn "xscreensaver-command -lock")
+     spawn "lock")
 
   , ((modMask , xK_w),
      spawn "dwb")
@@ -174,8 +206,22 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
      spawn "mpc toggle")
 
   , ((0 , xK_F1),
+     namedScratchpadAction scratchpads "term")
+
+  , ((0 , xK_F2),
      scratchPad)
 
+  , ((0 , xK_F3),
+     namedScratchpadAction scratchpads "applaunch")
+
+  , ((0 , xK_F4),
+     namedScratchpadAction scratchpads "notes")
+
+  , ((0 , xK_F5),
+     gotoMenuArgs ["-b", "-l", "10"])
+
+  , ((modMask , xK_semicolon),
+     warpToWindow (1/2) (1/2))
 
   -- Mute volume.
   , ((modMask .|. controlMask, xK_m),
@@ -287,11 +333,13 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
   -- mod-[1..9], Switch to workspace N
   -- mod-shift-[1..9], Move client to workspace N
-  [((m .|. modMask, k), windows $ f i)
-      | (i, k) <- zip (XMonad.workspaces conf) [xK_1 .. xK_9]
+  [((m .|. isMod k, k), windows $ f i)
+      | (i, k) <- zip (XMonad.workspaces conf) ([xK_1 .. xK_9] ++ [xK_F9 .. xK_F12])
       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
 	where
 	  scratchPad = scratchpadSpawnActionTerminal myTerminal
+	  isMod a | a `elem` [xK_1 .. xK_9] =  modMask 
+		  | otherwise = 0
 --  ++
 
   -- mod-{w,e,r}, Switch to physical/Xinerama screens 1, 2, or 3
@@ -320,9 +368,7 @@ myMouseBindings (XConfig {XMonad.modMask = modMask}) = M.fromList $
        (\w -> focus w >> windows W.swapMaster))
 
     -- mod-button3, Set the window to floating mode and resize by dragging
-    , ((modMask, button3),
-       (\w -> focus w >> mouseResizeWindow w))
-
+    , ((0, 11), (\w -> focus w >> kill))
     -- you may also bind events to the mouse scroll wheel (button4 and button5)
   ]
 
@@ -354,17 +400,21 @@ myStartupHook = return ()
 main = do
   xmproc <- spawnPipe "xmobar ~/.xmonad/xmobar.hs"
   xmonad $ defaults {
-      logHook = dynamicLogWithPP $ xmobarPP {
-            ppOutput = hPutStrLn xmproc
-          , ppTitle = xmobarColor xmobarTitleColor "" . shorten 100
-          , ppCurrent = xmobarColor xmobarCurrentWorkspaceColor ""
-          , ppSep = "   "
-      }
-      , manageHook = manageDocks <+> myManageHook
+      logHook = myLogHook xmproc >> updatePointer (Relative 0.95 0.95)
+      , manageHook = manageDocks <+> myManageHook <+> namedScratchpadManageHook scratchpads
       , startupHook = setWMName "LG3D"
   }
 
-
+myLogHook xmproc= dynamicLogWithPP $ xmobarPP {
+    ppOutput = hPutStrLn xmproc
+  , ppTitle = xmobarColor xmobarTitleColor "" . shorten 100
+  , ppCurrent = xmobarColor "#AEAFB5" ""
+  , ppHidden = xmobarColor "#3D58C4" "" . noScratchPad
+  , ppOrder = \(ws:_:t:_) -> [ws,t]
+  , ppSep = "   "
+}
+	where
+	  noScratchPad ws = if ws == "NSP" then "" else ws
 ------------------------------------------------------------------------
 -- Combine it all together
 -- A structure containing your configuration settings, overriding
