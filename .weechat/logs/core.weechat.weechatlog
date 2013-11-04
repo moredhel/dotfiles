@@ -1,0 +1,387 @@
+2013-10-08 20:10:38	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/guile.so": libguile-2.0.so.22: cannot open shared object file: No such file or directory
+2013-10-08 20:10:38	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-10-08 20:10:38		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-08 20:10:43		fifo: pipe closed
+2013-10-08 22:15:14	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/guile.so": libguile-2.0.so.22: cannot open shared object file: No such file or directory
+2013-10-08 22:15:14	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-10-08 22:15:14		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-08 22:16:27	=!=	irc: too few arguments for "server add" command
+2013-10-08 22:16:40		irc: server fn created
+2013-10-08 22:17:20		[core]
+2013-10-08 22:17:20		  away    buffer  command debug   filter  history key     mouse   plugin  quit    repeat  set     upgrade version window 
+2013-10-08 22:17:20		  bar     color   cursor  eval    help    input   layout  mute    proxy   reload  save    unset   uptime  wait   
+2013-10-08 22:17:20		[python]
+2013-10-08 22:17:20		  python
+2013-10-08 22:17:20		[xfer]
+2013-10-08 22:17:20		  me   xfer
+2013-10-08 22:17:20		[aspell]
+2013-10-08 22:17:20		  aspell
+2013-10-08 22:17:20		[logger]
+2013-10-08 22:17:20		  logger
+2013-10-08 22:17:20		[alias]
+2013-10-08 22:17:20		  AAWAY   AME     ANICK   C       CL      EXIT    J       KB      M       N       REDRAW  SIGNOFF UB      unalias W       WI      WW     
+2013-10-08 22:17:20		  alias   AMSG    BYE     CHAT    CLOSE   IG      K       LEAVE   MUB     Q       SAY     T       UMODE   V       WC      WII    
+2013-10-08 22:17:20		[lua]
+2013-10-08 22:17:20		  lua
+2013-10-08 22:17:20		[perl]
+2013-10-08 22:17:20		  perl
+2013-10-08 22:17:20		[ruby]
+2013-10-08 22:17:20		  ruby
+2013-10-08 22:17:20		[charset]
+2013-10-08 22:17:20		  charset
+2013-10-08 22:17:20		[script]
+2013-10-08 22:17:20		  script
+2013-10-08 22:17:20		[rmodifier]
+2013-10-08 22:17:20		  rmodifier
+2013-10-08 22:17:20		[irc]
+2013-10-08 22:17:20		  admin      ctcp       devoice    info       kickban    map        names      oper       quiet      sajoin     server     stats      unban      wallchops 
+2013-10-08 22:17:20		  allchan    cycle      die        invite     kill       me         nick       part       quote      samode     service    summon     userhost   wallops   
+2013-10-08 22:17:20		  allserv    dcc        disconnect ison       links      mode       notice     ping       reconnect  sanick     servlist   time       users      who       
+2013-10-08 22:17:20		  ban        dehalfop   halfop     join       list       motd       notify     pong       rehash     sapart     squery     topic      version    whois     
+2013-10-08 22:17:20		  connect    deop       ignore     kick       lusers     msg        op         query      restart    saquit     squit      trace      voice      whowas    
+2013-10-08 22:17:20		[relay]
+2013-10-08 22:17:20		  relay
+2013-10-08 22:17:20		[tcl]
+2013-10-08 22:17:20		  tcl
+2013-10-08 22:17:47	=!=	python: unknown option for command "python"
+2013-10-08 22:17:56		python scripts loaded:
+2013-10-08 22:17:56		  (none)
+2013-10-08 22:18:43	=!=	irc: server "fn" already exists, can't create it!
+2013-10-08 22:18:51	=!=	irc: unknown option for "server" command
+2013-10-08 22:18:57		[irc]  /server  list|listfull [<server>]
+2013-10-08 22:18:57		                add <server> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2013-10-08 22:18:57		                copy|rename <server> <new_name>
+2013-10-08 22:18:57		                del|keep <server>
+2013-10-08 22:18:57		                deloutq|jump|raw
+2013-10-08 22:18:57		list, add or remove IRC servers
+2013-10-08 22:18:57		    list: list servers (without argument, this list is displayed)
+2013-10-08 22:18:57		listfull: list servers with detailed info for each server
+2013-10-08 22:18:57		     add: create a new server
+2013-10-08 22:18:57		  server: server name, for internal and display use
+2013-10-08 22:18:57		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2013-10-08 22:18:57		    temp: create temporary server (not saved)
+2013-10-08 22:18:57		  option: set option for server (for boolean option, value can be omitted)
+2013-10-08 22:18:57		nooption: set boolean option to 'off' (for example: -nossl)
+2013-10-08 22:18:57		    copy: duplicate a server
+2013-10-08 22:18:57		  rename: rename a server
+2013-10-08 22:18:57		    keep: keep server in config file (for temporary servers only)
+2013-10-08 22:18:57		     del: delete a server
+2013-10-08 22:18:57		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2013-10-08 22:18:57		    jump: jump to server buffer
+2013-10-08 22:18:57		     raw: open buffer with raw IRC data
+2013-10-08 22:18:57		Examples:
+2013-10-08 22:18:57		  /server listfull
+2013-10-08 22:18:57		  /server add oftc irc.oftc.net/6697 -ssl -autoconnect
+2013-10-08 22:18:57		  /server add oftc6 irc6.oftc.net/6697 -ipv6 -ssl
+2013-10-08 22:18:57		  /server add freenode2 chat.eu.freenode.net/6667,chat.us.freenode.net/6667
+2013-10-08 22:18:57		  /server add freenode3 irc.freenode.net -password=mypass
+2013-10-08 22:18:57		  /server copy oftc oftcbis
+2013-10-08 22:18:57		  /server rename oftc newoftc
+2013-10-08 22:18:57		  /server del freenode
+2013-10-08 22:18:57		  /server deloutq
+2013-10-08 22:19:16		All servers:
+2013-10-08 22:19:16		Server: freenode [not connected]
+2013-10-08 22:19:16		  addresses. . . . . . : 'chat.freenode.net/6667'
+2013-10-08 22:19:16		  proxy. . . . . . . . :   ('')
+2013-10-08 22:19:16		  ipv6 . . . . . . . . :   (on)
+2013-10-08 22:19:16		  ssl. . . . . . . . . :   (off)
+2013-10-08 22:19:16		  ssl_cert . . . . . . :   ('')
+2013-10-08 22:19:16		  ssl_priorities . . . :   ('NORMAL')
+2013-10-08 22:19:16		  ssl_dhkey_size . . . :   (2048)
+2013-10-08 22:19:16		  ssl_verify . . . . . :   (on)
+2013-10-08 22:19:16		  password . . . . . . :   (hidden)
+2013-10-08 22:19:16		  capabilities . . . . :   ('')
+2013-10-08 22:19:16		  sasl_mechanism . . . :   ('plain')
+2013-10-08 22:19:16		  sasl_username. . . . :   ('')
+2013-10-08 22:19:16		  sasl_password. . . . :   (hidden)
+2013-10-08 22:19:16		  autoconnect. . . . . :   (off)
+2013-10-08 22:19:16		  autoreconnect. . . . :   (on)
+2013-10-08 22:19:16		  autoreconnect_delay. :   (10 seconds)
+2013-10-08 22:19:16		  nicks. . . . . . . . :   ('hamhut,hamhut1,hamhut2,hamhut3,hamhut4')
+2013-10-08 22:19:16		  username . . . . . . :   ('hamhut')
+2013-10-08 22:19:16		  realname . . . . . . :   ('')
+2013-10-08 22:19:16		  local_hostname . . . :   ('')
+2013-10-08 22:19:16		  command. . . . . . . :   ('')
+2013-10-08 22:19:16		  command_delay. . . . :   (0 seconds)
+2013-10-08 22:19:16		  autojoin . . . . . . :   ('')
+2013-10-08 22:19:16		  autorejoin . . . . . :   (off)
+2013-10-08 22:19:16		  autorejoin_delay . . :   (30 seconds)
+2013-10-08 22:19:16		  connection_timeout . :   (60 seconds)
+2013-10-08 22:19:16		  anti_flood_prio_high :   (2 seconds)
+2013-10-08 22:19:16		  anti_flood_prio_low. :   (2 seconds)
+2013-10-08 22:19:16		  away_check . . . . . :   (0 minutes)
+2013-10-08 22:19:16		  away_check_max_nicks :   (25)
+2013-10-08 22:19:16		  default_msg_part . . :   ('WeeChat %v')
+2013-10-08 22:19:16		  default_msg_quit . . :   ('WeeChat %v')
+2013-10-08 22:19:16		Server: fn [connected]
+2013-10-08 22:19:16		  addresses. . . . . . : 'irc.freenode.net'
+2013-10-08 22:19:16		  proxy. . . . . . . . :   ('')
+2013-10-08 22:19:16		  ipv6 . . . . . . . . :   (on)
+2013-10-08 22:19:16		  ssl. . . . . . . . . :   (off)
+2013-10-08 22:19:16		  ssl_cert . . . . . . :   ('')
+2013-10-08 22:19:16		  ssl_priorities . . . :   ('NORMAL')
+2013-10-08 22:19:16		  ssl_dhkey_size . . . :   (2048)
+2013-10-08 22:19:16		  ssl_verify . . . . . :   (on)
+2013-10-08 22:19:16		  password . . . . . . :   (hidden)
+2013-10-08 22:19:16		  capabilities . . . . :   ('')
+2013-10-08 22:19:16		  sasl_mechanism . . . :   ('plain')
+2013-10-08 22:19:16		  sasl_username. . . . :   ('')
+2013-10-08 22:19:16		  sasl_password. . . . :   (hidden)
+2013-10-08 22:19:16		  autoconnect. . . . . :   (off)
+2013-10-08 22:19:16		  autoreconnect. . . . :   (on)
+2013-10-08 22:19:16		  autoreconnect_delay. :   (10 seconds)
+2013-10-08 22:19:16		  nicks. . . . . . . . :   ('hamhut,hamhut1,hamhut2,hamhut3,hamhut4')
+2013-10-08 22:19:16		  username . . . . . . :   ('hamhut')
+2013-10-08 22:19:16		  realname . . . . . . :   ('')
+2013-10-08 22:19:16		  local_hostname . . . :   ('')
+2013-10-08 22:19:16		  command. . . . . . . :   ('')
+2013-10-08 22:19:16		  command_delay. . . . :   (0 seconds)
+2013-10-08 22:19:16		  autojoin . . . . . . :   ('')
+2013-10-08 22:19:16		  autorejoin . . . . . :   (off)
+2013-10-08 22:19:16		  autorejoin_delay . . :   (30 seconds)
+2013-10-08 22:19:16		  connection_timeout . :   (60 seconds)
+2013-10-08 22:19:16		  anti_flood_prio_high :   (2 seconds)
+2013-10-08 22:19:16		  anti_flood_prio_low. :   (2 seconds)
+2013-10-08 22:19:16		  away_check . . . . . :   (0 minutes)
+2013-10-08 22:19:16		  away_check_max_nicks :   (25)
+2013-10-08 22:19:16		  default_msg_part . . :   ('WeeChat %v')
+2013-10-08 22:19:16		  default_msg_quit . . :   ('WeeChat %v')
+2013-10-08 22:19:21		All servers:
+2013-10-08 22:19:21		   freenode
+2013-10-08 22:19:21		 * fn [connected], 1 channel, 0 pv
+2013-10-08 22:19:27	=!=	Error: unknown command "cleas" (type /help for help)
+2013-10-08 22:19:29	=!=	Error: unknown command "clear" (type /help for help)
+2013-10-08 22:19:34		All servers:
+2013-10-08 22:19:34		   freenode
+2013-10-08 22:19:34		 * fn [connected], 1 channel, 0 pv
+2013-10-08 22:19:40	=!=	irc: unknown option for "server" command
+2013-10-08 22:20:05		fifo: pipe closed
+2013-10-08 22:20:06	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/guile.so": libguile-2.0.so.22: cannot open shared object file: No such file or directory
+2013-10-08 22:20:06	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-10-08 22:20:06		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-08 22:35:24	=!=	Error: unknown command "nickserver" (type /help for help)
+2013-10-08 22:36:31		irc: server irc.imaginarynet.org created (temporary server, NOT SAVED!)
+2013-10-08 23:04:25	=!=	irc: unknown option for "server" command
+2013-10-08 23:04:31		irc: server irc.imaginarynet.org.uk created (temporary server, NOT SAVED!)
+2013-10-10 16:45:08		fifo: pipe closed
+2013-10-10 16:46:35	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/guile.so": libguile-2.0.so.22: cannot open shared object file: No such file or directory
+2013-10-10 16:46:35	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-10-10 16:46:35		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-10 16:46:55	=!=	irc: command "join" must be executed on irc buffer (server or channel)
+2013-10-10 16:47:02		irc: server irc.imaginarynet.co.uk created (temporary server, NOT SAVED!)
+2013-10-10 16:47:54		irc: server irc.imaginarynet.org.uk created (temporary server, NOT SAVED!)
+2013-10-10 16:49:33		Plugins loaded:
+2013-10-10 16:49:33		  python: Support of python scripts
+2013-10-10 16:49:33		  xfer: DCC file transfer and direct chat
+2013-10-10 16:49:33		  aspell: Spell checker for input (with Aspell)
+2013-10-10 16:49:33		  logger: Log buffers to files
+2013-10-10 16:49:33		  alias: Alias commands
+2013-10-10 16:49:33		  lua: Support of lua scripts
+2013-10-10 16:49:33		  perl: Support of perl scripts
+2013-10-10 16:49:33		  ruby: Support of ruby scripts
+2013-10-10 16:49:33		  charset: Charset conversions
+2013-10-10 16:49:33		  script: Scripts manager
+2013-10-10 16:49:33		  rmodifier: String modifier with regular expressions
+2013-10-10 16:49:33		  irc: IRC (Internet Relay Chat) protocol
+2013-10-10 16:49:33		  relay: Relay WeeChat data to remote application (irc/weechat protocols)
+2013-10-10 16:49:33		  fifo: FIFO pipe for remote control
+2013-10-10 16:49:33		  tcl: Support of tcl scripts
+2013-10-10 16:51:55		All servers:
+2013-10-10 16:51:55		   freenode
+2013-10-10 16:51:55		   fn
+2013-10-10 16:51:55		   irc.imaginarynet.co.uk (temporary)
+2013-10-10 16:51:55		 * irc.imaginarynet.org.uk [connected] (temporary), 2 channels, 0 pv
+2013-10-10 16:52:19		irc: server uni created
+2013-10-10 16:53:04	=!=	Error: option "nick" not found
+2013-10-10 16:53:13	=!=	Option "nick" not found (tip: you can use "*" at beginning and/or end of option to see a sublist)
+2013-10-10 16:53:18		[look] (weechat.conf)
+2013-10-10 16:53:18		  weechat.look.prefix_same_nick = ""
+2013-10-10 16:53:18		[color] (weechat.conf)
+2013-10-10 16:53:18		  weechat.color.chat_nick = lightcyan
+2013-10-10 16:53:18		[cmd] (alias.conf)
+2013-10-10 16:53:18		  alias.cmd.ANICK = "allserv /nick"
+2013-10-10 16:53:18		[look] (irc.conf)
+2013-10-10 16:53:18		  irc.look.smart_filter_nick = on
+2013-10-10 16:53:18		[color] (irc.conf)
+2013-10-10 16:53:18		  irc.color.input_nick = lightcyan
+2013-10-10 16:53:18		[network] (irc.conf)
+2013-10-10 16:53:18		  irc.network.alternate_nick = on
+2013-10-10 16:53:18		  irc.network.whois_double_nick = on
+2013-10-10 16:53:18		7 options (matching with "*nick")
+2013-10-10 16:53:54		Options saved to weechat.conf
+2013-10-10 16:53:54		Options saved to plugins.conf
+2013-10-10 16:53:54		Options saved to xfer.conf
+2013-10-10 16:53:54		Options saved to aspell.conf
+2013-10-10 16:53:54		Options saved to logger.conf
+2013-10-10 16:53:54		Options saved to alias.conf
+2013-10-10 16:53:54		Options saved to charset.conf
+2013-10-10 16:53:54		Options saved to script.conf
+2013-10-10 16:53:54		Options saved to rmodifier.conf
+2013-10-10 16:53:54		Options saved to irc.conf
+2013-10-10 16:53:54		Options saved to relay.conf
+2013-10-10 16:54:50	=!=	Error: option "irc.uni.autojoin" not found
+2013-10-10 16:55:27		Option changed: irc.server.uni.autojoin = "#inf1,#compsoc"  (default: (undefined))
+2013-10-10 16:55:31		Options saved to weechat.conf
+2013-10-10 16:55:31		Options saved to plugins.conf
+2013-10-10 16:55:31		Options saved to xfer.conf
+2013-10-10 16:55:31		Options saved to aspell.conf
+2013-10-10 16:55:31		Options saved to logger.conf
+2013-10-10 16:55:31		Options saved to alias.conf
+2013-10-10 16:55:31		Options saved to charset.conf
+2013-10-10 16:55:31		Options saved to script.conf
+2013-10-10 16:55:31		Options saved to rmodifier.conf
+2013-10-10 16:55:31		Options saved to irc.conf
+2013-10-10 16:55:31		Options saved to relay.conf
+2013-10-10 16:55:36		fifo: pipe closed
+2013-10-10 16:55:37	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/guile.so": libguile-2.0.so.22: cannot open shared object file: No such file or directory
+2013-10-10 16:55:37	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-10-10 16:55:37		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-10 16:55:41	=!=	irc: command "join" must be executed on irc buffer (server or channel)
+2013-10-10 17:55:17		Option changed: irc.server.fn.command = "/msg nickserver identify hamhut1066 feast92.amyl"  (default: (undefined))
+2013-10-10 17:56:24		Options saved to weechat.conf
+2013-10-10 17:56:24		Options saved to plugins.conf
+2013-10-10 17:56:24		Options saved to xfer.conf
+2013-10-10 17:56:24		Options saved to aspell.conf
+2013-10-10 17:56:24		Options saved to logger.conf
+2013-10-10 17:56:24		Options saved to alias.conf
+2013-10-10 17:56:24		Options saved to charset.conf
+2013-10-10 17:56:24		Options saved to script.conf
+2013-10-10 17:56:24		Options saved to rmodifier.conf
+2013-10-10 17:56:24		Options saved to irc.conf
+2013-10-10 17:56:24		Options saved to relay.conf
+2013-10-10 17:56:59		Option changed: irc.server.fn.autojoin = "#archlinux,#archlinux-offtopic"  (default: (undefined))
+2013-10-10 17:57:01		Options saved to weechat.conf
+2013-10-10 17:57:01		Options saved to plugins.conf
+2013-10-10 17:57:01		Options saved to xfer.conf
+2013-10-10 17:57:01		Options saved to aspell.conf
+2013-10-10 17:57:01		Options saved to logger.conf
+2013-10-10 17:57:01		Options saved to alias.conf
+2013-10-10 17:57:01		Options saved to charset.conf
+2013-10-10 17:57:01		Options saved to script.conf
+2013-10-10 17:57:01		Options saved to rmodifier.conf
+2013-10-10 17:57:01		Options saved to irc.conf
+2013-10-10 17:57:01		Options saved to relay.conf
+2013-10-10 17:59:09		Option changed: irc.server.fn.command = "/msg NickServ identify hamhut1066 feast92.amyl"  (default: (undefined))
+2013-10-10 18:00:04		Options saved to weechat.conf
+2013-10-10 18:00:04		Options saved to plugins.conf
+2013-10-10 18:00:04		Options saved to xfer.conf
+2013-10-10 18:00:04		Options saved to aspell.conf
+2013-10-10 18:00:04		Options saved to logger.conf
+2013-10-10 18:00:04		Options saved to alias.conf
+2013-10-10 18:00:04		Options saved to charset.conf
+2013-10-10 18:00:04		Options saved to script.conf
+2013-10-10 18:00:04		Options saved to rmodifier.conf
+2013-10-10 18:00:04		Options saved to irc.conf
+2013-10-10 18:00:04		Options saved to relay.conf
+2013-10-10 18:00:14		[irc]  /nick  [-all] <nick>
+2013-10-10 18:00:14		change current nick
+2013-10-10 18:00:14		-all: set new nick for all connected servers
+2013-10-10 18:00:14		nick: new nick
+2013-10-10 18:00:27		Options saved to weechat.conf
+2013-10-10 18:00:27		Options saved to plugins.conf
+2013-10-10 18:00:27		Options saved to xfer.conf
+2013-10-10 18:00:27		Options saved to aspell.conf
+2013-10-10 18:00:27		Options saved to logger.conf
+2013-10-10 18:00:27		Options saved to alias.conf
+2013-10-10 18:00:27		Options saved to charset.conf
+2013-10-10 18:00:27		Options saved to script.conf
+2013-10-10 18:00:27		Options saved to rmodifier.conf
+2013-10-10 18:00:27		Options saved to irc.conf
+2013-10-10 18:00:27		Options saved to relay.conf
+2013-10-10 20:15:16		Options reloaded from weechat.conf
+2013-10-10 20:15:16		Options reloaded from plugins.conf
+2013-10-10 20:15:16		Options reloaded from xfer.conf
+2013-10-10 20:15:16		Options reloaded from aspell.conf
+2013-10-10 20:15:16		Options reloaded from logger.conf
+2013-10-10 20:15:16		Options reloaded from alias.conf
+2013-10-10 20:15:16		Options reloaded from charset.conf
+2013-10-10 20:15:16		Options reloaded from script.conf
+2013-10-10 20:15:16		Options reloaded from rmodifier.conf
+2013-10-10 20:15:16		Options reloaded from irc.conf
+2013-10-10 20:15:16		Options reloaded from relay.conf
+2013-10-12 21:06:33		[irc]  /quiet  [<channel>] [<nick> [<nick>...]]
+2013-10-12 21:06:33		quiet nicks or hosts
+2013-10-12 21:06:33		channel: channel for quiet
+2013-10-12 21:06:33		   nick: user or host to quiet
+2013-10-12 21:06:33		Without argument, this command display quiet list for current channel.
+2013-10-12 23:01:10		Filter "joinquit" added:
+2013-10-12 23:01:10		  [joinquit] buffer: * / tags: irc_join,irc_part,irc_quit / regex: * 
+2013-10-12 23:01:16		Options saved to weechat.conf
+2013-10-12 23:01:16		Options saved to plugins.conf
+2013-10-12 23:01:16		Options saved to xfer.conf
+2013-10-12 23:01:16		Options saved to aspell.conf
+2013-10-12 23:01:16		Options saved to logger.conf
+2013-10-12 23:01:16		Options saved to alias.conf
+2013-10-12 23:01:16		Options saved to charset.conf
+2013-10-12 23:01:16		Options saved to script.conf
+2013-10-12 23:01:16		Options saved to rmodifier.conf
+2013-10-12 23:01:16		Options saved to irc.conf
+2013-10-12 23:01:16		Options saved to relay.conf
+2013-10-13 11:05:30		fifo: pipe closed
+2013-10-13 11:05:59	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/guile.so": libguile-2.0.so.22: cannot open shared object file: No such file or directory
+2013-10-13 11:05:59	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-10-13 11:05:59		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-16 20:42:47		fifo: pipe closed
+2013-10-16 20:44:56	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/guile.so": libguile-2.0.so.22: cannot open shared object file: No such file or directory
+2013-10-16 20:44:56	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-10-16 20:44:56		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-17 00:57:32		fifo: pipe closed
+2013-10-17 00:57:39	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/guile.so": libguile-2.0.so.22: cannot open shared object file: No such file or directory
+2013-10-17 00:57:39	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-10-17 00:57:39		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-17 00:57:46	=!=	irc: command "join" must be executed on irc buffer (server or channel)
+2013-10-18 12:46:00	=!=	Error: unknown command "?" (type /help for help)
+2013-10-18 15:55:29		fifo: pipe closed
+2013-10-18 15:55:42	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/guile.so": libguile-2.0.so.22: cannot open shared object file: No such file or directory
+2013-10-18 15:55:42	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-10-18 15:55:42		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-19 00:28:42		fifo: pipe closed
+2013-10-19 00:28:48	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/guile.so": libguile-2.0.so.22: cannot open shared object file: No such file or directory
+2013-10-19 00:28:48	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-10-19 00:28:48		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-19 00:28:52	=!=	irc: command "join" must be executed on irc buffer (server or channel)
+2013-10-20 22:15:53		fifo: removing old fifo pipe "/home/hamhut/.weechat/weechat_fifo_13954"
+2013-10-20 22:15:53		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-21 00:30:12		Options reloaded from sec.conf
+2013-10-21 00:30:12		Options reloaded from weechat.conf
+2013-10-21 00:30:12		Options reloaded from plugins.conf
+2013-10-21 00:30:12		Options reloaded from xfer.conf
+2013-10-21 00:30:12		Options reloaded from aspell.conf
+2013-10-21 00:30:12		Options reloaded from logger.conf
+2013-10-21 00:30:12		Options reloaded from alias.conf
+2013-10-21 00:30:12		Options reloaded from charset.conf
+2013-10-21 00:30:12		Options reloaded from script.conf
+2013-10-21 00:30:12		Options reloaded from rmodifier.conf
+2013-10-21 00:30:12		Options reloaded from irc.conf
+2013-10-21 00:30:12		Options reloaded from relay.conf
+2013-10-21 00:30:12		fifo: pipe closed
+2013-10-21 01:32:56		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-21 01:34:46		fifo: pipe closed
+2013-10-21 01:43:57		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-22 18:54:51	=!=	Error: unknown command "?" (type /help for help)
+2013-10-22 20:02:10		fifo: pipe closed
+2013-10-22 20:02:23		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-23 10:36:56		fifo: pipe closed
+2013-10-24 10:26:54		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-24 12:45:25		fifo: pipe closed
+2013-10-24 12:45:39		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-29 00:50:23		fifo: pipe closed
+2013-10-29 00:52:34		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-29 22:24:34		fifo: pipe closed
+2013-10-29 22:25:07		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-29 22:25:13	=!=	irc: command "join" must be executed on irc buffer (server or channel)
+2013-10-29 22:27:01		fifo: pipe closed
+2013-10-29 22:27:07		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-29 22:27:23		fifo: pipe closed
+2013-10-29 22:27:29		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-31 11:28:53	=!=	Error: unknown command "channels" (type /help for help)
+2013-11-01 18:26:17		fifo: removing old fifo pipe "/home/hamhut/.weechat/weechat_fifo_10506"
+2013-11-01 18:26:19		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-11-03 13:02:10		fifo: pipe closed
+2013-11-03 13:03:55		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-11-04 00:11:25		irc: server #xmonad created (temporary server, NOT SAVED!)
+2013-11-04 00:12:19	=!=	irc: command "join" must be executed on irc buffer (server or channel)
+2013-11-04 00:12:33		irc: server /fn created (temporary server, NOT SAVED!)
+2013-11-04 00:12:40	=!=	irc: command "join" must be executed on connected irc server
+2013-11-04 00:12:59		irc: server chat.freenode.org created (temporary server, NOT SAVED!)
+2013-11-04 01:17:44		irc: server localhost created (temporary server, NOT SAVED!)

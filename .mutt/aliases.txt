@@ -1,0 +1,34 @@
+alias hutchings-james James Hutchings <james@dogrock.net>
+alias lindsay-andrew Andrew Lindsay <andrew_e_lindsay@hotmail.com>
+alias today-linkedin LinkedIn Today <news@linkedin.com>
+alias k-kalorkoti KALORKOTI K <kk@inf.ed.ac.uk>
+alias rødseth-alexander Alexander Rødseth <rodseth@gmail.com>
+alias Savanna <info@savanna.co.za>
+alias effie-mcdonald MCDONALD Effie <Effie.McDonald@ed.ac.uk>
+alias allocations-accom ACCOM Allocations <f1aacco1@exseed.ed.ac.uk>
+alias hutchings-hamish Hamish Hutchings <hamhut1066@gmail.com>
+alias newell-steven Steven Newell <steven.newell@momentumcoachhire.com>
+alias hutchings-hamish Hamish Hutchings [mailto:hamhut1066@gmail.com]
+alias radke-andreas Andreas Radke <andyrtr@archlinux.org>
+alias s-wayne Wayne S <linux@zuik.net>
+alias waa-jelle Jelle van der Waa <jelle@vdwaa.nl>
+alias smet-ruben Ruben De Smet <ruben.de.smet@telenet.be>
+alias crew-edinburgh Edinburgh Bhangra Crew <info@edinburghbhangracrew.com>
+alias edinburgh-compsoc CompSoc Edinburgh <kimberley.mc@hotmail.co.uk>
+alias notification-arch Arch Website Notification <nobody@archlinux.org>
+alias eBay <eBay@reply.ebay.co.uk>
+alias blazewicz-karol Karol Blazewicz <karol.blazewicz@gmail.com>
+alias davis-john John Davis <davisjf@gmail.com>
+alias kate-farrow FARROW Kate <Kate.Farrow@ed.ac.uk>
+alias sannella-don Don Sannella [mailto:dts@inf.ed.ac.uk]
+alias powalowski-tobias Tobias Powalowski <tobias.powalowski@googlemail.com>
+alias email-eusa EUSA Newsletter Email <newsletter@eusa.ed.ac.uk>
+alias riley-nikki Nikki Riley <nikkiormesmith@gmail.com>
+alias hamhut1066@gmail.com hamhut1066@gmail.com
+alias wales)-yha YHA (England & Wales) <news@yhainfo.org.uk>
+alias devolder-ike Ike Devolder <ike.devolder@gmail.com>
+alias bryson-barry Barry Bryson <barry@cateredinburgh.com>
+alias trip-day Day Trip <daytripuk@gmail.com>
+alias arch-dev-public-bounces@archlinux.org arch-dev-public-bounces@archlinux.org
+alias ravier-timothée Timothée Ravier <siosm99@gmail.com>
+alias support@tardis.ed.ac.uk support@tardis.ed.ac.uk

@@ -1,0 +1,167 @@
+2013-10-09 09:10:24	-->	hamhut1066 (~hamhut@188.74.85.44) has joined #inf1
+2013-10-09 09:10:24	--	Topic for #inf1 is "Share code by pasting it on https://gist.github.com | Ask your question, we are listening. **You may have to wait for an answer.**"
+2013-10-09 09:10:24	--	Topic set by KitB (~kit@kitb.pw) on Mon, 23 Sep 2013 12:32:04
+2013-10-09 09:10:24	--	Nicks #inf1: [@ChrisB @KitB Bunny camerongray cronin101 drayshak hamhut1066 jkh lambdabot modulo R2ZER0 spink` stesh Sunstrike|Off]
+2013-10-09 09:10:24	--	Channel #inf1: 14 nicks (2 ops, 0 halfops, 0 voices, 12 normals)
+2013-10-09 09:10:26	--	Mode #inf1 [+tn]
+2013-10-09 09:10:26	--	Channel created on Wed, 13 Jun 2012 14:59:14
+2013-10-09 09:27:03	hamhut1066	cd ../ac
+2013-10-09 10:15:44	 *	ChrisB is back (gone 16:41:01)
+2013-10-09 11:19:54	-->	craigsnowden (~quassel@2605:6400:2:fed5:22:0:a952:b96c) has joined #inf1
+2013-10-09 11:29:39	--	Sunstrike|Off is now known as Sunstrike
+2013-10-09 11:57:38	--	Sunstrike is now known as Sunstrike|Off
+2013-10-09 12:07:12	-->	edran (~edran@188.74.75.234) has joined #inf1
+2013-10-09 12:08:11	-->	dcspaul (~textual@patagonia.inf.ed.ac.uk) has joined #inf1
+2013-10-09 12:52:24	<--	edran (~edran@188.74.75.234) has quit (Ping timeout: 246 seconds)
+2013-10-09 13:24:52	-->	edran (~edran@cpat003.wlan.net.ed.ac.uk) has joined #inf1
+2013-10-09 14:03:06	<--	edran (~edran@cpat003.wlan.net.ed.ac.uk) has quit (Ping timeout: 246 seconds)
+2013-10-09 14:13:36	-->	taobojlen (~taobojlen@cpat001.wlan.net.ed.ac.uk) has joined #inf1
+2013-10-09 14:14:50	--	taobojlen is now known as taobror
+2013-10-09 14:24:51	<--	taobror (~taobojlen@cpat001.wlan.net.ed.ac.uk) has quit (Quit: taobror)
+2013-10-09 14:31:39	-->	edran (~edran@cpat003.wlan.net.ed.ac.uk) has joined #inf1
+2013-10-09 14:55:50	dcspaul	would you expect this to be the same for all n ? ... decrypt n (encrypt n "hum")
+2013-10-09 15:05:30	@ChrisB	No... the string has fewer than 5 characters, so the splitEachFive adds in 'X's to make a block of 5. The cipher of those Xs then depends on the rotation number...
+2013-10-09 15:06:41	@ChrisB	so it's true for all n only when your string length is a multiple of 5
+2013-10-09 15:11:17	dcspaul	I think I'm asking a slightly different question - I can see that encrypt and decrypt are not inverses for the reasomn you give, but ...
+2013-10-09 15:12:21	dcspaul	decrypt 5 (encrypt 5 "foo") ... and ... decrypt 6 (encrypt 6 "foo")
+2013-10-09 15:16:31	@ChrisB	I think I was answering that slightly different question too :) The 'X's introduced by splitEachFive are not removed before deciphering, so the character they are deciphered to depends on n.
+2013-10-09 15:19:54	@ChrisB	(splitEachFive is applied after enciphering)
+2013-10-09 15:20:35	@ChrisB	I agree it's not the behaviour one would expect "in the real world", but it simplifies the exercise, I guess.
+2013-10-09 15:20:54	@ChrisB	Sorry, I have to go. Drop me an email if you still have questions.
+2013-10-09 15:21:02	 *	ChrisB is away: AFK
+2013-10-09 15:21:51	dcspaul	no - thats fine - thanks! it just seemed like an undesirable property, but fixing it would involve doing things in a different order ...
+2013-10-09 15:31:37	-->	Damodar (Damodar@a.clients.kiwiirc.com) has joined #inf1
+2013-10-09 15:32:40	Damodar	Hi there! I am struggling with exercise 2 for tutorial 2 I have made something like that : makeKey value = [ ( y , x ) | y <- ['A'..'Z'] , x <- rotate value ['A'..'Z'] , digitToInt y + 2 == digitToInt x   ]
+2013-10-09 15:32:54	Damodar	where rotate is : rotate number list = drop number list ++ take number list
+2013-10-09 15:33:20	Damodar	but when I want to make it work : *Main> makeKey 2
+2013-10-09 15:33:20	Damodar	*** Exception: Char.digitToInt: not a digit 'G'
+2013-10-09 15:33:36	Damodar	any idea?
+2013-10-09 15:39:22	dcspaul	digitToInt takes a single character representing a digit (eg. '0' or '7)
+2013-10-09 15:40:12	dcspaul	you are applying it to y which ranges over all of the letters 'A' .. 'Z'
+2013-10-09 15:41:02	dcspaul	it is actually failing on the 'G' (rather than the 'A') because it also understands the hexademical digits 'A' (10) through 'F' (15)
+2013-10-09 15:41:47	dcspaul	does that make sense ?
+2013-10-09 15:53:17	Damodar	Yeah thanks!
+2013-10-09 15:54:59	Damodar	So which function should I use to convert letter to number? Or how can I filter results of my makeKey function so that only pairs like ( A , A+ value ) will be given?
+2013-10-09 15:56:31	Damodar	I feel that my idea isn't really stright forwards soution, rather a tricky one.
+2013-10-09 16:00:09	Damodar	i figured out that I should use ord function, and it is working, but still that is a tricky solution, is there any better one?
+2013-10-09 16:00:29	<--	edran (~edran@cpat003.wlan.net.ed.ac.uk) has quit (Ping timeout: 264 seconds)
+2013-10-09 16:02:40	-->	edran (~edran@cpat003.wlan.net.ed.ac.uk) has joined #inf1
+2013-10-09 16:04:18	dcspaul	have you thought about using "zip" ?
+2013-10-09 16:05:55	Damodar	Not really, I will try it, and if I will have any trouble I will ask. Thats for the idea!
+2013-10-09 16:47:39	<--	dcspaul (~textual@patagonia.inf.ed.ac.uk) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2013-10-09 17:03:11	-->	tao (~taobror@assynt.inf.ed.ac.uk) has joined #inf1
+2013-10-09 17:06:37	--	Sunstrike|Off is now known as Sunstrike
+2013-10-09 17:15:41	<--	Damodar (Damodar@a.clients.kiwiirc.com) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2013-10-09 17:50:49	hamhut1066	I have found out that it is Keycom's fault
+2013-10-09 18:02:15	-->	abcd (abcd@b.clients.kiwiirc.com) has joined #inf1
+2013-10-09 18:02:50	<--	abcd (abcd@b.clients.kiwiirc.com) has quit (Client Quit)
+2013-10-09 18:24:38	<--	tao (~taobror@assynt.inf.ed.ac.uk) has quit (Quit: Leaving)
+2013-10-09 19:04:46	<--	edran (~edran@cpat003.wlan.net.ed.ac.uk) has quit (Quit: WeeChat 0.4.1)
+2013-10-09 19:23:05	-->	aguig (aguig@b.clients.kiwiirc.com) has joined #inf1
+2013-10-09 19:23:27	<--	aguig (aguig@b.clients.kiwiirc.com) has quit (Client Quit)
+2013-10-09 19:59:30	-->	dfgf (dfgf@b.clients.kiwiirc.com) has joined #inf1
+2013-10-09 20:13:57	-->	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has joined #inf1
+2013-10-09 20:14:07	<--	dfgf (dfgf@b.clients.kiwiirc.com) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2013-10-09 20:44:41	<--	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has quit
+2013-10-09 21:57:41	<--	craigsnowden (~quassel@2605:6400:2:fed5:22:0:a952:b96c) has quit (Ping timeout: 246 seconds)
+2013-10-09 22:31:52	-->	edran (~edran@188.74.75.176) has joined #inf1
+2013-10-09 23:37:05	<--	edran (~edran@188.74.75.176) has quit (Ping timeout: 246 seconds)
+2013-10-10 00:03:26	--	Sunstrike is now known as Sunstrike|Off
+2013-10-10 00:04:57	-->	edran (~edran@188.74.75.176) has joined #inf1
+2013-10-10 00:28:11	<--	edran (~edran@188.74.75.176) has quit (Ping timeout: 246 seconds)
+2013-10-10 10:34:56	--	irc: disconnected from server
+2013-10-10 10:35:08	-->	hamhut1066 (~hamhut@188.74.85.44) has joined #inf1
+2013-10-10 10:35:08	--	Topic for #inf1 is "Share code by pasting it on https://gist.github.com | Ask your question, we are listening. **You may have to wait for an answer.**"
+2013-10-10 10:35:08	--	Topic set by KitB (~kit@kitb.pw) on Mon, 23 Sep 2013 12:32:04
+2013-10-10 10:35:08	--	Nicks #inf1: [@ChrisB @KitB Bunny camerongray cronin101 dcspaul drayshak hamhut1066 jkh lambdabot modulo R2ZER0 spink` stesh Sunstrike|Off]
+2013-10-10 10:35:08	--	Channel #inf1: 15 nicks (2 ops, 0 halfops, 0 voices, 13 normals)
+2013-10-10 10:35:12	--	Mode #inf1 [+tn]
+2013-10-10 10:35:12	--	Channel created on Wed, 13 Jun 2012 14:59:14
+2013-10-10 10:43:27	-->	edran (~edran@cpat001.wlan.net.ed.ac.uk) has joined #inf1
+2013-10-10 11:33:42	<--	edran (~edran@cpat001.wlan.net.ed.ac.uk) has quit (Quit: WeeChat 0.4.1)
+2013-10-10 12:31:08	 *	ChrisB is away: AFK
+2013-10-10 12:37:49	<--	dcspaul (~textual@patagonia.inf.ed.ac.uk) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2013-10-10 13:11:53	 *	ChrisB is back
+2013-10-10 13:18:43	-->	dcspaul (~textual@patagonia.inf.ed.ac.uk) has joined #inf1
+2013-10-10 13:27:06	-->	litmus (litmus@a.clients.kiwiirc.com) has joined #inf1
+2013-10-10 13:32:42	<--	litmus (litmus@a.clients.kiwiirc.com) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2013-10-10 13:33:42	-->	edran (~edran@cpat003.wlan.net.ed.ac.uk) has joined #inf1
+2013-10-10 13:43:11	-->	Nakura (Nakura@b.clients.kiwiirc.com) has joined #inf1
+2013-10-10 13:43:22	Nakura	anybody here?
+2013-10-10 13:43:41	@KitB	yes
+2013-10-10 13:44:55	Nakura	I've got a question about the last compulsory exercise of this week's tutorial
+2013-10-10 13:45:02	Nakura	11
+2013-10-10 13:45:21	@KitB	Go ahead
+2013-10-10 13:46:55	Nakura	well, basically, this is my code for this exercise, it doesn't work and I don't know how to improve it:
+2013-10-10 13:48:08	Nakura	candidates xs = [(n, decipherStr n xs)|n<-[1..26],(contains "AND" (decipherStr n xs) || contains "THE" (decipherStr n xs))]
+2013-10-10 13:48:49	@KitB	you are using "contains" the wrong way around
+2013-10-10 13:49:00	@KitB	it should be:
+2013-10-10 13:49:12	@KitB	...contains (decipherStr n xs) "AND" ...
+2013-10-10 13:49:30	@KitB	this is made a bit more obvious if you use the backtick notation for contains
+2013-10-10 13:49:34	@KitB	so I would have
+2013-10-10 13:49:47	@KitB	... (decipherStr n xs) `contains` "AND" ...
+2013-10-10 13:50:14	Nakura	ok you're right
+2013-10-10 13:51:55	Nakura	god it works
+2013-10-10 13:53:03	Nakura	except that when I include the condition for n>(length xs) in the first exercise for the definition of rotate
+2013-10-10 13:53:29	Nakura	my candidates function works, but it also includes my error message
+2013-10-10 13:54:11	Nakura	is there a way to avoid that?
+2013-10-10 13:54:48	@KitB	That will be because you are using n <- [1..26]
+2013-10-10 13:54:54	@KitB	so it will eventually have the value 26
+2013-10-10 13:55:16	@KitB	> len ['A'..'Z']
+2013-10-10 13:55:18	lambdabot	  Not in scope: `len'
+2013-10-10 13:55:18	lambdabot	 Perhaps you meant `lex' (imported from Prelude)
+2013-10-10 13:55:23	@KitB	> length ['A'..'Z']
+2013-10-10 13:55:23	lambdabot	  26
+2013-10-10 13:55:58	@KitB	I use [1..25]
+2013-10-10 13:56:15	@KitB	Can you tell me which case this misses?
+2013-10-10 13:57:28	Nakura	the 26th case, which would be... [(A,A), (B,B) (...)], right?
+2013-10-10 13:57:48	@KitB	Indeed
+2013-10-10 13:58:01	@KitB	So in terms of decryption, what would this miss?
+2013-10-10 13:58:06	Nakura	so if you put an uncoded message
+2013-10-10 13:58:19	@KitB	Indeed
+2013-10-10 13:58:22	Nakura	your function will not find a key to it
+2013-10-10 14:00:30	<--	edran (~edran@cpat003.wlan.net.ed.ac.uk) has quit (Ping timeout: 264 seconds)
+2013-10-10 14:17:38	Nakura	Thanks. KitB!
+2013-10-10 14:17:45	<--	Nakura (Nakura@b.clients.kiwiirc.com) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2013-10-10 14:24:05	<--	dcspaul (~textual@patagonia.inf.ed.ac.uk) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2013-10-10 14:26:39	-->	edran (~edran@cpat001.wlan.net.ed.ac.uk) has joined #inf1
+2013-10-10 14:40:55	-->	JC (JC@b.clients.kiwiirc.com) has joined #inf1
+2013-10-10 14:43:06	JC	I'm having trouble trying to create a rotate function in haskell.. I get "https://gist.github.com/anonymous/3847b1d9011289ffaa0c
+2013-10-10 14:43:43	JC	Sorry, I get "parse error on input `|'" every time i try to compile my code posted above
+2013-10-10 14:59:00	@ChrisB	Because you have the wrong syntax for guards. Have a look at: http://learnyouahaskell.com/syntax-in-functions#guards-guards
+2013-10-10 14:59:06	<--	JC (JC@b.clients.kiwiirc.com) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2013-10-10 14:59:06	lambdabot	Title: Syntax in Functions - Learn You a Haskell for Great Good!, http://tinyurl.com/ykjclbx
+2013-10-10 14:59:37	@ChrisB	Was it something I said? ;-)
+2013-10-10 15:00:55	-->	asda (asda@b.clients.kiwiirc.com) has joined #inf1
+2013-10-10 15:01:29	asda	any ideas how to write the "lookUp" function?
+2013-10-10 15:01:55	<--	asda (asda@b.clients.kiwiirc.com) has quit (Client Quit)
+2013-10-10 15:08:48	<--	edran (~edran@cpat001.wlan.net.ed.ac.uk) has quit (Ping timeout: 246 seconds)
+2013-10-10 16:13:06	@KitB	ChrisB: that's just how it works when you get first years in IRC ;-)
+2013-10-10 16:34:15	-->	Need (NeedHelp@b.clients.kiwiirc.com) has joined #inf1
+2013-10-10 16:34:22	Need	anyone here?
+2013-10-10 16:34:30	<--	Need (NeedHelp@b.clients.kiwiirc.com) has left #inf1
+2013-10-10 16:34:38	-->	NeedHelp (NeedHelp@a.clients.kiwiirc.com) has joined #inf1
+2013-10-10 16:34:42	NeedHelp	hello
+2013-10-10 16:35:02	NeedHelp	I don't know how to start the first question of week 2 tutorial
+2013-10-10 16:45:08	--	irc: disconnected from server
+2013-10-10 16:48:08	-->	hamhut1066 (~hamhut@188.74.85.44) has joined #inf1
+2013-10-10 16:48:08	--	Topic for #inf1 is "Share code by pasting it on https://gist.github.com | Ask your question, we are listening. **You may have to wait for an answer.**"
+2013-10-10 16:48:08	--	Topic set by KitB (~kit@kitb.pw) on Mon, 23 Sep 2013 12:32:04
+2013-10-10 16:48:08	--	Nicks #inf1: [@ChrisB @KitB Bunny camerongray cronin101 drayshak hamhut1066 jkh lambdabot modulo NeedHelp R2ZER0 spink` stesh Sunstrike|Off]
+2013-10-10 16:48:08	--	Channel #inf1: 15 nicks (2 ops, 0 halfops, 0 voices, 13 normals)
+2013-10-10 16:48:10	--	Mode #inf1 [+tn]
+2013-10-10 16:48:10	--	Channel created on Wed, 13 Jun 2012 14:59:14
+2013-10-10 16:50:26	hamhut1066	@lambdabot
+2013-10-10 16:50:26	lambdabot	Unknown command, try @list
+2013-10-10 16:50:33	hamhut1066	@list
+2013-10-10 16:50:33	lambdabot	What module?  Try @listmodules for some ideas.
+2013-10-10 16:50:38	hamhut1066	@listmodules
+2013-10-10 16:50:38	lambdabot	activityPlugin base bfPlugin checkPlugin composePlugin dicePlugin dictPlugin djinnPlugin dummyPlugin elitePlugin evalPlugin filterPlugin freePlugin freshPlugin haddockPlugin helpPlugin hooglePlugin
+2013-10-10 16:50:38	lambdabot	instancesPlugin ircPlugin karmaPlugin localtimePlugin morePlugin oeisPlugin offlineRC plPlugin pointfulPlugin pollPlugin prettyPlugin quotePlugin searchPlugin seenPlugin slapPlugin sourcePlugin
+2013-10-10 16:50:38	lambdabot	spellPlugin system tellPlugin tickerPlugin todoPlugin topicPlugin typePlugin undoPlugin unlambdaPlugin unmtlPlugin urlPlugin versionPlugin vixenPlugin wherePlugin
+2013-10-10 16:51:04	hamhut1066	@lambdabot > ([1..10])
+2013-10-10 16:51:04	lambdabot	Unknown command, try @list
+2013-10-10 16:51:19	hamhut1066	> ([1..10])
+2013-10-10 16:51:20	lambdabot	  [1,2,3,4,5,6,7,8,9,10]
+2013-10-10 16:54:07	NeedHelp	hi
+2013-10-10 16:55:36	--	irc: disconnected from server

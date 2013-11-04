@@ -1,0 +1,62 @@
+set mbox_type = Maildir
+set folder = $HOME/mail
+set spoolfile="+/gmail/inbox"
+set text_flowed=yes
+set display_filter = ~/bin/aliases.sh
+set alias_file = ~/.mutt/aliases.txt
+
+set header_cache = ~/mail/mutt
+set message_cachedir = ~/mail/mutt
+set postponed = +[Gmail]/Drafts
+#set index_format="%4C %Z %{%b %d} %-15.15L %?M?(#%03M)&(%4l)? %?y?(%.20Y) ?%s"
+unset imap_passive
+
+set sleep_time = 0
+source ~/.mutt/mailboxes
+
+mailboxes [gmail] "=mu-search"
+
+# mu search:
+macro index "\Cs" "<enter-command>unset wait_key<enter><shell-escape>read -p'mu query: ' x; \
+      mu find --clearlinks --linksdir ~/Mail/mu-search --format links \$x<enter>\
+      <change-folder-readonly>~/Mail/mu-search\n" "mu find"
+macro index "<Esc>s" "<change-folder-readonly>~/Mail/mu-search\n" "display mu-find results"
+# -*-muttrc-*-
+
+# Palette for use with the Linux console.  Black background.
+
+color hdrdefault blue black
+color quoted blue black
+color signature blue black
+color attachment red black
+color message brightred black
+color error brightred black
+color indicator black red
+color status brightgreen blue
+color tree white black
+color normal white black
+color markers red black
+color search white black
+color tilde brightmagenta black
+color index blue black ~F
+color index red black "~N|~O"
+
+# color body brightwhite black '\*+[^*]+\*+'
+# color body brightwhite black '_+[^_]+_+'
+folder-hook gmail 'set from="Hamish Hutchings<hamhut1066@gmail.com>" signature="~/.signature-gmail"
+folder-hook gmail 'set sendmail="msmtp-enqueue.sh"; 
+macro index,pager a "s=gmail/gmail.archive<enter>"'
+#labels
+macro index y "<enter-command>set editor=\"~/bin/editlabel append\"\n\
+<edit><sync-mailbox><next-undeleted>\
+<enter-command>set editor=vim\n" "Append label"
+macro pager y "<enter-command>set editor=\"~/bin/editlabel append\"\n\
+<edit><sync-mailbox><next-undeleted>\
+<enter-command>set editor=vim\n" "Append label"
+macro index Y "<enter-command>set editor=\"~/bin/editlabel menu\"\n\
+<edit><sync-mailbox><next-undeleted>\
+<enter-command>set editor=vim\n" "Edit labels"
+macro pager Y "<enter-command>set editor=\"~/bin/editlabel menu\"\n\
+<edit><sync-mailbox><next-undeleted>\
+<enter-command>set editor=vim\n" "Edit labels"
+macro index \Cy "<limit>~y " "Limit view to label"
