@@ -22,6 +22,8 @@ import XMonad.Layout.Spiral
 import XMonad.Layout.Tabbed
 import XMonad.Layout.ThreeColumns
 import XMonad.Layout.Spacing
+import XMonad.Prompt
+import XMonad.Prompt.RunOrRaise
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig
 import XMonad.Util.NamedScratchpad
@@ -43,7 +45,7 @@ scratchpads = [
 
 	NS "applaunch" "xfce4-appfinder -c" (title =? "Application Finder") defaultFloating ,
 
-	NS "notes" "gvim --role notes ~/Dropbox/notes.md" (role =? "notes") (customFloating $ W.RationalRect (0) (1/20) (2/4) (9/10))]
+	NS "notes" "gvim --role notes ~/Dropbox/notes/notes.otl" (role =? "notes") (customFloating $ W.RationalRect (0) (1/20) (2/4) (9/10))]
 
 		where role = stringProperty "WM_WINDOW_ROLE"
 
@@ -53,8 +55,19 @@ scratchpads = [
 -- Workspaces
 -- The default number of workspaces (virtual screens) and their names.
 --
-myWorkspaces = ["1:term","2:web","3:notes","4:misc","5:torrent","6:fin","7:mail", "8:vm","9:file"] ++ 
-		map (\(a,x) -> (show x) ++ ":" ++ a) (zip ["0_o","0o0","\\o/","media"] [10..]) -- map show [9 .. 12] 
+workspaceNumbers = [1..13]
+workspaceNames = ["term", "web", "notes", "misc", "torrent", "fin", "mail", "vm", "0.o", "files", "0o0", "\\o/", "media"]
+myWorkspaces = [ "^ca(1,xdotool key " ++ super (x) ++ ")" ++ format x a ++ "^ca()" | (x,a) <- zip workspaceNumbers workspaceNames]
+		where super a 
+			| a < 10 = "super+" ++ show a
+			| otherwise = "F" ++ show (a-1)
+		      format x a = show x ++ ":" ++ a
+
+myWorkspaces' = (["1:term","2:web","3:notes","4:misc","5:torrent","6:fin","7:mail", "8:vm","9:file"] ++ 
+		map (\(a,x) -> (show x) ++ ":" ++ a) (zip ["0_o","0o0","\\o/","media"] [10..]))-- map show [9 .. 12] 
+		      where clickable l     = [ "^ca(1,xdotool key super+" ++ show (n) ++ ")" ++ ws ++ "^ca()" |
+                              (i,ws) <- zip [1..] l,
+                              let n = i ]
 
 ------------------------------------------------------------------------
 -- Window rules
@@ -77,12 +90,15 @@ myManageHook = composeAll
     , resource  =? "desktop_window" --> doIgnore
     , className =? "Vlc"     	    --> doShift (media)
     , className =? "MPlayer"        --> doShift (media)
+    , className =? "mpv"     	    --> doShift (media)
     , className =? "Vlc"     	    --> viewShift (media)
+    , className =? "mpv"     	    --> viewShift (media)
     , className =? "MPlayer"        --> viewShift (media)
     , className =? "Deluge"        --> doShift (myWorkspaces!!4)
     -- , resource  =? "gpicview"       --> doFloat
     , className =? "MPlayer"        --> doFloat
     , className =? "Vlc"            --> doFloat
+    , className =? "mpv"            --> doFloat
     , className =? "Xfce4-appfinder"--> doFloat
     , className =? "VirtualBox"     --> doShift (myWorkspaces!!7)
     , className =? "Thunderbird"     --> doShift (myWorkspaces!!6)
@@ -101,7 +117,7 @@ myManageHook = composeAll
 	  browser = myWorkspaces!!1
 	  pdfview = myWorkspaces!!2
 	  media = myWorkspaces!!12
-	  files = myWorkspaces!!8
+	  files = myWorkspaces!!9
 
 
 ------------------------------------------------------------------------
@@ -175,8 +191,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   --
 
   -- Start a terminal.  Terminal to start is specified by myTerminal variable.
-  [ ((modMask .|. shiftMask, xK_Return),
-     spawn $ XMonad.terminal conf)
+  [ ((modMask .|. shiftMask, xK_Return),	 spawn $ XMonad.terminal conf)
 
   -- Lock the screen using xscreensaver.
   , ((modMask .|. controlMask, xK_l),
@@ -187,8 +202,8 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
   -- Launch dmenu via yeganesh.
   -- Use this to launch programs without a key binding.
-  , ((modMask, xK_p),
-     spawn "dmenu-with-yeganesh")
+  -- , ((modMask, xK_p),
+     -- spawn "dmenu-with-yeganesh")
 
   -- Take a screenshot in select mode.
   -- After pressing this key binding, click a window, or draw a rectangle with
@@ -295,39 +310,30 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
      windows W.swapDown  )
 
   -- Swap the focused window with the previous window.
-  , ((modMask .|. shiftMask, xK_t),
-     windows W.swapUp    )
+  , ((modMask .|. shiftMask, xK_t), windows W.swapUp    )
 
   -- Shrink the master area.
-  , ((modMask, xK_d),
-     sendMessage Shrink)
+  , ((modMask, xK_d), sendMessage Shrink)
 
   -- Expand the master area.
-  , ((modMask, xK_n),
-     sendMessage Expand)
+  , ((modMask, xK_n), sendMessage Expand)
 
   -- Push window back into tiling.
-  , ((modMask .|. shiftMask, xK_r),
-     withFocused $ windows . W.sink)
+  , ((modMask .|. shiftMask, xK_r), withFocused $ windows . W.sink)
 
   -- Increment the number of windows in the master area.
-  , ((modMask, xK_comma),
-     sendMessage (IncMasterN 1))
+  , ((modMask, xK_comma), sendMessage (IncMasterN 1))
 
   -- Decrement the number of windows in the master area.
-  , ((modMask, xK_period),
-     sendMessage (IncMasterN (-1)))
+  , ((modMask, xK_period), sendMessage (IncMasterN (-1)))
 
   -- Toggle the status bar gap.
   -- TODO: update this binding with avoidStruts, ((modMask, xK_b),
 
-  -- Quit xmonad.
-  , ((modMask .|. shiftMask, xK_q),
-     io (exitWith ExitSuccess))
+  , ((modMask .|. shiftMask, xK_q), io (exitWith ExitSuccess)) -- Quit xmonad.
 
   -- Restart xmonad.
-  , ((modMask, xK_q),
-     restart "xmonad" True)
+  , ((modMask, xK_q), restart "xmonad" True)
   ]
   ++
 
@@ -398,18 +404,23 @@ myStartupHook = return ()
 -- Run xmonad with all the defaults we set up.
 --
 main = do
-  xmproc <- spawnPipe "xmobar ~/.xmonad/xmobar.hs"
+  -- conf <- dzen defaultConfig
+  xmproc <- spawnPipe "dzen2 -ta l -fn 'DejaVu Sans:size=8' -h 12 -e 'button1=menuexec'"  -- "xmobar ~/.xmonad/xmobar.hs"
+  status <- spawnPipe "conky -c ~/.xmonad/menu_conky.conf | dzen2 -ta r -fn 'DejaVu Sans:size=8' -h 12 -x 700 -e 'button1=menuexec'"
   xmonad $ defaults {
-      logHook = myLogHook xmproc >> updatePointer (Relative 0.95 0.95)
+      logHook = myLogHook xmproc >> updatePointer (Relative 0.95 0.95) -- <+>
+                -- myLogHook status
       , manageHook = manageDocks <+> myManageHook <+> namedScratchpadManageHook scratchpads
       , startupHook = setWMName "LG3D"
   }
 
-myLogHook xmproc= dynamicLogWithPP $ xmobarPP {
+-- myLogHook' xmproc = dynamicLogWithPP $ defaultPP { ppOutput = hPutStrLn xmproc }
+
+myLogHook xmproc= dynamicLogWithPP $ dzenPP {
     ppOutput = hPutStrLn xmproc
-  , ppTitle = xmobarColor xmobarTitleColor "" . shorten 100
-  , ppCurrent = xmobarColor "#AEAFB5" ""
-  , ppHidden = xmobarColor "#3D58C4" "" . noScratchPad
+  , ppTitle = dzenColor xmobarTitleColor "" . shorten 100
+  , ppCurrent = pad . dzenColor "#AEAFB5" ""
+  , ppHidden = pad . dzenColor "#3D58C4" "" . noScratchPad
   , ppOrder = \(ws:_:t:_) -> [ws,t]
   , ppSep = "   "
 }

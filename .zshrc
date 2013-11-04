@@ -11,6 +11,9 @@ alias cdp="cd ~/documents/lecture_notes"
 alias t="task"
 source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
-export PATH=$PATH:~/.cabal/bin:~/.xmonad/bin
+export PATH=~/bin:$PATH:~/.cabal/bin:~/.xmonad/bin
 export EDITOR="vim"
 task active
+echo ""
+mu find g:n -f 's f m'
+echo ""

@@ -104,8 +104,3 @@ defnonblock 5
 #
 screen zsh
 # screen -t monkey ssh monkey
-screen -t weechat 0 weechat
-split
-focus
-screen -t ncmpcpp 1 ncmpcpp
-
