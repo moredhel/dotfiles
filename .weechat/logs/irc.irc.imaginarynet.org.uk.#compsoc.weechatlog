@@ -1,0 +1,1074 @@
+2013-10-08 23:04:39	-->	hamhut (~hamhut@188.74.85.44) has joined #compsoc
+2013-10-08 23:04:39	--	Topic for #compsoc is "COMPSOC <3 YOU (The website lives!) http://comp-soc.com/"
+2013-10-08 23:04:39	--	Topic set by ChanServ (services@imaginarynet) on Wed, 04 Sep 2013 14:34:31
+2013-10-08 23:04:39	--	Nicks #compsoc: [@amazoph @COMPSOC @drayshak @StarScream Andrew ball-hayden blip2 Bunny camerongray craigs craigsnowden cronin101 edran errawr Estel Fib hamhut Jammy Jay joe kev KGL KitB kraken lambdabot modulo Norgg oliland R2ZER0 rachel Reid rob ross_a Rumpelstiltskin Simon skinnylinny Smilers_ staircase stesh StrawHatter Sunstrike ve Withad]
+2013-10-08 23:04:39	--	Channel #compsoc: 43 nicks (4 ops, 0 halfops, 0 voices, 39 normals)
+2013-10-08 23:04:41	--	Mode #compsoc [+n]
+2013-10-08 23:04:42	--	Channel created on Wed, 30 Mar 2011 23:45:26
+2013-10-08 23:05:31	hamhut	hey guys, does anyone know how I can set up ssh that I can access publicly?
+2013-10-08 23:05:49	hamhut	am trying to set it up using www.no-ip.com
+2013-10-08 23:09:21	Reid	On a VPS, your own machine...?
+2013-10-08 23:09:22	<--	Withad (~withad@211.50.208.46.dyn.plus.net) has quit (Remote host closed the connection)
+2013-10-08 23:12:04	hamhut	am using my own machine... could I use no-ip to get my Ip then ssh through them... this should be possible. it even says that it is finding me. But when I try ssh'ing it times out
+2013-10-08 23:12:23	Sunstrike	Got a router between you and the host?
+2013-10-08 23:12:31	stesh	hamhut: reverse SSH tunnel
+2013-10-08 23:12:32	Reid	Check no-ip permits ssh, check your machine is actually listening on the requisite port, check for any forwarding issues
+2013-10-08 23:12:42	Sunstrike	No-IP is just DNS, Reid.
+2013-10-08 23:12:48	Sunstrike	Dynamic DNS
+2013-10-08 23:12:53	Reid	Sunstrike: Ah, cool. Been forever since I used it.
+2013-10-08 23:13:15	Sunstrike	But my guess would be iffy port mapping
+2013-10-08 23:13:29	hamhut	yeah, have been using ssh through the uni vpn, but am still having to write down my ip
+2013-10-08 23:13:55	Sunstrike	Run the No-IP DUC on the server. Make it keep syncing every hour or two.
+2013-10-08 23:14:06	stesh	hamhut: do you another machine you can ssh to?
+2013-10-08 23:14:12	stesh	between you and the thing you want to really ssh to?
+2013-10-08 23:14:21	stesh	on the machine you want to get to:
+2013-10-08 23:14:43	hamhut	I have one laptop in my room that I want to ssh to, then my other laptop I carry around
+2013-10-08 23:14:57	Reid	How do you currently ssh to it?
+2013-10-08 23:15:07	stesh	ssh -fN -Rsomeport:localhost:22 intermediateip
+2013-10-08 23:15:10	stesh	then
+2013-10-08 23:15:19	stesh	on the machine with IP address intermediateip
+2013-10-08 23:15:23	stesh	ssh localhost -p someport
+2013-10-08 23:15:24	hamhut	I connect both of them to the uni vpn then write down the ip
+2013-10-08 23:15:32	stesh	done
+2013-10-08 23:15:32	Sunstrike	That's overcomplicating the situation a bit.
+2013-10-08 23:15:53	Sunstrike	I'm gunna warrant a guess that the IP in DNS isn't matching.
+2013-10-08 23:15:55	Reid	Check the one being given to no-ip is the VPN ip, and not the through-the-router ip
+2013-10-08 23:16:06	Reid	I'd guess at that being your problem.
+2013-10-08 23:16:06	Sunstrike	hamhut; what's your No-IP address? I want to run a dig on it
+2013-10-08 23:16:13	hamhut	Reid: yeah, that'll probably be it
+2013-10-08 23:16:26	hamhut	hamhut.sytes.net
+2013-10-08 23:16:31	hamhut	give it a spin
+2013-10-08 23:16:39	Sunstrike	Lemme look at dig then
+2013-10-08 23:16:42	stesh	I can get to sshd on that host
+2013-10-08 23:16:46	Reid	Can't remember the options no-ip DUC gives you, but check to see if you can choose which network
+2013-10-08 23:16:50	Reid	Otherwise, hamachi is your friend
+2013-10-08 23:16:54	stesh	$ nc hamhut.sytes.net 22                                                        [23:16]
+2013-10-08 23:16:57	Reid	In many, many situations
+2013-10-08 23:16:57	stesh	SSH-2.0-OpenSSH_6.3
+2013-10-08 23:17:13	Sunstrike	188.74.85.44
+2013-10-08 23:17:15	Sunstrike	?
+2013-10-08 23:17:17	hamhut	yep
+2013-10-08 23:17:21	hamhut	are you connecting?
+2013-10-08 23:18:11	Sunstrike	Not just now but stesh may be
+2013-10-08 23:18:18	hamhut	maybe it's my keycom being annoying on outbound connections
+2013-10-08 23:18:37	hamhut	ok, but you're pinging the right ip
+2013-10-08 23:18:40	stesh	hamhut: it's exposed to the Internet like
+2013-10-08 23:18:51	stesh	I can access that from a machine in Dublin :P
+2013-10-08 23:19:15	Sunstrike	I'd also recommend running it on a non-standard port.
+2013-10-08 23:19:21	Sunstrike	Less likely to get drive-by'd
+2013-10-08 23:19:35	stesh	there's a lot you can do to harden it
+2013-10-08 23:19:37	Reid	Oh god, fucking keycom
+2013-10-08 23:19:47	Sunstrike	Unfamiliar with Keycom.
+2013-10-08 23:19:49	hamhut	yeah, I know
+2013-10-08 23:19:53	hamhut	I have no idea
+2013-10-08 23:20:13	stesh	reverse tunnel is nice in that sense because you at least get the protection of whatever machine you're reverse tunneling through
+2013-10-08 23:20:46	stesh	except it's still vulnerable to attack by anyone with local access on that machine
+2013-10-08 23:21:00	stesh	(e.g. the school of informatics :P)
+2013-10-08 23:21:48	stesh	also, hamhut: https://wiki.archlinux.org/index.php/VPN_over_SSH
+2013-10-08 23:21:51	hamhut	yeah, not too fussed, might bulk up security in a bit. want a connection first
+2013-10-08 23:21:51	stesh	poor man's VPN
+2013-10-08 23:22:08	stesh	I don't know how you don't already have a connection though...
+2013-10-08 23:22:20	Sunstrike	Have you… cleared your machine's DNS cache?
+2013-10-08 23:22:30	stesh	why can't you just go ssh hamhut.sytes.net?
+2013-10-08 23:22:41	hamhut	it's not working
+2013-10-08 23:22:41	stesh	or ssh 188.74.85.44 to be super sure
+2013-10-08 23:22:48	stesh	eh
+2013-10-08 23:22:55	Sunstrike	ham, do you have dnstools installed from Pacman?
+2013-10-08 23:23:01	hamhut	ssh: connect to host hamhut.sytes.net port 22: No route to host
+2013-10-08 23:23:17	hamhut	dunno, looking now... which computer?
+2013-10-08 23:23:21	Sunstrike	If not, install it and run `dig hamhut.sytes.net` and tell me the output.
+2013-10-08 23:23:44	Sunstrike	Client
+2013-10-08 23:24:01	Sunstrike	I believe it's dnstools on Arch that dig is in
+2013-10-08 23:24:15	hamhut	hmm, having a look
+2013-10-08 23:24:24	hamhut	is that similar in any way to tracepath?
+2013-10-08 23:24:29	Sunstrike	No
+2013-10-08 23:24:43	Sunstrike	Dig is "DNS Information Groper", it pulls DNS records.
+2013-10-08 23:24:49	Sunstrike	Domain not DNS
+2013-10-08 23:24:51	Sunstrike	Derp
+2013-10-08 23:25:14	hamhut	running it now
+2013-10-08 23:25:18	hamhut	connection timed out
+2013-10-08 23:25:26	Sunstrike	On the dig command? o.O
+2013-10-08 23:25:33	stesh	hamhut: looks awfully like you have no interbutts at all
+2013-10-08 23:25:38	stesh	or no DNS at least
+2013-10-08 23:25:41	hamhut	yeah...
+2013-10-08 23:25:48	stesh	what happens when you try ssh 188.74.85.44?
+2013-10-08 23:25:51	Sunstrike	Manually set your DNS servers. How that works depends on your network manager.
+2013-10-08 23:26:07	Sunstrike	Google's ones are okay; 8.8.8.8, 8.8.4.4
+2013-10-08 23:26:48	hamhut	yeah, probs a good idea, will setup my dns servers.. give me a sec... gotta ask google
+2013-10-08 23:26:54	Reid	Google's DNS fuck yeah
+2013-10-08 23:27:11	StrawHatter	Why not DuckDuckGo?
+2013-10-08 23:27:30	Reid	a) afaik they don't do dns
+2013-10-08 23:27:34	Sunstrike	DduckDuckGo is a search engine not DNS, right? Unless they branched out
+2013-10-08 23:27:36	stesh	lol
+2013-10-08 23:27:40	Reid	b) Google give you jobs
+2013-10-08 23:27:46	StrawHatter	I
+2013-10-08 23:27:48	Sunstrike	I like B most.
+2013-10-08 23:27:49	hamhut	yeah, why not (b) anon
+2013-10-08 23:27:52	Reid	c) Google's DNS is fast as merry fuck
+2013-10-08 23:28:00	Sunstrike	Google Public DNS is awesome, yes.
+2013-10-08 23:28:04	StrawHatter	Thought we were taklking about search enginges
+2013-10-08 23:28:06	Reid	Jammy: They's be listening!
+2013-10-08 23:28:07	StrawHatter	this is why
+2013-10-08 23:28:16	StrawHatter	we should start reading more than the last sentence
+2013-10-08 23:28:32	Sunstrike	I committed the Google DNS IPs to muscle-memory since I keep needing them :P
+2013-10-08 23:28:36	Reid	Search-engine wise, I like the context that comes from combining search history and browsing habits into the algorithm.
+2013-10-08 23:28:41	Reid	Sunstrike: They're also very easy to memorise
+2013-10-08 23:28:44	Sunstrike	Yup
+2013-10-08 23:29:03	StrawHatter	I like duckduckgo because it has ducks
+2013-10-08 23:29:09	StrawHatter	and ducks are kyute
+2013-10-08 23:29:22	StrawHatter	not to mention, i can search for porn and shit, and no one will know
+2013-10-08 23:29:31	Sunstrike	I can't use Bing or DuckDuckGo since they return crap results for my kinds of searches.
+2013-10-08 23:29:41	Sunstrike	Usually for API docs or similar
+2013-10-08 23:29:51	StrawHatter	don't get me wrong
+2013-10-08 23:29:54	StrawHatter	for important stuff
+2013-10-08 23:29:57	StrawHatter	it's god awful
+2013-10-08 23:30:04	stesh	you can search google through ddg though
+2013-10-08 23:30:05	hamhut	haha, that's kinda true... duckduckgo works well for some things though
+2013-10-08 23:30:48	StrawHatter	who went to the social tonight then?
+2013-10-08 23:31:16	stesh	I was going to, but I decided I should instead work on coursework
+2013-10-08 23:31:21	stesh	so, I went home, and wasted time on IRC instead
+2013-10-08 23:31:26	Sunstrike	So figured how to switch DNS ham?
+2013-10-08 23:31:43	stesh	hamhut: ssh hamhut@188.74.85.44 
+2013-10-08 23:31:44	stesh	what happens
+2013-10-08 23:31:44	stesh	pls
+2013-10-08 23:31:58	stesh	if it works, then you know it's your DNS 
+2013-10-08 23:31:59	StrawHatter	stesh, working at uni is for nerds tho
+2013-10-08 23:32:24	hamhut	oh yeah, get a timeout
+2013-10-08 23:36:31	--	irc: disconnected from server
+2013-10-08 23:36:42	-->	hamhut (~hamhut@188.74.85.44) has joined #compsoc
+2013-10-08 23:36:42	--	Topic for #compsoc is "COMPSOC <3 YOU (The website lives!) http://comp-soc.com/"
+2013-10-08 23:36:42	--	Topic set by ChanServ (services@imaginarynet) on Wed, 04 Sep 2013 14:34:31
+2013-10-08 23:36:42	--	Nicks #compsoc: [@amazoph @COMPSOC @drayshak @StarScream Andrew ball-hayden blip2 Bunny camerongray craigs craigsnowden cronin101 edran errawr Estel Fib hamhut hamhut1066 Jammy Jay joe kev KGL KitB kraken lambdabot modulo Norgg oliland R2ZER0 rachel Reid rob ross_a Rumpelstiltskin Simon skinnylinny Smilers_ staircase stesh StrawHatter Sunstrike ve]
+2013-10-08 23:36:42	--	Channel #compsoc: 43 nicks (4 ops, 0 halfops, 0 voices, 39 normals)
+2013-10-08 23:36:44	--	Mode #compsoc [+n]
+2013-10-08 23:36:44	--	Channel created on Wed, 30 Mar 2011 23:45:26
+2013-10-08 23:36:55	Reid	StrawHatter: Work at an Informatics Ventures company
+2013-10-08 23:36:55	Sunstrike	The festival people are fuuun. Atleast the Venues and Companies crew are. The uni guys may get over-protective tho :P
+2013-10-08 23:37:07	Reid	True, the non-security people are
+2013-10-08 23:37:11	Reid	And the security ones are mostly okay
+2013-10-08 23:37:18	Reid	But some like to be too big
+2013-10-08 23:37:38	Sunstrike	The Stewards are the really good ones to know. They tend to be very laid back until someone pisses them off royally, which is very rare
+2013-10-08 23:37:50	Sunstrike	But they change every year
+2013-10-08 23:38:02	Reid	(the suggested response if the incident was repeated, we decided, was to ask where their university of edinburgh card was, and what they thought they were doing in a university of edinburgh building)
+2013-10-08 23:38:21	Reid	(essentially parrot them but switch festival for uni of ed)
+2013-10-08 23:38:28	Sunstrike	Ahah :P
+2013-10-08 23:38:36	StrawHatter	guise
+2013-10-08 23:38:40	Sunstrike	Next summer will be good for me. Both passes. Everywhere, yesss
+2013-10-08 23:38:46	StrawHatter	can we pull any pranks of in uni :c
+2013-10-08 23:38:52	Reid	You can
+2013-10-08 23:38:59	Reid	Just make sure people find it funny.
+2013-10-08 23:39:11	StrawHatter	b-but how?
+2013-10-08 23:39:15	hamhut1066	Reid: I tried ssh 188.74.85.44, still getting no route to host
+2013-10-08 23:39:17	Reid	And it's not too hard to clean up.
+2013-10-08 23:39:37	Sunstrike	Ham, you have some serious netderp then :p
+2013-10-08 23:40:12	hamhut1066	argh... will keep hacking away at the problem then :p
+2013-10-08 23:40:33	stesh	hamhut1066: it's definitely working
+2013-10-08 23:40:36	stesh	I can access it
+2013-10-08 23:40:47	stesh	you have a local connectivity problem on your end
+2013-10-08 23:41:01	stesh	ECDSA key fingerprint is df:91:d5:62:51:9c:21:8a:4a:d6:c2:cf:d8:6a:96:0d
+2013-10-08 23:41:04	stesh	right?
+2013-10-08 23:41:07	hamhut1066	then it must be my little laptop doing something weird
+2013-10-08 23:41:16	hamhut1066	try logging with test aoeu
+2013-10-08 23:41:17	stesh	can you access it from
+2013-10-08 23:41:17	stesh	say
+2013-10-08 23:41:19	stesh	informatics
+2013-10-08 23:41:25	stesh	log into kubelik and try sshing to it
+2013-10-08 23:41:32	hamhut1066	dunno, will try now
+2013-10-08 23:41:57	Sunstrike	ham, can you try `dig @8.8.8.8 hamhut.sytes.net`? What IP does it return?
+2013-10-08 23:42:51	hamhut1066	yep, straight on from the dice servers
+2013-10-08 23:43:50	hamhut1066	servers still can't be reached
+2013-10-08 23:44:01	Sunstrike	With that command?
+2013-10-08 23:44:17	hamhut1066	dig @8.8.8.8 hamhut.sytes.net
+2013-10-08 23:44:29	Sunstrike	You… can't reach Google DNS then
+2013-10-08 23:44:34	Sunstrike	Which is really weird
+2013-10-08 23:44:57	Reid	H-uh
+2013-10-08 23:45:06	Reid	Chuck out basic ping and nslookups?
+2013-10-08 23:45:09	Sunstrike	Atleast we now know it's not just your target host that's wonky, it's other servers.
+2013-10-08 23:45:10	hamhut1066	yeah, and I have an internet connection... but I can ping it
+2013-10-08 23:45:14	Reid	Make sure it's trying on a sane network
+2013-10-08 23:46:35	hamhut1066	define sane
+2013-10-08 23:46:47	<--	hamhut1066 (~hamhut106@188.74.85.160) has quit (Quit: leaving)
+2013-10-08 23:47:14	hamhut	am trying to use google dns on my little laptop
+2013-10-08 23:47:45	Reid	"the one you want it to"
+2013-10-08 23:47:56	Reid	s/want/expect
+2013-10-08 23:49:19	hamhut	yeah, cannot find route to host... but can see most other things
+2013-10-08 23:51:08	Reid	Strange
+2013-10-08 23:51:13	Reid	tracert?
+2013-10-08 23:51:16	Reid	Or equivalent
+2013-10-08 23:51:31	hamhut	having a look now
+2013-10-08 23:51:39	StrawHatter	i should
+2013-10-08 23:51:47	StrawHatter	stop watching anime and actually study once in a while
+2013-10-08 23:51:53	StrawHatter	this is getting pretty ridiculous
+2013-10-08 23:52:01	hamhut	haha, what are you watching?
+2013-10-08 23:52:06	hamhut	too easy to do
+2013-10-08 23:52:12	StrawHatter	Daily Lives of Highschool Boys
+2013-10-08 23:52:21	StrawHatter	Because I'm pretty sure in my mind I still am one qq
+2013-10-08 23:52:37	hamhut	any good? I'm kinda watching Ergo Proxy
+2013-10-08 23:52:43	hamhut	but keep getting distracted
+2013-10-08 23:52:56	StrawHatter	It's amazing
+2013-10-08 23:54:36	hamhut	haha, I have no idea
+2013-10-08 23:57:00	hamhut	looks interesting
+2013-10-08 23:57:50	--	You are now known as hamhut1066
+2013-10-08 23:59:04	hamhut1066	my computer is being retarded, it now refuses to turn off
+2013-10-08 23:59:21	Reid	Which OS?
+2013-10-08 23:59:26	hamhut1066	arch linux
+2013-10-08 23:59:30	hamhut1066	just Syu-'
+2013-10-08 23:59:33	hamhut1066	d/
+2013-10-08 23:59:57	Reid	Presuming you've tried sudo shutdown -r now?
+2013-10-09 00:00:23	hamhut1066	yep, spits out an 'System is Shutting down NOW' then just sits there
+2013-10-09 00:00:28	stesh	init 0
+2013-10-09 00:00:37	StrawHatter	i
+2013-10-09 00:00:45	StrawHatter	think i'm the only one who hates arch with a passion
+2013-10-09 00:00:49	stesh	no
+2013-10-09 00:00:49	hamhut1066	damn, forgot about that...
+2013-10-09 00:00:51	hamhut1066	how come?
+2013-10-09 00:00:53	stesh	StrawHatter: me too
+2013-10-09 00:00:55	stesh	<3
+2013-10-09 00:00:59	hamhut1066	it's normally awesome!!
+2013-10-09 00:01:05	stesh	well
+2013-10-09 00:01:05	Reid	...ditch the daft -r there,, sorry.
+2013-10-09 00:01:12	StrawHatter	the installation is a good place
+2013-10-09 00:01:16	stesh	given they recently deigned to actually sign their fucking packages
+2013-10-09 00:01:22	stesh	maybe it's gotten better
+2013-10-09 00:01:27	Reid	StrawHatter: It's a fairly common habit round here
+2013-10-09 00:01:27	StrawHatter	having to fucking to ever individual driver and stuff
+2013-10-09 00:01:38	Reid	Fun is to be had suggesting to newbies they should totally use it
+2013-10-09 00:01:40	StrawHatter	Reid, to hate Arch?
+2013-10-09 00:01:45	Reid	StrawHatter: Yes
+2013-10-09 00:01:55	StrawHatter	Reid, oh my gosh, that's kind of evil
+2013-10-09 00:02:06	Reid	Trololo~
+2013-10-09 00:02:08	hamhut1066	tbs, I'm kinda lazy and install using archbang iso
+2013-10-09 00:02:33	StrawHatter	Windows 8.1
+2013-10-09 00:02:34	StrawHatter	2gud
+2013-10-09 00:02:47	stesh	hamhut1066: you could compile a little program to shut it down
+2013-10-09 00:02:52	stesh	possibly with loss of data
+2013-10-09 00:02:54	stesh	:)
+2013-10-09 00:03:02	StrawHatter	pretty sure i still have to put on UberStudent :/
+2013-10-09 00:03:34	stesh	(using the syscall directly)
+2013-10-09 00:03:46	hamhut1066	I used a hack, just held in the power button, which I now regret as it isn't turning back on :(
+2013-10-09 00:03:51	stesh	...
+2013-10-09 00:03:59	Sunstrike	Yay -Syu~
+2013-10-09 00:04:02	hamhut1066	am dd'ing my fd, possible reinstall moment
+2013-10-09 00:04:09	hamhut1066	argh
+2013-10-09 00:04:14	stesh	dding your whatnow
+2013-10-09 00:04:18	hamhut1066	could be annoying
+2013-10-09 00:04:18	Sunstrike	Well… Reinstall might fix the issue but talk about nuclear :P
+2013-10-09 00:04:44	StrawHatter	hamhut1066, have you tried turning it off and on again?
+2013-10-09 00:04:47	hamhut1066	seperate conf files and /home, means an easy reinstall :p. 
+2013-10-09 00:05:14	hamhut1066	haha, yep, stuck at 'welcome to arch'. think it's a problem with systemd
+2013-10-09 00:05:21	hamhut1066	will just roll back
+2013-10-09 00:05:28	StrawHatter	i was quoting it crowd, but sure
+2013-10-09 00:05:57	Reid	Psst. Help me decide between these.
+2013-10-09 00:06:00	Reid	http://www.ebuyer.com/522183-gigabyte-intel-performance-1150-bundle-with-gigabyte-1150-z87-hd3-motherboard-intel-i5-intelperformance1150
+2013-10-09 00:06:00	hamhut1066	yeah, got that :p love it
+2013-10-09 00:06:06	lambdabot	Title: Gigabyte Intel Performance 1150 8GB DDR3 Bundle | Ebuyer.com, http://tinyurl.com/ojw9ut9
+2013-10-09 00:06:06	Reid	http://www.ebuyer.com/568394-cyberpower-i5-4670k-fire-shadow-bundle-ecc01168
+2013-10-09 00:06:07	lambdabot	Title: Cyberpower i5 4670K Fire Shadow Bundle | Ebuyer.com, http://tinyurl.com/naraxuk
+2013-10-09 00:06:17	StrawHatter	you get neither
+2013-10-09 00:06:24	StrawHatter	and give me the money so i can finally afford a vita
+2013-10-09 00:06:30	StrawHatter	<333
+2013-10-09 00:06:39	Reid	Vita is for fools
+2013-10-09 00:06:41	Reid	Get a 3DS
+2013-10-09 00:06:43	Reid	Have friends
+2013-10-09 00:06:48	StrawHatter	I
+2013-10-09 00:06:53	StrawHatter	Already have a 3DS tho
+2013-10-09 00:07:03	Reid	Then why would you possibly want a vita?
+2013-10-09 00:07:14	StrawHatter	DanganRonpa is coming to Vita
+2013-10-09 00:07:19	Reid	Emulate it
+2013-10-09 00:07:31	StrawHatter	Ew, gross
+2013-10-09 00:07:53	Reid	Vita is weaksauce enough that a decent PC can emulate
+2013-10-09 00:08:01	Reid	Use a 360 pad, call it a job well done
+2013-10-09 00:08:25	StrawHatter	Are Vita emulators even released yet?
+2013-10-09 00:08:45	 *	Reid shrugs
+2013-10-09 00:08:47	Reid	I dunno
+2013-10-09 00:08:59	StrawHatter	Oh yeah
+2013-10-09 00:09:02	StrawHatter	Pokemon 
+2013-10-09 00:09:04	Reid	I tend to ignore it as being "a bit shit"
+2013-10-09 00:09:05	StrawHatter	2 more days
+2013-10-09 00:09:26	hamhut1066	is there another one coming out?
+2013-10-09 00:09:31	Reid	X and Y
+2013-10-09 00:09:44	hamhut1066	what? they've resorted to variables?
+2013-10-09 00:09:56	Reid	Seems so
+2013-10-09 00:10:15	hamhut1066	I honestly had no idea where they would go from black and white
+2013-10-09 00:10:15	StrawHatter	It's supposed to be chromosons (or however it's spelled) 
+2013-10-09 00:10:22	Reid	Also, StrawHatter, tomorrow you can start singing "One more daaaaaaay!"
+2013-10-09 00:10:29	StrawHatter	...
+2013-10-09 00:10:34	StrawHatter	I- I can?
+2013-10-09 00:11:03	Reid	Well, then it'll be one day
+2013-10-09 00:11:09	StrawHatter	I
+2013-10-09 00:11:13	Reid	And there's never a bad time to not sing Les Mis
+2013-10-09 00:11:13	StrawHatter	Totally knew that
+2013-10-09 00:11:25	Reid	s/to not/to
+2013-10-09 00:11:29	StrawHatter	But i'm singing Nate King Kole to myself </3
+2013-10-09 00:11:49	Sunstrike	Anyway night people, good luck with the Archderp Ham :p
+2013-10-09 00:11:55	Reid	G'night Sunstrike 
+2013-10-09 00:12:01	Reid	StrawHatter: Hence, tomorrow
+2013-10-09 00:12:03	StrawHatter	Archderp is just being Arch
+2013-10-09 00:12:08	edran	Where were you guys when we were watching an amazing movie?
+2013-10-09 00:12:12	edran	Like, WHERE.
+2013-10-09 00:12:18	Reid	Being social
+2013-10-09 00:12:21	hamhut1066	anyone else using arch btw?
+2013-10-09 00:12:22	StrawHatter	>amazing
+2013-10-09 00:12:24	edran	Me.
+2013-10-09 00:12:24	StrawHatter	>swordfish
+2013-10-09 00:12:25	--	Sunstrike is now known as Sunstrike|Off
+2013-10-09 00:12:26	hamhut1066	yeah, it was good
+2013-10-09 00:12:27	StrawHatter	choose one
+2013-10-09 00:12:34	hamhut1066	bird >= word
+2013-10-09 00:12:38	edran	self-irony man.
+2013-10-09 00:12:40	StrawHatter	swordfish really isn't that good
+2013-10-09 00:12:48	Reid	Hackers
+2013-10-09 00:12:50	Reid	That's a film
+2013-10-09 00:12:51	Reid	:D
+2013-10-09 00:12:55	StrawHatter	I
+2013-10-09 00:13:03	StrawHatter	Honestly thought we'd be watching Fight Club
+2013-10-09 00:13:06	StrawHatter	Don't even ask me why
+2013-10-09 00:13:18	Reid	Why would we talk about Fight Club?
+2013-10-09 00:13:23	Reid	You know the rules.
+2013-10-09 00:13:31	StrawHatter	Because Rules 1 and 2 don't apply on IRC
+2013-10-09 00:13:31	edran	well
+2013-10-09 00:13:34	edran	honestly
+2013-10-09 00:13:37	edran	the film was crap
+2013-10-09 00:13:43	edran	but we laughed all the time
+2013-10-09 00:13:49	edran	plus pizza
+2013-10-09 00:13:52	edran	PIZZA.
+2013-10-09 00:14:04	Reid	Nyam nyam or Dominoes this year?
+2013-10-09 00:14:11	Reid	Or doing the STMU thing of Papa Johns?
+2013-10-09 00:15:33	edran	Dominoes
+2013-10-09 00:15:38	Reid	:(
+2013-10-09 00:15:39	edran	Craig is partial
+2013-10-09 00:15:43	Reid	No free pizza for me then
+2013-10-09 00:15:45	edran	No, wait
+2013-10-09 00:15:51	edran	wat.
+2013-10-09 00:15:56	edran	Don't say that
+2013-10-09 00:16:01	edran	You are a student
+2013-10-09 00:16:06	edran	deal with it
+2013-10-09 00:16:07	Reid	Dominoes leaves me very unpleasantly ill the following morning.
+2013-10-09 00:16:20	StrawHatter	^
+2013-10-09 00:16:23	Reid	I think it's something in their crust.
+2013-10-09 00:16:24	StrawHatter	Thank god I'm not the only one
+2013-10-09 00:16:35	Reid	Since I can manage a slice or two if I chuck the edge
+2013-10-09 00:16:52	Reid	But otherwise, bad times await.
+2013-10-09 00:17:06	edran	Any kind of american pizza makes people ill for days. As an Italian, I can only wholehearlty agree. But...
+2013-10-09 00:17:08	edran	free food.
+2013-10-09 00:17:12	edran	FREE food.
+2013-10-09 00:17:14	Reid	And since every other pizza place ever seems not to cause this problem, ~shrug~
+2013-10-09 00:17:14	edran	as in beer
+2013-10-09 00:17:27	Reid	Nyam Nyam year was the best year
+2013-10-09 00:17:32	Reid	Nyam Nyam pizza is good pizza
+2013-10-09 00:17:48	StrawHatter	free... beer?
+2013-10-09 00:17:59	Reid	Free as in speech, free as in beer
+2013-10-09 00:18:18	StrawHatter	jokes on you guys, i don't drink
+2013-10-09 00:18:20	StrawHatter	<3
+2013-10-09 00:18:23	Reid	You'll learn
+2013-10-09 00:18:24	edran	pfff
+2013-10-09 00:18:27	Reid	Also, beer is shitty
+2013-10-09 00:18:31	Reid	Spirits ftw
+2013-10-09 00:18:35	Reid	Particularly whisky.
+2013-10-09 00:18:39	Reid	All the whisky.
+2013-10-09 00:18:40	edran	Ciders maybe?
+2013-10-09 00:18:45	edran	You can't say no to ciders
+2013-10-09 00:18:45	Reid	Cider's decent
+2013-10-09 00:18:48	edran	good ones.
+2013-10-09 00:18:49	Reid	Well
+2013-10-09 00:18:50	Reid	yes
+2013-10-09 00:18:52	Reid	Good ones
+2013-10-09 00:18:57	Reid	Strongbow is bad
+2013-10-09 00:18:59	StrawHatter	what if i told you guys
+2013-10-09 00:19:04	StrawHatter	i can say no to ciders
+2013-10-09 00:19:06	Reid	Magners is possibly the lowest level.
+2013-10-09 00:19:11	Reid	StrawHatter: Are you.... tea-total?
+2013-10-09 00:19:17	Reid	Or tee-total?
+2013-10-09 00:19:24	Reid	Or just yet-to-learn-to-drink?
+2013-10-09 00:19:32	StrawHatter	i don't know what that means
+2013-10-09 00:19:33	StrawHatter	OH
+2013-10-09 00:19:34	StrawHatter	WAIT
+2013-10-09 00:19:35	StrawHatter	IS THAT
+2013-10-09 00:19:37	edran	*teae-total (a la latin)
+2013-10-09 00:19:37	StrawHatter	UM
+2013-10-09 00:19:43	StrawHatter	SOMEONE WHO DOESN'T DRINK?
+2013-10-09 00:19:45	Reid	Yes
+2013-10-09 00:19:48	edran	Bingo.
+2013-10-09 00:19:51	StrawHatter	yeah i'm
+2013-10-09 00:19:55	StrawHatter	T-Total
+2013-10-09 00:19:56	StrawHatter	- w -
+2013-10-09 00:20:09	Reid	Tee-total, or tea-total?
+2013-10-09 00:20:11	edran	whois doesn't help :(
+2013-10-09 00:20:19	edran	sign with your names guys
+2013-10-09 00:20:30	Reid	(the former is the technical term, the latter is the "pretty much everyone who is tee-total")
+2013-10-09 00:20:39	edran	^
+2013-10-09 00:20:57	Reid	edran: I have RealName
+2013-10-09 00:21:03	StrawHatter	um um I think I'm the first one?
+2013-10-09 00:21:10	StrawHatter	Is there really a differ-
+2013-10-09 00:21:18	StrawHatter	oh
+2013-10-09 00:21:25	Reid	The latter drink a shitton of tea
+2013-10-09 00:21:34	Reid	With one exception, every teetotaller I know is a teatotaller
+2013-10-09 00:21:42	edran	Reid: you do, you do.
+2013-10-09 00:21:56	StrawHatter	i'm
+2013-10-09 00:21:57	StrawHatter	both
+2013-10-09 00:21:59	StrawHatter	<3
+2013-10-09 00:22:03	Reid	So a tea-totaller then
+2013-10-09 00:22:28	edran	Nah, I know people who are coffe-totaller
+2013-10-09 00:22:41	Reid	However, with you earlier mentioning your age, is your teetotalitarianism an informed choice, or merely a "underage and not willing to try?"
+2013-10-09 00:22:43	edran	no alcohl & no coffee
+2013-10-09 00:23:09	 *	edran doesn't know how to speAl and is appy
+2013-10-09 00:23:09	Reid	edran: tea-total is "tee-total, also drinks so much tea. So. Much."
+2013-10-09 00:23:10	StrawHatter	an informed choice
+2013-10-09 00:23:17	Reid	Fairy snuff
+2013-10-09 00:23:41	edran	Troll sgunt.
+2013-10-09 00:23:48	edran	*sgrunt (maybe?)
+2013-10-09 00:23:52	Reid	Fwiw, shitty beer at high school parties != what decent drinks are like. Also, beer generally is a bit crap. So, y'know, try whisky at some point ;)
+2013-10-09 00:23:55	 *	Reid <3 whisky
+2013-10-09 00:24:09	StrawHatter	Who me?
+2013-10-09 00:24:11	hamhut1066	agreed, beer... med
+2013-10-09 00:24:14	hamhut1066	meh/
+2013-10-09 00:24:15	Reid	Yarrp
+2013-10-09 00:24:27	Reid	Most beer is average at best
+2013-10-09 00:24:32	Reid	Craft ale can be nice
+2013-10-09 00:24:32	StrawHatter	Nah, I just wanna stay away from all alchols
+2013-10-09 00:24:33	hamhut1066	whisky can be good
+2013-10-09 00:24:46	hamhut1066	I enjoy red wine too
+2013-10-09 00:25:04	Reid	A decent red wine is nice, but crap ones are...blech
+2013-10-09 00:25:12	Reid	Though make a reasonable basis for mulled wine
+2013-10-09 00:25:56	hamhut1066	yes, and add enough sugar and you've got yourself one hell of a hangover
+2013-10-09 00:26:01	Reid	Sugar?
+2013-10-09 00:26:02	Reid	SUGAR?
+2013-10-09 00:26:10	hamhut1066	haha, south african wines :p
+2013-10-09 00:26:24	 *	Reid grumbles something about fools not appreciating good mulled wine
+2013-10-09 00:26:28	Reid	I should totally do that this christmas
+2013-10-09 00:26:32	hamhut1066	they have tons of crap left over so they add sugar and release to the masses
+2013-10-09 00:26:35	Reid	Turn up at a compsoc thing with proper mulled wine
+2013-10-09 00:26:42	Reid	Oh gods
+2013-10-09 00:26:46	Reid	Why? Why would they do that?
+2013-10-09 00:26:49	hamhut1066	haha, good for parties :p
+2013-10-09 00:27:14	hamhut1066	but yeah... it's a bad choice every time... because they make lots of wine there
+2013-10-09 00:27:25	hamhut1066	winelands and all that
+2013-10-09 00:27:46	Reid	Thing is, some SA wine is lovely
+2013-10-09 00:28:35	hamhut1066	yeah, not gonna lie, they make good wine, but it's like anything. take the tea business in Kenya, the Kenyans get the shit tea. all the good stuff is exported
+2013-10-09 00:28:58	<--	ross_a (~ross@host-89-241-238-116.as13285.net) has quit (Quit: Ex-Chat)
+2013-10-09 00:29:10	Reid	Standard
+2013-10-09 00:29:16	StrawHatter	guys
+2013-10-09 00:29:18	Reid	Although
+2013-10-09 00:29:19	Reid	Not all
+2013-10-09 00:29:30	Reid	If you have money, it's the cheapest way to get good stuff. Be near the source.
+2013-10-09 00:29:42	StrawHatter	what number of lectures of which i missed is considered a bad number?
+2013-10-09 00:29:45	Reid	Like good single malts here are shit cheap compared to anywhere else.
+2013-10-09 00:29:49	Reid	StrawHatter: Varies wildly by course
+2013-10-09 00:29:56	StrawHatter	Reid, Industrial Management?
+2013-10-09 00:30:11	Reid	Some courses, don't bother with the lectures, they will make you dumber. Others, miss more than one and oh god no.
+2013-10-09 00:30:18	Reid	Dunno. Not Informatics.
+2013-10-09 00:30:37	Reid	Also, dunno for most Informatics ones now either, since various lecturers changed.
+2013-10-09 00:30:37	hamhut1066	yeah, that's true
+2013-10-09 00:30:39	StrawHatter	This is why, I'd like people to actually tell me what an outside course it :/
+2013-10-09 00:30:49	StrawHatter	is*
+2013-10-09 00:30:55	Reid	Outside course = course from outside your chosen school
+2013-10-09 00:31:09	Reid	So if you're studying informatics, a course from outside the school of informatics
+2013-10-09 00:31:12	StrawHatter	I only just found out I had to take one
+2013-10-09 00:31:13	StrawHatter	Like
+2013-10-09 00:31:13	hamhut1066	ie. I am doing Philosophy of Science
+2013-10-09 00:31:18	StrawHatter	4 weeks afterwards
+2013-10-09 00:31:21	hamhut1066	and studying Computer Science
+2013-10-09 00:31:26	Reid	You are under no obligation to take an outside course on CS/SE
+2013-10-09 00:31:34	Reid	You have a slot where you must choose a course
+2013-10-09 00:31:43	Reid	But you can pick ones within Informatics if any are available
+2013-10-09 00:31:58	Reid	Protip: Take Logic 1 in semester 2, you cover most of it in Computation and Logic
+2013-10-09 00:32:00	StrawHatter	hamhut, you an undergrad by any chance?
+2013-10-09 00:32:08	edran	StrawHatter: Really? What did your PT tell you?
+2013-10-09 00:32:25	edran	hamhut1066 is a first year like you probably
+2013-10-09 00:32:30	edran	I took PhilSci last year
+2013-10-09 00:32:32	Reid	Also, that's something that should've come up at your initial DoS meeting when you matriculated.
+2013-10-09 00:32:36	StrawHatter	edran, she like mentioned it briefly, and then i was like "i don't even know what that is"
+2013-10-09 00:32:49	StrawHatter	and then we moved on from the topic
+2013-10-09 00:33:15	hamhut1066	yeah, have just started... had to have a break between school and uni
+2013-10-09 00:33:28	edran	StrawHatter: can you pm me who she is? I'm the School Rep and I'd like to give this kind of feedback to the Directors of teaching
+2013-10-09 00:33:38	StrawHatter	You're kidding right?
+2013-10-09 00:33:55	edran	Me?
+2013-10-09 00:33:57	edran	No.
+2013-10-09 00:33:58	StrawHatter	@edran*
+2013-10-09 00:33:58	lambdabot	Unknown command, try @list
+2013-10-09 00:34:04	StrawHatter	oh
+2013-10-09 00:34:08	StrawHatter	are you sure?
+2013-10-09 00:34:12	StrawHatter	it's really not a big deal
+2013-10-09 00:34:15	Reid	They won't jump down her throat
+2013-10-09 00:34:32	edran	;)
+2013-10-09 00:34:36	edran	Don't worry
+2013-10-09 00:34:39	Reid	But if it becomes a recurring thing, they'll remind PTs that they really should inform students about that sort of thing
+2013-10-09 00:34:42	StrawHatter	<Reid> They won't jump down her throat
+2013-10-09 00:34:50	StrawHatter	i actually giggled i swear to god
+2013-10-09 00:34:56	edran	Fair enough
+2013-10-09 00:34:58	Reid	Have you never heard that expression before? o.O
+2013-10-09 00:34:59	edran	anyways, don't worry
+2013-10-09 00:35:22	StrawHatter	Reid, nope
+2013-10-09 00:35:27	Reid	Huh.
+2013-10-09 00:35:31	Reid	But...you are Scottish.
+2013-10-09 00:35:36	Reid	Does not compute
+2013-10-09 00:35:45	StrawHatter	:c
+2013-10-09 00:35:49	StrawHatter	I'm a bad Scot
+2013-10-09 00:35:50	StrawHatter	I'm sorry
+2013-10-09 00:35:56	StrawHatter	I'll do better next time
+2013-10-09 00:36:13	edran	lol
+2013-10-09 00:36:36	Reid	@cycle .
+2013-10-09 00:36:36	lambdabot	Unknown command, try @list
+2013-10-09 00:36:39	Reid	Tch
+2013-10-09 00:36:41	Reid	@list
+2013-10-09 00:36:41	lambdabot	What module?  Try @listmodules for some ideas.
+2013-10-09 00:36:47	hamhut1066	@listmodules
+2013-10-09 00:36:47	lambdabot	activityPlugin base bfPlugin checkPlugin composePlugin dicePlugin dictPlugin djinnPlugin dummyPlugin elitePlugin evalPlugin filterPlugin freePlugin freshPlugin haddockPlugin helpPlugin hooglePlugin
+2013-10-09 00:36:47	lambdabot	instancesPlugin ircPlugin karmaPlugin localtimePlugin morePlugin oeisPlugin offlineRC plPlugin pointfulPlugin pollPlugin prettyPlugin quotePlugin searchPlugin seenPlugin slapPlugin sourcePlugin
+2013-10-09 00:36:47	lambdabot	spellPlugin system tellPlugin tickerPlugin todoPlugin topicPlugin typePlugin undoPlugin unlambdaPlugin unmtlPlugin urlPlugin versionPlugin vixenPlugin wherePlugin
+2013-10-09 00:36:50	Reid	Goddamn it lamdabut
+2013-10-09 00:36:54	StrawHatter	c-calm down lambda
+2013-10-09 00:36:59	Reid	\cycle .
+2013-10-09 00:37:10	 *	Reid fails to remember the trigger for lamdabot to haskell
+2013-10-09 00:37:37	hamhut1066	@dicePlugin
+2013-10-09 00:37:37	lambdabot	Unknown command, try @list
+2013-10-09 00:37:53	StrawHatter	@canIgetAhug?
+2013-10-09 00:37:53	lambdabot	Unknown command, try @list
+2013-10-09 00:37:57	StrawHatter	fuck off lambda
+2013-10-09 00:38:00	edran	Tail [1..10]
+2013-10-09 00:38:01	StrawHatter	i didn't even want to hug you
+2013-10-09 00:38:04	edran	lol
+2013-10-09 00:38:07	Reid	Oh, yes
+2013-10-09 00:38:11	Reid	@eval cycle .
+2013-10-09 00:38:13	StrawHatter	[1..]
+2013-10-09 00:38:17	StrawHatter	nope nevermind
+2013-10-09 00:38:27	hamhut1066	@eval [1..10]
+2013-10-09 00:38:46	edran	@hoogle [a] -> [a]
+2013-10-09 00:38:46	lambdabot	Could not find some databases: default
+2013-10-09 00:38:46	lambdabot	Searching in:
+2013-10-09 00:38:46	lambdabot	  .
+2013-10-09 00:39:12	edran	> tail [1..10]
+2013-10-09 00:39:14	lambdabot	  [2,3,4,5,6,7,8,9,10]
+2013-10-09 00:39:15	edran	:D
+2013-10-09 00:39:19	StrawHatter	@lambdaisawhore 
+2013-10-09 00:39:19	lambdabot	Unknown command, try @list
+2013-10-09 00:39:24	StrawHatter	i swear to god
+2013-10-09 00:39:25	Reid	@do cycle .
+2013-10-09 00:39:25	lambdabot	<unknown>.hs: 1: 8:Parse error in expression: cycle .
+2013-10-09 00:39:30	Reid	Something like that
+2013-10-09 00:39:35	hamhut1066	@do stuff
+2013-10-09 00:39:35	lambdabot	stuff
+2013-10-09 00:39:36	Reid	Eval is nothing
+2013-10-09 00:39:45	Reid	do evaluates monads
+2013-10-09 00:39:48	Reid	@help do
+2013-10-09 00:39:48	lambdabot	do <expr>
+2013-10-09 00:39:48	lambdabot	Translate Monad operators to do notation.
+2013-10-09 00:40:00	StrawHatter	@help me
+2013-10-09 00:40:00	lambdabot	help <command>. Ask for help for <command>. Try 'list' for all commands
+2013-10-09 00:40:14	edran	@help list
+2013-10-09 00:40:14	lambdabot	list [module|command]. Show commands for [module] or the module providing [command].
+2013-10-09 00:40:23	edran	@help list [@do]
+2013-10-09 00:40:23	lambdabot	list [module|command]. Show commands for [module] or the module providing [command].
+2013-10-09 00:40:26	edran	@help list [do]
+2013-10-09 00:40:26	lambdabot	list [module|command]. Show commands for [module] or the module providing [command].
+2013-10-09 00:40:32	StrawHatter	guys
+2013-10-09 00:40:32	edran	@help do
+2013-10-09 00:40:32	lambdabot	do <expr>
+2013-10-09 00:40:32	lambdabot	Translate Monad operators to do notation.
+2013-10-09 00:40:35	StrawHatter	can we just
+2013-10-09 00:40:42	StrawHatter	accept the fact that lambda doesn't like us
+2013-10-09 00:40:48	edran	bulls
+2013-10-09 00:40:49	StrawHatter	</3
+2013-10-09 00:40:58	Reid	It has a simple operation thing
+2013-10-09 00:41:01	edran	On #haskell is fantastic
+2013-10-09 00:41:03	Reid	That I can't remember
+2013-10-09 00:41:09	Reid	edran: It's the same commands here
+2013-10-09 00:41:24	edran	Reid: I know. I just haven't used it in a while
+2013-10-09 00:41:29	StrawHatter	oh yeah
+2013-10-09 00:41:29	Reid	Ah
+2013-10-09 00:41:31	StrawHatter	do we
+2013-10-09 00:41:37	StrawHatter	still do haskell in year 2?
+2013-10-09 00:41:40	Reid	No
+2013-10-09 00:41:48	StrawHatter	<333
+2013-10-09 00:41:52	Reid	Just in FP
+2013-10-09 00:41:59	Reid	But learn to love it, it shows up again in other places
+2013-10-09 00:42:29	StrawHatter	I've tried loving it like how I tried to love the Street Fighter franchise
+2013-10-09 00:42:38	StrawHatter	She just could never love me back
+2013-10-09 00:42:41	edran	There are some 3rd and 4th year that can let you use it
+2013-10-09 00:42:45	edran	*courses
+2013-10-09 00:43:05	edran	Well, FP makes you hate everything else
+2013-10-09 00:43:17	edran	So brace yourself
+2013-10-09 00:44:20	StrawHatter	i just remembered i've got a tutorial thingy for thursday
+2013-10-09 00:44:25	hamhut1066	it's so much shorter than everything else
+2013-10-09 00:44:28	StrawHatter	i can already feel the despair
+2013-10-09 00:44:41	hamhut1066	yeah, I've started on next weeks... it's my procrastination tool
+2013-10-09 00:44:53	StrawHatter	fuck
+2013-10-09 00:44:56	Reid	The worst thing is
+2013-10-09 00:44:57	StrawHatter	i'm such a bad student
+2013-10-09 00:44:59	Reid	You don't have Wadler.
+2013-10-09 00:45:05	StrawHatter	Wadler?
+2013-10-09 00:45:05	Reid	No jumping up and down to emphasis points.
+2013-10-09 00:45:08	Reid	No Lambdaman.
+2013-10-09 00:45:12	Reid	Poor firsties :(
+2013-10-09 00:45:15	Reid	Phil Wadler
+2013-10-09 00:45:15	StrawHatter	Oh!
+2013-10-09 00:45:18	StrawHatter	Is this the -
+2013-10-09 00:45:23	StrawHatter	He's my Tutor for it!
+2013-10-09 00:45:29	hamhut1066	my maths is death though
+2013-10-09 00:45:30	Reid	The reason lambdabot is often referred to as wadlerbot
+2013-10-09 00:45:43	hamhut1066	oh, I can't remember the name of mine
+2013-10-09 00:45:45	Reid	He lectured FP until the year before last
+2013-10-09 00:45:48	Reid	Was on sabbatical last year
+2013-10-09 00:46:00	StrawHatter	I remember him being Phil and that he was a previous lectuere
+2013-10-09 00:46:12	StrawHatter	No but
+2013-10-09 00:46:13	StrawHatter	The Don
+2013-10-09 00:46:16	StrawHatter	Is amazing
+2013-10-09 00:46:16	Reid	He's one of the inventors of Haskell
+2013-10-09 00:46:31	StrawHatter	... Oh snap, really?
+2013-10-09 00:46:59	Reid	And concluded the lambda calculus lecture by ripping open his shirt to reveal the lambdaman costume, with the line "So remember... ~rip~ lamda calculus!"
+2013-10-09 00:47:02	Reid	Yes.
+2013-10-09 00:47:14	Reid	(and it's a Superman costume with a lambda instead of an S)
+2013-10-09 00:47:19	StrawHatter	PLEASE TELL ME YOU ARE BEING SERIOUS
+2013-10-09 00:47:21	StrawHatter	I SWEAR TO GOD
+2013-10-09 00:47:26	StrawHatter	THIS IS AMAZING
+2013-10-09 00:47:43	StrawHatter	HOW-
+2013-10-09 00:47:44	StrawHatter	I JUST-
+2013-10-09 00:47:51	StrawHatter	DON BETTER DO THIS OR I SWEAR TO GOD
+2013-10-09 00:48:12	Reid	Highlight of that lecture
+2013-10-09 00:48:32	Reid	Oh fuck, he did it at QCon
+2013-10-09 00:48:38	edran	Reid, tell them the big picture tho
+2013-10-09 00:48:41	StrawHatter	>he did it at a Con
+2013-10-09 00:48:51	StrawHatter	[giggling intensifies]
+2013-10-09 00:49:18	Reid	http://www.youtube.com/watch?v=TL5AeX4bGn4
+2013-10-09 00:49:20	Reid	edran: ?
+2013-10-09 00:49:23	lambdabot	Title: Lambda Man - YouTube
+2013-10-09 00:49:38	edran	Don is not too bad. Wadler is a mmm... an interesting guy. If you love Haskell, you'll love him, but otherwise you may come to hate him.
+2013-10-09 00:49:48	Reid	http://bodil.org/hipster/m/lambda-man.jpg
+2013-10-09 00:49:56	 *	Reid doesn't know Don
+2013-10-09 00:50:02	Reid	Wadler really REALLY knows his stuff
+2013-10-09 00:50:09	StrawHatter	what if i said
+2013-10-09 00:50:16	StrawHatter	i don't like Haskell
+2013-10-09 00:50:17	StrawHatter	oh
+2013-10-09 00:50:18	StrawHatter	right
+2013-10-09 00:50:25	StrawHatter	i should really read before i type
+2013-10-09 00:50:26	Reid	There's a level of kool aid offering, and if you drink it he's great
+2013-10-09 00:50:27	edran	Don too. I think he partially designed ML, so he should not be too bad :)
+2013-10-09 00:50:48	edran	ha
+2013-10-09 00:51:16	edran	Well, I do like Wadler, but I heard people saying completely the opposite.
+2013-10-09 00:51:27	edran	While generally Don is loved by everyone :P
+2013-10-09 00:51:37	edran	at least last year it was that way
+2013-10-09 00:52:03	Reid	Wadler is hated by two classes of people
+2013-10-09 00:52:23	Reid	1) People who get cross about being forced to work hard
+2013-10-09 00:52:35	Reid	2) People who actively dislike functional programming
+2013-10-09 00:52:49	StrawHatter	...
+2013-10-09 00:53:03	StrawHatter	How on Earth do I fill both categories
+2013-10-09 00:53:44	Reid	With magic
+2013-10-09 00:53:56	Reid	There are things you will learn to love about FP, and things you will learn to hate
+2013-10-09 00:53:59	StrawHatter	A-Am I a wizard yet?
+2013-10-09 00:54:22	Reid	An obvious example of the latter - there are SO MANY INSTANCES where you want to use 2 or 3 lines of code with an internal variable. No can do.
+2013-10-09 00:54:53	Reid	An obvious example of the former - anything you learn to do with list comprehension. You will cry at its absence in other langauges in the fullness of time.
+2013-10-09 00:55:01	Reid	languages*
+2013-10-09 00:55:04	StrawHatter	shhhhhhhhhhh
+2013-10-09 00:55:08	StrawHatter	i just
+2013-10-09 00:55:19	StrawHatter	won't even attempt to make lists viable <3
+2013-10-09 00:55:30	Reid	You won't see uses for them now
+2013-10-09 00:55:32	Reid	But you will in time
+2013-10-09 00:55:34	Reid	Trust me.
+2013-10-09 00:56:13	Reid	There have been a number of situations where I've wished I could do a single line list comprehension, and been forced to write several lines and use a helper function
+2013-10-09 00:56:48	StrawHatter	i'm waiting for the day
+2013-10-09 00:56:59	Reid	Everything you write in haskell that should be written in haskell (some tasks you're given should not be written in haskell) is beautiful, consise code
+2013-10-09 00:57:03	StrawHatter	when functional programming becomes what it like, needs to be
+2013-10-09 00:57:14	Reid	concise*
+2013-10-09 00:57:19	Reid	In the real world, it is
+2013-10-09 00:57:35	Reid	Its main usage is in mass data crunching, which is what it's perfect for.
+2013-10-09 00:57:35	StrawHatter	it is? 
+2013-10-09 00:57:37	StrawHatter	oh
+2013-10-09 00:58:06	Reid	Uni does the artificial environment of handing you things you shouldn't do in FP to do in FP
+2013-10-09 00:58:37	StrawHatter	speaking of uni, i'm guessing it's not a bad idea to drop out at the end of semester 1 right? :D
+2013-10-09 01:00:01	Reid	.....
+2013-10-09 01:00:10	hamhut1066	but it's kinda fun, and gets you to think of how the language works
+2013-10-09 01:00:29	StrawHatter	i meant uni in general
+2013-10-09 01:03:43	Reid	hamhut1066: Yes. Though frustrating when you get marks for putting a screw in with a hammer.
+2013-10-09 01:04:15	Reid	StrawHatter: If you genuinely feel it's not working out, talk to your PT. Dropping out isn't something you should just go "eh, fuck it" about.
+2013-10-09 01:04:34	Norgg	Reid: AT is great because when you're in AT you don't need to look at AT.
+2013-10-09 01:04:52	<--	errawr (~errawr@31.205.91.55) has quit (Quit: errawr)
+2013-10-09 01:04:53	Reid	Norgg: I was talking about the coffee on upper floors
+2013-10-09 01:05:23	Norgg	Free coffee is pretty standard for doing software because caffiene intake is roughly proportional to code output.
+2013-10-09 01:05:58	Reid	And how it's nice to work there because of the free coffee being decent
+2013-10-09 01:07:00	StrawHatter	Norgg, is that an actual fact?
+2013-10-09 01:07:22	Norgg	Definitely and also I haven't just got back from drinking beers.
+2013-10-09 01:07:30	Reid	Did you Computer?
+2013-10-09 01:07:40	Norgg	Am in Cambridge, sort of computered.
+2013-10-09 01:07:50	Reid	Oooh
+2013-10-09 01:07:51	Norgg	Said goodbye to an increpare.
+2013-10-09 01:07:55	Reid	Cambridge
+2013-10-09 01:07:57	Reid	Fancy :D
+2013-10-09 01:08:19	Norgg	Will be back in Edinburgh in ~6 months.
+2013-10-09 01:08:31	Reid	That's a while to be down there
+2013-10-09 01:08:39	Reid	Won't <insert company name here> miss you?
+2013-10-09 01:08:48	Reid	Or are you job upgrading?
+2013-10-09 01:08:52	Norgg	I've been down here for like 2 years, still work for the company on AT6 though.
+2013-10-09 01:08:58	Norgg	It's complicated. :P
+2013-10-09 01:09:16	Reid	That'll be why you only occasionally appear around then :P
+2013-10-09 01:09:22	Norgg	Yep. :D
+2013-10-09 01:09:24	Reid	Reckon you'll make Conpulsion this year?
+2013-10-09 01:10:03	Norgg	Hopefully! It's about when we're moving back.
+2013-10-09 01:10:08	Reid	:D
+2013-10-09 01:10:21	Norgg	2 kids to bring along now.
+2013-10-09 01:10:22	Reid	T'will be a bit later than usual this year - last weekend in April
+2013-10-09 01:10:32	Reid	And so they shall become one of us
+2013-10-09 01:11:14	Norgg	Either that or I'll drive them mad and they'll totally rebel from everything geeky, could go either way really.
+2013-10-09 01:11:27	Reid	Early indoctrination is the safest ploy
+2013-10-09 01:11:33	StrawHatter	^
+2013-10-09 01:11:38	Reid	Otherwise they might end up being professional athletes or something
+2013-10-09 01:13:56	Norgg	I would be pretty down with that.
+2013-10-09 01:14:25	hamhut1066	Reid: agreed, but am still learning the syntax. we're only getting into higher order functions now
+2013-10-09 01:15:18	Reid	Norgg: Woe is you. Your children shall either be true geeks, or popular people ;)
+2013-10-09 01:15:29	Reid	hamhut1066: You'll learn to love (chunks of) it :D
+2013-10-09 01:15:31	hamhut1066	my system is back up, took long enough... damn systemd update
+2013-10-09 01:15:34	Reid	And on that note, I'm going to bed.
+2013-10-09 01:15:38	Reid	Night all
+2013-10-09 01:15:40	StrawHatter	what is this
+2013-10-09 01:15:41	StrawHatter	bed?
+2013-10-09 01:15:46	StrawHatter	thou speakest of?
+2013-10-09 01:15:55	Reid	A comfy place
+2013-10-09 01:15:57	Reid	For nap naps
+2013-10-09 01:16:06	StrawHatter	can i join you? :D
+2013-10-09 01:16:10	Norgg	Reid: You're not ircing from bed already?
+2013-10-09 01:16:16	hamhut1066	I am heading off too!! 
+2013-10-09 01:16:36	hamhut1066	damn it... ssh doesn't work!!! I blame keysurf
+2013-10-09 01:16:37	StrawHatter	guys it's only 1
+2013-10-09 01:16:38	Reid	Norgg: I'm ircing from about 2 feet from my bed
+2013-10-09 01:16:42	Reid	My laptop is made of meh.
+2013-10-09 01:16:46	Norgg	:(
+2013-10-09 01:16:48	StrawHatter	>i have to be on a train in 6 hours
+2013-10-09 01:16:53	StrawHatter	life is truly suffering
+2013-10-09 01:17:05	hamhut1066	at least you get plugs in the train
+2013-10-09 01:17:07	Norgg	I will be jumped on by a 4 year old in ~5 hours.
+2013-10-09 01:17:07	Reid	StrawHatter: Are you an attractive female who likes geeky things? If so, perhaps.
+2013-10-09 01:17:20	Reid	Norgg: Most effective alarm clock you'll ever possess.
+2013-10-09 01:17:38	Norgg	Reid: No snooze button. DDDD:
+2013-10-09 01:17:43	StrawHatter	If i was an attractive female who liked geeky things
+2013-10-09 01:17:46	StrawHatter	couldn't i just
+2013-10-09 01:17:51	StrawHatter	sleep with the lectureres
+2013-10-09 01:17:56	StrawHatter	to get full marks?
+2013-10-09 01:18:56	Reid	This isn't American movies. No.
+2013-10-09 01:19:19	StrawHatter	Eugh
+2013-10-09 01:19:32	StrawHatter	that sounded like it could work for some reason
+2013-10-09 01:19:45	StrawHatter	but to answer your question, no, i'm not a grill
+2013-10-09 01:20:01	Reid	I'd be worried if you were a George Foreman
+2013-10-09 01:20:17	Reid	Impressed, admittedly, but worried about the imminent takeover.
+2013-10-09 01:20:27	Norgg	http://www.thesweetscience.com/images/stories/boxing/george-foreman-7.jpg
+2013-10-09 01:20:30	Norgg	Pretty sexy!
+2013-10-09 01:20:32	lambdabot	http://tinyurl.com/dxv6g5o
+2013-10-09 01:20:52	StrawHatter	...
+2013-10-09 01:20:54	StrawHatter	Yes
+2013-10-09 01:21:04	Reid	But anyhoo. If you're not an attractive ladyperson, then I'm afraid joining me in my bed is not an optionthing.
+2013-10-09 01:21:12	StrawHatter	Lambda is 10/10
+2013-10-09 01:21:22	StrawHatter	Lambda is best girl <3
+2013-10-09 01:21:31	Reid	And now, zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz~
+2013-10-09 01:21:46	StrawHatter	whelp
+2013-10-09 01:21:47	StrawHatter	time to go
+2013-10-09 01:21:57	StrawHatter	shitpost on some irc servers
+2013-10-09 01:23:53	hamhut1066	sounds like fun, have fun!
+2013-10-09 01:24:39	StrawHatter	i really wont
+2013-10-09 01:26:57	StrawHatter	yeah screw it, i'll just try and sleep
+2013-10-09 01:27:30	StrawHatter	bai bai
+2013-10-09 01:27:36	<--	StrawHatter (~StrawHatt@host86-140-130-82.range86-140.btcentralplus.com) has quit
+2013-10-09 09:10:05	--	irc: disconnected from server
+2013-10-09 09:10:15	-->	hamhut1066 (~hamhut@188.74.85.44) has joined #compsoc
+2013-10-09 09:10:15	--	Topic for #compsoc is "COMPSOC <3 YOU (The website lives!) http://comp-soc.com/"
+2013-10-09 09:10:15	--	Topic set by R2ZER0 (~quassel@mercury.r2zer0.net) on Sat, 17 Aug 2013 01:18:51
+2013-10-09 09:10:15	--	Nicks #compsoc: [@amazoph @COMPSOC @drayshak @StarScream Andrew ball-hayden blip2 Bunny camerongray craigs cronin101 Estel Fib hamhut1066 Jammy Jay joe kev KGL KitB kraken lambdabot modulo Norgg oliland R2ZER0 rachel Reid rob Rumpelstiltskin Simon skinnylinny Smilers_ staircase stesh Sunstrike|Off ve]
+2013-10-09 09:10:15	--	Channel #compsoc: 37 nicks (4 ops, 0 halfops, 0 voices, 33 normals)
+2013-10-09 09:10:17	--	Mode #compsoc [+n]
+2013-10-09 09:10:17	--	Channel created on Wed, 30 Mar 2011 23:45:26
+2013-10-09 09:54:35	-->	errawr (~errawr@31.205.91.55) has joined #compsoc
+2013-10-09 09:56:21	<--	KGL (~KGL@host217-44-33-222.range217-44.btcentralplus.com) has quit (Ping timeout: 246 seconds)
+2013-10-09 10:25:31	-->	StrawHatter (~StrawHatt@cpat001.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-09 10:25:48	StrawHatter	hai hai
+2013-10-09 10:26:34	@StarScream	hai
+2013-10-09 10:26:43	StrawHatter	i'm just you know
+2013-10-09 10:26:50	StrawHatter	chillin' in my CL tutorial
+2013-10-09 10:27:12	StrawHatter	how are you @SStar?
+2013-10-09 10:27:17	@StarScream	i'm chillin' in business accounting
+2013-10-09 10:27:33	StrawHatter	sounds gross
+2013-10-09 10:27:52	@StarScream	we're done with class so we're revising for the economic issues assessment next hour
+2013-10-09 10:28:00	@StarScream	dullsville
+2013-10-09 10:28:04	@StarScream	I hate wednesdays
+2013-10-09 10:28:49	StrawHatter	i hate everyday :/
+2013-10-09 10:29:16	StrawHatter	I JUST WANNA STAY AT HOME AND DO KYUTE THINGS WITH MY COMPUTER
+2013-10-09 10:30:01	StrawHatter	Jennni is best girl <3
+2013-10-09 10:30:08	StrawHatter	Lambda is a shit
+2013-10-09 10:31:35	StrawHatter	Jenni is my laptop's name, just fyi... I don't want you guys thinking i like girls or anything ;)
+2013-10-09 10:32:00	@StarScream	oh no we wouldnt want that
+2013-10-09 10:32:29	@StarScream	I cba revising i'm totes ready I just want today to be over
+2013-10-09 10:33:31	StrawHatter	6THI
+2013-10-09 10:33:33	StrawHatter	i just
+2013-10-09 10:33:35	StrawHatter	wanna walk out
+2013-10-09 10:34:17	StrawHatter	wait wait wait
+2013-10-09 10:34:21	@StarScream	you couuld but its only an hour
+2013-10-09 10:34:23	StrawHatter	what's a sequent calculus?
+2013-10-09 10:34:27	@StarScream	lol
+2013-10-09 10:34:29	@StarScream	idk
+2013-10-09 10:34:34	StrawHatter	woop woop
+2013-10-09 10:34:42	StrawHatter	oh
+2013-10-09 10:34:44	StrawHatter	it's just
+2013-10-09 10:34:46	StrawHatter	implications
+2013-10-09 10:34:56	@StarScream	prolly
+2013-10-09 10:35:02	StrawHatter	i'll go back to looking at otters now <3333
+2013-10-09 10:35:08	StrawHatter	http://31.media.tumblr.com/e5adbd464a3c34f259e53c82c1198dc3/tumblr_mu739h1BlI1sgmj3co1_400.gif
+2013-10-09 10:35:09	lambdabot	http://tinyurl.com/qhlvaey
+2013-10-09 10:35:12	@StarScream	otters!
+2013-10-09 10:35:30	@StarScream	ee otter
+2013-10-09 10:35:30	StrawHatter	How /fucking/ kyute is that
+2013-10-09 10:35:39	@StarScream	so fcking kyute
+2013-10-09 10:36:03	@StarScream	silly otter I bet it doesnt fully understand the rules of basketball
+2013-10-09 10:37:22	StrawHatter	excuse u
+2013-10-09 10:37:30	StrawHatter	it's an honourary member of the globtroters
+2013-10-09 10:37:40	@StarScream	oh my glob
+2013-10-09 10:39:09	StrawHatter	http://media.tumblr.com/a708cbca73f2e7b71294f2c5f89045a8/tumblr_inline_mu69s5rOnI1r4k70j.jpg
+2013-10-09 10:39:09	lambdabot	http://tinyurl.com/nmdxler
+2013-10-09 10:39:12	StrawHatter	i could just
+2013-10-09 10:39:22	StrawHatter	give out an unlimited number of otter pictures and gifs
+2013-10-09 10:53:07	<--	StrawHatter (~StrawHatt@cpat001.wlan.net.ed.ac.uk) has quit
+2013-10-09 10:58:08	hamhut1066	morning all, have almost made it out of my room!
+2013-10-09 10:58:58	hamhut1066	off to make breakfast
+2013-10-09 11:05:01	-->	StrawHatter (~StrawHatt@cpat003.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-09 11:19:54	-->	craigsnowden (~quassel@2605:6400:2:fed5:22:0:a952:b96c) has joined #compsoc
+2013-10-09 11:20:45	hamhut1066	how was CL? I have mine at 1
+2013-10-09 11:21:32	StrawHatter	It's pretty damn godawful
+2013-10-09 11:29:39	--	Sunstrike|Off is now known as Sunstrike
+2013-10-09 11:37:11	<--	StrawHatter (~StrawHatt@cpat003.wlan.net.ed.ac.uk) has quit
+2013-10-09 11:57:38	--	Sunstrike is now known as Sunstrike|Off
+2013-10-09 12:02:27	hamhut1066	anyone else on irc in linear algebra?
+2013-10-09 12:07:10	-->	edran (~edran@188.74.75.234) has joined #compsoc
+2013-10-09 12:13:40	-->	KGL (~KGL@host217-44-33-222.range217-44.btcentralplus.com) has joined #compsoc
+2013-10-09 12:14:57	<--	errawr (~errawr@31.205.91.55) has quit (Ping timeout: 246 seconds)
+2013-10-09 12:17:37	-->	StrawHatter (~StrawHatt@cpat001.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-09 12:17:48	StrawHatter	zzz
+2013-10-09 12:20:01	craigsnowden	How is CL this year? I hear Dave isn't lecturing it anymore
+2013-10-09 12:21:47	StrawHatter	Let's not discuss CL
+2013-10-09 12:21:58	StrawHatter	Bad bad bad times in the lectures...
+2013-10-09 12:22:54	craigsnowden	Feh, just work out what's going on by the coursework and you'll be fine.
+2013-10-09 12:24:43	StrawHatter	Yeah, I kinda already taught myself Digital Electronics, so it should be fine
+2013-10-09 12:24:52	StrawHatter	But the lectures
+2013-10-09 12:24:54	StrawHatter	Oh my word
+2013-10-09 12:34:19	 *	Reid mumbles something about lack of bacon
+2013-10-09 12:35:21	StrawHatter	So
+2013-10-09 12:35:28	StrawHatter	What do I do if I can't Haskell to save my life?
+2013-10-09 12:36:11	Reid	Cry
+2013-10-09 12:36:17	Reid	Then learnyouahaskell
+2013-10-09 12:37:22	StrawHatter	what if I've tried that
+2013-10-09 12:37:29	StrawHatter	Ohwait
+2013-10-09 12:37:31	StrawHatter	I'll
+2013-10-09 12:37:36	StrawHatter	Try the crying part again
+2013-10-09 12:37:37	StrawHatter	That might help
+2013-10-09 12:37:57	Reid	http://learnyouahaskell.com/chapters
+2013-10-09 12:37:58	lambdabot	Title: Chapters - Learn You a Haskell for Great Good!
+2013-10-09 12:38:05	Reid	That is learnyouahaskell
+2013-10-09 12:38:07	Reid	It is good
+2013-10-09 12:38:08	Reid	Very good
+2013-10-09 12:38:12	StrawHatter	Like
+2013-10-09 12:38:13	StrawHatter	How good?
+2013-10-09 12:39:17	Reid	Excellent
+2013-10-09 12:39:42	StrawHatter	...
+2013-10-09 12:39:43	StrawHatter	Oh my gosh
+2013-10-09 12:40:00	StrawHatter	This actually tells me how to do things Recursively
+2013-10-09 12:41:49	Reid	Now use it and pass FP
+2013-10-09 12:49:05	<--	StrawHatter (~StrawHatt@cpat001.wlan.net.ed.ac.uk) has quit (Ping timeout: 264 seconds)
+2013-10-09 12:52:24	<--	edran (~edran@188.74.75.234) has quit (Ping timeout: 246 seconds)
+2013-10-09 12:53:53	Jammy	fuck passing FP, ace FP
+2013-10-09 12:54:02	Jammy	100% club 4 lyf
+2013-10-09 13:00:38	Reid	I dropped one mark through a stupid.
+2013-10-09 13:01:50	Jammy	not in the 100% club then
+2013-10-09 13:02:19	Jammy	I am playing with Firefox OS
+2013-10-09 13:02:25	Jammy	it's... okay
+2013-10-09 13:10:20	Reid	I 100%'d OOP?
+2013-10-09 13:10:23	Reid	Does that make up for it?
+2013-10-09 13:24:50	-->	edran (~edran@cpat003.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-09 13:39:31	Fib	Why not 1105?
+2013-10-09 13:39:37	Fib	Why not 110%?
+2013-10-09 14:03:06	<--	edran (~edran@cpat003.wlan.net.ed.ac.uk) has quit (Ping timeout: 246 seconds)
+2013-10-09 14:13:36	-->	taobojlen (~taobojlen@cpat001.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-09 14:14:50	--	taobojlen is now known as taobror
+2013-10-09 14:24:51	<--	taobror (~taobojlen@cpat001.wlan.net.ed.ac.uk) has quit (Quit: taobror)
+2013-10-09 14:31:37	-->	edran (~edran@cpat003.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-09 14:40:55	Reid	Because whilst corporate things will suggest giving 110%, the university agrees with common sense in declaring that to be fucking stupid.
+2013-10-09 14:44:32	Jammy	but it's not necessarily stupid
+2013-10-09 14:44:43	Jammy	if you define 100% to be an acceptable level of effort for example
+2013-10-09 14:44:57	Jammy	then giving an exceptional level of effort would be more than 100%
+2013-10-09 14:45:40	Jammy	percentages above 100 are relatively common in pretty much any situation where percentages are used
+2013-10-09 14:47:47	Reid	Not when discussing usage of things with maxima
+2013-10-09 14:47:55	Reid	So "100% effort" is "all possible effort"
+2013-10-09 14:48:05	Reid	"an increase of >100%" is fine
+2013-10-09 15:06:00	cronin101	But then you'd have to rank students against the diety of effort giving, the one man who gave more than all others
+2013-10-09 15:06:02	cronin101	Also
+2013-10-09 15:06:06	cronin101	I got 130% in NAT
+2013-10-09 15:06:29	cronin101	(coursework)
+2013-10-09 15:06:44	cronin101	But that's because M. Herrman is a pretty cool guy
+2013-10-09 15:07:28	cronin101	also, wish me luck
+2013-10-09 15:07:33	cronin101	I have to give a presentation to DK Arvind
+2013-10-09 15:07:46	cronin101	Not even the wonders of Keynote can prepare me for this
+2013-10-09 15:08:42	stesh	https://github.com/NodeOS/NodeOS
+2013-10-09 15:08:48	stesh	well, nothing could possibly go wrong with this
+2013-10-09 15:11:29	Jammy	Reid: But the the informatics marking system for coursework makes even less sense than that
+2013-10-09 15:11:39	Jammy	in that 70% is if you do everything that's asked of you
+2013-10-09 15:11:46	Jammy	and 100% is some abstract thing more
+2013-10-09 15:11:52	Reid	cronin101: Cry.
+2013-10-09 15:12:03	Reid	I'd try and offer advice, but DK.
+2013-10-09 15:12:06	Jammy	it's a lot easier to pick up marks in the 0-70% range than the 70-100% range
+2013-10-09 15:12:41	Jammy	saying that 100% is getting everything that was asked of you done would be much better
+2013-10-09 15:12:50	Jammy	and more than 100% if you go above and beyond
+2013-10-09 15:13:56	Jammy	and whenever I hear the "Giving it 110% thing", I take that to mean that you're doing more than would usually be expected
+2013-10-09 15:14:42	Jammy	if 100% is the normal amount of work/effort and a job is particularly important (the sitations where you are told to give 110%), then you'd be putting more work or effort in than what is normally 100%
+2013-10-09 15:14:54	Jammy	they don't day 110% of your maximum
+2013-10-09 15:15:05	Jammy	say*
+2013-10-09 15:17:34	Reid	Thing is, the only people who use phrases like "give 110%" are the ones who normally ask for staff to "give their all" or "give 100%/110%" on the average day. Or they're quoting corporate buzzwords
+2013-10-09 15:18:08	Jammy	maybe 100% is the average amount of effort given in that sector?
+2013-10-09 15:19:00	Jammy	blanket rules of "nothing more than 100%!" are great for making sure 6 year olds aren't confused, but most people grow out of them eventually
+2013-10-09 15:22:43	Jammy	on an unrelated note, Firefox OS seems pretty cool
+2013-10-09 15:22:48	Jammy	from my first impressions
+2013-10-09 15:22:54	Jammy	although the ZTE open is SLOW
+2013-10-09 15:22:57	hamhut1066	have you installed it?
+2013-10-09 15:23:02	hamhut1066	mobile os?
+2013-10-09 15:23:30	Jammy	I'm gonna play around with it a bit
+2013-10-09 15:23:42	Jammy	so I got one of the phones
+2013-10-09 15:23:46	Jammy	they're like £60
+2013-10-09 15:25:11	hamhut1066	cool, sounds Like it could be fun
+2013-10-09 15:26:11	Jammy	gonna build images with all of the default apps replaced by my own versions
+2013-10-09 15:26:23	Jammy	a calculator that is always off-by-1
+2013-10-09 15:54:13	cronin101	If the calendar event is your anniversary with your wife, it forgets to remind you
+2013-10-09 15:55:09	cronin101	If it detects your wife operating your phone, it flashes a notification saying 'Sexy Kate just signed in'
+2013-10-09 15:57:24	-->	errawr (~errawr@31.205.91.55) has joined #compsoc
+2013-10-09 16:00:29	<--	edran (~edran@cpat003.wlan.net.ed.ac.uk) has quit (Ping timeout: 264 seconds)
+2013-10-09 16:02:38	-->	edran (~edran@cpat003.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-09 16:11:44	hamhut1066	haha, sounds like the ideal phone
+2013-10-09 17:06:37	--	Sunstrike|Off is now known as Sunstrike
+2013-10-09 17:10:04	-->	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has joined #compsoc
+2013-10-09 17:18:25	<--	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has quit (Read error: Connection reset by peer)
+2013-10-09 17:18:41	-->	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has joined #compsoc
+2013-10-09 17:47:59	-->	Withad (~withad@211.50.208.46.dyn.plus.net) has joined #compsoc
+2013-10-09 18:00:53	hamhut1066	also, yeah... it was all keycoms fault, like you said... as soon as I tried with eduroam it worked like a charm
+2013-10-09 18:07:27	StrawHatter	gz
+2013-10-09 18:08:23	StrawHatter	hamhut1066, you done the exercise for FP tutorials tomorrow?
+2013-10-09 19:04:46	<--	edran (~edran@cpat003.wlan.net.ed.ac.uk) has quit (Quit: WeeChat 0.4.1)
+2013-10-09 19:10:54	<--	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has quit (Remote host closed the connection)
+2013-10-09 19:13:46	-->	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has joined #compsoc
+2013-10-09 20:44:41	<--	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has quit
+2013-10-09 20:54:49	-->	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has joined #compsoc
+2013-10-09 21:21:23	StrawHatter	ded chat
+2013-10-09 21:57:41	<--	craigsnowden (~quassel@2605:6400:2:fed5:22:0:a952:b96c) has quit (Ping timeout: 246 seconds)
+2013-10-09 22:10:05	<--	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has quit (Ping timeout: 264 seconds)
+2013-10-09 22:10:21	-->	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has joined #compsoc
+2013-10-09 22:11:38	-->	leynos (~leynos@cpc9-sgyl32-2-0-cust529.18-2.cable.virginmedia.com) has joined #compsoc
+2013-10-09 22:26:37	<--	leynos (~leynos@cpc9-sgyl32-2-0-cust529.18-2.cable.virginmedia.com) has quit (Quit: Off to dreams of Laserdiscs and Neo-Geos)
+2013-10-09 22:29:02	StrawHatter	Hi Leyno-
+2013-10-09 22:29:05	StrawHatter	By Leynos
+2013-10-09 22:31:52	-->	edran (~edran@188.74.75.176) has joined #compsoc
+2013-10-09 22:33:14	<--	Withad (~withad@211.50.208.46.dyn.plus.net) has quit (Remote host closed the connection)
+2013-10-09 22:42:26	StrawHatter	Hi edran
+2013-10-09 22:51:30	Reid	Word up
+2013-10-09 22:53:03	StrawHatter	woop woop
+2013-10-09 22:53:41	Reid	Golden Joystick voting is down
+2013-10-09 22:53:48	Reid	I blame the free civ v/mafia ii
+2013-10-09 22:55:35	StrawHatter	:/
+2013-10-09 22:56:43	StrawHatter	i blame GTAV
+2013-10-09 22:56:45	StrawHatter	but you knwo
+2013-10-09 22:57:09	Reid	Free games
+2013-10-09 22:57:16	Reid	What else would you blame?
+2013-10-09 22:57:29	StrawHatter	um
+2013-10-09 22:57:38	StrawHatter	Pikmin 3
+2013-10-09 22:58:12	StrawHatter	Monstah Huntah
+2013-10-09 22:58:21	StrawHatter	Hoping for Firm Wang on 3DS
+2013-10-09 22:58:50	Reid	Pssht
+2013-10-09 22:58:53	Reid	Voting won't crash it
+2013-10-09 22:58:58	Reid	At least, not at normal levels
+2013-10-09 22:59:08	Reid	Free games for voting incentivises people to crash through voting overload
+2013-10-09 22:59:43	StrawHatter	Water you voting for?
+2013-10-09 23:04:41	Reid	I will decide once the voting is back up
+2013-10-09 23:10:02	StrawHatter	imagine if
+2013-10-09 23:10:06	StrawHatter	it didn't go back up
+2013-10-09 23:10:19	StrawHatter	and just sorta, was offline for a full 2 months
+2013-10-09 23:11:52	Reid	Then I would be sad at no free game
+2013-10-09 23:15:29	StrawHatter	-pat pat-
+2013-10-09 23:37:05	<--	edran (~edran@188.74.75.176) has quit (Ping timeout: 246 seconds)
+2013-10-09 23:48:52	<--	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has quit
+2013-10-10 00:03:26	--	Sunstrike is now known as Sunstrike|Off
+2013-10-10 00:04:55	-->	edran (~edran@188.74.75.176) has joined #compsoc
+2013-10-10 00:28:11	<--	edran (~edran@188.74.75.176) has quit (Ping timeout: 246 seconds)
+2013-10-10 01:04:05	<--	errawr (~errawr@31.205.91.55) has quit (Quit: errawr)
+2013-10-10 10:34:56	--	irc: disconnected from server
+2013-10-10 10:35:06	-->	hamhut1066 (~hamhut@188.74.85.44) has joined #compsoc
+2013-10-10 10:35:06	--	Topic for #compsoc is "COMPSOC <3 YOU (The website lives!) http://comp-soc.com/"
+2013-10-10 10:35:06	--	Topic set by ChanServ (services@imaginarynet) on Wed, 04 Sep 2013 14:34:31
+2013-10-10 10:35:06	--	Nicks #compsoc: [@amazoph @COMPSOC @drayshak @StarScream Andrew ball-hayden blip2 Bunny camerongray ChrisB craigs cronin101 Estel Fib hamhut1066 Jammy Jay joe kev KGL KitB kraken lambdabot modulo Norgg oliland R2ZER0 rachel Reid rob Rumpelstiltskin Simon skinnylinny Smilers_ staircase stesh StrawHatter Sunstrike|Off ve]
+2013-10-10 10:35:06	--	Channel #compsoc: 39 nicks (4 ops, 0 halfops, 0 voices, 35 normals)
+2013-10-10 10:35:07	Jammy	don't let anyone stop if
+2013-10-10 10:35:10	--	Mode #compsoc [+n]
+2013-10-10 10:35:10	--	Channel created on Wed, 30 Mar 2011 23:45:26
+2013-10-10 10:35:17	Jammy	if security turn up, just punch them in the throat and run away
+2013-10-10 10:35:50	StrawHatter	I'll just tell them Jammy told me to do it <3
+2013-10-10 10:35:58	Jammy	sure
+2013-10-10 10:36:21	StrawHatter	That reminds me, is it bad if I've already missed 3 of my math tests online?
+2013-10-10 10:36:49	Jammy	they have online math tests now?
+2013-10-10 10:36:59	Jammy	also, I guess that depends on how it works exactly
+2013-10-10 10:37:12	Jammy	when I were a lad, there were 10 maths courseworks
+2013-10-10 10:37:17	StrawHatter	W-Woah
+2013-10-10 10:37:20	Jammy	and your mark was based on the best 8
+2013-10-10 10:37:29	Jammy	so you could miss 2 and still get 100%
+2013-10-10 10:37:36	StrawHatter	That sounds pretty darn neat
+2013-10-10 10:38:00	Jammy	and you only needed 40%
+2013-10-10 10:38:06	Jammy	so you could get away with doing 4
+2013-10-10 10:38:29	Jammy	and the maths department whined at informatics constantly about how nobody was doing the coursework
+2013-10-10 10:38:34	StrawHatter	Bahahha
+2013-10-10 10:38:38	StrawHatter	That's priceless!
+2013-10-10 10:38:57	Jammy	I seem to remember the response to that was just "Maybe if the coursework was worth more than 10% of the course, they'd do it"
+2013-10-10 10:39:40	StrawHatter	I thought we just had tests, we have to do coursework? Like a project?
+2013-10-10 10:40:05	Jammy	it's an entirely different course now :)
+2013-10-10 10:40:27	StrawHatter	:
+2013-10-10 10:40:27	Jammy	but it was basically just an exercise sheet every week
+2013-10-10 10:40:28	StrawHatter	:c
+2013-10-10 10:40:37	Jammy	took a couple of hours a time
+2013-10-10 10:40:51	Jammy	and don't be like :c
+2013-10-10 10:41:00	Jammy	it took YEARS of work to get this change
+2013-10-10 10:43:15	StrawHatter	BUT IT'S STILL SO MUCH EFFORT
+2013-10-10 10:43:27	-->	edran (~edran@cpat001.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-10 10:44:16	Jammy	at least it should be well taught now
+2013-10-10 10:45:06	StrawHatter	If by well taught, you mean self-taught then sure
+2013-10-10 10:51:17	Jammy	huh?
+2013-10-10 10:51:23	Jammy	but you should be taking it with the maths students
+2013-10-10 10:51:48	Jammy	so the department like, give a shit about it and don't just put a lecturer they found in a cupboard somewhere on it
+2013-10-10 10:55:57	StrawHatter	Well, we're told to read like a chapter of our big book, then answer questions on it in class :/
+2013-10-10 10:56:11	StrawHatter	Anyway, lecture time </3
+2013-10-10 11:01:06	<--	StrawHatter (~StrawHatt@cpat001.wlan.net.ed.ac.uk) has quit (Ping timeout: 264 seconds)
+2013-10-10 11:33:42	<--	edran (~edran@cpat001.wlan.net.ed.ac.uk) has quit (Quit: WeeChat 0.4.1)
+2013-10-10 12:26:13	-->	Ourobooros (~s1041841@backbarrow.inf.ed.ac.uk) has joined #compsoc
+2013-10-10 12:31:08	 *	ChrisB is away: AFK
+2013-10-10 12:45:21	Jammy	wat
+2013-10-10 12:52:29	Ourobooros	anyone going to the citi thing?
+2013-10-10 12:55:19	<--	Ourobooros (~s1041841@backbarrow.inf.ed.ac.uk) has quit (Quit: must find coffee.)
+2013-10-10 13:11:07	-->	AngusP (~AngusP@92.40.248.49.threembb.co.uk) has joined #compsoc
+2013-10-10 13:12:44	-->	StrawHatter (~StrawHatt@cpat003.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-10 13:14:04	AngusP	StrawHatter: you should be listening to Toby.
+2013-10-10 13:14:16	StrawHatter	Angus, so should you b-baka
+2013-10-10 13:16:02	-->	Ourobooros (~s1041841@nissan.inf.ed.ac.uk) has joined #compsoc
+2013-10-10 13:33:42	-->	edran (~edran@cpat003.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-10 13:33:59	StrawHatter	edran <3
+2013-10-10 13:38:09	<--	StrawHatter (~StrawHatt@cpat003.wlan.net.ed.ac.uk) has quit (Ping timeout: 246 seconds)
+2013-10-10 13:43:25	edran	what?
+2013-10-10 13:43:28	edran	What?
+2013-10-10 14:00:30	<--	edran (~edran@cpat003.wlan.net.ed.ac.uk) has quit (Ping timeout: 264 seconds)
+2013-10-10 14:25:17	<--	AngusP (~AngusP@92.40.248.49.threembb.co.uk) has quit (Quit: Bye)
+2013-10-10 14:26:37	-->	edran (~edran@cpat001.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-10 14:28:43	-->	StrawHatter (~StrawHatt@cpat003.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-10 14:41:18	<--	StrawHatter (~StrawHatt@cpat003.wlan.net.ed.ac.uk) has quit (Ping timeout: 264 seconds)
+2013-10-10 14:41:46	-->	StrawHatter (~StrawHatt@cpat003.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-10 15:03:34	<--	Ourobooros (~s1041841@nissan.inf.ed.ac.uk) has quit (Remote host closed the connection)
+2013-10-10 15:08:48	<--	edran (~edran@cpat001.wlan.net.ed.ac.uk) has quit (Ping timeout: 246 seconds)
+2013-10-10 15:19:42	<--	StrawHatter (~StrawHatt@cpat003.wlan.net.ed.ac.uk) has quit (Ping timeout: 264 seconds)
+2013-10-10 16:40:30	-->	errawr (~errawr@cpat001.wlan.net.ed.ac.uk) has joined #compsoc
+2013-10-10 16:45:08	--	irc: disconnected from server
+2013-10-10 16:48:15	-->	hamhut1066 (~hamhut@188.74.85.44) has joined #compsoc
+2013-10-10 16:48:15	--	Topic for #compsoc is "COMPSOC <3 YOU (The website lives!) http://comp-soc.com/"
+2013-10-10 16:48:15	--	Topic set by R2ZER0 (~quassel@mercury.r2zer0.net) on Sat, 17 Aug 2013 01:18:51
+2013-10-10 16:48:15	--	Nicks #compsoc: [@amazoph @COMPSOC @drayshak @StarScream Andrew ball-hayden blip2 Bunny camerongray ChrisB craigs cronin101 errawr Estel Fib hamhut1066 Jammy Jay joe kev KGL KitB kraken lambdabot modulo Norgg oliland R2ZER0 rachel Reid rob Rumpelstiltskin Simon skinnylinny Smilers_ staircase stesh Sunstrike|Off ve]
+2013-10-10 16:48:15	--	Channel #compsoc: 39 nicks (4 ops, 0 halfops, 0 voices, 35 normals)
+2013-10-10 16:48:17	--	Mode #compsoc [+n]
+2013-10-10 16:48:17	--	Channel created on Wed, 30 Mar 2011 23:45:26
+2013-10-10 16:53:02	-->	StrawHatter (~StrawHatt@host31-52-69-100.range31-52.btcentralplus.com) has joined #compsoc
+2013-10-10 16:54:25	Jammy	ya'll motherfuckers needs to get some irssi + screen
+2013-10-10 16:55:14	StrawHatter	I literally just got home
+2013-10-10 16:55:20	StrawHatter	Trains are a nightmare, I swear
+2013-10-10 16:55:31	StrawHatter	Even worse when they don't have free wi-fi
+2013-10-10 16:55:36	--	irc: disconnected from server

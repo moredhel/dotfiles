@@ -10,6 +10,12 @@ fi
 
 # Gtk themes 
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+#settings for mail cron-job
+touch $HOME/.Xdbus
+chmod 600 $HOME/.Xdbus
+env | grep DBUS_SESSION_BUS_ADDRESS > $HOME/.Xdbus
+echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.Xdbus
+#----------------
 
 #setxkbmap dvorak
 setxkbmap -layout "dvorak"
@@ -17,21 +23,33 @@ setxkbmap -option terminate:ctrl_alt_bksp
 #xset -dpms
 xset s off
 nm-applet &
+<<<<<<< HEAD
 #(sleep 1 && parcellite &)
 #urxvtd &
 #thunar --daemon &
 #unclutter &
+=======
+(sleep 1 && parcellite &)
+mpd &
+urxvtd &
+thunar --daemon &
+unclutter -noevents &
+>>>>>>> deae690bc38afea4c0b7dc29fecceec9a42f0352
 dropboxd &
 conky -c ~/.xmonad/conky.conf &
-#trayer --edge bottom --align right --SetDockType true --SetPartialStrut false \
-# --expand true --width 9 --transparent true --tint 0x000000 --height 10 &
+trayer --edge bottom --align right --SetDockType true --SetPartialStrut false \
+ --expand true --width 9 --transparent true --tint 0x000000 --height 10 &
 xsetroot -cursor_name left_ptr &
 xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
 #bash /home/hamhut/bin/wall.sh &
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
-#hsetroot -fill pictures/wall.jpg
+hsetroot -fill pictures/wall.jpg
 #exec startxfce4
-(sleep 2 && exec urxvtc &)
-exec xfce4-session &
+exec urxvtc -e ncmpcpp &
+#exec xfce4-session &
+exec rox -S &
+sleep 10 && exec thunderbird &
+sleep 60 && exec gnucash &
+sleep 3 && exec dwb &
 exec xmonad
 #exec i3 -V -d all >> ~/.i3/logfile

@@ -1,0 +1,57 @@
+[general]
+# List of accounts to be synced, separated by a comma.
+accounts = main
+#
+[Account main]
+# # Identifier for the local repository; e.g. the maildir to be synced via
+# IMAP.
+localrepository = main-local
+# # Identifier for the remote repository; i.e. the actual IMAP, usually
+# non-local.
+remoterepository = gmail-remote
+# # Status cache. Default is plain, which eventually becomes huge and slow.
+status_backend = sqlite
+#
+[Repository main-local]
+# # Currently, offlineimap only supports maildir and IMAP for local
+# repositories.
+type = Maildir
+nametrans = lambda foldername: re.sub ('bak', '^\[gmail\]',
+                               re.sub ('sent', 'sent_mail',
+                               re.sub ('edinburgh', 'Edinburgh',
+                               re.sub ('forums', 'Forums',
+                               re.sub ('notifications', 'Notifications',
+                               re.sub ('promotions', 'Promotions',
+                               #re.sub ('social_updates', 'Social Updates',
+                               re.sub ('university', 'University',
+                               re.sub ('flagged', 'starred',
+                               re.sub ('inbox', 'INBOX',
+                               re.sub ('_', ' ', foldername.lower()))))))))))
+# # Where should the mail be placed?
+localfolders = ~/mail/gmail
+
+[Repository gmail-remote]
+type = Gmail
+createFolders = False
+remoteuser = hamhut1066@gmail.com
+remotepass = Feast92.amyl
+nametrans = lambda foldername: re.sub ('^\[gmail\]', 'bak',
+                               re.sub ('sent_mail', 'sent',
+                               re.sub ('starred', 'flagged',
+                               re.sub ('Edinburgh', 'edinburgh',
+                               re.sub ('Forums', 'forums',
+                               re.sub ('Notifications', 'notifications',
+                               re.sub ('Promotions', 'promotions',
+                               re.sub ('University', 'university',
+                               re.sub (' ', '_', foldername.lower())))))))))
+folderfilter = lambda foldername: foldername not in '[Gmail]/All Mail'
+# Necessary as of OfflineIMAP 6.5.4
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+
+[mbnames]
+enabled = yes
+filename = ~/.mutt/mailboxes
+header = "mailboxes "
+peritem = "+%(accountname)s/%(foldername)s"
+sep = " "
+footer = "\n"

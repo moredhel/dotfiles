@@ -1,0 +1,114 @@
+2013-10-31 11:32:55	-->	hamhut (~hamhut@188.74.85.94) has joined #tardis
+2013-10-31 11:32:55	--	Topic for #tardis is "Tardis :: Things are broken after some updates - we're working on it..."
+2013-10-31 11:32:55	--	Topic set by ChanServ (services@imaginarynet) on Wed, 04 Sep 2013 14:34:31
+2013-10-31 11:32:55	--	Nicks #tardis: [@amazoph @bacam @thom angusp|off ball-hayden blip2 broonie Bunny camerongray craigs cronin101 Dave dcoles edran fitzretsil hamhut Hazel Jammy Jay jgm joe john kev KitB kraken lewiseason Malcolm moray Norgg oliland patrick Pert R2ZER0 rachel rob rob2 Simon skips slowriot Smilers_ stesh Sunstrike|Off thom0 Timbo xoebus]
+2013-10-31 11:32:55	--	Channel #tardis: 45 nicks (3 ops, 0 voices, 42 normals)
+2013-10-31 11:32:57	--	Mode #tardis [+n]
+2013-10-31 11:32:57	--	Channel created on Wed, 30 Mar 2011 23:45:26
+2013-10-31 11:37:14	--	angusp|off is now known as angusp
+2013-10-31 12:18:00	--	Sunstrike|Off is now known as Sunstrike
+2013-10-31 13:10:36	Malcolm	[Debian Security] DSA-2788 iceweasel
+2013-10-31 13:10:37	Malcolm	http://www.debian.org/security/2013/dsa-2788
+2013-10-31 13:22:33	angusp	Is there anyone in/near AT that I can give an application form to?
+2013-10-31 13:24:37	--	Sunstrike is now known as Sunstrike|Off
+2013-10-31 13:33:42	ball-hayden	Grr. I was there then. Not there now. Sorry.
+2013-10-31 13:34:09	ball-hayden	I'll be in AT again at 16:00 if you are still around?
+2013-10-31 13:34:45	ball-hayden	Jammy: I'm blind. Yes, there is still one there.
+2013-10-31 13:37:50	ball-hayden	We have 12(?) boxes, but I suspect a second one wouldn't do much good unless it had cables long enough to reach the top/bottom of the rack.
+2013-10-31 13:45:08	<--	edran (~edran@cpat001.wlan.net.ed.ac.uk) has quit (Ping timeout: 246 seconds)
+2013-10-31 13:55:51	-->	darius (~darka@2.121.11.49) has joined #tardis
+2013-10-31 14:06:14	Jammy	Hmmmmm
+2013-10-31 14:06:20	Jammy	Ok, I won't bring one at the moment
+2013-10-31 14:06:47	Jammy	but if we get a patch panel at some point, then I can probably grab a second one then
+2013-10-31 14:16:01	ball-hayden	Thanks.
+2013-10-31 14:44:12	Jammy	soooooooo
+2013-10-31 14:44:29	Jammy	have you used any IOS stuff so far?
+2013-10-31 14:44:54	Jammy	i.e. will you be able to set this up yourself, or should we arrange sometime I can bring it over and do the initial config?
+2013-10-31 14:48:20	angusp	ball-hayden: Yeah, could be there at 16:00. Where in AT is the tardis?
+2013-10-31 15:16:05	Jammy	angusp: It's on AT5, in a room just off lab west
+2013-10-31 15:16:11	Jammy	front right corner
+2013-10-31 15:19:20	angusp	Jammy: Though it was there
+2013-10-31 15:19:44	Jammy	if he hasn't seen my question by then, can you ask him about it?
+2013-10-31 15:20:05	Jammy	I should be free to come and set it up any time outside office hours if he needs a hand
+2013-10-31 15:22:19	angusp	Yeah, just sitting in the lab because it's locked atm
+2013-10-31 15:22:49	Jammy	cheers homeboy
+2013-10-31 15:22:55	Jammy	you should come along too!
+2013-10-31 15:22:58	Jammy	get involved
+2013-10-31 15:23:05	Jammy	the more the merrier
+2013-10-31 15:23:12	Jammy	especially once we have our cloud
+2013-10-31 15:24:11	Jammy	speaking of cloud...
+2013-10-31 15:24:56	angusp	Could get involved... btw I have a poweredge lying around doing nothing
+2013-10-31 15:25:03	Jammy	anybody have any computers that support VT-d or AMD-Vi to donate?
+2013-10-31 15:28:02	<--	darius (~darka@2.121.11.49) has quit (Ping timeout: 246 seconds)
+2013-10-31 15:41:11	angusp	Jammy: I might, it can run vmware so...? dunno.
+2013-10-31 15:56:47	-->	darius (~darka@2.121.11.49) has joined #tardis
+2013-10-31 16:03:35	angusp	ball-hayden: Are you going to be in AT anytime soon?
+2013-10-31 16:06:49	--	Sunstrike|Off is now known as Sunstrike
+2013-10-31 16:31:57	-->	fitz (~StarkingB@void.printf.net) has joined #tardis
+2013-10-31 16:37:34	<--	fitz (~StarkingB@void.printf.net) has quit (Quit: leaving)
+2013-10-31 16:42:54	-->	edran (~edran@cpat001.wlan.net.ed.ac.uk) has joined #tardis
+2013-10-31 17:02:25	<--	edran (~edran@cpat001.wlan.net.ed.ac.uk) has quit (Ping timeout: 264 seconds)
+2013-10-31 17:29:27	-->	edran (~edran@188.74.74.40) has joined #tardis
+2013-10-31 18:25:29	<--	edran (~edran@188.74.74.40) has quit (Ping timeout: 246 seconds)
+2013-10-31 18:39:53	<--	Norgg (~norgg@norgg.org) has quit (Ping timeout: 244 seconds)
+2013-10-31 18:40:53	-->	Norgg (~norgg@norgg.org) has joined #tardis
+2013-10-31 23:50:01	-->	edran (~edran@188.74.74.40) has joined #tardis
+2013-11-01 00:10:37	--	Sunstrike is now known as Sunstrike|Off
+2013-11-01 02:12:37	<--	darius (~darka@2.121.11.49) has quit (Ping timeout: 264 seconds)
+2013-11-01 04:01:56	<--	edran (~edran@188.74.74.40) has quit (Ping timeout: 246 seconds)
+2013-11-01 12:39:36	--	irc: disconnected from server
+2013-11-01 12:39:52	-->	hamhut (~hamhut@188.74.85.94) has joined #tardis
+2013-11-01 12:39:52	--	Topic for #tardis is "Tardis :: Things are broken after some updates - we're working on it..."
+2013-11-01 12:39:52	--	Topic set by ChanServ (services@imaginarynet) on Sun, 19 May 2013 18:21:03
+2013-11-01 12:39:52	--	Nicks #tardis: [@amazoph @bacam @thom angusp ball-hayden blip2 broonie Bunny camerongray craigs cronin101 darius Dave dcoles edran fitzretsil hamhut Hazel Jammy Jay jgm joe john kev KitB kraken lewiseason Malcolm moray Norgg oliland patrick Pert R2ZER0 rachel rob rob2 Simon skips slowriot Smilers_ stesh Sunstrike thom0 Timbo xoebus]
+2013-11-01 12:39:52	--	Channel #tardis: 46 nicks (3 ops, 0 voices, 43 normals)
+2013-11-01 12:39:58	--	Mode #tardis [+n]
+2013-11-01 12:39:58	--	Channel created on Wed, 30 Mar 2011 23:45:26
+2013-11-01 12:48:40	ball-hayden	Is everyone happy if I create angusp an account and he gives the form in on Monday (assuming you've filled it in angusp?)
+2013-11-01 12:49:24	Sunstrike	I need to get round to doing that too actually. Meh. :p
+2013-11-01 12:57:14	--	Sunstrike is now known as Sunstrike|Off
+2013-11-01 13:20:33	hamhut	yeah, I'll do that, I almost printed them yesterday but I forgot to go to the printer
+2013-11-01 13:27:51	ball-hayden	Don't forget the uni computing regulations as well
+2013-11-01 13:51:06	hamhut	yep, will do
+2013-11-01 15:12:33	joe	looks like we've started looking for interns and graduates
+2013-11-01 15:13:48	joe	anybody want to work for Cisco?
+2013-11-01 15:13:54	joe	(that Jammy hasn't already spoken to)
+2013-11-01 15:14:12	Jammy	apparently I'm also now doing an STMU talk
+2013-11-01 15:14:35	Jammy	I stupidly mentioned that I was thinking of doing one to Andy on Wednesday and now he's told me I have to
+2013-11-01 15:14:55	Jammy	if something's broke, don't mention it's broke because you'll get dragged in to fixing it
+2013-11-01 15:16:59	joe	when?
+2013-11-01 15:17:10	Jammy	29th of this month apparently
+2013-11-01 15:17:12	joe	mine is at the end of the month
+2013-11-01 15:17:16	joe	:D
+2013-11-01 15:17:18	Jammy	wat
+2013-11-01 15:17:20	joe	same!
+2013-11-01 15:17:21	Jammy	uh oh
+2013-11-01 15:17:24	Jammy	what's yours about
+2013-11-01 15:17:27	joe	TDD
+2013-11-01 15:17:31	Jammy	I'm not 100% decided yet
+2013-11-01 15:17:40	joe	basically the same as I did in the office
+2013-11-01 15:17:46	Jammy	I started at computers and have narrowed it down to networks so far
+2013-11-01 15:18:03	Jammy	maybe I'll narrow it down further to internet or even IPv6
+2013-11-01 15:18:10	joe	I've always thought "lol, networks" might make for an interesting talk
+2013-11-01 15:18:19	Jammy	I like IPv6 because it has big numbers
+2013-11-01 15:18:26	joe	wires -> hubs -> switches -> routers
+2013-11-01 15:18:46	@bacam	Jammy: Good intro line for a talk, that
+2013-11-01 15:18:56	Jammy	wires -> wires -> wires -> glass wires
+2013-11-01 15:21:35	Jammy	bacam: How about "18 quintillion addresses should be enough for anyone"?
+2013-11-01 15:22:16	Jammy	wait
+2013-11-01 15:22:55	angusp	ball-hayden: Yeah, filled it in but you lot are never in
+2013-11-01 15:23:51	Jammy	I seem to remember seeing something about the recommended allocation being like /56 per customer now rather than /64
+2013-11-01 15:26:48	angusp	Is anyone in AT now? Or can I just put the form under the door?
+2013-11-01 15:28:11	ball-hayden	I'm in LT3 at the moment. I'm running off to the train station at 15:45, so if you catch me then...
+2013-11-01 15:34:06	angusp	Where's LT3? Im in AT 5.05
+2013-11-01 15:34:16	angusp	Oh. Lecture Theatre. Doh
+2013-11-01 15:34:44	ball-hayden	Yep. Ground floor by the stairs
+2013-11-01 15:37:08	angusp	I'll be there asap
+2013-11-01 16:31:59	<--	angusp (~angusp@188.74.91.180) has quit (Ping timeout: 246 seconds)
+2013-11-01 16:37:49	<--	edran (~edran@188.74.74.40) has quit (Ping timeout: 264 seconds)
+2013-11-01 16:39:30	--	Sunstrike|Off is now known as Sunstrike
+2013-11-01 16:45:07	-->	angusp (~angusp@188.74.91.180) has joined #tardis
+2013-11-01 17:36:39	--	Sunstrike is now known as Sunstrike|Off
+2013-11-01 18:01:14	Malcolm	[Debian Security] DSA-2789 strongswan
+2013-11-01 18:01:15	Malcolm	http://www.debian.org/security/2013/dsa-2789
+2013-11-01 18:09:26	-->	edran (~edran@cpat001.wlan.net.ed.ac.uk) has joined #tardis
