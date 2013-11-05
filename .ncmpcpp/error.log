@@ -14,3 +14,6 @@ TagLib: MPEG::Header::parse() -- Invalid sample rate.
 TagLib: MPEG::Header::parse() -- Invalid sample rate.
 TagLib: MPEG::Header::parse() -- Invalid sample rate.
 TagLib: MPEG::Header::parse() -- Invalid sample rate.
+[2013/10/26 11:12:02 AM] Constructed window is bigger than terminal size!
+[2013/10/26 11:12:05 AM] Constructed window is bigger than terminal size!
+[2013/10/26 11:12:09 AM] Constructed window is bigger than terminal size!

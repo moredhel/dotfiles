@@ -218,11 +218,11 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
      windows W.focusDown)
 
   -- Move focus to the next window.
-  , ((modMask, xK_h),
+  , ((modMask, xK_t),
      windows W.focusDown)
 
   -- Move focus to the previous window.
-  , ((modMask, xK_t),
+  , ((modMask, xK_h),
      windows W.focusUp  )
 
   -- Move focus to the master window.
