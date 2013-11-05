@@ -1,6 +1,6 @@
 CASE_SENSITIVE="true"
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="hamish"
+ZSH_THEME="test"
 ncmpcppShow() { BUFFER="ncmpcpp"; zle accept-line; }
 zle -N ncmpcppShow
 bindkey '^[\' ncmpcppShow
@@ -12,7 +12,6 @@ source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
 export PATH=~/bin:$PATH:~/.cabal/bin:~/.xmonad/bin
 export EDITOR="vim"
-<<<<<<< HEAD
 
 export MARKPATH=$HOME/.marks
 function jump { 
@@ -27,9 +26,7 @@ function unmark {
 function marks {
     ls -l "$MARKPATH" | sed 's/  / /g' | cut -d' ' -f9- | sed 's/ -/\t-/g' && echo
 }
-=======
 task active
 echo ""
 mu find g:n -f 's f m'
 echo ""
->>>>>>> deae690bc38afea4c0b7dc29fecceec9a42f0352

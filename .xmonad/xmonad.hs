@@ -333,7 +333,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask .|. shiftMask, xK_q), io (exitWith ExitSuccess)) -- Quit xmonad.
 
   -- Restart xmonad.
-  , ((modMask, xK_q), restart "xmonad" True)
+  , ((modMask, xK_q), spawn "killall conky && xmonad --recompile && xmonad --restart")
   ]
   ++
 
@@ -405,8 +405,9 @@ myStartupHook = return ()
 --
 main = do
   -- conf <- dzen defaultConfig
-  xmproc <- spawnPipe "dzen2 -ta l -fn 'DejaVu Sans:size=8' -h 12 -e 'button1=menuexec'"  -- "xmobar ~/.xmonad/xmobar.hs"
-  status <- spawnPipe "conky -c ~/.xmonad/menu_conky.conf | dzen2 -ta r -fn 'DejaVu Sans:size=8' -h 12 -x 700 -e 'button1=menuexec'"
+  xmproc <- spawnPipe "dzen2 -ta l -fn 'DejaVu Sans:size=5' -h 12 -e 'button1=menuexec'"  -- "xmobar ~/.xmonad/xmobar.hs"
+  status <- spawnPipe "conky -c ~/.xmonad/menu_conky.conf | dzen2 -ta r -fn 'DejaVu Sans:size=5' -h 12 -x 700 -e 'button1=menuexec'"
+  deskto <- spawnPipe "conky -c ~/.xmonad/conky.conf"
   xmonad $ defaults {
       logHook = myLogHook xmproc >> updatePointer (Relative 0.95 0.95) -- <+>
                 -- myLogHook status

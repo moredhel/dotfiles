@@ -23,33 +23,30 @@ setxkbmap -option terminate:ctrl_alt_bksp
 #xset -dpms
 xset s off
 nm-applet &
-<<<<<<< HEAD
 #(sleep 1 && parcellite &)
 #urxvtd &
 #thunar --daemon &
 #unclutter &
-=======
 (sleep 1 && parcellite &)
 mpd &
 urxvtd &
 thunar --daemon &
 unclutter -noevents &
->>>>>>> deae690bc38afea4c0b7dc29fecceec9a42f0352
 dropboxd &
-conky -c ~/.xmonad/conky.conf &
+#conky -c ~/.xmonad/conky.conf &
 trayer --edge bottom --align right --SetDockType true --SetPartialStrut false \
  --expand true --width 9 --transparent true --tint 0x000000 --height 10 &
 xsetroot -cursor_name left_ptr &
 xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
 #bash /home/hamhut/bin/wall.sh &
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
-hsetroot -fill pictures/wall.jpg
+hsetroot -fill Pictures/wall.jpg
 #exec startxfce4
 exec urxvtc -e ncmpcpp &
 #exec xfce4-session &
 exec rox -S &
-sleep 10 && exec thunderbird &
-sleep 60 && exec gnucash &
-sleep 3 && exec dwb &
+#sleep 10 && exec thunderbird &
+#sleep 60 && exec gnucash &
+#sleep 3 && exec dwb &
 exec xmonad
 #exec i3 -V -d all >> ~/.i3/logfile

@@ -54,7 +54,8 @@ URxvt*.transparent: true
 URxvt*.shading: 40
 URxvt.scrollstyle: plain
 URxvt.scrollBar: none
-URxvt.font: heb8x13
+!URxvt.font: heb8x13
+URxvt*font:xft:Inconsolata:size=8
 
 xterm*termname: xterm-256color
 XTerm*locale: true
