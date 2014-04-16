@@ -1,6 +1,6 @@
-execute pathogen#infect()
+"execute pathogen#infect()
 "call pathogen()
-call pathogen#helptags()
+"call pathogen#helptags()
 "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 syntax on
 set visualbell
@@ -17,9 +17,6 @@ set number
 set textwidth=79
 set nowrap
 let mapleader = ","
-noremap <C-n> :nohl<CR>
-vnoremap <C-n> :nohl<CR>
-inoremap <C-n> :nohl<CR>
 map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
 map <Leader>ev <esc>:e ~/.vimrc<CR>
@@ -169,7 +166,7 @@ if !exists(":DiffOrig")
                 \ | wincmd p | diffthis
 endif
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
-set backupdir=/home/hamhut/documents/vim_backups
+"set backupdir=/home/hamhut/documents/vim_backups
 map <Leader>c <F9>
 map <Leader>x <esc>:AsyncShell /home/hamhut/bin/runc %<CR>
 map <Leader>z <esc>:AsyncShell /home/hamhut/bin/runc % "valgrind"<CR>
