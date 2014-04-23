@@ -37,7 +37,7 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal = "urxvt"
+myTerminal = "lxterminal"
 
 
 scratchpads = [
@@ -60,7 +60,7 @@ workspaceNames = ["term", "web", "notes", "misc", "torrent", "fin", "mail", "vm"
 myWorkspaces = [ "^ca(1,xdotool key " ++ super (x) ++ ")" ++ format x a ++ "^ca()" | (x,a) <- zip workspaceNumbers workspaceNames]
 		where super a 
 			| a < 10 = "super+" ++ show a
-			| otherwise = "F" ++ show (a-1)
+			| otherwise = "F" ++ show (a-9)
 		      format x a = show x ++ ":" ++ a
 
 myWorkspaces' = (["1:term","2:web","3:notes","4:misc","5:torrent","6:fin","7:mail", "8:vm","9:file"] ++ 
@@ -220,20 +220,15 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask , xK_a),
      spawn "mpc toggle")
 
-  , ((0 , xK_F1),
-     namedScratchpadAction scratchpads "term")
+  -- , ((0 , xK_F1), namedScratchpadAction scratchpads "term")
 
-  , ((0 , xK_F2),
-     scratchPad)
+  -- , ((0 , xK_F2), scratchPad)
 
-  , ((0 , xK_F3),
-     namedScratchpadAction scratchpads "applaunch")
+  -- , ((0 , xK_F3), namedScratchpadAction scratchpads "applaunch")
 
-  , ((0 , xK_F4),
-     namedScratchpadAction scratchpads "notes")
+  -- , ((0 , xK_F4), namedScratchpadAction scratchpads "notes")
 
-  , ((0 , xK_F5),
-     gotoMenuArgs ["-b", "-l", "10"])
+  , ((0 , xK_F5), gotoMenuArgs ["-b", "-l", "10"])
 
   , ((modMask , xK_semicolon),
      warpToWindow (1/2) (1/2))
@@ -340,7 +335,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- mod-[1..9], Switch to workspace N
   -- mod-shift-[1..9], Move client to workspace N
   [((m .|. isMod k, k), windows $ f i)
-      | (i, k) <- zip (XMonad.workspaces conf) ([xK_1 .. xK_9] ++ [xK_F9 .. xK_F12])
+      | (i, k) <- zip (XMonad.workspaces conf) ([xK_1 .. xK_9] ++ [xK_F1 .. xK_F4])
       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
 	where
 	  scratchPad = scratchpadSpawnActionTerminal myTerminal
