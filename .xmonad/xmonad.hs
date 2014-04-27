@@ -37,7 +37,7 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal = "lxterminal"
+myTerminal = "gnome-terminal"
 
 
 scratchpads = [
@@ -269,24 +269,21 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
      kill)
 
   -- Cycle through the available layout algorithms.
-  , ((modMask, xK_space),
-     sendMessage NextLayout)
+  , ((modMask, xK_space), sendMessage NextLayout)
 
   --  Reset the layouts on the current workspace to default.
-  , ((modMask .|. shiftMask, xK_space),
-     setLayout $ XMonad.layoutHook conf)
+  , ((modMask .|. shiftMask, xK_space), setLayout $ XMonad.layoutHook conf)
 
   -- Resize viewed windows to the correct size.
   -- , ((modMask, xK_n),
      -- refresh)
 
   -- Move focus to the next window.
-  , ((modMask, xK_Tab),
-     windows W.focusDown)
+  , ((modMask, xK_Tab), windows W.focusDown)
 
   -- Move focus to the next window.
-  , ((modMask, xK_h),
-     windows W.focusDown)
+  , ((modMask, xK_h), windows W.focusDown)
+
 
   -- Move focus to the previous window.
   , ((modMask, xK_t),
@@ -322,8 +319,8 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Decrement the number of windows in the master area.
   , ((modMask, xK_period), sendMessage (IncMasterN (-1)))
 
-  -- Toggle the status bar gap.
-  -- TODO: update this binding with avoidStruts, ((modMask, xK_b),
+  -- Open Dmenu
+  , ((modMask, xK_p), spawn "dmenu_run")
 
   , ((modMask .|. shiftMask, xK_q), io (exitWith ExitSuccess)) -- Quit xmonad.
 

@@ -1,6 +1,6 @@
 CASE_SENSITIVE="true"
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="dieter"
+ZSH_THEME="hamish"
 ncmpcppShow() { BUFFER="ncmpcpp"; zle accept-line; }
 zle -N ncmpcppShow
 bindkey '^[\' ncmpcppShow
