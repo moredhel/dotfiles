@@ -8,9 +8,9 @@ import System.IO
 import System.Exit
 import XMonad
 import XMonad.Actions.WindowBringer
--- try and get warping to work...
 import XMonad.Actions.Warp
 import XMonad.Actions.UpdatePointer
+import XMonad.Actions.CopyWindow
 import XMonad.Actions.CycleWS
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
@@ -60,7 +60,11 @@ workspaceNames = ["term", "web", "notes", "misc", "torrent", "fin", "mail", "vm"
 myWorkspaces = [ "^ca(1,xdotool key " ++ super (x) ++ ")" ++ format x a ++ "^ca()" | (x,a) <- zip workspaceNumbers workspaceNames]
 		where super a 
 			| a < 10 = "super+" ++ show a
-			| otherwise = "F" ++ show (a-9)
+			| a == 10 = "super+" ++ show "m"
+			| a == 11 = "super+" ++ show "w"
+			| a == 12 = "super+" ++ show "v"
+			| a == 13 = "super+" ++ show "z"
+			| otherwise = "F"
 		      format x a = show x ++ ":" ++ a
 
 myWorkspaces' = (["1:term","2:web","3:notes","4:misc","5:torrent","6:fin","7:mail", "8:vm","9:file"] ++ 
@@ -110,6 +114,7 @@ myManageHook = composeAll
     , className =? "MuPDF"     --> viewShift (pdfview)
     , className =? "Xchat"          --> doShift "5:media"
     , className =? "stalonetray"    --> doIgnore
+    , className =? "Xfce4-notifyd" --> doF W.focusDown <+> doF copyToAll
     , stringProperty "WM_NAME" =? "File Operation Progress" --> doFloat
     , isFullscreen --> (doF W.focusDown <+> doFullFloat)]) <+> manageScratchPad
 	where
@@ -134,11 +139,9 @@ myLayout = avoidStruts
     myTiled |||
     Tall 1 (3/100) (1/2) |||
     Mirror (Tall 1 (3/100) (1/2)) |||
-    tabbed shrinkText tabConfig |||
-    Full |||
     noBorders (fullscreenFull Full)
 
-myTiled = spacing 5 $ Tall 1 (3/100) (1/2) -- (6/7)
+myTiled = Tall 1 (3/100) (1/2) -- (6/7)
 
 manageScratchPad :: ManageHook
 manageScratchPad = scratchpadManageHook (W.RationalRect l t w h)
@@ -196,9 +199,6 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Lock the screen using xscreensaver.
   , ((modMask .|. controlMask, xK_l),
      spawn "lock")
-
-  , ((modMask , xK_w),
-     spawn "dwb")
 
   -- Launch dmenu via yeganesh.
   -- Use this to launch programs without a key binding.
@@ -332,12 +332,12 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- mod-[1..9], Switch to workspace N
   -- mod-shift-[1..9], Move client to workspace N
   [((m .|. isMod k, k), windows $ f i)
-      | (i, k) <- zip (XMonad.workspaces conf) ([xK_1 .. xK_9] ++ [xK_F1 .. xK_F4])
+      | (i, k) <- zip (XMonad.workspaces conf) ([xK_1 .. xK_9] ++ [xK_m, xK_w, xK_v, xK_z])
       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
 	where
 	  scratchPad = scratchpadSpawnActionTerminal myTerminal
 	  isMod a | a `elem` [xK_1 .. xK_9] =  modMask 
-		  | otherwise = 0
+	          | otherwise = modMask
 --  ++
 
   -- mod-{w,e,r}, Switch to physical/Xinerama screens 1, 2, or 3
@@ -390,7 +390,11 @@ myMouseBindings (XConfig {XMonad.modMask = modMask}) = M.fromList $
 --
 -- By default, do nothing.
 myStartupHook = return ()
-
+-- stop pointer being moved on certain windows
+pointerIgnore = [ className =? "Xfce4-notifyd" 
+    , stringProperty "WM_NAME" =? "File Operation Progress"
+    ]
+myUpdatePointer = updatePointer (Relative 0.95 0.95)
 
 ------------------------------------------------------------------------
 -- Run xmonad with all the defaults we set up.
@@ -398,9 +402,9 @@ myStartupHook = return ()
 main = do
   -- conf <- dzen defaultConfig
   xmproc <- spawnPipe "dzen2 -ta l -fn 'DejaVu Sans:size=8' -h 12 -e 'button1=menuexec'"  -- "xmobar ~/.xmonad/xmobar.hs"
-  status <- spawnPipe "conky -c ~/.xmonad/menu_conky.conf | dzen2 -ta r -fn 'DejaVu Sans:size=8' -h 12 -x 700 -e 'button1=menuexec'"
+  -- status <- spawnPipe "conky -c ~/.xmonad/menu_conky.conf | dzen2 -ta r -fn 'DejaVu Sans:size=8' -h 12 -x 700 -e 'button1=menuexec'"
   xmonad $ defaults {
-      logHook = myLogHook xmproc >> updatePointer (Relative 0.95 0.95) -- <+>
+      logHook = myLogHook xmproc >> myUpdatePointer -- <+>
                 -- myLogHook status
       , manageHook = manageDocks <+> myManageHook <+> namedScratchpadManageHook scratchpads
       , startupHook = setWMName "LG3D"

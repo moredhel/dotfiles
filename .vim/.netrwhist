@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/hamhut/.kde4/share/config/kresources/calendar'
-let g:netrw_dirhist_2='/home/hamhut/.kde4/share/config/kresources'
-let g:netrw_dirhist_3='/home/hamhut/.kde4/share/config'
-let g:netrw_dirhist_4='/home/hamhut/.kde4/share'
-let g:netrw_dirhist_5='/home/hamhut/.kde4/share/kde4'
-let g:netrw_dirhist_6='/home/hamhut/.kde4/share/kde4/services'
