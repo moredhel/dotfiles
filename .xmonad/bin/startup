@@ -1,0 +1,1 @@
+conky -c menu_conky.conf | dzen2 -ta r -fn 'DejaVu Sans:size=8' -h 12 -x 700 -e 'button1=menuexec' &
