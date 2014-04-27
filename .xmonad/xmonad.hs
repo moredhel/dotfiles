@@ -8,9 +8,9 @@ import System.IO
 import System.Exit
 import XMonad
 import XMonad.Actions.WindowBringer
--- try and get warping to work...
 import XMonad.Actions.Warp
 import XMonad.Actions.UpdatePointer
+import XMonad.Actions.CopyWindow
 import XMonad.Actions.CycleWS
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
@@ -114,6 +114,7 @@ myManageHook = composeAll
     , className =? "MuPDF"     --> viewShift (pdfview)
     , className =? "Xchat"          --> doShift "5:media"
     , className =? "stalonetray"    --> doIgnore
+    , className =? "Xfce4-notifyd" --> doF W.focusDown <+> doF copyToAll
     , stringProperty "WM_NAME" =? "File Operation Progress" --> doFloat
     , isFullscreen --> (doF W.focusDown <+> doFullFloat)]) <+> manageScratchPad
 	where
@@ -138,11 +139,9 @@ myLayout = avoidStruts
     myTiled |||
     Tall 1 (3/100) (1/2) |||
     Mirror (Tall 1 (3/100) (1/2)) |||
-    tabbed shrinkText tabConfig |||
-    Full |||
     noBorders (fullscreenFull Full)
 
-myTiled = spacing 5 $ Tall 1 (3/100) (1/2) -- (6/7)
+myTiled = Tall 1 (3/100) (1/2) -- (6/7)
 
 manageScratchPad :: ManageHook
 manageScratchPad = scratchpadManageHook (W.RationalRect l t w h)
@@ -406,7 +405,7 @@ myUpdatePointer = updatePointer (Relative 0.95 0.95)
 main = do
   -- conf <- dzen defaultConfig
   xmproc <- spawnPipe "dzen2 -ta l -fn 'DejaVu Sans:size=8' -h 12 -e 'button1=menuexec'"  -- "xmobar ~/.xmonad/xmobar.hs"
-  status <- spawnPipe "conky -c ~/.xmonad/menu_conky.conf | dzen2 -ta r -fn 'DejaVu Sans:size=8' -h 12 -x 700 -e 'button1=menuexec'"
+  -- status <- spawnPipe "conky -c ~/.xmonad/menu_conky.conf | dzen2 -ta r -fn 'DejaVu Sans:size=8' -h 12 -x 700 -e 'button1=menuexec'"
   xmonad $ defaults {
       logHook = myLogHook xmproc >> myUpdatePointer -- <+>
                 -- myLogHook status
