@@ -394,7 +394,11 @@ myMouseBindings (XConfig {XMonad.modMask = modMask}) = M.fromList $
 --
 -- By default, do nothing.
 myStartupHook = return ()
-
+-- stop pointer being moved on certain windows
+pointerIgnore = [ className =? "Xfce4-notifyd" 
+    , stringProperty "WM_NAME" =? "File Operation Progress"
+    ]
+myUpdatePointer = updatePointer (Relative 0.95 0.95)
 
 ------------------------------------------------------------------------
 -- Run xmonad with all the defaults we set up.
@@ -404,7 +408,7 @@ main = do
   xmproc <- spawnPipe "dzen2 -ta l -fn 'DejaVu Sans:size=8' -h 12 -e 'button1=menuexec'"  -- "xmobar ~/.xmonad/xmobar.hs"
   status <- spawnPipe "conky -c ~/.xmonad/menu_conky.conf | dzen2 -ta r -fn 'DejaVu Sans:size=8' -h 12 -x 700 -e 'button1=menuexec'"
   xmonad $ defaults {
-      logHook = myLogHook xmproc >> updatePointer (Relative 0.95 0.95) -- <+>
+      logHook = myLogHook xmproc >> myUpdatePointer -- <+>
                 -- myLogHook status
       , manageHook = manageDocks <+> myManageHook <+> namedScratchpadManageHook scratchpads
       , startupHook = setWMName "LG3D"
