@@ -37,7 +37,7 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal = "lxterminal"
+myTerminal = "xfce4-terminal -e byobu"
 
 
 scratchpads = [
@@ -60,7 +60,11 @@ workspaceNames = ["term", "web", "notes", "misc", "torrent", "fin", "mail", "vm"
 myWorkspaces = [ "^ca(1,xdotool key " ++ super (x) ++ ")" ++ format x a ++ "^ca()" | (x,a) <- zip workspaceNumbers workspaceNames]
 		where super a 
 			| a < 10 = "super+" ++ show a
-			| otherwise = "F" ++ show (a-9)
+			| a == 10 = "super+" ++ show "m"
+			| a == 11 = "super+" ++ show "w"
+			| a == 12 = "super+" ++ show "v"
+			| a == 13 = "super+" ++ show "z"
+			| otherwise = "F"
 		      format x a = show x ++ ":" ++ a
 
 myWorkspaces' = (["1:term","2:web","3:notes","4:misc","5:torrent","6:fin","7:mail", "8:vm","9:file"] ++ 
@@ -197,9 +201,6 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask .|. controlMask, xK_l),
      spawn "lock")
 
-  , ((modMask , xK_w),
-     spawn "dwb")
-
   -- Launch dmenu via yeganesh.
   -- Use this to launch programs without a key binding.
   -- , ((modMask, xK_p),
@@ -335,12 +336,12 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- mod-[1..9], Switch to workspace N
   -- mod-shift-[1..9], Move client to workspace N
   [((m .|. isMod k, k), windows $ f i)
-      | (i, k) <- zip (XMonad.workspaces conf) ([xK_1 .. xK_9] ++ [xK_F1 .. xK_F4])
+      | (i, k) <- zip (XMonad.workspaces conf) ([xK_1 .. xK_9] ++ [xK_m, xK_w, xK_v, xK_z])
       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
 	where
 	  scratchPad = scratchpadSpawnActionTerminal myTerminal
 	  isMod a | a `elem` [xK_1 .. xK_9] =  modMask 
-		  | otherwise = 0
+	          | otherwise = modMask
 --  ++
 
   -- mod-{w,e,r}, Switch to physical/Xinerama screens 1, 2, or 3
