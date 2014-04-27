@@ -9,6 +9,7 @@ alias aoeu="kinit s1249759@INF.ED.AC.UK"
 alias snth="ncmpcpp"
 alias cdp="cd ~/documents/lecture_notes"
 alias t="task"
+alias em="emacsclient"
 source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
 export PATH=~/bin:$PATH:~/.cabal/bin:~/.xmonad/bin
