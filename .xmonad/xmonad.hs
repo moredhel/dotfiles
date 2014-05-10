@@ -7,6 +7,7 @@ import System.IO
 import System.IO
 import System.Exit
 import XMonad
+import qualified XMonad.Actions.FlexibleResize as Flex
 import XMonad.Actions.WindowBringer
 import XMonad.Actions.Warp
 import XMonad.Actions.UpdatePointer
@@ -27,26 +28,18 @@ import XMonad.Prompt.RunOrRaise
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig
 import XMonad.Util.NamedScratchpad
-import XMonad.Util.Scratchpad
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
 
-------------------------------------------------------------------------
 -- Terminal
--- The preferred terminal program, which is used in a binding below and by
--- certain contrib modules.
---
 myTerminal = "gnome-terminal"
 
 
 scratchpads = [
-	NS "term" "urxvt -e tmux a -d" (title =? "tmux") (customFloating $ W.RationalRect (1/12) (1/12) (5/6) (5/6)),
-
+	NS "term" "xfce4-terminal --role=scratchpad" (role =? "scratchpad") (customFloating $ W.RationalRect (1/12) (1/12) (5/6) (5/6)),
 	NS "applaunch" "xfce4-appfinder -c" (title =? "Application Finder") defaultFloating ,
-
 	NS "notes" "gvim --role notes ~/Dropbox/notes/notes.otl" (role =? "notes") (customFloating $ W.RationalRect (0) (1/20) (2/4) (9/10))]
-
 		where role = stringProperty "WM_WINDOW_ROLE"
 
 
@@ -55,24 +48,16 @@ scratchpads = [
 -- Workspaces
 -- The default number of workspaces (virtual screens) and their names.
 --
-workspaceNumbers = [1..13]
-workspaceNames = ["term", "web", "notes", "misc", "torrent", "fin", "mail", "vm", "0.o", "files", "0o0", "\\o/", "media"]
-myWorkspaces = [ "^ca(1,xdotool key " ++ super (x) ++ ")" ++ format x a ++ "^ca()" | (x,a) <- zip workspaceNumbers workspaceNames]
+workspaceNames = ["!","@", "#", "$", "%", "^", "&", "*","0.o", "\\o/", "web", "term", "0.0"]
+myWorkspaces = [ format x a | (x,a) <- zip [1..] workspaceNames]
 		where super a 
 			| a < 10 = "super+" ++ show a
 			| a == 10 = "super+" ++ show "m"
 			| a == 11 = "super+" ++ show "w"
 			| a == 12 = "super+" ++ show "v"
 			| a == 13 = "super+" ++ show "z"
-			| otherwise = "F"
-		      format x a = show x ++ ":" ++ a
-
-myWorkspaces' = (["1:term","2:web","3:notes","4:misc","5:torrent","6:fin","7:mail", "8:vm","9:file"] ++ 
-		map (\(a,x) -> (show x) ++ ":" ++ a) (zip ["0_o","0o0","\\o/","media"] [10..]))-- map show [9 .. 12] 
-		      where clickable l     = [ "^ca(1,xdotool key super+" ++ show (n) ++ ")" ++ ws ++ "^ca()" |
-                              (i,ws) <- zip [1..] l,
-                              let n = i ]
-
+			| otherwise = ""
+		      format x a = "<action=xdotool key " ++ super x ++ ">" ++ a ++ "</action>"
 ------------------------------------------------------------------------
 -- Window rules
 -- Execute arbitrary actions and WindowSet manipulations when managing
@@ -88,19 +73,19 @@ myWorkspaces' = (["1:term","2:web","3:notes","4:misc","5:torrent","6:fin","7:mai
 -- 'className' and 'resource' are used below.
 --
 myManageHook = composeAll
-    ([ className =? "Chromium"       --> doShift (browser)
-    , className =? "Google-chrome"  --> doShift (browser)
+    ([ 
+    className =? "Chromium"       --> doShift (browser)
     , className =? "Dwb"  	    --> doShift (browser)
     , resource  =? "desktop_window" --> doIgnore
-    , className =? "Vlc"     	    --> doShift (media)
-    , className =? "MPlayer"        --> doShift (media)
-    , className =? "mpv"     	    --> doShift (media)
-    , className =? "Vlc"     	    --> viewShift (media)
-    , className =? "mpv"     	    --> viewShift (media)
-    , className =? "MPlayer"        --> viewShift (media)
+    -- , className =? "Vlc"     	    --> doShift (media)
+    -- , className =? "Vlc"     	    --> viewShift (media)
+    -- , className =? "MPlayer"        --> doShift (media)
+    -- , className =? "mpv"     	    --> doShift (media)
+    -- , className =? "mpv"     	    --> viewShift (media)
+    -- , className =? "MPlayer"        --> viewShift (media)
+    -- , className =? "MPlayer"        --> doFloat
     , className =? "Deluge"        --> doShift (myWorkspaces!!4)
     -- , resource  =? "gpicview"       --> doFloat
-    , className =? "MPlayer"        --> doFloat
     , className =? "Vlc"            --> doFloat
     , className =? "mpv"            --> doFloat
     , className =? "Xfce4-appfinder"--> doFloat
@@ -114,9 +99,11 @@ myManageHook = composeAll
     , className =? "MuPDF"     --> viewShift (pdfview)
     , className =? "Xchat"          --> doShift "5:media"
     , className =? "stalonetray"    --> doIgnore
+    , className =? "Orage"    --> doFloat
     , className =? "Xfce4-notifyd" --> doF W.focusDown <+> doF copyToAll
     , stringProperty "WM_NAME" =? "File Operation Progress" --> doFloat
-    , isFullscreen --> (doF W.focusDown <+> doFullFloat)]) <+> manageScratchPad
+    , stringProperty "WM_NAME" =? "LastPass Site Search" --> doFloat
+    , isFullscreen --> (doF W.focusDown <+> doFullFloat)]) 
 	where
 	  viewShift = doF . liftM2 (.) W.greedyView W.shift
 	  browser = myWorkspaces!!1
@@ -143,14 +130,6 @@ myLayout = avoidStruts
 
 myTiled = Tall 1 (3/100) (1/2) -- (6/7)
 
-manageScratchPad :: ManageHook
-manageScratchPad = scratchpadManageHook (W.RationalRect l t w h)
-			where
-			  h = 0.8
-			  w = 0.8
-			  t = (1 - h) / 2
-			  l = (1 - w) / 2
-
 ------------------------------------------------------------------------
 -- Colors and borders
 -- Currently based on the ir_black theme.
@@ -169,7 +148,7 @@ tabConfig = defaultTheme {
 }
 
 -- Color of current window title in xmobar.
-xmobarTitleColor = "#FFB6B0"
+xmobarTitleColor = "#aeafb5"
 
 -- Color of current workspace in xmobar.
 xmobarCurrentWorkspaceColor = "#CEFFAC"
@@ -197,8 +176,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   [ ((modMask .|. shiftMask, xK_Return),	 spawn $ XMonad.terminal conf)
 
   -- Lock the screen using xscreensaver.
-  , ((modMask .|. controlMask, xK_l),
-     spawn "lock")
+  , ((modMask .|. controlMask, xK_l), spawn "lock")
 
   -- Launch dmenu via yeganesh.
   -- Use this to launch programs without a key binding.
@@ -208,19 +186,16 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Take a screenshot in select mode.
   -- After pressing this key binding, click a window, or draw a rectangle with
   -- the mouse.
-  , ((modMask , xK_quoteright),
-     spawn "mpc next")
+  , ((modMask , xK_quoteright), spawn "mpc next")
 
   -- Take full screenshot in multi-head mode.
   -- That is, take a screenshot of everything you see.
-  , ((modMask .|. controlMask .|. shiftMask, xK_p),
-     spawn "screenshot")
+  , ((modMask .|. controlMask .|. shiftMask, xK_p), spawn "screenshot")
 
   -- Play/Pause mpd
-  , ((modMask , xK_a),
-     spawn "mpc toggle")
+  , ((modMask , xK_a), spawn "mpc toggle")
 
-  -- , ((0 , xK_F1), namedScratchpadAction scratchpads "term")
+  , ((0 , xK_F1), namedScratchpadAction scratchpads "term")
 
   -- , ((0 , xK_F2), scratchPad)
 
@@ -230,43 +205,34 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
   , ((0 , xK_F5), gotoMenuArgs ["-b", "-l", "10"])
 
-  , ((modMask , xK_semicolon),
-     warpToWindow (1/2) (1/2))
+  , ((modMask , xK_semicolon), warpToWindow (1/2) (1/2))
 
   -- Mute volume.
-  , ((modMask .|. controlMask, xK_m),
-     spawn "amixer -q set Master toggle")
+  , ((modMask .|. controlMask, xK_m), spawn "pactl set-sink-mute 0 toggle")
 
   -- Decrease volume.
-  , ((modMask .|. controlMask, xK_h),
-     spawn "amixer -q set Master 10%-")
+  , ((modMask .|. controlMask, xK_h), spawn "pactl set-sink-volume 0 -- -5%")
 
   -- Increase volume.
-  , ((modMask .|. controlMask, xK_t),
-     spawn "amixer -q set Master 10%+")
+  , ((modMask .|. controlMask, xK_t), spawn "pactl set-sink-volume 0 -- +5%")
 
   -- Audio previous.
-  , ((0, 0x1008FF16),
-     spawn "mpc previous")
+  , ((0, 0x1008FF16), spawn "mpc previous")
 
   -- Play/pause.
-  , ((0, 0x1008FF14),
-     spawn "")
+  , ((0, 0x1008FF14), spawn "")
 
   -- Audio next.
-  , ((0, 0x1008FF17),
-     spawn "")
+  , ((0, 0x1008FF17), spawn "")
 
   -- Eject CD tray.
-  , ((0, 0x1008FF2C),
-     spawn "eject -T")
+  , ((0, 0x1008FF2C), spawn "eject -T")
   --------------------------------------------------------------------
   -- "Standard" xmonad key bindings
   --
 
   -- Close focused window.
-  , ((modMask .|. shiftMask, xK_c),
-     kill)
+  , ((modMask .|. shiftMask, xK_c), kill)
 
   -- Cycle through the available layout algorithms.
   , ((modMask, xK_space), sendMessage NextLayout)
@@ -281,25 +247,20 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Move focus to the next window.
   , ((modMask, xK_Tab), windows W.focusDown)
 
-  -- Move focus to the next window.
-  , ((modMask, xK_h), windows W.focusDown)
-
-
   -- Move focus to the previous window.
-  , ((modMask, xK_t),
-     windows W.focusUp  )
+  , ((modMask, xK_h), windows W.focusUp  )
+  
+  -- Move focus to the next window.
+  , ((modMask, xK_t), windows W.focusDown)
 
   -- Move focus to the master window.
-  , ((modMask, xK_m),
-     windows W.focusMaster  )
+  , ((modMask, xK_m), windows W.focusMaster  )
 
   -- Swap the focused window and the master window.
-  , ((modMask, xK_Return),
-     windows W.swapMaster)
+  , ((modMask, xK_Return), windows W.swapMaster)
 
   -- Swap the focused window with the next window.
-  , ((modMask .|. shiftMask, xK_h),
-     windows W.swapDown  )
+  , ((modMask .|. shiftMask, xK_h), windows W.swapDown  )
 
   -- Swap the focused window with the previous window.
   , ((modMask .|. shiftMask, xK_t), windows W.swapUp    )
@@ -335,7 +296,6 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
       | (i, k) <- zip (XMonad.workspaces conf) ([xK_1 .. xK_9] ++ [xK_m, xK_w, xK_v, xK_z])
       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
 	where
-	  scratchPad = scratchpadSpawnActionTerminal myTerminal
 	  isMod a | a `elem` [xK_1 .. xK_9] =  modMask 
 	          | otherwise = modMask
 --  ++
@@ -358,13 +318,10 @@ myFocusFollowsMouse = True
 myMouseBindings (XConfig {XMonad.modMask = modMask}) = M.fromList $
   [
     -- mod-button1, Set the window to floating mode and move by dragging
-    ((modMask, button1),
-     (\w -> focus w >> mouseMoveWindow w))
+    ((modMask, button1), (\w -> focus w >> mouseMoveWindow w))
 
     -- mod-button2, Raise the window to the top of the stack
-    , ((modMask, button2),
-       (\w -> focus w >> windows W.swapMaster))
-
+    , ((modMask, button3), (\w -> focus w >> mouseResizeWindow w))
     -- mod-button3, Set the window to floating mode and resize by dragging
     , ((0, 11), (\w -> focus w >> kill))
     -- you may also bind events to the mouse scroll wheel (button4 and button5)
@@ -401,8 +358,9 @@ myUpdatePointer = updatePointer (Relative 0.95 0.95)
 --
 main = do
   -- conf <- dzen defaultConfig
-  xmproc <- spawnPipe "dzen2 -ta l -fn 'DejaVu Sans:size=8' -h 12 -e 'button1=menuexec'"  -- "xmobar ~/.xmonad/xmobar.hs"
-  -- status <- spawnPipe "conky -c ~/.xmonad/menu_conky.conf | dzen2 -ta r -fn 'DejaVu Sans:size=8' -h 12 -x 700 -e 'button1=menuexec'"
+  -- status <- spawnPipe "killall conky; conky -c ~/.xmonad/menu_conky.conf | dzen2 -ta r -fn 'Terminus:size=8' -h 12 -x 700 -e 'button1=menuexec'; killall conky"
+  -- xmproc <- spawnPipe "dzen2 -ta l -fn 'Terminus:size=8' -h 12 -e 'button1=menuexec'"  -- "xmobar ~/.xmonad/xmobar.hs"
+  xmproc <- spawnPipe "xmobar ~/.xmonad/xmobar.hs"
   xmonad $ defaults {
       logHook = myLogHook xmproc >> myUpdatePointer -- <+>
                 -- myLogHook status
@@ -412,16 +370,16 @@ main = do
 
 -- myLogHook' xmproc = dynamicLogWithPP $ defaultPP { ppOutput = hPutStrLn xmproc }
 
-myLogHook xmproc= dynamicLogWithPP $ dzenPP {
+myLogHook xmproc= dynamicLogWithPP $ xmobarPP {
     ppOutput = hPutStrLn xmproc
-  , ppTitle = dzenColor xmobarTitleColor "" . shorten 100
-  , ppCurrent = pad . dzenColor "#AEAFB5" ""
-  , ppHidden = pad . dzenColor "#3D58C4" "" . noScratchPad
+  , ppTitle = xmobarColor xmobarTitleColor "" . shorten 100
+  , ppCurrent = xmobarColor "#AEAFB5" ""
+  , ppHidden = xmobarColor "#3D58C4" "" . noScratchPad
   , ppOrder = \(ws:_:t:_) -> [ws,t]
   , ppSep = "   "
 }
 	where
-	  noScratchPad ws = if ws == "NSP" then "" else ws
+	  noScratchPad ws = if ws == "NSP" then "" else ws -- stop NSP from showing
 ------------------------------------------------------------------------
 -- Combine it all together
 -- A structure containing your configuration settings, overriding

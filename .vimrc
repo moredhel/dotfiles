@@ -2,7 +2,7 @@ set visualbell
 set encoding=utf-8
 set scrolloff=3
 autocmd FileType text set spell
-set foldmethod=syntax
+syntax on
 set ts=4
 set hls
 set smartcase
@@ -21,8 +21,6 @@ set nowritebackup
 set noswapfile
 set laststatus=2
 autocmd FileType c compiler gcc
-" This must be first, because it changes other options as a side effect.
-set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
