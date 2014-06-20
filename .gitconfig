@@ -10,5 +10,12 @@
     a = add
     cm = commit -m
     l = log --color
+    b = branch
+    mt = mergetool
 [color]
 	ui = true
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
+[mergetool]
+	prompt = false
