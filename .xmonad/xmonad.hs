@@ -4,25 +4,23 @@
 
 import Control.Monad (liftM2)
 import System.IO
-import System.IO
 import System.Exit
 import XMonad
-import qualified XMonad.Actions.FlexibleResize as Flex
-import XMonad.Actions.WindowBringer
 import XMonad.Actions.Warp
 import XMonad.Actions.UpdatePointer
-import XMonad.Actions.CopyWindow
-import XMonad.Actions.CycleWS
-import XMonad.Hooks.DynamicLog
+import XMonad.Actions.CopyWindow --check
+import XMonad.Actions.CycleWS --check
+import XMonad.Hooks.DynamicLog --check
+import XMonad.Hooks.EwmhDesktops --check
 import XMonad.Hooks.ManageDocks
-import XMonad.Hooks.ManageHelpers
+import XMonad.Hooks.ManageHelpers --check
 import XMonad.Hooks.SetWMName
-import XMonad.Layout.Fullscreen
-import XMonad.Layout.NoBorders
-import XMonad.Layout.Spiral
-import XMonad.Layout.Tabbed
-import XMonad.Layout.ThreeColumns
-import XMonad.Layout.Spacing
+import XMonad.Layout.Fullscreen --check
+import XMonad.Layout.NoBorders --check
+import XMonad.Layout.Spiral --check
+import XMonad.Layout.Tabbed --check
+import XMonad.Layout.ThreeColumns --check
+import XMonad.Layout.Spacing --check
 import XMonad.Prompt
 import XMonad.Prompt.RunOrRaise
 import XMonad.Util.Run(spawnPipe)
@@ -203,8 +201,6 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
   -- , ((0 , xK_F4), namedScratchpadAction scratchpads "notes")
 
-  , ((0 , xK_F5), gotoMenuArgs ["-b", "-l", "10"])
-
   , ((modMask , xK_semicolon), warpToWindow (1/2) (1/2))
 
   -- Mute volume.
@@ -346,7 +342,8 @@ myMouseBindings (XConfig {XMonad.modMask = modMask}) = M.fromList $
 -- per-workspace layout choices.
 --
 -- By default, do nothing.
-myStartupHook = return ()
+--TODO get startup hook working
+myStartupHook = spawn "bash /home/moredhel/bin/startup"
 -- stop pointer being moved on certain windows
 pointerIgnore = [ className =? "Xfce4-notifyd" 
     , stringProperty "WM_NAME" =? "File Operation Progress"
@@ -361,7 +358,7 @@ main = do
   -- status <- spawnPipe "killall conky; conky -c ~/.xmonad/menu_conky.conf | dzen2 -ta r -fn 'Terminus:size=8' -h 12 -x 700 -e 'button1=menuexec'; killall conky"
   -- xmproc <- spawnPipe "dzen2 -ta l -fn 'Terminus:size=8' -h 12 -e 'button1=menuexec'"  -- "xmobar ~/.xmonad/xmobar.hs"
   xmproc <- spawnPipe "xmobar ~/.xmonad/xmobar.hs"
-  xmonad $ defaults {
+  xmonad $ ewmh defaults {
       logHook = myLogHook xmproc >> myUpdatePointer -- <+>
                 -- myLogHook status
       , manageHook = manageDocks <+> myManageHook <+> namedScratchpadManageHook scratchpads

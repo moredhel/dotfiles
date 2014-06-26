@@ -1,6 +1,7 @@
 set encoding=utf-8
 set scrolloff=3
 autocmd FileType text set spell
+au BufRead,BufNewFile *.coffee set filetype=ruby
 syntax on
 set ts=4
 set hls
