@@ -12,6 +12,7 @@ alias t="task"
 alias g="git"
 alias em="emacsclient -t"
 alias es="emacsclient"
+alias g="git"
 source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
 export PATH=~/.cabal/bin:~/bin:$PATH:~/.cabal/bin:~/.xmonad/bin

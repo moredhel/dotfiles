@@ -2,8 +2,20 @@
 	name = Hamish Hutchings
 	email = hamhut1066@gmail.com
 [push]
-	default = simple
-[credential]
-	helper = cache
+	#default = simple
 [alias]
-	co = checkout
+    co = checkout
+    s = status
+    d = diff --color
+    a = add
+    cm = commit -m
+    l = log --color
+    b = branch
+    mt = mergetool
+[color]
+	ui = true
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
+[mergetool]
+	prompt = false
