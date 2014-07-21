@@ -6,10 +6,11 @@ import Control.Monad (liftM2)
 import System.IO
 import System.Exit
 import XMonad
-import XMonad.Actions.Warp
-import XMonad.Actions.UpdatePointer
 import XMonad.Actions.CopyWindow --check
 import XMonad.Actions.CycleWS --check
+import XMonad.Actions.UpdatePointer
+import XMonad.Actions.Warp
+import Graphics.X11.ExtraTypes.XF86
 import XMonad.Hooks.DynamicLog --check
 import XMonad.Hooks.EwmhDesktops --check
 import XMonad.Hooks.ManageDocks
@@ -36,6 +37,7 @@ myTerminal = "gnome-terminal"
 
 scratchpads = [
 	NS "term" "xfce4-terminal --role=scratchpad" (role =? "scratchpad") (customFloating $ W.RationalRect (1/12) (1/12) (5/6) (5/6)),
+	NS "irc" "xfce4-terminal --role=irc" (role =? "irc") (customFloating $ W.RationalRect (1/12) (1/12) (5/6) (5/6)),
 	NS "applaunch" "xfce4-appfinder -c" (title =? "Application Finder") defaultFloating ,
 	NS "notes" "gvim --role notes ~/Dropbox/notes/notes.otl" (role =? "notes") (customFloating $ W.RationalRect (0) (1/20) (2/4) (9/10))]
 		where role = stringProperty "WM_WINDOW_ROLE"
@@ -126,7 +128,7 @@ myLayout = avoidStruts
     Mirror (Tall 1 (3/100) (1/2)) |||
     noBorders (fullscreenFull Full)
 
-myTiled = Tall 1 (3/100) (1/2) -- (6/7)
+myTiled = Tall 1 (3/100) (3/5) -- (6/7)
 
 ------------------------------------------------------------------------
 -- Colors and borders
@@ -165,52 +167,57 @@ myBorderWidth = 1
 --
 myModMask = mod4Mask
 
-myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
+myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   ----------------------------------------------------------------------
   -- Custom key bindings
   --
 
   -- Start a terminal.  Terminal to start is specified by myTerminal variable.
-  [ ((modMask .|. shiftMask, xK_Return),	 spawn $ XMonad.terminal conf)
+  [ ((modm .|. shiftMask, xK_Return),	 spawn $ XMonad.terminal conf)
 
   -- Lock the screen using xscreensaver.
-  , ((modMask .|. controlMask, xK_l), spawn "lock")
+  , ((modm .|. controlMask, xK_l), spawn "gnome-screensaver-command -l")
 
   -- Launch dmenu via yeganesh.
   -- Use this to launch programs without a key binding.
-  -- , ((modMask, xK_p),
+  -- , ((modm, xK_p),
      -- spawn "dmenu-with-yeganesh")
+  , ((modm, xK_g), windows copyToAll) -- make focused window visible on all workspaces
+  , ((modm .|. shiftMask, xK_g), killAllOtherCopies) -- make focused window only visible on current workspace
 
   -- Take a screenshot in select mode.
   -- After pressing this key binding, click a window, or draw a rectangle with
   -- the mouse.
-  , ((modMask , xK_quoteright), spawn "mpc next")
+  , ((modm , xK_quoteright), spawn "mpc next")
 
   -- Take full screenshot in multi-head mode.
   -- That is, take a screenshot of everything you see.
-  , ((modMask .|. controlMask .|. shiftMask, xK_p), spawn "screenshot")
+  , ((modm .|. controlMask .|. shiftMask, xK_p), spawn "screenshot")
 
   -- Play/Pause mpd
-  , ((modMask , xK_a), spawn "mpc toggle")
+  , ((modm , xK_a), spawn "mpc toggle")
 
   , ((0 , xK_F1), namedScratchpadAction scratchpads "term")
 
   -- , ((0 , xK_F2), scratchPad)
 
-  -- , ((0 , xK_F3), namedScratchpadAction scratchpads "applaunch")
+  , ((controlMask , xK_grave), namedScratchpadAction scratchpads "irc")
 
   -- , ((0 , xK_F4), namedScratchpadAction scratchpads "notes")
 
-  , ((modMask , xK_semicolon), warpToWindow (1/2) (1/2))
+  , ((modm , xK_semicolon), warpToWindow (1/2) (1/2))
 
   -- Mute volume.
-  , ((modMask .|. controlMask, xK_m), spawn "pactl set-sink-mute 0 toggle")
+  , ((modm .|. controlMask, xK_m), spawn "pactl set-sink-mute 1 toggle")
+  , ((modm .|. controlMask, xK_m), spawn "pactl set-sink-mute 1 toggle")
 
   -- Decrease volume.
-  , ((modMask .|. controlMask, xK_h), spawn "pactl set-sink-volume 0 -- -5%")
+  , ((modm .|. controlMask, xK_h), spawn "pactl set-sink-volume 1 -- -5%")
+  , ((0, xF86XK_AudioLowerVolume), spawn "pactl set-sink-volume 1 -- -5%")
 
   -- Increase volume.
-  , ((modMask .|. controlMask, xK_t), spawn "pactl set-sink-volume 0 -- +5%")
+  , ((modm .|. controlMask, xK_t), spawn "pactl set-sink-volume 1 -- +5%")
+  , ((0, xF86XK_AudioRaiseVolume), spawn "pactl set-sink-volume 1 -- +5%")
 
   -- Audio previous.
   , ((0, 0x1008FF16), spawn "mpc previous")
@@ -228,61 +235,65 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   --
 
   -- Close focused window.
-  , ((modMask .|. shiftMask, xK_c), kill)
+  , ((modm .|. shiftMask, xK_c), kill1)
+ 
+  -- launch xkill
+  , ((modm .|. shiftMask, xK_x     ), spawn "xkill")
 
   -- Cycle through the available layout algorithms.
-  , ((modMask, xK_space), sendMessage NextLayout)
+  , ((modm, xK_space), sendMessage NextLayout)
 
   --  Reset the layouts on the current workspace to default.
-  , ((modMask .|. shiftMask, xK_space), setLayout $ XMonad.layoutHook conf)
+  , ((modm .|. shiftMask, xK_space), setLayout $ XMonad.layoutHook conf)
 
   -- Resize viewed windows to the correct size.
-  -- , ((modMask, xK_n),
-     -- refresh)
+  -- , ((modm, xK_n), refresh)
 
   -- Move focus to the next window.
-  , ((modMask, xK_Tab), windows W.focusDown)
+  , ((modm, xK_Tab), windows W.focusDown)
 
   -- Move focus to the previous window.
-  , ((modMask, xK_h), windows W.focusUp  )
+  , ((modm, xK_h), windows W.focusUp  )
   
   -- Move focus to the next window.
-  , ((modMask, xK_t), windows W.focusDown)
+  , ((modm, xK_t), windows W.focusDown)
 
   -- Move focus to the master window.
-  , ((modMask, xK_m), windows W.focusMaster  )
+  , ((modm, xK_m), windows W.focusMaster  )
 
   -- Swap the focused window and the master window.
-  , ((modMask, xK_Return), windows W.swapMaster)
+  , ((modm, xK_Return), windows W.swapMaster)
 
   -- Swap the focused window with the next window.
-  , ((modMask .|. shiftMask, xK_t), windows W.swapDown  )
+  , ((modm .|. shiftMask, xK_t), windows W.swapDown  )
 
   -- Swap the focused window with the previous window.
-  , ((modMask .|. shiftMask, xK_h), windows W.swapUp    )
+  , ((modm .|. shiftMask, xK_h), windows W.swapUp    )
 
   -- Shrink the master area.
-  , ((modMask, xK_d), sendMessage Shrink)
+  , ((modm, xK_d), sendMessage Shrink)
 
   -- Expand the master area.
-  , ((modMask, xK_n), sendMessage Expand)
+  , ((modm, xK_n), sendMessage Expand)
 
   -- Push window back into tiling.
-  , ((modMask .|. shiftMask, xK_r), withFocused $ windows . W.sink)
+  , ((modm .|. shiftMask, xK_r), withFocused $ windows . W.sink)
 
   -- Increment the number of windows in the master area.
-  , ((modMask, xK_comma), sendMessage (IncMasterN 1))
+  , ((modm, xK_comma), sendMessage (IncMasterN 1))
 
   -- Decrement the number of windows in the master area.
-  , ((modMask, xK_period), sendMessage (IncMasterN (-1)))
+  , ((modm, xK_period), sendMessage (IncMasterN (-1)))
 
   -- Open Dmenu
-  , ((modMask, xK_p), spawn "dmenu_run")
+  , ((modm, xK_p), spawn "dmenu_run")
 
-  , ((modMask .|. shiftMask, xK_q), io (exitWith ExitSuccess)) -- Quit xmonad.
+  , ((modm .|. shiftMask, xK_q), io (exitWith ExitSuccess)) -- Quit xmonad.
 
   -- Restart xmonad.
-  , ((modMask, xK_q), restart "xmonad" True)
+  , ((modm, xK_q), restart "xmonad" True)
+
+  , ((modm , xK_bracketleft), sendMessage ToggleStruts)
   ]
   ++
 
@@ -292,13 +303,13 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
       | (i, k) <- zip (XMonad.workspaces conf) ([xK_1 .. xK_9] ++ [xK_m, xK_w, xK_v, xK_z])
       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
 	where
-	  isMod a | a `elem` [xK_1 .. xK_9] =  modMask 
-	          | otherwise = modMask
+	  isMod a | a `elem` [xK_1 .. xK_9] =  modm 
+	          | otherwise = modm
 --  ++
 
   -- mod-{w,e,r}, Switch to physical/Xinerama screens 1, 2, or 3
   -- mod-shift-{w,e,r}, Move client to screen 1, 2, or 3
---  [((m .|. modMask, key), screenWorkspace sc >>= flip whenJust (windows . f))
+--  [((m .|. modm, key), screenWorkspace sc >>= flip whenJust (windows . f))
  --     | (key, sc) <- zip [xK_w, xK_e, xK_r] [0..]
   --    , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
 
@@ -311,16 +322,21 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 myFocusFollowsMouse :: Bool
 myFocusFollowsMouse = True
 
-myMouseBindings (XConfig {XMonad.modMask = modMask}) = M.fromList $
+myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
   [
     -- mod-button1, Set the window to floating mode and move by dragging
-    ((modMask, button1), (\w -> focus w >> mouseMoveWindow w))
+    ((modm, button1), (\w -> focus w >> mouseMoveWindow w))
 
     -- mod-button2, Raise the window to the top of the stack
-    , ((modMask, button3), (\w -> focus w >> mouseResizeWindow w))
-    -- mod-button3, Set the window to floating mode and resize by dragging
+    , ((modm, button3), (\w -> focus w >> mouseResizeWindow w))
+
+    -- left scroll to kill the program the mouse is over
     , ((0, 11), (\w -> focus w >> kill))
-    -- you may also bind events to the mouse scroll wheel (button4 and button5)
+
+    -- middle click to raise stack
+    , ((modm, button2), (\w -> focus w >> mouseResizeWindow w
+                                            >> windows W.shiftMaster))
+    
   ]
 
 
@@ -367,13 +383,19 @@ main = do
 
 -- myLogHook' xmproc = dynamicLogWithPP $ defaultPP { ppOutput = hPutStrLn xmproc }
 
-myLogHook xmproc= dynamicLogWithPP $ xmobarPP {
-    ppOutput = hPutStrLn xmproc
-  , ppTitle = xmobarColor xmobarTitleColor "" . shorten 100
-  , ppCurrent = xmobarColor "#AEAFB5" ""
-  , ppHidden = xmobarColor "#3D58C4" "" . noScratchPad
-  , ppOrder = \(ws:_:t:_) -> [ws,t]
-  , ppSep = "   "
+myLogHook xmproc = do
+    copies <- wsContainingCopies
+    -- add checking to see if any other windows are on the workspace TODO
+    let check ws | ws `elem` copies = xmobarColor "green" "" $ ws
+                 -- | = xmobarColor "green" "black" $ ws
+                 | otherwise = ws
+    dynamicLogWithPP $ xmobarPP {
+        ppOutput = hPutStrLn xmproc
+        , ppTitle = xmobarColor xmobarTitleColor "" . shorten 100
+        , ppCurrent = xmobarColor "#0DBA35" ""
+        , ppHidden = xmobarColor "#3D58C4" "" . check . noScratchPad
+        , ppOrder = \(ws:_:t:_) -> [ws,t]
+        , ppSep = "   "
 }
 	where
 	  noScratchPad ws = if ws == "NSP" then "" else ws -- stop NSP from showing
