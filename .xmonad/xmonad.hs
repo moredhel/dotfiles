@@ -14,6 +14,7 @@ import XMonad.Hooks.DynamicLog --check
 import XMonad.Hooks.EwmhDesktops --check
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers --check
+import XMonad.Hooks.Script
 import XMonad.Hooks.SetWMName
 import XMonad.Layout.Fullscreen --check
 import XMonad.Layout.NoBorders --check
@@ -55,7 +56,7 @@ myWorkspaces = [ format x a | (x,a) <- zip [1..] workspaceNames]
 			| a == 12 = "super+" ++ show "v"
 			| a == 13 = "super+" ++ show "z"
 			| otherwise = ""
-		      format x a = "<action=xdotool key " ++ super x ++ ">" ++ a ++ "</action>"
+		      format x a = a
 ------------------------------------------------------------------------
 -- Window rules
 -- Execute arbitrary actions and WindowSet manipulations when managing
@@ -132,7 +133,7 @@ myTiled = Tall 1 (3/100) (1/2) -- (6/7)
 -- Colors and borders
 -- Currently based on the ir_black theme.
 --
-myNormalBorderColor  = "#7c7c7c"
+myNormalBorderColor  = "#000000"
 myFocusedBorderColor = "#ffb6b0"
 
 -- Colors for text and backgrounds of each tab when in "Tabbed" layout.
@@ -362,7 +363,7 @@ main = do
       logHook = myLogHook xmproc >> myUpdatePointer -- <+>
                 -- myLogHook status
       , manageHook = manageDocks <+> myManageHook <+> namedScratchpadManageHook scratchpads
-      , startupHook = setWMName "LG3D"
+      , startupHook = setWMName "LG3D" <+> spawn "/home/hamhut/.xmonad/startup.sh"
   }
 
 -- myLogHook' xmproc = dynamicLogWithPP $ defaultPP { ppOutput = hPutStrLn xmproc }

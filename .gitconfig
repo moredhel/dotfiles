@@ -19,5 +19,3 @@
 	tool = vimdiff
 [mergetool]
 	prompt = false
-[push]
-	default = simple
