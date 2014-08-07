@@ -17,3 +17,6 @@ source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
 export PATH=~/.cabal/bin:~/bin:$PATH:~/.cabal/bin:~/.xmonad/bin
 export EDITOR="nvim"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export GPG_TTY=`tty`

@@ -32,3 +32,39 @@ alias trip-day Day Trip <daytripuk@gmail.com>
 alias arch-dev-public-bounces@archlinux.org arch-dev-public-bounces@archlinux.org
 alias ravier-timothée Timothée Ravier <siosm99@gmail.com>
 alias support@tardis.ed.ac.uk support@tardis.ed.ac.uk
+alias LinkedIn <jobs-listings@linkedin.com>
+alias summers-ann Ann Summers <annsummers@email.annsummers.com>
+alias Edinburgh <FreecycleEdinburgh@mod.freecycle.org>
+alias gardens-maranoa Maranoa Gardens <Maranoa.Gardens@boroondara.vic.gov.au>
+alias Google <no-reply@accounts.google.com>
+alias Teresa <ormesmithmama@gmail.com>
+alias robertson-david David Robertson <dr@inf.ed.ac.uk>
+alias stevens-perdita Perdita Stevens <perdita@inf.ed.ac.uk>
+alias eBay <ebay@ebay.co.uk>
+alias cloud_kitten-ebay eBay Member: cloud_kitten <cloudk_ft2208nf@members.ebay.co.uk>
+alias hutchings-james james hutchings <james@dogrock.net>
+alias clarke-henry Henry Clarke <henry@merlinllp.com>
+alias store-steam Steam Store <support@steampowered.com>
+alias TechSmart <contact@megaleecher.net>
+alias inc.-bittorrent BitTorrent Inc. <bleep@bittorrent.com>
+alias ventures-informatics Informatics Ventures <ronnie@informatics-ventures.com>
+alias Eventbrite <orders@eventbrite.com>
+alias Dropbox <no-reply@dropboxmail.com>
+alias Cyfe <support@cyfe.com>
+alias Twitter <notify@twitter.com>
+alias baster-james James Baster <james@jarofgreen.co.uk>
+alias andrew-alastair Alastair Andrew <al@airts.co.uk>
+alias hutchings-hamish Hamish Hutchings <hamhut@hamhut1066.com>
+alias piazza-math MATH 08058 on Piazza <no-reply@piazza.com>
+alias fitzpatrick-rory Rory Fitzpatrick <badgrs@gmail.com>
+alias Ektoplazm <basilisk@ektoplazm.com>
+alias EdinburghFreegle <EdinburghFreegle-owner@yahoogroups.com>
+alias view-angularjs AngularJS Mountain View <info@meetup.com>
+alias freegle-edinburgh Edinburgh Freegle <EdinburghFreegle-owner@yahoogroups.com>
+alias professionals-linux Linux Professionals <groups-noreply@linkedin.com>
+alias calendar-google Google Calendar <calendar-notification@google.com>
+alias TomWard TomWard
+alias Voodoo <noreply@skiddle.com>
+alias knox-robin Robin Knox <intelligentpos@gmail.com>
+alias Sainsburys <Grocery@em.sainsburys.co.uk>
+alias leeming-ewan Ewan Leeming <info@meetup.com>

@@ -3,7 +3,7 @@
 # github.com/gianu
 # sgianazza@gmail.com
 
-PROMPT='[%{$fg_bold[white]%}%n%{$reset_color%}@%{$fg_bold[blue]%}%m%{$reset_color%} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)%{$reset_color%}]$ '
+PROMPT='[%{$fg_bold[white]%}%n%{$reset_color%}@%{$fg_bold[red]%}%m%{$reset_color%} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)%{$reset_color%}]$ '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="(%{$fg_bold[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX=")"

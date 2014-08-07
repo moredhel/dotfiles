@@ -1,7 +1,40 @@
 [general]
 # List of accounts to be synced, separated by a comma.
-accounts = main
+accounts = main, hamhut1066
 #
+[Account hamhut1066]
+localrepository = hamhut1066-local
+remoterepository = hamhut1066-remote
+status_backend = sqlite
+#
+[Repository hamhut1066-local]
+# # Currently, offlineimap only supports maildir and IMAP for local
+# repositories.
+type = Maildir
+nametrans = lambda foldername: re.sub ('bak', '^\[gmail\]',
+                               re.sub ('sent', 'Sent Mail',
+                               re.sub ('archives', 'Archives',
+                               re.sub ('flagged', 'starred',
+                               re.sub ('inbox', 'INBOX',
+                               re.sub ('_', ' ', foldername.lower()))))))
+# # Where should the mail be placed?
+localfolders = ~/mail/hamhut1066
+
+[Repository hamhut1066-remote]
+postsynchook = notmuch new
+type = Gmail
+createFolders = False
+realdelete = no
+remoteuser = hamhut@hamhut1066.com
+nametrans = lambda foldername: re.sub ('^\[gmail\]', 'bak',
+                               re.sub ('Sent Mail', 'sent',
+                               re.sub ('starred', 'flagged',
+                               re.sub ('Archives', 'archives',
+                               re.sub (' ', '_', foldername.lower())))))
+folderfilter = lambda foldername: foldername not in '[Gmail]/All Mail'
+# Necessary as of OfflineIMAP 6.5.4
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+
 [Account main]
 # # Identifier for the local repository; e.g. the maildir to be synced via
 # IMAP.
@@ -11,39 +44,44 @@ localrepository = main-local
 remoterepository = gmail-remote
 # # Status cache. Default is plain, which eventually becomes huge and slow.
 status_backend = sqlite
+
 #
 [Repository main-local]
 # # Currently, offlineimap only supports maildir and IMAP for local
 # repositories.
 type = Maildir
 nametrans = lambda foldername: re.sub ('bak', '^\[gmail\]',
-                               re.sub ('sent', 'sent_mail',
+                               re.sub ('sent', 'Sent Mail',
                                re.sub ('edinburgh', 'Edinburgh',
                                re.sub ('forums', 'Forums',
                                re.sub ('notifications', 'Notifications',
                                re.sub ('promotions', 'Promotions',
                                #re.sub ('social_updates', 'Social Updates',
                                re.sub ('university', 'University',
+                               re.sub ('archives', 'Archives',
                                re.sub ('flagged', 'starred',
                                re.sub ('inbox', 'INBOX',
-                               re.sub ('_', ' ', foldername.lower()))))))))))
+                               re.sub ('_', ' ', foldername.lower())))))))))))
 # # Where should the mail be placed?
 localfolders = ~/mail/gmail
 
 [Repository gmail-remote]
+postsynchook = notmuch new
 type = Gmail
 createFolders = False
+realdelete = no
 remoteuser = hamhut1066@gmail.com
-remotepass = Feast92.amyl
+remotepass = aqxkbtmiykeagtos
 nametrans = lambda foldername: re.sub ('^\[gmail\]', 'bak',
-                               re.sub ('sent_mail', 'sent',
+                               re.sub ('Sent Mail', 'sent',
                                re.sub ('starred', 'flagged',
                                re.sub ('Edinburgh', 'edinburgh',
                                re.sub ('Forums', 'forums',
                                re.sub ('Notifications', 'notifications',
                                re.sub ('Promotions', 'promotions',
                                re.sub ('University', 'university',
-                               re.sub (' ', '_', foldername.lower())))))))))
+                               re.sub ('Archives', 'archives',
+                               re.sub (' ', '_', foldername.lower()))))))))))
 folderfilter = lambda foldername: foldername not in '[Gmail]/All Mail'
 # Necessary as of OfflineIMAP 6.5.4
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
