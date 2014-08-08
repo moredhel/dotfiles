@@ -11,8 +11,8 @@ set mbox_type = Maildir
 #set spoolfile="+gmail/inbox"
 #set postponed = +gmail/bak.drafts
 set text_flowed=yes
-set display_filter = ~/bin/aliases.sh
-set alias_file = ~/.mutt/aliases.txt
+set display_filter = ~/mail/aliases.sh
+set alias_file = ~/mail/aliases.txt
 set abort_nosubject = yes
 
 set header_cache = ~/mail/mutt_header
