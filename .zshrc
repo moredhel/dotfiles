@@ -17,4 +17,5 @@ source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
 export PATH=~/.cabal/bin:~/bin:$PATH:~/.cabal/bin:~/.xmonad/bin
 export EDITOR="nvim"
-alias todo="ack-grep TODO -G 'fgp|gmap\/'"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export GPG_TTY=`tty`
