@@ -19,3 +19,8 @@ export PATH=~/.cabal/bin:~/bin:$PATH:~/.cabal/bin:~/.xmonad/bin
 export EDITOR="nvim"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export GPG_TTY=`tty`
+function cd {
+    builtin cd $1
+    echo `pwd` > ~/.last_location
+}
+cd `cat ~/.last_location`

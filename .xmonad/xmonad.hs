@@ -177,7 +177,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   [ ((modm .|. shiftMask, xK_Return),	 spawn $ XMonad.terminal conf)
 
   -- Lock the screen using xscreensaver.
-  , ((modm .|. controlMask, xK_l), spawn "gnome-screensaver-command -l")
+  , ((modm .|. controlMask, xK_l), spawn "dm-tool lock")
 
   -- Launch dmenu via yeganesh.
   -- Use this to launch programs without a key binding.
@@ -287,7 +287,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   , ((modm, xK_period), sendMessage (IncMasterN (-1)))
 
   -- Open Dmenu
-  , ((modm, xK_p), spawn "dmenu_run")
+  , ((modm, xK_p), spawn "dmenu_run -sb '#333' -nf '#aaa' -nb '#000'")
 
   , ((modm .|. shiftMask, xK_q), io (exitWith ExitSuccess)) -- Quit xmonad.
 
@@ -360,7 +360,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 --
 -- By default, do nothing.
 --TODO get startup hook working
-myStartupHook = spawn "bash /home/moredhel/bin/startup"
+myStartupHook = spawn "bash /home/hamhut/bin/startup"
 -- stop pointer being moved on certain windows
 pointerIgnore = [ className =? "Xfce4-notifyd" 
     , stringProperty "WM_NAME" =? "File Operation Progress"
