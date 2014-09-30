@@ -27,19 +27,24 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 let g:ycm_collect_identifiers_from_tags_files = 1
 
-colorscheme desert
+if has('desert')
+    colorscheme desert
+endif
 set background=dark
 set encoding=utf-8
 set scrolloff=5
 autocmd FileType text set spell
 au BufRead,BufNewFile *.coffee set filetype=ruby
 au BufRead,BufNewFile *.jinja set filetype=jinja
-syntax on
+runtime /usr/share/vim/vim72/syntax/syntax.vim
+"syntax on
 set ts=4
 set hls
 set smartcase
 set number
-set relativenumber
+if has('relativenumber')
+    set relativenumber
+endif
 set history=700
 set undolevels=700
 set tabstop=4
