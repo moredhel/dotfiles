@@ -16,8 +16,8 @@ alias g="git"
 source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
 export PATH=~/.cabal/bin:~/bin:$PATH:~/.cabal/bin:~/.xmonad/bin
-export EDITOR="nvim"
-export PATH="$HOME/.rbenv/bin:$PATH"
+export EDITOR="vim"
+export PATH="$HOME/bin:$HOME/.rbenv/bin:$PATH"
 export GPG_TTY=`tty`
 function cd {
     builtin cd $1
