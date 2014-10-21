@@ -21,6 +21,7 @@ Plugin 'vim-scripts/textutil.vim'
 Plugin 'vim-scripts/Jinja'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'https://github.com/kien/ctrlp.vim'
+Bundle 'https://github.com/vim-scripts/mips.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
