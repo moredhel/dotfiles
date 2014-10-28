@@ -209,16 +209,16 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   , ((modm , xK_semicolon), warpToWindow (1/2) (1/2))
 
   -- Mute volume.
-  , ((modm .|. controlMask, xK_m), spawn "pactl set-sink-mute 1 toggle")
-  , ((modm .|. controlMask, xK_m), spawn "pactl set-sink-mute 1 toggle")
+  , ((modm .|. controlMask, xK_m), spawn "pactl set-sink-mute 0 toggle")
+  , ((0 , xF86XK_AudioMute), spawn "pactl set-sink-mute 0 toggle")
 
   -- Decrease volume.
-  , ((modm .|. controlMask, xK_h), spawn "pactl set-sink-volume 1 -- -5%")
-  , ((0, xF86XK_AudioLowerVolume), spawn "pactl set-sink-volume 1 -- -5%")
+  , ((modm .|. controlMask, xK_h), spawn "pactl set-sink-volume 0 -- -5%")
+  , ((0, xF86XK_AudioLowerVolume), spawn "pactl set-sink-volume 0 -- -5%")
 
   -- Increase volume.
-  , ((modm .|. controlMask, xK_t), spawn "pactl set-sink-volume 1 -- +5%")
-  , ((0, xF86XK_AudioRaiseVolume), spawn "pactl set-sink-volume 1 -- +5%")
+  , ((modm .|. controlMask, xK_t), spawn "pactl set-sink-volume 0 -- +5%")
+  , ((0, xF86XK_AudioRaiseVolume), spawn "pactl set-sink-volume 0 -- +5%")
 
   -- Audio previous.
   , ((0, 0x1008FF16), spawn "mpc previous")
@@ -358,7 +358,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 --
 -- By default, do nothing.
 --TODO get startup hook working
-myStartupHook = spawn "bash /home/hamhut/bin/startup"
+myStartupHook = spawn "sleep 5; bash /home/hamhut/bin/startup"
 -- stop pointer being moved on certain windows
 pointerIgnore = [ className =? "Xfce4-notifyd" 
     , stringProperty "WM_NAME" =? "File Operation Progress"

@@ -1,10 +1,11 @@
 CASE_SENSITIVE="true"
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="cypher"
+ZSH_THEME="dieter"
 ncmpcppShow() { BUFFER="ncmpcpp"; zle accept-line; }
 zle -N ncmpcppShow
 bindkey '^[\' ncmpcppShow
 alias _="sudo"
+alias mail="ssh -t crowfox screen -rd mail"
 alias aoeu="kinit s1249759@INF.ED.AC.UK"
 alias snth="ncmpcpp"
 alias cdp="cd ~/documents/lecture_notes"
