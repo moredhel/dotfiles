@@ -30,3 +30,7 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 set foldmethod=indent
+augroup filetypedetect
+" Mail
+autocmd BufRead,BufNewFile *mutt-*              setfiletype mail
+augroup END
