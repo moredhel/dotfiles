@@ -1,6 +1,6 @@
 CASE_SENSITIVE="true"
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="hamish"
+ZSH_THEME="cypher"
 ncmpcppShow() { BUFFER="ncmpcpp"; zle accept-line; }
 zle -N ncmpcppShow
 bindkey '^[\' ncmpcppShow
@@ -17,8 +17,7 @@ source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
 export PATH=~/.cabal/bin:~/bin:$PATH:~/.cabal/bin:~/.xmonad/bin
 export EDITOR="vim"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+export PATH="$HOME/bin:$HOME/.rbenv/bin:$PATH"
 export GPG_TTY=`tty`
 uptime
 
@@ -27,3 +26,8 @@ PERL5LIB="/home/hamhut/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB
 PERL_LOCAL_LIB_ROOT="/home/hamhut/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/hamhut/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/hamhut/perl5"; export PERL_MM_OPT;
+function cd {
+    builtin cd $1
+    echo `pwd` > ~/.last_location
+}
+cd `cat ~/.last_location`

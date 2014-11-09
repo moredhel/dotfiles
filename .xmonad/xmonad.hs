@@ -15,6 +15,7 @@ import XMonad.Hooks.DynamicLog --check
 import XMonad.Hooks.EwmhDesktops --check
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers --check
+import XMonad.Hooks.Script
 import XMonad.Hooks.SetWMName
 import XMonad.Layout.Fullscreen --check
 import XMonad.Layout.NoBorders --check
@@ -57,7 +58,7 @@ myWorkspaces = [ format x a | (x,a) <- zip [1..] workspaceNames]
 			| a == 12 = "super+" ++ show "v"
 			| a == 13 = "super+" ++ show "z"
 			| otherwise = ""
-		      format x a = "<action=xdotool key " ++ super x ++ ">" ++ a ++ "</action>"
+		      format x a = a
 ------------------------------------------------------------------------
 -- Window rules
 -- Execute arbitrary actions and WindowSet manipulations when managing
@@ -134,7 +135,7 @@ myTiled = Tall 1 (3/100) (3/5) -- (6/7)
 -- Colors and borders
 -- Currently based on the ir_black theme.
 --
-myNormalBorderColor  = "#7c7c7c"
+myNormalBorderColor  = "#000000"
 myFocusedBorderColor = "#ffb6b0"
 
 -- Colors for text and backgrounds of each tab when in "Tabbed" layout.
@@ -176,7 +177,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   [ ((modm .|. shiftMask, xK_Return),	 spawn $ XMonad.terminal conf)
 
   -- Lock the screen using xscreensaver.
-  , ((modm .|. controlMask, xK_l), spawn "gnome-screensaver-command -l")
+  , ((modm .|. controlMask, xK_l), spawn "dm-tool lock")
 
   -- Launch dmenu via yeganesh.
   -- Use this to launch programs without a key binding.
@@ -286,7 +287,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   , ((modm, xK_period), sendMessage (IncMasterN (-1)))
 
   -- Open Dmenu
-  , ((modm, xK_p), spawn "dmenu_run")
+  , ((modm, xK_p), spawn "dmenu_run -sb '#333' -nf '#aaa' -nb '#000'")
 
   , ((modm .|. shiftMask, xK_q), io (exitWith ExitSuccess)) -- Quit xmonad.
 
@@ -302,16 +303,14 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   [((m .|. isMod k, k), windows $ f i)
       | (i, k) <- zip (XMonad.workspaces conf) ([xK_1 .. xK_9] ++ [xK_m, xK_w, xK_v, xK_z])
       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
+  ++
+  [((m .|. modm, key), screenWorkspace sc >>= flip whenJust (windows . f))
+      | (key, sc) <- zip [xK_apostrophe, xK_Tab] [0..]
+      , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
 	where
 	  isMod a | a `elem` [xK_1 .. xK_9] =  modm 
 	          | otherwise = modm
---  ++
 
-  -- mod-{w,e,r}, Switch to physical/Xinerama screens 1, 2, or 3
-  -- mod-shift-{w,e,r}, Move client to screen 1, 2, or 3
---  [((m .|. modm, key), screenWorkspace sc >>= flip whenJust (windows . f))
- --     | (key, sc) <- zip [xK_w, xK_e, xK_r] [0..]
-  --    , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
 
 
 ------------------------------------------------------------------------
@@ -359,7 +358,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 --
 -- By default, do nothing.
 --TODO get startup hook working
-myStartupHook = spawn "bash /home/moredhel/bin/startup"
+myStartupHook = spawn "bash /home/hamhut/bin/startup"
 -- stop pointer being moved on certain windows
 pointerIgnore = [ className =? "Xfce4-notifyd" 
     , stringProperty "WM_NAME" =? "File Operation Progress"
@@ -378,7 +377,7 @@ main = do
       logHook = myLogHook xmproc >> myUpdatePointer -- <+>
                 -- myLogHook status
       , manageHook = manageDocks <+> myManageHook <+> namedScratchpadManageHook scratchpads
-      , startupHook = setWMName "LG3D"
+      , startupHook = setWMName "LG3D" <+> spawn "/home/hamhut/.xmonad/startup.sh"
   }
 
 -- myLogHook' xmproc = dynamicLogWithPP $ defaultPP { ppOutput = hPutStrLn xmproc }

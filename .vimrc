@@ -1,13 +1,50 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'mtth/scratch.vim'
+Plugin 'burnettk/vim-angular'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-scripts/textutil.vim'
+Plugin 'vim-scripts/Jinja'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'https://github.com/kien/ctrlp.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+let g:ycm_collect_identifiers_from_tags_files = 1
+
+if has('desert')
+    colorscheme desert
+endif
+set background=dark
 set encoding=utf-8
-set scrolloff=3
+set scrolloff=5
 autocmd FileType text set spell
 au BufRead,BufNewFile *.coffee set filetype=ruby
-syntax on
+au BufRead,BufNewFile *.jinja set filetype=jinja
+runtime /usr/share/vim/vim72/syntax/syntax.vim
+"syntax on
 set ts=4
 set hls
 set smartcase
 set number
-set relativenumber
+if has('relativenumber')
+    set relativenumber
+endif
 set history=700
 set undolevels=700
 set tabstop=4
@@ -34,3 +71,20 @@ augroup filetypedetect
 " Mail
 autocmd BufRead,BufNewFile *mutt-*              setfiletype mail
 augroup END
+set showmatch " Show matching braces.
+" Strip the newline from the end of a string
+function! Chomp(str)
+  return substitute(a:str, '\n$', '', '')
+endfunction
+
+" Find a file and pass it to cmd
+function! DmenuOpen(cmd)
+  let fname = Chomp(system("git ls-files | dmenu -sb '#333' -nf '#aaa' -nb '#000' -l 40 -i -p " . a:cmd))
+  if empty(fname)
+    return
+  endif
+  execute a:cmd . " " . fname
+endfunction
+
+map <c-t> :call DmenuOpen("tabe")<cr>
+map <c-f> :call DmenuOpen("e")<cr>
