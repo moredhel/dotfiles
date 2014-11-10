@@ -37,7 +37,7 @@ autocmd FileType text set spell
 au BufRead,BufNewFile *.coffee set filetype=ruby
 au BufRead,BufNewFile *.jinja set filetype=jinja
 runtime /usr/share/vim/vim72/syntax/syntax.vim
-"syntax on
+syntax on
 set ts=4
 set hls
 set smartcase

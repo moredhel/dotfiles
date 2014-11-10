@@ -33,7 +33,7 @@ import qualified Data.Map        as M
 
 
 -- Terminal
-myTerminal = "gnome-terminal"
+myTerminal = "xfce4-terminal"
 
 
 scratchpads = [

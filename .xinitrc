@@ -18,7 +18,7 @@ echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.Xdbus
 #----------------
 
 #setxkbmap dvorak
-setxkbmap -layout "dvorak, us" -option "grp:caps_toggle"
+#setxkbmap -layout "dvorak, us" -option "grp:caps_toggle"
 setxkbmap -option terminate:ctrl_alt_bksp
 #xset -dpms
 xset s off
