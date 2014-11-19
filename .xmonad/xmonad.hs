@@ -33,7 +33,7 @@ import qualified Data.Map        as M
 
 
 -- Terminal
-myTerminal = "xfce4-terminal"
+myTerminal = "urxvtc"
 
 
 scratchpads = [
@@ -49,7 +49,7 @@ scratchpads = [
 -- Workspaces
 -- The default number of workspaces (virtual screens) and their names.
 --
-workspaceNames = ["!","@", "#", "$", "%", "^", "&", "*","0.o", "\\o/", "web", "term", "0.0"]
+workspaceNames = ["!","@", "#", "$", "%", "^", "&", "*","(", "β", "Δ", "Π", "Ω"]
 myWorkspaces = [ format x a | (x,a) <- zip [1..] workspaceNames]
 		where super a 
 			| a < 10 = "super+" ++ show a
@@ -135,8 +135,8 @@ myTiled = Tall 1 (3/100) (3/5) -- (6/7)
 -- Colors and borders
 -- Currently based on the ir_black theme.
 --
-myNormalBorderColor  = "#000000"
-myFocusedBorderColor = "#ffb6b0"
+myNormalBorderColor  = "#141314"
+myFocusedBorderColor = "#ccc2a6"
 
 -- Colors for text and backgrounds of each tab when in "Tabbed" layout.
 tabConfig = defaultTheme {
@@ -149,7 +149,7 @@ tabConfig = defaultTheme {
 }
 
 -- Color of current window title in xmobar.
-xmobarTitleColor = "#aeafb5"
+xmobarTitleColor = "#8e8774"
 
 -- Color of current workspace in xmobar.
 xmobarCurrentWorkspaceColor = "#CEFFAC"
@@ -209,16 +209,16 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   , ((modm , xK_semicolon), warpToWindow (1/2) (1/2))
 
   -- Mute volume.
-  , ((modm .|. controlMask, xK_m), spawn "pactl set-sink-mute 1 toggle")
-  , ((modm .|. controlMask, xK_m), spawn "pactl set-sink-mute 1 toggle")
+  , ((modm .|. controlMask, xK_m), spawn "amixer sset Master toggle")
+  , ((0, xF86XK_AudioMute), spawn "amixer sset Master toggle")
 
   -- Decrease volume.
-  , ((modm .|. controlMask, xK_h), spawn "pactl set-sink-volume 1 -- -5%")
-  , ((0, xF86XK_AudioLowerVolume), spawn "pactl set-sink-volume 1 -- -5%")
+  , ((modm .|. controlMask, xK_h), spawn "amixer sset Master 2dB-")
+  , ((0, xF86XK_AudioLowerVolume), spawn "amixer sset Master 2dB-")
 
   -- Increase volume.
-  , ((modm .|. controlMask, xK_t), spawn "pactl set-sink-volume 1 -- +5%")
-  , ((0, xF86XK_AudioRaiseVolume), spawn "pactl set-sink-volume 1 -- +5%")
+  , ((modm .|. controlMask, xK_t), spawn "amixer sset Master 2dB+")
+  , ((0, xF86XK_AudioRaiseVolume), spawn "amixer sset Master 2dB+")
 
   -- Audio previous.
   , ((0, 0x1008FF16), spawn "mpc previous")
@@ -385,14 +385,13 @@ main = do
 myLogHook xmproc = do
     copies <- wsContainingCopies
     -- add checking to see if any other windows are on the workspace TODO
-    let check ws | ws `elem` copies = xmobarColor "green" "" $ ws
-                 -- | = xmobarColor "green" "black" $ ws
+    let check ws | ws `elem` copies = xmobarColor "#514d42" "" $ ws
                  | otherwise = ws
     dynamicLogWithPP $ xmobarPP {
         ppOutput = hPutStrLn xmproc
         , ppTitle = xmobarColor xmobarTitleColor "" . shorten 100
-        , ppCurrent = xmobarColor "#0DBA35" ""
-        , ppHidden = xmobarColor "#3D58C4" "" . check . noScratchPad
+        , ppCurrent = xmobarColor "#ccc2a6" ""
+        , ppHidden = xmobarColor "#514d42" "" . check . noScratchPad
         , ppOrder = \(ws:_:t:_) -> [ws,t]
         , ppSep = "   "
 }

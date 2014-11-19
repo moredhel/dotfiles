@@ -27,9 +27,11 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 let g:ycm_collect_identifiers_from_tags_files = 1
 
-if has('desert')
-    colorscheme desert
-endif
+try
+    colorscheme slate
+catch
+    " catch no colorscheme
+endtry
 set background=dark
 set encoding=utf-8
 set scrolloff=5

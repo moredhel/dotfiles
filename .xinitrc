@@ -18,7 +18,7 @@ echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.Xdbus
 #----------------
 
 #setxkbmap dvorak
-#setxkbmap -layout "dvorak, us" -option "grp:caps_toggle"
+setxkbmap -layout "dvorak, us" -option "grp:caps_toggle"
 setxkbmap -option terminate:ctrl_alt_bksp
 #xset -dpms
 xset s off
@@ -29,14 +29,14 @@ urxvtd &
 thunar --daemon &
 unclutter -noevents &
 dropboxd &
-conky -c ~/.xmonad/conky.conf &
+#conky -c ~/.xmonad/conky.conf &
 trayer --edge bottom --align right --SetDockType true --SetPartialStrut false \
  --expand true --width 9 --transparent true --tint 0x000000 --height 10 &
 xsetroot -cursor_name left_ptr &
 xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
 #bash /home/hamhut/bin/wall.sh &
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
-hsetroot -fill pictures/wall.jpg
+~/bin/wallpaper.sh &
 #exec startxfce4
 exec urxvtc -e ncmpcpp &
 #exec xfce4-session &

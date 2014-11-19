@@ -1,6 +1,11 @@
+#oh-my-zsh stuff
 CASE_SENSITIVE="true"
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="cypher"
+ZSH_THEME="custom"
+plugins=(archlinux git zsh-syntax-highlighting)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+
+
 ncmpcppShow() { BUFFER="ncmpcpp"; zle accept-line; }
 zle -N ncmpcppShow
 bindkey '^[\' ncmpcppShow
@@ -19,7 +24,6 @@ export PATH=~/.cabal/bin:~/bin:$PATH:~/.cabal/bin:~/.xmonad/bin
 export EDITOR="vim"
 export PATH="$HOME/bin:$HOME/.rbenv/bin:$PATH"
 export GPG_TTY=`tty`
-uptime
 
 PATH="/home/hamhut/perl5/bin${PATH+:}${PATH}"; export PATH;
 PERL5LIB="/home/hamhut/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
