@@ -21,6 +21,11 @@ Plugin 'vim-scripts/textutil.vim'
 Plugin 'vim-scripts/Jinja'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'https://github.com/kien/ctrlp.vim'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'https://github.com/jiangmiao/auto-pairs'
+Bundle 'https://github.com/tpope/vim-eunuch'
+Bundle 'https://github.com/tpope/vim-sensible'
+Bundle 'https://github.com/tpope/vim-endwise'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,7 +40,12 @@ endtry
 set background=dark
 set encoding=utf-8
 set scrolloff=5
+set timeoutlen=100
+set nowildmenu
 autocmd FileType text set spell
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
 au BufRead,BufNewFile *.coffee set filetype=ruby
 au BufRead,BufNewFile *.jinja set filetype=jinja
 runtime /usr/share/vim/vim72/syntax/syntax.vim
