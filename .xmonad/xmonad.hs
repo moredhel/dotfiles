@@ -49,7 +49,8 @@ scratchpads = [
 -- Workspaces
 -- The default number of workspaces (virtual screens) and their names.
 --
-workspaceNames = ["!","@", "#", "$", "%", "^", "&", "*","(", "β", "Δ", "Π", "Ω"]
+-- workspaceNames = ["!","@", "#", "$", "%", "^", "&", "*","(", "β", "Δ", "Π", "Ω"]
+workspaceNames = ["&","[", "{", "}", "(", "=", "*", ")","+", "]", "!", "β", "Π", "Δ",  "Ω", "λ", "√", "Γ"]
 myWorkspaces = [ format x a | (x,a) <- zip [1..] workspaceNames]
 		where super a 
 			| a < 10 = "super+" ++ show a
@@ -75,8 +76,8 @@ myWorkspaces = [ format x a | (x,a) <- zip [1..] workspaceNames]
 --
 myManageHook = composeAll
     ([ 
-    className =? "Chromium"       --> doShift (browser)
-    , className =? "Dwb"  	    --> doShift (browser)
+    -- className =? "Chromium"       --> doShift (browser)
+    className =? "Dwb"  	    --> doShift (browser)
     , resource  =? "desktop_window" --> doIgnore
     -- , className =? "Vlc"     	    --> doShift (media)
     -- , className =? "Vlc"     	    --> viewShift (media)
@@ -125,7 +126,8 @@ myManageHook = composeAll
 --
 myLayout = avoidStruts
     myTiled |||
-    Tall 1 (3/100) (1/2) |||
+    Tall 1 (3/100) (3/10) |||
+    -- Tall 1 (100/100) (1/2) |||
     Mirror (Tall 1 (3/100) (1/2)) |||
     noBorders (fullscreenFull Full)
 
@@ -202,11 +204,11 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
   -- , ((0 , xK_F2), scratchPad)
 
-  , ((controlMask , xK_grave), namedScratchpadAction scratchpads "irc")
+  , ((controlMask , xK_dollar), namedScratchpadAction scratchpads "irc")
 
   -- , ((0 , xK_F4), namedScratchpadAction scratchpads "notes")
 
-  , ((modm , xK_semicolon), warpToWindow (1/2) (1/2))
+  -- , ((modm , xK_semicolon), warpToWindow (1/2) (1/2))
 
   -- Mute volume.
   , ((modm .|. controlMask, xK_m), spawn "amixer sset Master toggle")
@@ -294,21 +296,22 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   -- Restart xmonad.
   , ((modm, xK_q), restart "xmonad" True)
 
-  , ((modm , xK_bracketleft), sendMessage ToggleStruts)
+  , ((modm , xK_dollar), sendMessage ToggleStruts)
   ]
   ++
 
   -- mod-[1..9], Switch to workspace N
   -- mod-shift-[1..9], Move client to workspace N
+  -- & [ {  } ( = *  ) +  ] !
   [((m .|. isMod k, k), windows $ f i)
-      | (i, k) <- zip (XMonad.workspaces conf) ([xK_1 .. xK_9] ++ [xK_m, xK_w, xK_v, xK_z])
+      | (i, k) <- zip (XMonad.workspaces conf) ([xK_ampersand, xK_bracketleft, xK_braceleft, xK_braceright, xK_parenleft ,xK_equal, xK_asterisk, xK_parenright, xK_plus, xK_bracketright, xK_exclam] ++ [xK_b, xK_m, xK_w , xK_v, xK_z, xK_F7, xK_F8])
       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
   ++
   [((m .|. modm, key), screenWorkspace sc >>= flip whenJust (windows . f))
-      | (key, sc) <- zip [xK_apostrophe, xK_Tab] [0..]
+      | (key, sc) <- zip [xK_semicolon, xK_l] [0..]
       , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
 	where
-	  isMod a | a `elem` [xK_1 .. xK_9] =  modm 
+	  isMod a | a `elem` [xK_F7, xK_F8] =  0 
 	          | otherwise = modm
 
 
