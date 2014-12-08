@@ -26,6 +26,8 @@ Bundle 'https://github.com/jiangmiao/auto-pairs'
 Bundle 'https://github.com/tpope/vim-eunuch'
 Bundle 'https://github.com/tpope/vim-sensible'
 Bundle 'https://github.com/tpope/vim-endwise'
+Bundle 'https://github.com/tpope/vim-fireplace'
+Bundle 'http://github.com/mattn/emmet-vim/'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -80,22 +82,22 @@ map <c-l> <c-w>l
 map <c-h> <c-w>h
 set foldmethod=indent
 augroup filetypedetect
-" Mail
-autocmd BufRead,BufNewFile *mutt-*              setfiletype mail
+    " Mail
+    autocmd BufRead,BufNewFile *mutt-*              setfiletype mail
 augroup END
 set showmatch " Show matching braces.
 " Strip the newline from the end of a string
 function! Chomp(str)
-  return substitute(a:str, '\n$', '', '')
+    return substitute(a:str, '\n$', '', '')
 endfunction
 
 " Find a file and pass it to cmd
 function! DmenuOpen(cmd)
-  let fname = Chomp(system("git ls-files | dmenu -sb '#333' -nf '#aaa' -nb '#000' -l 40 -i -p " . a:cmd))
-  if empty(fname)
-    return
-  endif
-  execute a:cmd . " " . fname
+    let fname = Chomp(system("git ls-files | dmenu -sb '#333' -nf '#aaa' -nb '#000' -l 40 -i -p " . a:cmd))
+    if empty(fname)
+        return
+    endif
+    execute a:cmd . " " . fname
 endfunction
 
 map <c-t> :call DmenuOpen("tabe")<cr>

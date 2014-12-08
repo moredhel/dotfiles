@@ -37,3 +37,4 @@ function cd {
     echo `pwd` > ~/.last_location
 }
 cd `cat ~/.last_location`
+export TERM=rxvt

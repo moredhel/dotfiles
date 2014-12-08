@@ -66,3 +66,7 @@ alias kendal-reid REID Kendal <kreid5@staffmail.ed.ac.uk>
 alias boycott-assessment ASSESSMENT Boycott <Assessment.Boycott@ed.ac.uk>
 alias fftf-evan Evan Greer from FFTF <info@list.fightforthefuture.org>
 alias hiroshi-shimodaira SHIMODAIRA Hiroshi <h.shimodaira@ed.ac.uk>
+alias gmail-inbox Inbox by Gmail <inbox@google.com>
+alias hirniak-jaroslaw Jaroslaw Hirniak <s1143166@inf.ed.ac.uk>
+alias connections!-job Job Openings Job Leads and Job Connections! <groups-noreply@linkedin.com>
+alias balzategui-jon Jon Balzategui <jon.balzategui@gmail.com>
