@@ -1,8 +1,6 @@
 [user]
 	name = Hamish Hutchings
 	email = hamhut1066@gmail.com
-[push]
-	#default = simple
 [alias]
     co = checkout
     s = status
@@ -19,5 +17,3 @@
 	tool = vimdiff
 [mergetool]
 	prompt = false
-[push]
-	default = simple
