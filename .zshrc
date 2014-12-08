@@ -2,7 +2,7 @@
 CASE_SENSITIVE="true"
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="custom"
-plugins=(archlinux git zsh-syntax-highlighting)
+plugins=(archlinux git git-flow zsh-syntax-highlighting)
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 
@@ -18,12 +18,14 @@ alias g="git"
 alias em="emacsclient -t"
 alias es="emacsclient"
 alias g="git"
+alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
 source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
 export PATH=~/.cabal/bin:~/bin:$PATH:~/.cabal/bin:~/.xmonad/bin
 export EDITOR="vim"
-export PATH="$HOME/bin:$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.gem/ruby/2.1.0/bin:$HOME/.rbenv/bin:$PATH"
 export GPG_TTY=`tty`
+unset GREP_OPTIONS
 
 PATH="/home/hamhut/perl5/bin${PATH+:}${PATH}"; export PATH;
 PERL5LIB="/home/hamhut/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
