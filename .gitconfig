@@ -17,3 +17,8 @@
 	tool = vimdiff
 [mergetool]
 	prompt = false
+[core]
+	autocrlf = input
+	autoctrlf = input
+[push]
+	default = simple

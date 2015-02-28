@@ -1,8 +1,8 @@
 #oh-my-zsh stuff
 CASE_SENSITIVE="true"
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="custom"
-plugins=(archlinux git git-flow zsh-syntax-highlighting)
+ZSH_THEME="af-magic"
+plugins=(git git-flow zsh-syntax-highlighting)
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 
@@ -21,20 +21,26 @@ alias g="git"
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
 source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
-export PATH=~/.cabal/bin:~/bin:$PATH:~/.cabal/bin:~/.xmonad/bin
-export EDITOR="vim"
-export PATH="$HOME/bin:$HOME/.gem/ruby/2.1.0/bin:$HOME/.rbenv/bin:$PATH"
+export EDITOR="mvim"
 export GPG_TTY=`tty`
+export RBENV_ROOT=/usr/local/var/rbenv
+export WORKON_HOME=$HOME/.envs
 unset GREP_OPTIONS
+export PATH=./vendor/bundler/bin:~/.bin/:~/.cabal/bin:$PATH
 
-PATH="/home/hamhut/perl5/bin${PATH+:}${PATH}"; export PATH;
-PERL5LIB="/home/hamhut/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/hamhut/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/hamhut/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/hamhut/perl5"; export PERL_MM_OPT;
 function cd {
     builtin cd $1
     echo `pwd` > ~/.last_location
 }
 cd `cat ~/.last_location`
-export TERM=rxvt
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/bin/virtualenvwrapper.sh
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+function test {
+
+}
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/moredhel/.boot2docker/certs/boot2docker-vm
+export PIP_REQUIRE_VIRTUALENV=true
