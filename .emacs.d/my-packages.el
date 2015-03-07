@@ -22,6 +22,11 @@
     company
     flycheck
     monokai-theme
+    jedi
+    rainbow-delimiters
+    rainbow-mode
+    ghc
+    dash-at-point
     ) "A list of packages to ensure are installed at launch.")
 
 ; method to check if all packages are installed
