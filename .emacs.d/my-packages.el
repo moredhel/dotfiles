@@ -27,6 +27,7 @@
     rainbow-mode
     ghc
     dash-at-point
+    smartparens
     ) "A list of packages to ensure are installed at launch.")
 
 ; method to check if all packages are installed
