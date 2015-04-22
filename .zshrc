@@ -21,12 +21,14 @@ alias g="git"
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
 source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
-export EDITOR="mvim"
+export EDITOR="emacs"
 export GPG_TTY=`tty`
 export RBENV_ROOT=/usr/local/var/rbenv
 export WORKON_HOME=$HOME/.envs
 unset GREP_OPTIONS
 export PATH=./vendor/bundler/bin:~/.bin/:~/.cabal/bin:$PATH
+export PATH=$PATH:/usr/local/opt/go/libexec/bin:$HOME/perl5/bin
+export GOPATH=$HOME/.gocode
 
 function cd {
     builtin cd $1
@@ -40,7 +42,17 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 function test {
 
 }
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_HOST=tcp://192.168.59.104:2376
 export DOCKER_CERT_PATH=/Users/moredhel/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
 export PIP_REQUIRE_VIRTUALENV=true
+
+PERL_MB_OPT="--install_base \"/Users/moredhel/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/moredhel/perl5"; export PERL_MM_OPT;
+export PERL5LIB=/Users/moredhel/perl5/lib/perl5/
+
+# Attempting Fish Like things
+autoload predict-on
+autoload predict-off
+
+predict-on
