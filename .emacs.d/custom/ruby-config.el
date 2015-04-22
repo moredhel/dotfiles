@@ -22,5 +22,5 @@
 (setq enh-ruby-bounce-deep-indent t)
 (setq enh-ruby-hanging-brace-indent-level 2)
  
-(provide 'ruby.el)
-;;; ruby.el ends here
+(provide 'ruby-config.el)
+;;; ruby-config.el ends here
