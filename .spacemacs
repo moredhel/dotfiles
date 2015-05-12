@@ -13,9 +13,11 @@
    dotspacemacs-configuration-layers
    '(
      (auto-completion :variables
-                      auto-completion-use-tab-instead-of-enter t
+                      auto-completion-return-key-behavior nil
+                      auto-completion-tab-key-behavior complete
                       auto-completion-enable-company-help-tooltip t
-                      auto-completion-enable-company-yasnippet t)
+                      auto-completion-enable-company-yasnippet t
+                      )
      better-defaults
      (git :variables git-gutter-use-fringe t)
      syntax-checking
@@ -25,8 +27,10 @@
      xkcd
      osx
      c-c++
+     typescript
+     markdown
      ycmd
-     gtags
+     ;; gtags
      ;; --------------------------------------------------------
      ;; Example of useful layers you may want to use right away
      ;; Uncomment a layer name and press C-c C-c to install it
@@ -69,7 +73,7 @@ before layers configuration."
    dotspacemacs-always-show-changelog t
    ;; List of items to show in the startup buffer. If nil it is disabled.
    ;; Possible values are: `recents' `bookmarks' `projects'."
-   dotspacemacs-startup-lists '(recents projects)
+   dotspacemacs-startup-lists '(recents projects bookmarks)
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
@@ -156,8 +160,35 @@ layers configuration."
   (electric-pair-mode)
   (setenv "WORKON_HOME" "/Users/moredhel/.envs")
   (setq python-shell-virtualenv-path "/Users/moredhel/.envs/karma")
-  (setq company-idle-delay 0)
+  (setq flycheck-highlighting-mode 'symbols)
+  (evil-leader/set-key "oo" 'new-frame)
+
+
+
+  ;; Custom keybindings
+  ;; (company-idle-delay 0)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ahs-case-fold-search nil)
+ '(ahs-default-range (quote ahs-range-whole-buffer))
+ '(ahs-idle-interval 0.25)
+ '(ahs-idle-timer 0 t)
+ '(ahs-inhibit-face-list nil)
+ '(paradox-automatically-star nil)
+ '(paradox-github-token "970425ac8268fd646486acde776b20b1a6404efd")
+ '(ring-bell-function (quote ignore) t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((((class color) (min-colors 257)) (:foreground "#F8F8F2" :background "#272822")) (((class color) (min-colors 89)) (:foreground "#F5F5F5" :background "#1B1E1C"))))
+ '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
