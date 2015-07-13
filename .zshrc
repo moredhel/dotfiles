@@ -2,13 +2,12 @@
 CASE_SENSITIVE="true"
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="af-magic"
-plugins=(git git-flow zsh-syntax-highlighting)
+plugins=(git-flow git zsh-syntax-highlighting)
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
+fpath=(/usr/local/share/zsh-completions $fpath)
 
-ncmpcppShow() { BUFFER="ncmpcpp"; zle accept-line; }
-zle -N ncmpcppShow
-bindkey '^[\' ncmpcppShow
+
 alias _="sudo"
 alias aoeu="kinit s1249759@INF.ED.AC.UK"
 alias snth="ncmpcpp"
@@ -19,15 +18,18 @@ alias em="emacsclient -t"
 alias es="emacsclient"
 alias g="git"
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
+alias be='bundle exec'
+
+export PATH=./vendor/bundler/bin:./node_modules/.bin:~/.bin:~/.cabal/bin:$PATH
+export PATH=$PATH:/usr/local/opt/go/libexec/bin:$HOME/perl5/bin
+export PATH=./bin:$PATH
+
 source $ZSH/oh-my-zsh.sh
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
-export EDITOR="emacs"
+export EDITOR="vim"
 export GPG_TTY=`tty`
-export RBENV_ROOT=/usr/local/var/rbenv
 export WORKON_HOME=$HOME/.envs
 unset GREP_OPTIONS
-export PATH=./vendor/bundler/bin:~/.bin/:~/.cabal/bin:$PATH
-export PATH=$PATH:/usr/local/opt/go/libexec/bin:$HOME/perl5/bin
 export GOPATH=$HOME/.gocode
 
 function cd {
@@ -35,8 +37,6 @@ function cd {
     echo `pwd` > ~/.last_location
 }
 cd `cat ~/.last_location`
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/bin/virtualenvwrapper.sh
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 function test {
@@ -51,8 +51,7 @@ PERL_MB_OPT="--install_base \"/Users/moredhel/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/moredhel/perl5"; export PERL_MM_OPT;
 export PERL5LIB=/Users/moredhel/perl5/lib/perl5/
 
-# Attempting Fish Like things
-autoload predict-on
-autoload predict-off
+unsetopt correct_all
 
-predict-on
+
+source $HOME/.zsh_local
