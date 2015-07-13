@@ -13,23 +13,27 @@
    dotspacemacs-configuration-layers
    '(
      (auto-completion :variables
-                      auto-completion-return-key-behavior nil
-                      auto-completion-tab-key-behavior complete
+                      auto-completion-return-key-behavior 'complete
+                      auto-completion-tab-key-behavior 'complete
                       auto-completion-enable-company-help-tooltip t
                       auto-completion-enable-company-yasnippet t
+                      auto-completion-enable-help-tooltip t
+                      auto-completion-enable-sort-by-usage t
                       )
      better-defaults
      (git :variables git-gutter-use-fringe t)
      syntax-checking
      python
+     chruby-private
      ruby
      javascript
      xkcd
      osx
      c-c++
-     typescript
+     typescript-private
      markdown
      ycmd
+     html
      ;; gtags
      ;; --------------------------------------------------------
      ;; Example of useful layers you may want to use right away
@@ -151,19 +155,26 @@ before layers configuration."
   ;; Not used for now.
   dotspacemacs-default-package-repository nil
   ;; User initialization goes here
+  ruby-enable-ruby-on-rails-support t
   )
 
 (defun dotspacemacs/config ()
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+  ;; I prefer electric-pair-mode
+  (smartparens-mode -1)
   (electric-pair-mode)
+
+  ;; Enable chruby
+  (chruby "ruby-2.1.6")
   (setenv "WORKON_HOME" "/Users/moredhel/.envs")
   (setq python-shell-virtualenv-path "/Users/moredhel/.envs/karma")
   (setq flycheck-highlighting-mode 'symbols)
   (evil-leader/set-key "oo" 'new-frame)
 
-
+  (setq js2-basic-offset 2)
+  (setq enh-ruby-deep-indent-paren nil)
 
   ;; Custom keybindings
   ;; (company-idle-delay 0)
@@ -181,6 +192,8 @@ layers configuration."
  '(ahs-idle-interval 0.25)
  '(ahs-idle-timer 0 t)
  '(ahs-inhibit-face-list nil)
+ '(js2-basic-offset 2)
+ '(magit-use-overlays nil)
  '(paradox-automatically-star nil)
  '(paradox-github-token "970425ac8268fd646486acde776b20b1a6404efd")
  '(ring-bell-function (quote ignore) t))
