@@ -13,7 +13,7 @@ git clone https://github.com/hamhut1066/dotfiles.git $DOT_DIR
 git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 # oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone --depth=1 --recursive https://github.com/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh
 
 # private layers
 git clone https://github.com/hamhut1066/private-layers.git $HOME/.spacemacs.private

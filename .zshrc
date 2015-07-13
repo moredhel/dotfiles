@@ -54,4 +54,4 @@ export PERL5LIB=/Users/moredhel/perl5/lib/perl5/
 unsetopt correct_all
 
 
-source $HOME/.zsh_local
+source $HOME/.zshrc_local
