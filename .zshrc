@@ -1,7 +1,7 @@
 #oh-my-zsh stuff
 CASE_SENSITIVE="true"
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="af-magic"
+ZSH_THEME="robbyrussell"
 plugins=(git-flow git zsh-syntax-highlighting)
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 

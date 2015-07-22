@@ -155,7 +155,6 @@ before layers configuration."
   ;; Not used for now.
   dotspacemacs-default-package-repository nil
   ;; User initialization goes here
-  ruby-enable-ruby-on-rails-support t
   )
 
 (defun dotspacemacs/config ()
@@ -167,14 +166,40 @@ layers configuration."
   (electric-pair-mode)
 
   ;; Enable chruby
-  (chruby "ruby-2.1.6")
+  ;; (chruby "ruby-2.1.6")
   (setenv "WORKON_HOME" "/Users/moredhel/.envs")
+  (setq ruby-enable-ruby-on-rails-support t)
   (setq python-shell-virtualenv-path "/Users/moredhel/.envs/karma")
   (setq flycheck-highlighting-mode 'symbols)
   (evil-leader/set-key "oo" 'new-frame)
 
   (setq js2-basic-offset 2)
   (setq enh-ruby-deep-indent-paren nil)
+  (setq enh-ruby-add-encoding-comment-on-save nil)
+
+  ;; Create a layer for this...
+  ;; Possibly contribute into the spacemacs ruby mode.
+  ;; Require package: (evil)
+  (evil-define-motion evil-ruby-jump-item (count)
+    :jump t
+    :type inclusive
+    (cond ((string-match ruby-block-beg-re (current-word))
+           (ruby-end-of-block count))
+          ((string-match ruby-block-end-re (current-word))
+           (ruby-beginning-of-block count))
+          (t
+           (evil-jump-item count))))
+
+  (add-hook 'enh-ruby-mode-hook
+            (lambda ()
+              (define-key evil-normal-state-local-map "%" 'evil-ruby-jump-item)
+              (define-key evil-motion-state-local-map "%" 'evil-ruby-jump-item)))
+
+  ;; Create a layer for this...
+  (require 'fullframe)
+  (fullframe magit-status magit-mode-quit-window nil)
+  (fullframe magit-diff magit-mode-quit-window nil)
+
 
   ;; Custom keybindings
   ;; (company-idle-delay 0)
