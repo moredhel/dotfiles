@@ -1,6 +1,8 @@
 ;; -*- mode: emacs-lisp -*-
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
+;; TODO: add a (load "local-machine.el") call for local config settings.
+;; ... msg <ww> on #tardis for more funsies.
 
 (defun dotspacemacs/layers ()
   "Configuration Layers declaration.
