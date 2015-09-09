@@ -1,57 +1,56 @@
-#oh-my-zsh stuff
+#oh-my-zsh config
 CASE_SENSITIVE="true"
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 plugins=(git-flow git zsh-syntax-highlighting)
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
+# make this only set on OSX
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 
+# core alias'
 alias _="sudo"
-alias aoeu="kinit s1249759@INF.ED.AC.UK"
-alias snth="ncmpcpp"
-alias cdp="cd ~/documents/lecture_notes"
-alias t="task"
 alias g="git"
-alias em="emacsclient -t"
-alias es="emacsclient"
-alias g="git"
-alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
+alias e="emacsclient -n"
 alias be='bundle exec'
+alias f="git-flow"
 
+# some useful paths
 export PATH=./vendor/bundler/bin:./node_modules/.bin:~/.bin:~/.cabal/bin:$PATH
 export PATH=$PATH:/usr/local/opt/go/libexec/bin:$HOME/perl5/bin
 export PATH=./bin:$PATH
 
-source $ZSH/oh-my-zsh.sh
+# should probs figure out what this does...
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
+
+# system env. variables
 export EDITOR="vim"
 export GPG_TTY=`tty`
-export WORKON_HOME=$HOME/.envs
 unset GREP_OPTIONS
-export GOPATH=$HOME/.gocode
 
+# override cd function to save last visited location
 function cd {
     builtin cd $1
     echo `pwd` > ~/.last_location
 }
-cd `cat ~/.last_location`
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-function test {
-
+# create an emacs opener.
+function ec {
+  which osascript > /dev/null 2>&1 && osascript -e 'tell application "Emacs" to activate'
+  emacsclient -nc $@
 }
-export DOCKER_HOST=tcp://192.168.59.104:2376
-export DOCKER_CERT_PATH=/Users/moredhel/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-export PIP_REQUIRE_VIRTUALENV=true
 
-PERL_MB_OPT="--install_base \"/Users/moredhel/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/moredhel/perl5"; export PERL_MM_OPT;
-export PERL5LIB=/Users/moredhel/perl5/lib/perl5/
+export PIP_REQUIRE_VIRTUALENV=true
+export WORKON_HOME=$HOME/.envs
 
 unsetopt correct_all
 
-
+# source oh-my-zsh
+# TODO: reduce depenency on oh-my-zsh.
+source $ZSH/oh-my-zsh.sh
+# source local config.
 source $HOME/.zshrc_local
+
+# lastly cd to previous location
+cd `cat ~/.last_location`
