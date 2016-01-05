@@ -44,9 +44,13 @@ values."
      html
      rcirc
      yaml
+     common-lisp
+     clojure
 
      perspectives
      eyebrowse
+     org
+     spotify
 
      chruby-private
      typescript-private
@@ -67,7 +71,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
    ;; configuration in `dotspacemacs/config'.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(fullframe elm-mode scala-mode2)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(smartparens-mode)
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -249,17 +253,48 @@ layers configuration. You are free to put any user code."
   ;; (fullframe magit-status magit-mode-quit-window nil)
   ;; (fullframe magit-diff magit-mode-quit-window nil)
 
+  ;; Dispatch
 
-  ;; Custom keybindings
-  (setf company-idle-delay 0)
+  ;; Org Mode
+  (setq org-default-notes-file (concat "~/src/org" "/notes.org"))
+  (define-key global-map "\C-cc" 'org-capture)
+
+  ;; C config
+  ;; (add-to-list 'flycheck-gcc-include-path '"../libs/cutest/")
+
+  ;; Rebindings
+  (define-key evil-normal-state-map "Y" 'evil-yank-line)
+
+  ;; Custom keybindings TODO: figure out why this isn't working...
   (global-set-key (kbd "s-d") 'split-window-right-and-focus)
   (global-set-key (kbd "s-D") 'split-window-below-and-focus)
   (global-set-key (kbd "s-D") 'split-window-below-and-focus)
+  (global-set-key (kbd "s-p") 'spacemacs/helm-project-smart-do-search)
   (global-set-key (kbd "s-t") 'helm-projectile-find-file)
   (global-set-key (kbd "s-g") 'helm-semantic-or-imenu)
   (global-set-key (kbd "s-G") 'helm-imenu-in-all-buffers)
+  (global-set-key (kbd "s-b") 'helm-mini)
+
+  (setf company-idle-delay 0)
+;; (load (expand-file-name "~/.roswell/impls/ALL/ALL/quicklisp/slime-helper.el"))
+(setq inferior-lisp-program "ros -L sbcl -Q run")
 
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-agenda-files
+   (quote
+    ("~/src/org/epl/index.org" "~/src/org/pi/index.org" "~/src/org/cd/notes.org" "~/src/org/dbs/index.org")))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))

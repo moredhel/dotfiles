@@ -6,7 +6,7 @@
     s = status
     d = diff --color
     a = add
-    cm = commit -m
+    cm = commit
     l = log --color
     b = branch
     mt = mergetool

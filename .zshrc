@@ -16,6 +16,10 @@ alias e="emacsclient -n"
 alias be='bundle exec'
 alias f="git-flow"
 
+# utility alias'
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+
 # some useful paths
 export PATH=./vendor/bundler/bin:./node_modules/.bin:~/.bin:~/.cabal/bin:$PATH
 export PATH=$PATH:/usr/local/opt/go/libexec/bin:$HOME/perl5/bin
@@ -41,7 +45,6 @@ function ec {
   emacsclient -nc $@
 }
 
-export PIP_REQUIRE_VIRTUALENV=true
 export WORKON_HOME=$HOME/.envs
 
 unsetopt correct_all
