@@ -12,9 +12,6 @@ git clone https://github.com/hamhut1066/dotfiles.git $DOT_DIR
 # Spacemacs
 git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
-# oh-my-zsh
-git clone --depth=1 --recursive https://github.com/robbyrussell/oh-my-zsh $HOME/.oh-my-zsh
-
 # private layers
 git clone https://github.com/hamhut1066/private-layers.git $HOME/.spacemacs.private
 
