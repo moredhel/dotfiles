@@ -15,21 +15,8 @@ Plugin 'burnettk/vim-angular'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'https://github.com/bitc/vim-hdevtools'
-Plugin 'ervandew/supertab'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-scripts/textutil.vim'
-Plugin 'vim-scripts/Jinja'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'https://github.com/kien/ctrlp.vim'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'https://github.com/tpope/vim-eunuch'
-Bundle 'https://github.com/tpope/vim-sensible'
-Bundle 'https://github.com/tpope/vim-endwise'
-Bundle 'https://github.com/tpope/vim-fireplace'
 Bundle 'http://github.com/mattn/emmet-vim/'
 Bundle 'https://github.com/scrooloose/syntastic'
-Bundle 'https://github.com/tpope/vim-dispatch'
 Bundle 'https://github.com/bling/vim-airline'
 
 " All of your Plugins must be added before the following line
