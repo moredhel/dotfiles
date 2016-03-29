@@ -1,6 +1,7 @@
 [user]
 	name = Hamish Hutchings
-	email = hamhut1066@gmail.com
+	email = moredhel@aoeu.me
+	signingkey = 4EB572F4
 [alias]
     co = checkout
     s = status
@@ -19,6 +20,8 @@
 	prompt = false
 [core]
 	autocrlf = input
-	autoctrlf = input
+	excludesfile = /Users/moredhel/.gitignore_global
 [push]
 	default = simple
+[rerere]
+	enabled = 1
