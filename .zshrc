@@ -1,17 +1,105 @@
 # sweet emacs
 bindkey -e
 
-RED="\[\033[0;31m\]"
-PINK="\[\033[1;31m\]"
-YELLOW="\[\033[1;33m\]"
-GREEN="\[\033[0;32m\]"
-LT_GREEN="\[\033[1;32m\]"
-BLUE="\[\033[0;34m\]"
-WHITE="\[\033[1;37m\]"
-PURPLE="\[\033[1;35m\]"
-CYAN="\[\033[1;36m\]"
-BROWN="\[\033[0;33m\]"
-COLOR_NONE="\[\033[0m\]"
+setopt PROMPT_SUBST
+autoload -U promptinit
+autoload -U colors && colors
+# prompt setup
+export ZSH_THEME_GIT_PROMPT_PREFIX=""
+export ZSH_THEME_GIT_PROMPT_SUFFIX=""
+export ZSH_THEME_GIT_PROMPT_DIRTY=""
+export ZSH_THEME_GIT_PROMPT_CLEAN=""
+export ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[cyan]%} ✈"
+export ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[yellow]%} ✭"
+export ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} ✗"
+export ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[blue]%} ➦"
+export ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[magenta]%} ✂"
+export ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[grey]%} ✱"
+
+
+
+function parse_git_dirty() {
+  local STATUS=''
+  local FLAGS
+  FLAGS=('--porcelain')
+  if [[ "$(command git config --get oh-my-zsh.hide-dirty)" != "1" ]]; then
+    if [[ $POST_1_7_2_GIT -gt 0 ]]; then
+      FLAGS+='--ignore-submodules=dirty'
+    fi
+    if [[ "$DISABLE_UNTRACKED_FILES_DIRTY" == "true" ]]; then
+      FLAGS+='--untracked-files=no'
+    fi
+    STATUS=$(command git status ${FLAGS} 2> /dev/null | tail -n1)
+  fi
+  if [[ -n $STATUS ]]; then
+    echo "$ZSH_THEME_GIT_PROMPT_DIRTY"
+  else
+    echo "$ZSH_THEME_GIT_PROMPT_CLEAN"
+  fi
+}
+
+function git_prompt_info() {
+  local ref
+  if [[ "$(command git config --get oh-my-zsh.hide-status 2>/dev/null)" != "1" ]]; then
+    ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
+    ref=$(command git rev-parse --short HEAD 2> /dev/null) || return 0
+    echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(parse_git_dirty)$ZSH_THEME_GIT_PROMPT_SUFFIX"
+  fi
+}
+
+function git_prompt_status() {
+  local INDEX STATUS
+  INDEX=$(command git status --porcelain -b 2> /dev/null)
+  STATUS=""
+  if $(echo "$INDEX" | command grep -E '^\?\? ' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_UNTRACKED$STATUS"
+  fi
+  if $(echo "$INDEX" | grep '^A  ' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_ADDED$STATUS"
+  elif $(echo "$INDEX" | grep '^M  ' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_ADDED$STATUS"
+  fi
+  if $(echo "$INDEX" | grep '^ M ' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_MODIFIED$STATUS"
+  elif $(echo "$INDEX" | grep '^AM ' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_MODIFIED$STATUS"
+  elif $(echo "$INDEX" | grep '^ T ' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_MODIFIED$STATUS"
+  fi
+  if $(echo "$INDEX" | grep '^R  ' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_RENAMED$STATUS"
+  fi
+  if $(echo "$INDEX" | grep '^ D ' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_DELETED$STATUS"
+  elif $(echo "$INDEX" | grep '^D  ' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_DELETED$STATUS"
+  elif $(echo "$INDEX" | grep '^AD ' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_DELETED$STATUS"
+  fi
+  if $(command git rev-parse --verify refs/stash >/dev/null 2>&1); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_STASHED$STATUS"
+  fi
+  if $(echo "$INDEX" | grep '^UU ' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_UNMERGED$STATUS"
+  fi
+  if $(echo "$INDEX" | grep '^## .*ahead' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_AHEAD$STATUS"
+  fi
+  if $(echo "$INDEX" | grep '^## .*behind' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_BEHIND$STATUS"
+  fi
+  if $(echo "$INDEX" | grep '^## .*diverged' &> /dev/null); then
+    STATUS="$ZSH_THEME_GIT_PROMPT_DIVERGED$STATUS"
+  fi
+  echo $STATUS
+}
+
+function my_test() {
+  echo "Hello"
+}
+
+export PROMPT="%{$fg[magenta]%}[%c] %{$reset_color%}"
+export RPROMPT="%{$fg[magenta]%}$(git_prompt_info)%{$reset_color%} $(git_prompt_status)%{$reset_color%}"
 
 # make this only set on OSX
 fpath=(/usr/local/share/zsh-completions $fpath)
@@ -62,6 +150,7 @@ function cd {
 }
 
 # zsh custom options
+autoload -Uz compinit && compinit # command completion
 autoload -U select-word-style
 select-word-style bash
 
@@ -74,8 +163,8 @@ setopt inc_append_history share_history
 export HISTFILE="$HOME/.zsh_history"
 export SAVEHIST=10000000
 # custom history manouvers
-bindkey "${key[Up]}" up-line-or-local-history
-bindkey "${key[Down]}" down-line-or-local-history
+# bindkey "${key[Up]}" up-line-or-local-history
+# bindkey "${key[Down]}" down-line-or-local-history
 
 up-line-or-local-history() {
     zle set-local-history 1
@@ -95,12 +184,6 @@ zle -N down-line-or-local-history
 source ~/.zsh/zsh-autocompletions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=250'
 
-# setup powerline
-export POWERLINE_LOCATION="/usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh"
-if [ -f `which powerline-daemon` ]; then
-    powerline-daemon -q
-fi
-
 # go config...
 export WORKON_HOME=$HOME/.envs
 
@@ -109,13 +192,16 @@ export WORKON_HOME=$HOME/.envs
 source $HOME/.zshrc_local
 
 # this is after the local config, allowing customization of location
-if [[ -r $POWERLINE_LOCATION ]]; then
-    source $POWERLINE_LOCATION
-fi
+# if [[ -r $POWERLINE_LOCATION ]]; then
+    # source $POWERLINE_LOCATION
+# fi
 
 if [ $TERM = "eterm-color" ]; then
   # prompt for emacs (width sensitive)
   PS1='\u@\h:\w\$ '
 fi
 # lastly cd to previous location
-cd `cat ~/.last_location`
+cd "`cat ~/.last_location`"
+
+export PROMPT='%{$fg[magenta]%}[%c] %{$reset_color%}'
+export RPROMPT='%{$fg[magenta]%}$(git_prompt_info)%{$reset_color%} $(git_prompt_status)%{$reset_color%}'
