@@ -9,6 +9,7 @@
 
     // Organising
     "s" = ("performBundleItemWithUUID:", "A1413076-0E9F-4FFD-A224-4D251A4C5EC7");
+    "S" = ("performBundleItemWithUUID:", "03B35B47-9836-4EE1-9AFF-0D01D6F249F0");
 
     // Sending  
     "@\U000A" = "send:"; // ⌘+return
