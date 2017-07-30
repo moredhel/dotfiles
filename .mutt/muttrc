@@ -1,0 +1,78 @@
+macro index  <F5> ':source ~/.mutt/hamhut1066.com<enter>;<change-folder> =inbox<enter>'
+macro index  <F6> ':source ~/.mutt/gmail.com<enter><change-folder> =inbox<enter>'
+
+#account-hook appsdomain.tld 'set imap_user=hamhut@hamhut1066.com imap_pass=appsaccountpassword'
+#account-hook companydomain.tld 'set imap_user=user@companydomain.tld imap_pass=companyaccountpassword'
+
+set move = no
+
+set mbox_type = Maildir
+#set folder = $HOME/mail
+#set spoolfile="+gmail/inbox"
+#set postponed = +gmail/bak.drafts
+set text_flowed=yes
+set display_filter = ~/mail/aliases.sh
+set alias_file = ~/mail/aliases.txt
+set abort_nosubject = yes
+
+set header_cache = ~/mail/mutt_header
+set message_cachedir = ~/mail/mutt_body
+set index_format="%4C %Z %{%b %d} %-15.15L %?M?(#%03M)&(%4l)? %?y?(%.20Y) ?%s"
+unset imap_passive
+
+set sleep_time = 0
+source ~/.mutt/mailboxes
+
+#mailboxes [gmail] "=mu-search"
+
+#threading
+set sort="threads"
+set strict_threads="yes"
+set sort_browser="reverse-date"
+set sort_aux="last-date-received"
+unset collapse_unread
+bind index - collapse-thread
+bind index _ collapse-all
+
+# mu search:
+#macro index "\Cs" "<enter-command>unset wait_key<enter><shell-escape>read -p'mu query: ' x; \
+#       mu find --clearlinks --linksdir ~/Mail/mu-search --format links \$x<enter>\
+#      <change-folder-readonly>~/Mail/mu-search\n" "mu find"
+#macro index "<Esc>s" "<change-folder-readonly>~/Mail/mu-search\n" "display mu-find results"
+# -*-muttrc-*-
+
+# Palette for use with the Linux console.  Black background.
+
+color hdrdefault blue black
+color quoted blue black
+color signature blue black
+color attachment red black
+color message brightred black
+color error brightred black
+color indicator black red
+color status brightgreen blue
+color tree white black
+color normal white black
+color markers red black
+color search white black
+color tilde brightmagenta black
+color index blue black ~F
+color index red black "~N|~O"
+
+color body brightwhite black '\*+[^*]+\*+'
+color body brightwhite black '_+[^_]+_+'
+#folder-hook gmail 'set from="Hamish Hutchings<hamhut1066@gmail.com>" signature="~/.signature-gmail"'
+set from="Hamish Hutchings"
+#set sendmail="msmtp-enqueue.sh"
+macro index,pager a "s=archives<enter>"
+macro index .a "<change-folder> =archives<enter>" "go to archives"
+macro index .i "<change-folder> =inbox<enter>" "go to inbox"
+macro index .s "<change-folder> =bak.sent<enter>" "go to sent"
+macro index .d "<change-folder> =bak.drafts<enter>" "go to drafts"
+macro index .,  "<limit>(~N|~F)<Enter>"  "view new/flag"
+macro index ..  "<limit>~A<Enter>"       "view all"
+macro index L "<enter-command>unset wait_key<enter><shell-escape>read -p 'notmuch query: ' x; echo \$x >~/.cache/mutt_terms<enter><limit>~i \"\`notmuch search --output=messages \$(cat ~/.cache/mutt_terms) | head -n 600 | perl -le '@a=<>;chomp@a;s/\^id:// for@a;$,=\"|\";print@a'\`\"<enter>" "show only messages matching a notmuch pattern"
+
+# Choose which account should be loaded on startup, uncomment only one of these:
+#source ~/.mutt/appsdomain.tld
+source ~/.mutt/gmail.com

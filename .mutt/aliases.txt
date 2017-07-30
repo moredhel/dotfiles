@@ -1,0 +1,72 @@
+alias stevens-perdita Perdita Stevens <perdita@inf.ed.ac.uk>
+alias redsmin-fg FG Ribreau from Redsmin <fg@redsmin.com>
+alias riley-nikki Nikki Riley <nikkiormesmith@gmail.com>
+alias encouraged)-thinking Thinking Allowed (and even encouraged) <info@meetup.com>
+alias Ektoplazm <basilisk@ektoplazm.com>
+alias Google+ <noreply-a810b369@plus.google.com>
+alias mcquaid-mike Mike McQuaid <mike@mikemcquaid.com>
+alias reply-please Please do not reply <noreply@mycareerhub.ed.ac.uk>
+alias calendar-google Google Calendar <calendar-notification@google.com>
+alias view-angularjs AngularJS Mountain View <info@meetup.com>
+alias fitzpatrick-rory Rory Fitzpatrick <badgrs@gmail.com>
+alias Eventbrite <orders@eventbrite.com>
+alias ventures-informatics Informatics Ventures <ronnie@informatics-ventures.com>
+alias Amazon.co.uk <vfe-campaign-response@amazon.co.uk>
+alias Ticketsasa <info@ticketsasa.com>
+alias tricks-george george tricks <georgetricks@yahoo.co.uk>
+alias maude-gillian Gillian Maude <figtree.ghm@gmail.com>
+alias nicoll-j J Ross Nicoll <jrn@jrn.me.uk>
+alias mappingbook-julie Julie Tolmie - Mappingbook <julie.tolmie@mappingbook.eu>
+alias bookshop-blackwells Blackwells Bookshop <email@blackwells.emv5.com>
+alias wenhua-dong DONG Wenhua <s1336311@sms.ed.ac.uk>
+alias festival-eh1 EH1 Festival <noreply@skiddle.com>
+alias LAUNCH.ed <groups-noreply@linkedin.com>
+alias nicoll-ross Ross Nicoll <jrn@jrn.me.uk>
+alias 125-unidesk UNIDESK Mailbox 125 <feepayment@ed.ac.uk>
+alias cooke-chris Chris Cooke <cc@inf.ed.ac.uk>
+alias alistair-hill HILL Alistair <ahill210@staffmail.ed.ac.uk>
+alias summers-matthew Matthew Summers <notifications@github.com>
+alias storkey-amos Amos Storkey <amos@inf.ed.ac.uk>
+alias Zoom <noreply@skiddle.com>
+alias Amazon.co.uk <auto-shipping@amazon.co.uk>
+alias magnante-mark Mark Magnante <markmagnante@googlemail.com>
+alias auto-confirm@amazon.co.uk <auto-confirm@amazon.co.uk>
+alias iTunes <discover@new.itunes.com>
+alias gregory-matthew Matthew Gregory <putty@nogsnet.com>
+alias entertainment-blizzard Blizzard Entertainment <noreply@blizzard.com>
+alias g-amy Amy G <rhiaro@gmail.com>
+alias logan-jenni Jenni Logan <jen@greencat.com>
+alias hutchings-hamish Hamish Hutchings [mailto:hamhut1066@gmail.com]
+alias hutchings-hamish Hamish Hutchings [mailto:hamhut1066@gmail.com<mailto:hamhut1066@gmail.com>]
+alias giezeman-wienke Wienke Giezeman <wienke@wappzapp.tv>
+alias simpson-alex Alex Simpson <als@inf.ed.ac.uk>
+alias leather-hugh Hugh Leather <hughleat@gmail.com>
+alias hutchings-hamish Hamish Hutchings <s1249759@inf.ed.ac.uk>
+alias action-ifttt IFTTT Action <action@ifttt.com>
+alias logan-muriel Muriel Logan <muriel@greencat.com>
+alias Jenni Logan
+alias logan-steve Steve Logan [mailto:steve@bigsmoke.com]
+alias stuart-anderson ANDERSON Stuart <soa@staffmail.ed.ac.uk>
+alias ajitha-rajan RAJAN AJITHA <arajan@staffmail.ed.ac.uk>
+alias Vistaprint <vistaprint@em.vistaprint.co.uk>
+alias services-informatics Informatics Student Services <ito@inf.ed.ac.uk>
+alias logan-steve Steve Logan <steve@bigsmoke.com>
+alias developers-storq storq developers <storqapp@gmail.com>
+alias isaac-henrion HENRION Isaac <s1469238@sms.ed.ac.uk>
+alias hutchings-hamish Hamish Hutchings <hamhut1066@gmail.com>
+alias ebilling@bt.com ebilling@bt.com
+alias khan-sal Sal Khan <salman@khanacademy.org>
+alias claire-edminson EDMINSON Claire <cedminso@staffmail.ed.ac.uk>
+alias at-people-bounces@inf.ed.ac.uk [mailto:at-people-bounces@inf.ed.ac.uk]
+alias allan-clark CLARK Allan <A.D.Clark@ed.ac.uk>
+alias alexandru-cristina-adriana Cristina-Adriana Alexandru <C.A.Alexandru@sms.ed.ac.uk>
+alias squinney@inf.ed.ac.uk <squinney@inf.ed.ac.uk>
+alias hutchings-james james hutchings <james@dogrock.net>
+alias kendal-reid REID Kendal <kreid5@staffmail.ed.ac.uk>
+alias boycott-assessment ASSESSMENT Boycott <Assessment.Boycott@ed.ac.uk>
+alias fftf-evan Evan Greer from FFTF <info@list.fightforthefuture.org>
+alias hiroshi-shimodaira SHIMODAIRA Hiroshi <h.shimodaira@ed.ac.uk>
+alias gmail-inbox Inbox by Gmail <inbox@google.com>
+alias hirniak-jaroslaw Jaroslaw Hirniak <s1143166@inf.ed.ac.uk>
+alias connections!-job Job Openings Job Leads and Job Connections! <groups-noreply@linkedin.com>
+alias balzategui-jon Jon Balzategui <jon.balzategui@gmail.com>

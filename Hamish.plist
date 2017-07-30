@@ -1,0 +1,68 @@
+{
+    // Hamish's person key bindings for MailMate
+
+    // Email Creation
+    "c" = "newMessage:";
+    "R" = "replyAll:";
+    "r" = "replySender:";
+    "f" =  "forwardMessage:";
+
+    // Organising
+    "s" = ("performBundleItemWithUUID:", "A1413076-0E9F-4FFD-A224-4D251A4C5EC7");
+    "S" = ("performBundleItemWithUUID:", "03B35B47-9836-4EE1-9AFF-0D01D6F249F0");
+
+    // Sending  
+    "@\U000A" = "send:"; // ⌘+return
+    "@\U000D" = "send:"; // ⌘+enter
+    // "@\\" = ( "sendAndMoveParentToMailbox:", "/Delegated" );
+
+    // Filtering
+    "h" = (
+        "copyToMailbox:", "/Spam.TrainGood",
+        "moveToMailbox:", "INBOX" );
+    "x" = "deleteMessage:";
+    "X" = ( "moveThreadToMailbox:", "trash" );
+    "m" = "moveToMailbox:";
+    "M" = "moveThreadToMailbox:";
+    "d" = ( "moveToMailbox:", "/Deferred" );
+    "D" = ( "moveThreadToMailbox:", "/Deferred" );
+    "a" = "archive:";
+    "A" = ( "moveThreadToMailbox:", "/Archive" );
+    "l" = ( "moveToMailbox:", "/Later" );
+    "L" = ( "moveThreadToMailbox:", "/Later" );
+
+    // Navigation
+    "." = "rootOfThread:";
+    "," = "lastOfThread:";
+    "/" = "searchAllMessages:";
+    "j" = "nextMessage:";
+    "k" = "previousMessage:";
+    "J" = "nextThread:";
+    "K" = "previousThread:";
+
+    "g" = {
+        "g" = "goToMailbox:";
+        " " = ( "goToMailbox:", "DA8DA147-DA6E-453E-A179-3FC2CE14DC61");
+        "i" = ( "goToMailbox:", "DA8DA147-DA6E-453E-A179-3FC2CE14DC61" );
+        "f" = ( "goToMailbox:", "9F9852A2-2A23-44CC-A4C5-2100EB0657D7",
+                "selectLastMessageRow:");
+        "a" = ( "goToMailbox:", "ARCHIVE" );
+        "s" = ( "goToMailbox:", "SENT" );
+        "d" = ( "goToMailbox:", "C6B4A13A-21C3-408A-BBFF-764F6ABF22E6" );
+        "D" = ( "goToMailbox:", "DRAFTS" );
+        "A" = ( "goToMailbox:", "/Archive" );
+        "s" = ( "goToMailbox:", "Spam" );
+        "l" = ( "goToMailbox:", "24D6AF8E-9ED0-45D7-9A35-4EBCD3C5EF9E" );
+    };
+
+    // Message State
+    "!" = "toggleFlag:";
+    "n" = "toggleReadState:";
+    "-" = "toggleMuteState:";
+
+    // Miscellaneous
+    "$" = "refreshMailbox:";
+    "u" = "undo:";
+    "z" = "redo:";
+    "o" = "showThread:";
+}

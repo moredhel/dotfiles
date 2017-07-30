@@ -1,0 +1,16 @@
+#!/bin/bash
+xrandr --output LVDS1 --off
+setxkbmap -layout "dvorak, gb" -option "grp:caps_toggle"
+
+orage &
+orage -t
+mpd
+mpc pause
+#killall conky
+#conky -c /home/moredhel/.xmonad/menu_conky.conf 2> /dev/null | dzen2 -ta r -fn \
+#'DejaVu Sans:size=8' -h 12 -x 700 -e 'button1=menuexec' &
+
+(bash ~/bin/background.sh)&
+killall trayer
+trayer --edge bottom --align right --SetDockType true --SetPartialStrut false \
+--expand true --width 9 --transparent true --tint 0x000000 --height 10 & &> /dev/null

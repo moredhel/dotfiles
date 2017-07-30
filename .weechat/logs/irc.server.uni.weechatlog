@@ -1,0 +1,2273 @@
+2013-10-10 16:55:45	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-10 16:55:45	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-10 16:55:45	--	*** Processing connection to gl.is
+2013-10-10 16:55:45	--	*** Looking up your hostname...
+2013-10-10 16:55:45	--	*** Checking Ident
+2013-10-10 16:55:45	--	*** Couldn't look up your hostname
+2013-10-10 16:55:45	--	*** No Ident response
+2013-10-10 16:55:45	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-10 16:55:45	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-10 16:55:45	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-10 16:55:45	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-10 16:55:45	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-10 16:55:45	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-10 16:55:45	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-10 16:55:45	--	There are 30 users and 82 invisible on 5 servers
+2013-10-10 16:55:45	--	14 :IRC Operators online
+2013-10-10 16:55:45	--	73 :channels formed
+2013-10-10 16:55:45	--	I have 28 clients and 1 servers
+2013-10-10 16:55:45	--	28 33 :Current local users 28, max 33
+2013-10-10 16:55:45	--	112 124 :Current global users 112, max 124
+2013-10-10 16:55:45	--	Highest connection count: 34 (33 clients) (903 connections received)
+2013-10-10 16:55:45	--	- gl.is Message of the Day -
+2013-10-10 16:55:45	--	-
+2013-10-10 16:55:45	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-10 16:55:45	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-10 16:55:45	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-10 16:55:45	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-10 16:55:45	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-10 16:55:45	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-10 16:55:45	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-10 16:55:45	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-10 16:55:45	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-10 16:55:45	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-10 16:55:45	--	-                               1$ .4P  l$l
+2013-10-10 16:55:45	--	-         |                      ?$$'   l$l                         |
+2013-10-10 16:55:45	--	-        | |                            :$:                        | |
+2013-10-10 16:55:45	--	-      -  |  -                           !                       -  |  -
+2013-10-10 16:55:45	--	-    -- --+-- --                                               -- --+-- --
+2013-10-10 16:55:45	--	-      -  |  -                                                   -  |  -
+2013-10-10 16:55:45	--	-        | |                                                       | |
+2013-10-10 16:55:45	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-10 16:55:45	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-10 16:55:45	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-10 16:55:45	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-10 16:55:45	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-10 16:55:45	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-10 16:55:45	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-10 16:55:45	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-10 16:55:45	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-10 16:55:45	--	-
+2013-10-10 16:55:45	--	-                            ImaginaryNET IRC Network
+2013-10-10 16:55:45	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-10 16:55:45	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-10 16:55:45	--	-
+2013-10-10 16:55:45	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-10 16:55:45	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-10 16:55:45	--	-
+2013-10-10 16:55:45	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-10 16:55:45	--	End of /MOTD command.
+2013-10-10 17:51:47	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-10 17:51:47	--	irc: disconnecting from server...
+2013-10-10 17:51:47	--	irc: disconnected from server
+2013-10-10 17:51:47	--	irc: reconnecting to server in 10 seconds
+2013-10-10 17:51:57	--	irc: reconnecting to server...
+2013-10-10 17:51:57	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-10 17:51:58	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-10 17:51:58	--	*** Processing connection to blip2.net
+2013-10-10 17:51:58	--	*** Looking up your hostname...
+2013-10-10 17:51:58	--	*** Checking Ident
+2013-10-10 17:51:58	--	*** No Ident response
+2013-10-10 17:51:58	--	*** Couldn't look up your hostname
+2013-10-10 17:51:58	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-10 17:51:58	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-10 17:51:58	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-10 17:51:58	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-10 17:51:58	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-10 17:51:58	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-10 17:51:58	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-10 17:51:58	--	There are 34 users and 82 invisible on 5 servers
+2013-10-10 17:51:58	--	14 :IRC Operators online
+2013-10-10 17:51:58	--	73 :channels formed
+2013-10-10 17:51:58	--	I have 37 clients and 3 servers
+2013-10-10 17:51:58	--	37 42 :Current local users 37, max 42
+2013-10-10 17:51:58	--	116 124 :Current global users 116, max 124
+2013-10-10 17:51:58	--	Highest connection count: 45 (42 clients) (1170 connections received)
+2013-10-10 17:51:58	--	- blip2.net Message of the Day -
+2013-10-10 17:51:58	--	-
+2013-10-10 17:51:58	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-10 17:51:58	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-10 17:51:58	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-10 17:51:58	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-10 17:51:58	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-10 17:51:58	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-10 17:51:58	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-10 17:51:58	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-10 17:51:58	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-10 17:51:58	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-10 17:51:58	--	-                               1$ .4P  l$l
+2013-10-10 17:51:58	--	-         |                      ?$$'   l$l                         |
+2013-10-10 17:51:58	--	-        | |                            :$:                        | |
+2013-10-10 17:51:58	--	-      -  |  -                           !                       -  |  -
+2013-10-10 17:51:58	--	-    -- --+-- --                                               -- --+-- --
+2013-10-10 17:51:58	--	-      -  |  -                                                   -  |  -
+2013-10-10 17:51:58	--	-        | |                                                       | |
+2013-10-10 17:51:58	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-10 17:51:58	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-10 17:51:58	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-10 17:51:58	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-10 17:51:58	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-10 17:51:58	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-10 17:51:58	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-10 17:51:58	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-10 17:51:58	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-10 17:51:58	--	-
+2013-10-10 17:51:58	--	-                            ImaginaryNET IRC Network
+2013-10-10 17:51:58	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-10 17:51:58	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-10 17:51:58	--	End of /MOTD command.
+2013-10-10 17:58:26	--	MSG(nickserver): identify hamhut1066 feast92.amyl
+2013-10-10 17:58:26	--	nickserver: No such nick/channel
+2013-10-11 11:06:11	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-11 11:06:11	--	irc: disconnecting from server...
+2013-10-11 11:06:11	--	irc: disconnected from server
+2013-10-11 11:06:11	--	irc: reconnecting to server in 10 seconds
+2013-10-11 11:06:21	--	irc: reconnecting to server...
+2013-10-11 11:06:21	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-11 11:06:21	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-11 11:06:21	--	*** Processing connection to blip2.net
+2013-10-11 11:06:21	--	*** Looking up your hostname...
+2013-10-11 11:06:21	--	*** Checking Ident
+2013-10-11 11:06:21	--	*** No Ident response
+2013-10-11 11:06:21	--	*** Couldn't look up your hostname
+2013-10-11 11:06:22	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut1066
+2013-10-11 11:06:22	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-11 11:06:22	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-11 11:06:22	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-11 11:06:22	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-11 11:06:22	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-11 11:06:22	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-11 11:06:22	--	There are 31 users and 83 invisible on 5 servers
+2013-10-11 11:06:22	--	14 :IRC Operators online
+2013-10-11 11:06:22	--	73 :channels formed
+2013-10-11 11:06:22	--	I have 38 clients and 3 servers
+2013-10-11 11:06:22	--	38 42 :Current local users 38, max 42
+2013-10-11 11:06:22	--	114 124 :Current global users 114, max 124
+2013-10-11 11:06:22	--	Highest connection count: 45 (42 clients) (1193 connections received)
+2013-10-11 11:06:22	--	- blip2.net Message of the Day -
+2013-10-11 11:06:22	--	-
+2013-10-11 11:06:22	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-11 11:06:22	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-11 11:06:22	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-11 11:06:22	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-11 11:06:22	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-11 11:06:22	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-11 11:06:22	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-11 11:06:22	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-11 11:06:22	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-11 11:06:22	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-11 11:06:22	--	-                               1$ .4P  l$l
+2013-10-11 11:06:22	--	-         |                      ?$$'   l$l                         |
+2013-10-11 11:06:22	--	-        | |                            :$:                        | |
+2013-10-11 11:06:22	--	-      -  |  -                           !                       -  |  -
+2013-10-11 11:06:22	--	-    -- --+-- --                                               -- --+-- --
+2013-10-11 11:06:22	--	-      -  |  -                                                   -  |  -
+2013-10-11 11:06:22	--	-        | |                                                       | |
+2013-10-11 11:06:22	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-11 11:06:22	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-11 11:06:22	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-11 11:06:22	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-11 11:06:22	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-11 11:06:22	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-11 11:06:22	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-11 11:06:22	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-11 11:06:22	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-11 11:06:22	--	-
+2013-10-11 11:06:22	--	-                            ImaginaryNET IRC Network
+2013-10-11 11:06:22	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-11 11:06:22	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-11 11:06:22	--	End of /MOTD command.
+2013-10-12 18:27:50	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-12 18:27:50	--	irc: disconnecting from server...
+2013-10-12 18:27:50	--	irc: disconnected from server
+2013-10-12 18:27:50	--	irc: reconnecting to server in 10 seconds
+2013-10-12 18:28:00	--	irc: reconnecting to server...
+2013-10-12 18:28:00	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-12 18:28:00	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-12 18:28:00	--	*** Processing connection to blip2.net
+2013-10-12 18:28:00	--	*** Looking up your hostname...
+2013-10-12 18:28:00	--	*** Checking Ident
+2013-10-12 18:28:00	--	*** No Ident response
+2013-10-12 18:28:00	--	*** Couldn't look up your hostname
+2013-10-12 18:28:00	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut1066
+2013-10-12 18:28:00	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-12 18:28:00	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-12 18:28:00	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-12 18:28:00	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-12 18:28:00	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-12 18:28:00	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-12 18:28:00	--	There are 29 users and 81 invisible on 5 servers
+2013-10-12 18:28:00	--	14 :IRC Operators online
+2013-10-12 18:28:00	--	75 :channels formed
+2013-10-12 18:28:00	--	I have 35 clients and 3 servers
+2013-10-12 18:28:00	--	35 42 :Current local users 35, max 42
+2013-10-12 18:28:00	--	110 124 :Current global users 110, max 124
+2013-10-12 18:28:00	--	Highest connection count: 45 (42 clients) (1233 connections received)
+2013-10-12 18:28:00	--	- blip2.net Message of the Day -
+2013-10-12 18:28:00	--	-
+2013-10-12 18:28:00	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-12 18:28:00	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-12 18:28:00	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-12 18:28:00	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-12 18:28:00	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-12 18:28:00	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-12 18:28:00	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-12 18:28:00	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-12 18:28:00	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-12 18:28:00	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-12 18:28:00	--	-                               1$ .4P  l$l
+2013-10-12 18:28:00	--	-         |                      ?$$'   l$l                         |
+2013-10-12 18:28:00	--	-        | |                            :$:                        | |
+2013-10-12 18:28:00	--	-      -  |  -                           !                       -  |  -
+2013-10-12 18:28:00	--	-    -- --+-- --                                               -- --+-- --
+2013-10-12 18:28:00	--	-      -  |  -                                                   -  |  -
+2013-10-12 18:28:00	--	-        | |                                                       | |
+2013-10-12 18:28:00	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-12 18:28:00	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-12 18:28:00	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-12 18:28:00	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-12 18:28:00	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-12 18:28:00	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-12 18:28:00	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-12 18:28:00	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-12 18:28:00	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-12 18:28:00	--	-
+2013-10-12 18:28:00	--	-                            ImaginaryNET IRC Network
+2013-10-12 18:28:00	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-12 18:28:00	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-12 18:28:00	--	End of /MOTD command.
+2013-10-12 21:06:22	--	q: is unknown mode char to me
+2013-10-12 21:06:54	--	q: is unknown mode char to me
+2013-10-12 21:07:21	--	q: is unknown mode char to me
+2013-10-12 21:07:26	--	q: is unknown mode char to me
+2013-10-13 10:19:31	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-13 10:19:31	--	irc: disconnecting from server...
+2013-10-13 10:19:31	--	irc: disconnected from server
+2013-10-13 10:19:31	--	irc: reconnecting to server in 10 seconds
+2013-10-13 10:19:41	--	irc: reconnecting to server...
+2013-10-13 10:19:41	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-13 10:19:41	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-13 10:19:41	--	*** Processing connection to gl.is
+2013-10-13 10:19:41	--	*** Looking up your hostname...
+2013-10-13 10:19:41	--	*** Checking Ident
+2013-10-13 10:19:41	--	*** No Ident response
+2013-10-13 10:19:42	--	*** Couldn't look up your hostname
+2013-10-13 10:19:42	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut1066
+2013-10-13 10:19:42	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-13 10:19:42	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-13 10:19:42	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-13 10:19:42	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-13 10:19:42	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-13 10:19:42	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-13 10:19:42	--	There are 27 users and 81 invisible on 5 servers
+2013-10-13 10:19:42	--	14 :IRC Operators online
+2013-10-13 10:19:42	--	73 :channels formed
+2013-10-13 10:19:42	--	I have 24 clients and 1 servers
+2013-10-13 10:19:42	--	24 33 :Current local users 24, max 33
+2013-10-13 10:19:42	--	108 124 :Current global users 108, max 124
+2013-10-13 10:19:42	--	Highest connection count: 34 (33 clients) (958 connections received)
+2013-10-13 10:19:42	--	- gl.is Message of the Day -
+2013-10-13 10:19:42	--	-
+2013-10-13 10:19:42	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-13 10:19:42	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-13 10:19:42	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-13 10:19:42	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-13 10:19:42	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-13 10:19:42	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-13 10:19:42	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-13 10:19:42	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-13 10:19:42	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-13 10:19:42	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-13 10:19:42	--	-                               1$ .4P  l$l
+2013-10-13 10:19:42	--	-         |                      ?$$'   l$l                         |
+2013-10-13 10:19:42	--	-        | |                            :$:                        | |
+2013-10-13 10:19:42	--	-      -  |  -                           !                       -  |  -
+2013-10-13 10:19:42	--	-    -- --+-- --                                               -- --+-- --
+2013-10-13 10:19:42	--	-      -  |  -                                                   -  |  -
+2013-10-13 10:19:42	--	-        | |                                                       | |
+2013-10-13 10:19:42	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-13 10:19:42	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-13 10:19:42	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-13 10:19:42	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-13 10:19:42	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-13 10:19:42	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-13 10:19:42	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-13 10:19:42	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-13 10:19:42	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-13 10:19:42	--	-
+2013-10-13 10:19:42	--	-                            ImaginaryNET IRC Network
+2013-10-13 10:19:42	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-13 10:19:42	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-13 10:19:42	--	-
+2013-10-13 10:19:42	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-13 10:19:42	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-13 10:19:42	--	-
+2013-10-13 10:19:42	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-13 10:19:42	--	End of /MOTD command.
+2013-10-13 11:05:30	--	irc: disconnected from server
+2013-10-13 11:06:27	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-13 11:06:27	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-13 11:06:27	--	*** Processing connection to gl.is
+2013-10-13 11:06:27	--	*** Looking up your hostname...
+2013-10-13 11:06:27	--	*** Checking Ident
+2013-10-13 11:06:27	--	*** Couldn't look up your hostname
+2013-10-13 11:06:27	--	*** No Ident response
+2013-10-13 11:06:28	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-13 11:06:28	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-13 11:06:28	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-13 11:06:28	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-13 11:06:28	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-13 11:06:28	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-13 11:06:28	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-13 11:06:28	--	There are 28 users and 82 invisible on 5 servers
+2013-10-13 11:06:28	--	14 :IRC Operators online
+2013-10-13 11:06:28	--	73 :channels formed
+2013-10-13 11:06:28	--	I have 25 clients and 1 servers
+2013-10-13 11:06:28	--	25 33 :Current local users 25, max 33
+2013-10-13 11:06:28	--	110 124 :Current global users 110, max 124
+2013-10-13 11:06:28	--	Highest connection count: 34 (33 clients) (961 connections received)
+2013-10-13 11:06:28	--	- gl.is Message of the Day -
+2013-10-13 11:06:28	--	-
+2013-10-13 11:06:28	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-13 11:06:28	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-13 11:06:28	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-13 11:06:28	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-13 11:06:28	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-13 11:06:28	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-13 11:06:28	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-13 11:06:28	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-13 11:06:28	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-13 11:06:28	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-13 11:06:28	--	-                               1$ .4P  l$l
+2013-10-13 11:06:28	--	-         |                      ?$$'   l$l                         |
+2013-10-13 11:06:28	--	-        | |                            :$:                        | |
+2013-10-13 11:06:28	--	-      -  |  -                           !                       -  |  -
+2013-10-13 11:06:28	--	-    -- --+-- --                                               -- --+-- --
+2013-10-13 11:06:28	--	-      -  |  -                                                   -  |  -
+2013-10-13 11:06:28	--	-        | |                                                       | |
+2013-10-13 11:06:28	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-13 11:06:28	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-13 11:06:28	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-13 11:06:28	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-13 11:06:28	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-13 11:06:28	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-13 11:06:28	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-13 11:06:28	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-13 11:06:28	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-13 11:06:28	--	-
+2013-10-13 11:06:28	--	-                            ImaginaryNET IRC Network
+2013-10-13 11:06:28	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-13 11:06:28	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-13 11:06:28	--	-
+2013-10-13 11:06:28	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-13 11:06:28	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-13 11:06:28	--	-
+2013-10-13 11:06:28	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-13 11:06:28	--	End of /MOTD command.
+2013-10-14 10:24:45	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-14 10:24:45	--	irc: disconnecting from server...
+2013-10-14 10:24:45	--	irc: disconnected from server
+2013-10-14 10:24:45	--	irc: reconnecting to server in 10 seconds
+2013-10-14 10:24:55	--	irc: reconnecting to server...
+2013-10-14 10:24:55	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-14 10:24:55	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-14 10:24:55	--	*** Processing connection to gl.is
+2013-10-14 10:24:55	--	*** Looking up your hostname...
+2013-10-14 10:24:55	--	*** Checking Ident
+2013-10-14 10:24:55	--	*** No Ident response
+2013-10-14 10:24:55	--	*** Couldn't look up your hostname
+2013-10-14 10:24:55	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut1066
+2013-10-14 10:24:55	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-14 10:24:55	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-14 10:24:55	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-14 10:24:55	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-14 10:24:55	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-14 10:24:55	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-14 10:24:55	--	There are 27 users and 84 invisible on 5 servers
+2013-10-14 10:24:55	--	14 :IRC Operators online
+2013-10-14 10:24:55	--	73 :channels formed
+2013-10-14 10:24:55	--	I have 24 clients and 1 servers
+2013-10-14 10:24:55	--	24 33 :Current local users 24, max 33
+2013-10-14 10:24:55	--	111 124 :Current global users 111, max 124
+2013-10-14 10:24:55	--	Highest connection count: 34 (33 clients) (986 connections received)
+2013-10-14 10:24:55	--	- gl.is Message of the Day -
+2013-10-14 10:24:55	--	-
+2013-10-14 10:24:55	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-14 10:24:55	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-14 10:24:55	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-14 10:24:55	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-14 10:24:55	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-14 10:24:55	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-14 10:24:55	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-14 10:24:55	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-14 10:24:55	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-14 10:24:55	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-14 10:24:55	--	-                               1$ .4P  l$l
+2013-10-14 10:24:55	--	-         |                      ?$$'   l$l                         |
+2013-10-14 10:24:55	--	-        | |                            :$:                        | |
+2013-10-14 10:24:55	--	-      -  |  -                           !                       -  |  -
+2013-10-14 10:24:55	--	-    -- --+-- --                                               -- --+-- --
+2013-10-14 10:24:55	--	-      -  |  -                                                   -  |  -
+2013-10-14 10:24:55	--	-        | |                                                       | |
+2013-10-14 10:24:55	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-14 10:24:55	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-14 10:24:55	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-14 10:24:55	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-14 10:24:55	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-14 10:24:55	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-14 10:24:55	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-14 10:24:55	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-14 10:24:55	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-14 10:24:55	--	-
+2013-10-14 10:24:55	--	-                            ImaginaryNET IRC Network
+2013-10-14 10:24:55	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-14 10:24:55	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-14 10:24:55	--	-
+2013-10-14 10:24:55	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-14 10:24:55	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-14 10:24:55	--	-
+2013-10-14 10:24:55	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-14 10:24:55	--	End of /MOTD command.
+2013-10-15 08:31:52	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-15 08:31:52	--	irc: disconnecting from server...
+2013-10-15 08:31:52	--	irc: disconnected from server
+2013-10-15 08:31:52	--	irc: reconnecting to server in 10 seconds
+2013-10-15 08:32:02	--	irc: reconnecting to server...
+2013-10-15 08:32:02	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-15 08:32:02	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-15 08:32:02	--	*** Processing connection to blip2.net
+2013-10-15 08:32:02	--	*** Looking up your hostname...
+2013-10-15 08:32:02	--	*** Checking Ident
+2013-10-15 08:32:02	--	*** No Ident response
+2013-10-15 08:32:02	--	*** Couldn't look up your hostname
+2013-10-15 08:32:02	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut1066
+2013-10-15 08:32:02	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-15 08:32:02	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-15 08:32:02	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-15 08:32:02	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-15 08:32:02	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-15 08:32:02	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-15 08:32:02	--	There are 27 users and 82 invisible on 5 servers
+2013-10-15 08:32:02	--	14 :IRC Operators online
+2013-10-15 08:32:02	--	73 :channels formed
+2013-10-15 08:32:02	--	I have 35 clients and 3 servers
+2013-10-15 08:32:02	--	35 43 :Current local users 35, max 43
+2013-10-15 08:32:02	--	109 124 :Current global users 109, max 124
+2013-10-15 08:32:02	--	Highest connection count: 46 (43 clients) (1319 connections received)
+2013-10-15 08:32:02	--	- blip2.net Message of the Day -
+2013-10-15 08:32:02	--	-
+2013-10-15 08:32:02	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-15 08:32:02	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-15 08:32:02	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-15 08:32:02	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-15 08:32:02	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-15 08:32:02	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-15 08:32:02	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-15 08:32:02	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-15 08:32:02	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-15 08:32:02	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-15 08:32:02	--	-                               1$ .4P  l$l
+2013-10-15 08:32:02	--	-         |                      ?$$'   l$l                         |
+2013-10-15 08:32:02	--	-        | |                            :$:                        | |
+2013-10-15 08:32:02	--	-      -  |  -                           !                       -  |  -
+2013-10-15 08:32:02	--	-    -- --+-- --                                               -- --+-- --
+2013-10-15 08:32:02	--	-      -  |  -                                                   -  |  -
+2013-10-15 08:32:02	--	-        | |                                                       | |
+2013-10-15 08:32:02	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-15 08:32:02	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-15 08:32:02	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-15 08:32:02	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-15 08:32:02	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-15 08:32:02	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-15 08:32:02	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-15 08:32:02	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-15 08:32:02	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-15 08:32:02	--	-
+2013-10-15 08:32:02	--	-                            ImaginaryNET IRC Network
+2013-10-15 08:32:02	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-15 08:32:02	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-15 08:32:02	--	End of /MOTD command.
+2013-10-16 11:19:10	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-16 11:19:10	--	irc: disconnecting from server...
+2013-10-16 11:19:10	--	irc: disconnected from server
+2013-10-16 11:19:10	--	irc: reconnecting to server in 10 seconds
+2013-10-16 11:19:20	--	irc: reconnecting to server...
+2013-10-16 11:19:20	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-16 11:19:20	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-16 11:19:20	--	*** Processing connection to gl.is
+2013-10-16 11:19:20	--	*** Looking up your hostname...
+2013-10-16 11:19:20	--	*** Checking Ident
+2013-10-16 11:19:20	--	*** No Ident response
+2013-10-16 11:19:20	--	*** Couldn't look up your hostname
+2013-10-16 11:19:20	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut1066
+2013-10-16 11:19:20	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-16 11:19:20	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-16 11:19:20	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-16 11:19:20	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-16 11:19:20	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-16 11:19:20	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-16 11:19:20	--	There are 29 users and 86 invisible on 5 servers
+2013-10-16 11:19:20	--	14 :IRC Operators online
+2013-10-16 11:19:20	--	72 :channels formed
+2013-10-16 11:19:20	--	I have 27 clients and 1 servers
+2013-10-16 11:19:20	--	27 33 :Current local users 27, max 33
+2013-10-16 11:19:20	--	115 124 :Current global users 115, max 124
+2013-10-16 11:19:20	--	Highest connection count: 34 (33 clients) (1049 connections received)
+2013-10-16 11:19:20	--	- gl.is Message of the Day -
+2013-10-16 11:19:20	--	-
+2013-10-16 11:19:20	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-16 11:19:20	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-16 11:19:20	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-16 11:19:20	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-16 11:19:20	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-16 11:19:20	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-16 11:19:20	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-16 11:19:20	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-16 11:19:20	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-16 11:19:20	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-16 11:19:20	--	-                               1$ .4P  l$l
+2013-10-16 11:19:20	--	-         |                      ?$$'   l$l                         |
+2013-10-16 11:19:20	--	-        | |                            :$:                        | |
+2013-10-16 11:19:20	--	-      -  |  -                           !                       -  |  -
+2013-10-16 11:19:20	--	-    -- --+-- --                                               -- --+-- --
+2013-10-16 11:19:20	--	-      -  |  -                                                   -  |  -
+2013-10-16 11:19:20	--	-        | |                                                       | |
+2013-10-16 11:19:20	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-16 11:19:20	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-16 11:19:20	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-16 11:19:20	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-16 11:19:20	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-16 11:19:20	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-16 11:19:20	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-16 11:19:20	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-16 11:19:20	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-16 11:19:20	--	-
+2013-10-16 11:19:20	--	-                            ImaginaryNET IRC Network
+2013-10-16 11:19:20	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-16 11:19:20	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-16 11:19:20	--	-
+2013-10-16 11:19:20	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-16 11:19:20	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-16 11:19:20	--	-
+2013-10-16 11:19:20	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-16 11:19:20	--	End of /MOTD command.
+2013-10-16 20:42:47	--	irc: disconnected from server
+2013-10-16 20:45:10	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-16 20:45:10	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-16 20:45:10	--	*** Processing connection to blip2.net
+2013-10-16 20:45:10	--	*** Looking up your hostname...
+2013-10-16 20:45:10	--	*** Checking Ident
+2013-10-16 20:45:10	--	*** No Ident response
+2013-10-16 20:45:11	--	*** Couldn't look up your hostname
+2013-10-16 20:45:11	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-16 20:45:11	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-16 20:45:11	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-16 20:45:11	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-16 20:45:11	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-16 20:45:11	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-16 20:45:11	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-16 20:45:11	--	There are 36 users and 84 invisible on 5 servers
+2013-10-16 20:45:11	--	14 :IRC Operators online
+2013-10-16 20:45:11	--	74 :channels formed
+2013-10-16 20:45:11	--	I have 41 clients and 3 servers
+2013-10-16 20:45:11	--	41 45 :Current local users 41, max 45
+2013-10-16 20:45:11	--	120 124 :Current global users 120, max 124
+2013-10-16 20:45:11	--	Highest connection count: 48 (45 clients) (1397 connections received)
+2013-10-16 20:45:11	--	- blip2.net Message of the Day -
+2013-10-16 20:45:11	--	-
+2013-10-16 20:45:11	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-16 20:45:11	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-16 20:45:11	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-16 20:45:11	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-16 20:45:11	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-16 20:45:11	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-16 20:45:11	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-16 20:45:11	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-16 20:45:11	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-16 20:45:11	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-16 20:45:11	--	-                               1$ .4P  l$l
+2013-10-16 20:45:11	--	-         |                      ?$$'   l$l                         |
+2013-10-16 20:45:11	--	-        | |                            :$:                        | |
+2013-10-16 20:45:11	--	-      -  |  -                           !                       -  |  -
+2013-10-16 20:45:11	--	-    -- --+-- --                                               -- --+-- --
+2013-10-16 20:45:11	--	-      -  |  -                                                   -  |  -
+2013-10-16 20:45:11	--	-        | |                                                       | |
+2013-10-16 20:45:11	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-16 20:45:11	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-16 20:45:11	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-16 20:45:11	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-16 20:45:11	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-16 20:45:11	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-16 20:45:11	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-16 20:45:11	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-16 20:45:11	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-16 20:45:11	--	-
+2013-10-16 20:45:11	--	-                            ImaginaryNET IRC Network
+2013-10-16 20:45:11	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-16 20:45:11	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-16 20:45:11	--	End of /MOTD command.
+2013-10-17 00:57:32	--	irc: disconnected from server
+2013-10-17 00:57:50	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-17 00:57:50	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-17 00:57:50	--	*** Processing connection to gl.is
+2013-10-17 00:57:51	--	*** Looking up your hostname...
+2013-10-17 00:57:51	--	*** Checking Ident
+2013-10-17 00:57:51	--	*** Couldn't look up your hostname
+2013-10-17 00:57:51	--	*** No Ident response
+2013-10-17 00:57:51	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-17 00:57:51	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-17 00:57:51	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-17 00:57:51	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-17 00:57:51	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-17 00:57:51	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-17 00:57:51	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-17 00:57:51	--	There are 28 users and 84 invisible on 5 servers
+2013-10-17 00:57:51	--	14 :IRC Operators online
+2013-10-17 00:57:51	--	72 :channels formed
+2013-10-17 00:57:51	--	I have 25 clients and 1 servers
+2013-10-17 00:57:51	--	25 33 :Current local users 25, max 33
+2013-10-17 00:57:51	--	112 124 :Current global users 112, max 124
+2013-10-17 00:57:51	--	Highest connection count: 34 (33 clients) (1077 connections received)
+2013-10-17 00:57:51	--	- gl.is Message of the Day -
+2013-10-17 00:57:51	--	-
+2013-10-17 00:57:51	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-17 00:57:51	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-17 00:57:51	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-17 00:57:51	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-17 00:57:51	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-17 00:57:51	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-17 00:57:51	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-17 00:57:51	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-17 00:57:51	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-17 00:57:51	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-17 00:57:51	--	-                               1$ .4P  l$l
+2013-10-17 00:57:51	--	-         |                      ?$$'   l$l                         |
+2013-10-17 00:57:51	--	-        | |                            :$:                        | |
+2013-10-17 00:57:51	--	-      -  |  -                           !                       -  |  -
+2013-10-17 00:57:51	--	-    -- --+-- --                                               -- --+-- --
+2013-10-17 00:57:51	--	-      -  |  -                                                   -  |  -
+2013-10-17 00:57:51	--	-        | |                                                       | |
+2013-10-17 00:57:51	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-17 00:57:51	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-17 00:57:51	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-17 00:57:51	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-17 00:57:51	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-17 00:57:51	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-17 00:57:51	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-17 00:57:51	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-17 00:57:51	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-17 00:57:51	--	-
+2013-10-17 00:57:51	--	-                            ImaginaryNET IRC Network
+2013-10-17 00:57:51	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-17 00:57:51	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-17 00:57:51	--	-
+2013-10-17 00:57:51	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-17 00:57:51	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-17 00:57:51	--	-
+2013-10-17 00:57:51	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-17 00:57:51	--	End of /MOTD command.
+2013-10-17 08:38:30	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-17 08:38:30	--	irc: disconnecting from server...
+2013-10-17 08:38:30	--	irc: disconnected from server
+2013-10-17 08:38:30	--	irc: reconnecting to server in 10 seconds
+2013-10-17 08:38:40	--	irc: reconnecting to server...
+2013-10-17 08:38:40	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-17 08:38:40	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-17 08:38:40	--	*** Processing connection to gl.is
+2013-10-17 08:38:40	--	*** Looking up your hostname...
+2013-10-17 08:38:40	--	*** Checking Ident
+2013-10-17 08:38:40	--	*** Couldn't look up your hostname
+2013-10-17 08:38:40	--	*** No Ident response
+2013-10-17 08:38:40	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut1066
+2013-10-17 08:38:40	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-17 08:38:40	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-17 08:38:40	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-17 08:38:40	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-17 08:38:40	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-17 08:38:40	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-17 08:38:40	--	There are 27 users and 84 invisible on 5 servers
+2013-10-17 08:38:40	--	14 :IRC Operators online
+2013-10-17 08:38:40	--	72 :channels formed
+2013-10-17 08:38:40	--	I have 26 clients and 1 servers
+2013-10-17 08:38:40	--	26 33 :Current local users 26, max 33
+2013-10-17 08:38:40	--	111 124 :Current global users 111, max 124
+2013-10-17 08:38:40	--	Highest connection count: 34 (33 clients) (1081 connections received)
+2013-10-17 08:38:40	--	- gl.is Message of the Day -
+2013-10-17 08:38:40	--	-
+2013-10-17 08:38:40	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-17 08:38:40	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-17 08:38:40	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-17 08:38:40	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-17 08:38:40	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-17 08:38:40	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-17 08:38:40	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-17 08:38:40	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-17 08:38:40	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-17 08:38:40	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-17 08:38:40	--	-                               1$ .4P  l$l
+2013-10-17 08:38:40	--	-         |                      ?$$'   l$l                         |
+2013-10-17 08:38:40	--	-        | |                            :$:                        | |
+2013-10-17 08:38:40	--	-      -  |  -                           !                       -  |  -
+2013-10-17 08:38:40	--	-    -- --+-- --                                               -- --+-- --
+2013-10-17 08:38:40	--	-      -  |  -                                                   -  |  -
+2013-10-17 08:38:40	--	-        | |                                                       | |
+2013-10-17 08:38:40	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-17 08:38:40	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-17 08:38:40	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-17 08:38:40	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-17 08:38:40	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-17 08:38:40	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-17 08:38:40	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-17 08:38:40	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-17 08:38:40	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-17 08:38:40	--	-
+2013-10-17 08:38:40	--	-                            ImaginaryNET IRC Network
+2013-10-17 08:38:40	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-17 08:38:40	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-17 08:38:40	--	-
+2013-10-17 08:38:40	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-17 08:38:40	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-17 08:38:40	--	-
+2013-10-17 08:38:40	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-17 08:38:40	--	End of /MOTD command.
+2013-10-18 11:52:39	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-18 11:52:39	--	irc: disconnecting from server...
+2013-10-18 11:52:39	--	irc: disconnected from server
+2013-10-18 11:52:39	--	irc: reconnecting to server in 10 seconds
+2013-10-18 11:52:49	--	irc: reconnecting to server...
+2013-10-18 11:52:49	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-18 11:52:49	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-18 11:52:49	--	*** Processing connection to blip2.net
+2013-10-18 11:52:49	--	*** Looking up your hostname...
+2013-10-18 11:52:49	--	*** Checking Ident
+2013-10-18 11:52:49	--	*** No Ident response
+2013-10-18 11:52:49	--	*** Couldn't look up your hostname
+2013-10-18 11:52:49	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut1066
+2013-10-18 11:52:49	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-18 11:52:49	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-18 11:52:49	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-18 11:52:49	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-18 11:52:49	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-18 11:52:49	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-18 11:52:49	--	There are 27 users and 86 invisible on 5 servers
+2013-10-18 11:52:49	--	14 :IRC Operators online
+2013-10-18 11:52:49	--	73 :channels formed
+2013-10-18 11:52:49	--	I have 37 clients and 3 servers
+2013-10-18 11:52:49	--	37 45 :Current local users 37, max 45
+2013-10-18 11:52:49	--	113 124 :Current global users 113, max 124
+2013-10-18 11:52:49	--	Highest connection count: 48 (45 clients) (1474 connections received)
+2013-10-18 11:52:49	--	- blip2.net Message of the Day -
+2013-10-18 11:52:49	--	-
+2013-10-18 11:52:49	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-18 11:52:49	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-18 11:52:49	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-18 11:52:49	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-18 11:52:49	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-18 11:52:49	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-18 11:52:49	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-18 11:52:49	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-18 11:52:49	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-18 11:52:49	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-18 11:52:49	--	-                               1$ .4P  l$l
+2013-10-18 11:52:49	--	-         |                      ?$$'   l$l                         |
+2013-10-18 11:52:49	--	-        | |                            :$:                        | |
+2013-10-18 11:52:49	--	-      -  |  -                           !                       -  |  -
+2013-10-18 11:52:49	--	-    -- --+-- --                                               -- --+-- --
+2013-10-18 11:52:49	--	-      -  |  -                                                   -  |  -
+2013-10-18 11:52:49	--	-        | |                                                       | |
+2013-10-18 11:52:49	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-18 11:52:49	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-18 11:52:49	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-18 11:52:49	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-18 11:52:49	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-18 11:52:49	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-18 11:52:49	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-18 11:52:49	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-18 11:52:49	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-18 11:52:49	--	-
+2013-10-18 11:52:49	--	-                            ImaginaryNET IRC Network
+2013-10-18 11:52:49	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-18 11:52:49	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-18 11:52:49	--	End of /MOTD command.
+2013-10-18 15:55:29	--	irc: disconnected from server
+2013-10-18 15:55:47	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-18 15:55:47	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-18 15:55:47	--	*** Processing connection to blip2.net
+2013-10-18 15:55:47	--	*** Looking up your hostname...
+2013-10-18 15:55:47	--	*** Checking Ident
+2013-10-18 15:55:47	--	*** No Ident response
+2013-10-18 15:55:47	--	*** Couldn't look up your hostname
+2013-10-18 15:55:47	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-18 15:55:47	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-18 15:55:47	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-18 15:55:47	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-18 15:55:47	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-18 15:55:47	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-18 15:55:47	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-18 15:55:47	--	There are 29 users and 85 invisible on 5 servers
+2013-10-18 15:55:47	--	14 :IRC Operators online
+2013-10-18 15:55:47	--	73 :channels formed
+2013-10-18 15:55:47	--	I have 36 clients and 3 servers
+2013-10-18 15:55:47	--	36 45 :Current local users 36, max 45
+2013-10-18 15:55:47	--	114 124 :Current global users 114, max 124
+2013-10-18 15:55:47	--	Highest connection count: 48 (45 clients) (1489 connections received)
+2013-10-18 15:55:47	--	- blip2.net Message of the Day -
+2013-10-18 15:55:47	--	-
+2013-10-18 15:55:47	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-18 15:55:47	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-18 15:55:47	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-18 15:55:47	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-18 15:55:47	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-18 15:55:47	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-18 15:55:47	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-18 15:55:47	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-18 15:55:47	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-18 15:55:47	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-18 15:55:47	--	-                               1$ .4P  l$l
+2013-10-18 15:55:47	--	-         |                      ?$$'   l$l                         |
+2013-10-18 15:55:47	--	-        | |                            :$:                        | |
+2013-10-18 15:55:47	--	-      -  |  -                           !                       -  |  -
+2013-10-18 15:55:47	--	-    -- --+-- --                                               -- --+-- --
+2013-10-18 15:55:47	--	-      -  |  -                                                   -  |  -
+2013-10-18 15:55:47	--	-        | |                                                       | |
+2013-10-18 15:55:47	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-18 15:55:47	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-18 15:55:47	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-18 15:55:47	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-18 15:55:47	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-18 15:55:47	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-18 15:55:47	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-18 15:55:47	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-18 15:55:47	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-18 15:55:47	--	-
+2013-10-18 15:55:47	--	-                            ImaginaryNET IRC Network
+2013-10-18 15:55:47	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-18 15:55:47	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-18 15:55:47	--	End of /MOTD command.
+2013-10-19 00:28:42	--	irc: disconnected from server
+2013-10-19 00:28:58	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-19 00:28:58	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-19 00:28:58	--	*** Processing connection to gl.is
+2013-10-19 00:28:58	--	*** Looking up your hostname...
+2013-10-19 00:28:58	--	*** Checking Ident
+2013-10-19 00:28:58	--	*** No Ident response
+2013-10-19 00:28:58	--	*** Couldn't look up your hostname
+2013-10-19 00:28:58	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-19 00:28:58	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-19 00:28:58	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-19 00:28:58	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-19 00:28:58	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-19 00:28:58	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-19 00:28:58	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-19 00:28:58	--	There are 28 users and 85 invisible on 5 servers
+2013-10-19 00:28:58	--	14 :IRC Operators online
+2013-10-19 00:28:58	--	73 :channels formed
+2013-10-19 00:28:58	--	I have 29 clients and 1 servers
+2013-10-19 00:28:58	--	29 33 :Current local users 29, max 33
+2013-10-19 00:28:58	--	113 124 :Current global users 113, max 124
+2013-10-19 00:28:58	--	Highest connection count: 34 (33 clients) (1150 connections received)
+2013-10-19 00:28:58	--	- gl.is Message of the Day -
+2013-10-19 00:28:58	--	-
+2013-10-19 00:28:58	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-19 00:28:58	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-19 00:28:58	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-19 00:28:58	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-19 00:28:58	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-19 00:28:58	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-19 00:28:58	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-19 00:28:58	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-19 00:28:58	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-19 00:28:58	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-19 00:28:58	--	-                               1$ .4P  l$l
+2013-10-19 00:28:58	--	-         |                      ?$$'   l$l                         |
+2013-10-19 00:28:58	--	-        | |                            :$:                        | |
+2013-10-19 00:28:58	--	-      -  |  -                           !                       -  |  -
+2013-10-19 00:28:58	--	-    -- --+-- --                                               -- --+-- --
+2013-10-19 00:28:58	--	-      -  |  -                                                   -  |  -
+2013-10-19 00:28:58	--	-        | |                                                       | |
+2013-10-19 00:28:58	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-19 00:28:58	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-19 00:28:58	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-19 00:28:58	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-19 00:28:58	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-19 00:28:58	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-19 00:28:58	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-19 00:28:58	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-19 00:28:58	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-19 00:28:58	--	-
+2013-10-19 00:28:58	--	-                            ImaginaryNET IRC Network
+2013-10-19 00:28:58	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-19 00:28:58	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-19 00:28:58	--	-
+2013-10-19 00:28:58	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-19 00:28:58	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-19 00:28:58	--	-
+2013-10-19 00:28:58	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-19 00:28:58	--	End of /MOTD command.
+2013-10-19 13:01:29	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-19 13:01:29	--	irc: disconnecting from server...
+2013-10-19 13:01:29	--	irc: disconnected from server
+2013-10-19 13:01:29	--	irc: reconnecting to server in 10 seconds
+2013-10-19 13:01:39	--	irc: reconnecting to server...
+2013-10-19 13:01:39	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-19 13:01:40	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-19 13:01:40	--	*** Processing connection to blip2.net
+2013-10-19 13:01:40	--	*** Looking up your hostname...
+2013-10-19 13:01:40	--	*** Checking Ident
+2013-10-19 13:01:40	--	*** No Ident response
+2013-10-19 13:01:40	--	*** Couldn't look up your hostname
+2013-10-19 13:01:40	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-19 13:01:40	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-19 13:01:40	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-19 13:01:40	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-19 13:01:40	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-19 13:01:40	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-19 13:01:40	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-19 13:01:40	--	There are 30 users and 84 invisible on 5 servers
+2013-10-19 13:01:40	--	14 :IRC Operators online
+2013-10-19 13:01:40	--	75 :channels formed
+2013-10-19 13:01:40	--	I have 35 clients and 3 servers
+2013-10-19 13:01:40	--	35 45 :Current local users 35, max 45
+2013-10-19 13:01:40	--	114 124 :Current global users 114, max 124
+2013-10-19 13:01:40	--	Highest connection count: 48 (45 clients) (1531 connections received)
+2013-10-19 13:01:40	--	- blip2.net Message of the Day -
+2013-10-19 13:01:40	--	-
+2013-10-19 13:01:40	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-19 13:01:40	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-19 13:01:40	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-19 13:01:40	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-19 13:01:40	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-19 13:01:40	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-19 13:01:40	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-19 13:01:40	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-19 13:01:40	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-19 13:01:40	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-19 13:01:40	--	-                               1$ .4P  l$l
+2013-10-19 13:01:40	--	-         |                      ?$$'   l$l                         |
+2013-10-19 13:01:40	--	-        | |                            :$:                        | |
+2013-10-19 13:01:40	--	-      -  |  -                           !                       -  |  -
+2013-10-19 13:01:40	--	-    -- --+-- --                                               -- --+-- --
+2013-10-19 13:01:40	--	-      -  |  -                                                   -  |  -
+2013-10-19 13:01:40	--	-        | |                                                       | |
+2013-10-19 13:01:40	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-19 13:01:40	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-19 13:01:40	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-19 13:01:40	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-19 13:01:40	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-19 13:01:40	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-19 13:01:40	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-19 13:01:40	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-19 13:01:40	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-19 13:01:40	--	-
+2013-10-19 13:01:40	--	-                            ImaginaryNET IRC Network
+2013-10-19 13:01:40	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-19 13:01:40	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-19 13:01:40	--	End of /MOTD command.
+2013-10-20 16:56:57	--	MSG(angusp): hi
+2013-10-20 21:43:17	=!=	irc: sending data to server: error 32 Broken pipe
+2013-10-20 21:43:18	=!=	Closing Link: 188.74.85.44 (Ping timeout: 246 seconds)
+2013-10-20 21:43:18	--	irc: disconnected from server
+2013-10-20 21:43:18	--	irc: reconnecting to server in 10 seconds
+2013-10-20 21:43:30	--	irc: reconnecting to server...
+2013-10-20 21:43:31	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-20 21:45:18	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-20 21:45:22	--	*** Processing connection to gl.is
+2013-10-20 21:45:22	--	*** Looking up your hostname...
+2013-10-20 21:45:22	--	*** Checking Ident
+2013-10-20 21:45:22	--	*** No Ident response
+2013-10-20 21:45:22	--	*** Couldn't look up your hostname
+2013-10-20 21:45:24	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-20 21:45:24	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-20 21:45:24	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-20 21:45:24	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-20 21:45:24	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-20 21:45:24	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-20 21:45:24	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-20 21:45:24	--	There are 35 users and 86 invisible on 5 servers
+2013-10-20 21:45:24	--	14 :IRC Operators online
+2013-10-20 21:45:24	--	75 :channels formed
+2013-10-20 21:45:24	--	I have 32 clients and 1 servers
+2013-10-20 21:45:24	--	32 33 :Current local users 32, max 33
+2013-10-20 21:45:24	--	121 124 :Current global users 121, max 124
+2013-10-20 21:45:24	--	Highest connection count: 34 (33 clients) (1207 connections received)
+2013-10-20 21:45:24	--	- gl.is Message of the Day -
+2013-10-20 21:45:24	--	-
+2013-10-20 21:45:24	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-20 21:45:24	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-20 21:45:24	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-20 21:45:24	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-20 21:45:24	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-20 21:45:24	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-20 21:45:24	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-20 21:45:24	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-20 21:45:24	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-20 21:45:24	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-20 21:45:24	--	-                               1$ .4P  l$l
+2013-10-20 21:45:24	--	-         |                      ?$$'   l$l                         |
+2013-10-20 21:45:24	--	-        | |                            :$:                        | |
+2013-10-20 21:45:24	--	-      -  |  -                           !                       -  |  -
+2013-10-20 21:45:24	--	-    -- --+-- --                                               -- --+-- --
+2013-10-20 21:45:24	--	-      -  |  -                                                   -  |  -
+2013-10-20 21:45:24	--	-        | |                                                       | |
+2013-10-20 21:45:24	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-20 21:45:24	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-20 21:45:24	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-20 21:45:24	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-20 21:46:49	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-20 21:46:49	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-20 21:46:49	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-20 21:46:49	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-20 21:46:49	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-20 21:46:49	--	-
+2013-10-20 21:46:49	--	-                            ImaginaryNET IRC Network
+2013-10-20 21:46:49	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-20 21:46:49	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-20 21:46:49	--	-
+2013-10-20 21:46:50	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-20 21:46:50	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-20 21:46:50	--	-
+2013-10-20 21:46:50	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-20 21:46:50	--	End of /MOTD command.
+2013-10-20 22:16:01	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-20 22:16:01	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-20 22:16:01	--	*** Processing connection to blip2.net
+2013-10-20 22:16:01	--	*** Looking up your hostname...
+2013-10-20 22:16:01	--	*** Checking Ident
+2013-10-20 22:16:01	--	*** No Ident response
+2013-10-20 22:16:01	--	*** Couldn't look up your hostname
+2013-10-20 22:16:01	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-20 22:16:01	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-20 22:16:01	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-20 22:16:01	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-20 22:16:01	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-20 22:16:01	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-20 22:16:01	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-20 22:16:01	--	There are 35 users and 86 invisible on 5 servers
+2013-10-20 22:16:01	--	14 :IRC Operators online
+2013-10-20 22:16:01	--	75 :channels formed
+2013-10-20 22:16:01	--	I have 39 clients and 3 servers
+2013-10-20 22:16:01	--	39 45 :Current local users 39, max 45
+2013-10-20 22:16:01	--	121 124 :Current global users 121, max 124
+2013-10-20 22:16:01	--	Highest connection count: 48 (45 clients) (1588 connections received)
+2013-10-20 22:16:01	--	- blip2.net Message of the Day -
+2013-10-20 22:16:01	--	-
+2013-10-20 22:16:01	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-20 22:16:01	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-20 22:16:01	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-20 22:16:01	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-20 22:16:01	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-20 22:16:01	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-20 22:16:01	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-20 22:16:01	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-20 22:16:01	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-20 22:16:01	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-20 22:16:01	--	-                               1$ .4P  l$l
+2013-10-20 22:16:01	--	-         |                      ?$$'   l$l                         |
+2013-10-20 22:16:01	--	-        | |                            :$:                        | |
+2013-10-20 22:16:01	--	-      -  |  -                           !                       -  |  -
+2013-10-20 22:16:01	--	-    -- --+-- --                                               -- --+-- --
+2013-10-20 22:16:01	--	-      -  |  -                                                   -  |  -
+2013-10-20 22:16:01	--	-        | |                                                       | |
+2013-10-20 22:16:01	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-20 22:16:01	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-20 22:16:01	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-20 22:16:01	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-20 22:16:01	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-20 22:16:01	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-20 22:16:01	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-20 22:16:01	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-20 22:16:01	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-20 22:16:01	--	-
+2013-10-20 22:16:01	--	-                            ImaginaryNET IRC Network
+2013-10-20 22:16:01	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-20 22:16:01	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-20 22:16:01	--	End of /MOTD command.
+2013-10-21 00:30:12	=!=	Closing Link: 188.74.85.44 (Quit: WeeChat 0.4.2)
+2013-10-21 00:30:12	--	irc: disconnected from server
+2013-10-21 00:30:12	--	irc: reconnecting to server in 10 seconds
+2013-10-21 00:30:12	--	irc: disconnected from server
+2013-10-21 01:33:14	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-21 01:33:14	=!=	irc: connection refused
+2013-10-21 01:33:14	--	irc: reconnecting to server in 10 seconds
+2013-10-21 01:33:24	--	irc: reconnecting to server...
+2013-10-21 01:33:24	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-21 01:33:24	=!=	irc: connection refused
+2013-10-21 01:33:24	--	irc: reconnecting to server in 20 seconds
+2013-10-21 01:33:44	--	irc: reconnecting to server...
+2013-10-21 01:33:44	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-21 01:33:44	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-21 01:33:44	--	*** Processing connection to gl.is
+2013-10-21 01:33:44	--	*** Looking up your hostname...
+2013-10-21 01:33:44	--	*** Checking Ident
+2013-10-21 01:33:44	--	*** Couldn't look up your hostname
+2013-10-21 01:33:44	--	*** No Ident response
+2013-10-21 01:33:44	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-21 01:33:44	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-21 01:33:44	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-21 01:33:44	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-21 01:33:44	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-21 01:33:44	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-21 01:33:44	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-21 01:33:44	--	There are 27 users and 84 invisible on 5 servers
+2013-10-21 01:33:44	--	14 :IRC Operators online
+2013-10-21 01:33:44	--	73 :channels formed
+2013-10-21 01:33:44	--	I have 29 clients and 1 servers
+2013-10-21 01:33:44	--	29 33 :Current local users 29, max 33
+2013-10-21 01:33:44	--	111 124 :Current global users 111, max 124
+2013-10-21 01:33:44	--	Highest connection count: 34 (33 clients) (1212 connections received)
+2013-10-21 01:33:44	--	- gl.is Message of the Day -
+2013-10-21 01:33:44	--	-
+2013-10-21 01:33:44	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-21 01:33:44	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-21 01:33:44	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-21 01:33:44	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-21 01:33:44	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-21 01:33:44	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-21 01:33:44	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-21 01:33:44	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-21 01:33:44	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-21 01:33:44	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-21 01:33:44	--	-                               1$ .4P  l$l
+2013-10-21 01:33:44	--	-         |                      ?$$'   l$l                         |
+2013-10-21 01:33:44	--	-        | |                            :$:                        | |
+2013-10-21 01:33:44	--	-      -  |  -                           !                       -  |  -
+2013-10-21 01:33:44	--	-    -- --+-- --                                               -- --+-- --
+2013-10-21 01:33:44	--	-      -  |  -                                                   -  |  -
+2013-10-21 01:33:44	--	-        | |                                                       | |
+2013-10-21 01:33:44	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-21 01:33:44	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-21 01:33:44	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-21 01:33:44	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-21 01:33:44	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-21 01:33:44	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-21 01:33:44	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-21 01:33:44	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-21 01:33:44	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-21 01:33:44	--	-
+2013-10-21 01:33:44	--	-                            ImaginaryNET IRC Network
+2013-10-21 01:33:44	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-21 01:33:44	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-21 01:33:44	--	-
+2013-10-21 01:33:44	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-21 01:33:44	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-21 01:33:44	--	-
+2013-10-21 01:33:44	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-21 01:33:44	--	End of /MOTD command.
+2013-10-21 01:34:46	--	irc: disconnected from server
+2013-10-21 01:44:00	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-21 01:44:01	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-21 01:44:01	--	*** Processing connection to blip2.net
+2013-10-21 01:44:01	--	*** Looking up your hostname...
+2013-10-21 01:44:01	--	*** Checking Ident
+2013-10-21 01:44:01	--	*** No Ident response
+2013-10-21 01:44:01	--	*** Couldn't look up your hostname
+2013-10-21 01:44:01	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-21 01:44:01	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-21 01:44:01	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-21 01:44:01	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-21 01:44:01	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-21 01:44:01	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-21 01:44:01	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-21 01:44:01	--	There are 27 users and 83 invisible on 5 servers
+2013-10-21 01:44:01	--	14 :IRC Operators online
+2013-10-21 01:44:01	--	73 :channels formed
+2013-10-21 01:44:01	--	I have 33 clients and 3 servers
+2013-10-21 01:44:01	--	33 45 :Current local users 33, max 45
+2013-10-21 01:44:01	--	110 124 :Current global users 110, max 124
+2013-10-21 01:44:01	--	Highest connection count: 48 (45 clients) (1590 connections received)
+2013-10-21 01:44:01	--	- blip2.net Message of the Day -
+2013-10-21 01:44:01	--	-
+2013-10-21 01:44:01	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-21 01:44:01	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-21 01:44:01	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-21 01:44:01	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-21 01:44:01	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-21 01:44:01	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-21 01:44:01	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-21 01:44:01	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-21 01:44:01	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-21 01:44:01	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-21 01:44:01	--	-                               1$ .4P  l$l
+2013-10-21 01:44:01	--	-         |                      ?$$'   l$l                         |
+2013-10-21 01:44:01	--	-        | |                            :$:                        | |
+2013-10-21 01:44:01	--	-      -  |  -                           !                       -  |  -
+2013-10-21 01:44:01	--	-    -- --+-- --                                               -- --+-- --
+2013-10-21 01:44:01	--	-      -  |  -                                                   -  |  -
+2013-10-21 01:44:01	--	-        | |                                                       | |
+2013-10-21 01:44:01	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-21 01:44:01	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-21 01:44:01	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-21 01:44:01	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-21 01:44:01	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-21 01:44:01	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-21 01:44:01	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-21 01:44:01	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-21 01:44:01	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-21 01:44:01	--	-
+2013-10-21 01:44:01	--	-                            ImaginaryNET IRC Network
+2013-10-21 01:44:01	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-21 01:44:01	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-21 01:44:01	--	End of /MOTD command.
+2013-10-21 11:26:31	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-21 11:26:31	--	irc: disconnecting from server...
+2013-10-21 11:26:31	--	irc: disconnected from server
+2013-10-21 11:26:31	--	irc: reconnecting to server in 10 seconds
+2013-10-21 11:26:41	--	irc: reconnecting to server...
+2013-10-21 11:26:41	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-21 11:26:49	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-21 11:26:49	--	*** Processing connection to blip2.net
+2013-10-21 11:26:49	--	*** Looking up your hostname...
+2013-10-21 11:26:49	--	*** Checking Ident
+2013-10-21 11:26:49	--	*** No Ident response
+2013-10-21 11:26:49	--	*** Couldn't look up your hostname
+2013-10-21 11:26:49	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-21 11:26:49	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-21 11:26:49	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-21 11:26:49	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-21 11:26:49	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-21 11:26:49	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-21 11:26:49	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-21 11:26:49	--	There are 28 users and 84 invisible on 5 servers
+2013-10-21 11:26:49	--	14 :IRC Operators online
+2013-10-21 11:26:49	--	73 :channels formed
+2013-10-21 11:26:49	--	I have 36 clients and 3 servers
+2013-10-21 11:26:49	--	36 45 :Current local users 36, max 45
+2013-10-21 11:26:49	--	112 124 :Current global users 112, max 124
+2013-10-21 11:26:49	--	Highest connection count: 48 (45 clients) (1606 connections received)
+2013-10-21 11:26:49	--	- blip2.net Message of the Day -
+2013-10-21 11:26:49	--	-
+2013-10-21 11:26:49	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-21 11:26:49	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-21 11:26:49	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-21 11:26:49	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-21 11:26:49	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-21 11:26:49	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-21 11:26:49	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-21 11:26:49	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-21 11:26:49	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-21 11:26:49	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-21 11:26:49	--	-                               1$ .4P  l$l
+2013-10-21 11:26:49	--	-         |                      ?$$'   l$l                         |
+2013-10-21 11:26:49	--	-        | |                            :$:                        | |
+2013-10-21 11:26:49	--	-      -  |  -                           !                       -  |  -
+2013-10-21 11:26:49	--	-    -- --+-- --                                               -- --+-- --
+2013-10-21 11:26:49	--	-      -  |  -                                                   -  |  -
+2013-10-21 11:26:49	--	-        | |                                                       | |
+2013-10-21 11:26:49	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-21 11:26:49	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-21 11:26:49	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-21 11:26:49	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-21 11:26:49	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-21 11:26:49	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-21 11:26:49	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-21 11:26:49	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-21 11:26:49	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-21 11:26:49	--	-
+2013-10-21 11:26:49	--	-                            ImaginaryNET IRC Network
+2013-10-21 11:26:49	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-21 11:26:49	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-21 11:26:49	--	End of /MOTD command.
+2013-10-22 08:16:45	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-22 08:16:45	--	irc: disconnecting from server...
+2013-10-22 08:16:45	--	irc: disconnected from server
+2013-10-22 08:16:45	--	irc: reconnecting to server in 10 seconds
+2013-10-22 08:16:55	--	irc: reconnecting to server...
+2013-10-22 08:16:55	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-22 08:16:55	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-22 08:16:55	--	*** Processing connection to gl.is
+2013-10-22 08:16:55	--	*** Looking up your hostname...
+2013-10-22 08:16:55	--	*** Checking Ident
+2013-10-22 08:16:55	--	*** No Ident response
+2013-10-22 08:16:56	--	*** Couldn't look up your hostname
+2013-10-22 08:16:56	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-22 08:16:56	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-22 08:16:56	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-22 08:16:56	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-22 08:16:56	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-22 08:16:56	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-22 08:16:56	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-22 08:16:56	--	There are 24 users and 82 invisible on 5 servers
+2013-10-22 08:16:56	--	14 :IRC Operators online
+2013-10-22 08:16:56	--	73 :channels formed
+2013-10-22 08:16:56	--	I have 27 clients and 1 servers
+2013-10-22 08:16:56	--	27 33 :Current local users 27, max 33
+2013-10-22 08:16:56	--	106 124 :Current global users 106, max 124
+2013-10-22 08:16:56	--	Highest connection count: 34 (33 clients) (1238 connections received)
+2013-10-22 08:16:56	--	- gl.is Message of the Day -
+2013-10-22 08:16:56	--	-
+2013-10-22 08:16:56	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-22 08:16:56	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-22 08:16:56	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-22 08:16:56	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-22 08:16:56	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-22 08:16:56	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-22 08:16:56	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-22 08:16:56	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-22 08:16:56	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-22 08:16:56	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-22 08:16:56	--	-                               1$ .4P  l$l
+2013-10-22 08:16:56	--	-         |                      ?$$'   l$l                         |
+2013-10-22 08:16:56	--	-        | |                            :$:                        | |
+2013-10-22 08:16:56	--	-      -  |  -                           !                       -  |  -
+2013-10-22 08:16:56	--	-    -- --+-- --                                               -- --+-- --
+2013-10-22 08:16:56	--	-      -  |  -                                                   -  |  -
+2013-10-22 08:16:56	--	-        | |                                                       | |
+2013-10-22 08:16:56	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-22 08:16:56	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-22 08:16:56	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-22 08:16:56	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-22 08:16:56	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-22 08:16:56	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-22 08:16:56	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-22 08:16:56	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-22 08:16:56	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-22 08:16:56	--	-
+2013-10-22 08:16:56	--	-                            ImaginaryNET IRC Network
+2013-10-22 08:16:56	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-22 08:16:56	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-22 08:16:56	--	-
+2013-10-22 08:16:56	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-22 08:16:56	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-22 08:16:56	--	-
+2013-10-22 08:16:56	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-22 08:16:56	--	End of /MOTD command.
+2013-10-22 20:02:10	--	irc: disconnected from server
+2013-10-22 20:02:27	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-22 20:02:27	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-22 20:02:27	--	*** Processing connection to blip2.net
+2013-10-22 20:02:27	--	*** Looking up your hostname...
+2013-10-22 20:02:27	--	*** Checking Ident
+2013-10-22 20:02:27	--	*** No Ident response
+2013-10-22 20:02:28	--	*** Couldn't look up your hostname
+2013-10-22 20:02:28	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-22 20:02:28	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-22 20:02:28	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-22 20:02:28	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-22 20:02:28	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-22 20:02:28	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-22 20:02:28	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-22 20:02:28	--	There are 36 users and 85 invisible on 5 servers
+2013-10-22 20:02:28	--	14 :IRC Operators online
+2013-10-22 20:02:28	--	75 :channels formed
+2013-10-22 20:02:28	--	I have 36 clients and 3 servers
+2013-10-22 20:02:28	--	36 45 :Current local users 36, max 45
+2013-10-22 20:02:28	--	121 124 :Current global users 121, max 124
+2013-10-22 20:02:28	--	Highest connection count: 48 (45 clients) (1666 connections received)
+2013-10-22 20:02:28	--	- blip2.net Message of the Day -
+2013-10-22 20:02:28	--	-
+2013-10-22 20:02:28	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-22 20:02:28	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-22 20:02:28	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-22 20:02:28	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-22 20:02:28	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-22 20:02:28	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-22 20:02:28	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-22 20:02:28	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-22 20:02:28	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-22 20:02:28	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-22 20:02:28	--	-                               1$ .4P  l$l
+2013-10-22 20:02:28	--	-         |                      ?$$'   l$l                         |
+2013-10-22 20:02:28	--	-        | |                            :$:                        | |
+2013-10-22 20:02:28	--	-      -  |  -                           !                       -  |  -
+2013-10-22 20:02:28	--	-    -- --+-- --                                               -- --+-- --
+2013-10-22 20:02:28	--	-      -  |  -                                                   -  |  -
+2013-10-22 20:02:28	--	-        | |                                                       | |
+2013-10-22 20:02:28	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-22 20:02:28	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-22 20:02:28	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-22 20:02:28	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-22 20:02:28	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-22 20:02:28	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-22 20:02:28	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-22 20:02:28	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-22 20:02:28	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-22 20:02:28	--	-
+2013-10-22 20:02:28	--	-                            ImaginaryNET IRC Network
+2013-10-22 20:02:28	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-22 20:02:28	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-22 20:02:28	--	End of /MOTD command.
+2013-10-23 10:00:36	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-23 10:00:36	--	irc: disconnecting from server...
+2013-10-23 10:00:36	--	irc: disconnected from server
+2013-10-23 10:00:36	--	irc: reconnecting to server in 10 seconds
+2013-10-23 10:00:46	--	irc: reconnecting to server...
+2013-10-23 10:00:46	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-23 10:00:46	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-23 10:00:46	--	*** Processing connection to blip2.net
+2013-10-23 10:00:46	--	*** Looking up your hostname...
+2013-10-23 10:00:46	--	*** Checking Ident
+2013-10-23 10:00:46	--	*** No Ident response
+2013-10-23 10:00:46	--	*** Couldn't look up your hostname
+2013-10-23 10:00:46	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-23 10:00:46	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-23 10:00:46	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-23 10:00:46	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-23 10:00:46	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-23 10:00:46	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-23 10:00:46	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-23 10:00:46	--	There are 29 users and 82 invisible on 5 servers
+2013-10-23 10:00:46	--	14 :IRC Operators online
+2013-10-23 10:00:46	--	73 :channels formed
+2013-10-23 10:00:46	--	I have 34 clients and 3 servers
+2013-10-23 10:00:46	--	34 45 :Current local users 34, max 45
+2013-10-23 10:00:46	--	111 124 :Current global users 111, max 124
+2013-10-23 10:00:46	--	Highest connection count: 48 (45 clients) (1686 connections received)
+2013-10-23 10:00:46	--	- blip2.net Message of the Day -
+2013-10-23 10:00:46	--	-
+2013-10-23 10:00:46	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-23 10:00:46	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-23 10:00:46	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-23 10:00:46	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-23 10:00:46	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-23 10:00:46	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-23 10:00:46	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-23 10:00:46	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-23 10:00:46	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-23 10:00:46	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-23 10:00:46	--	-                               1$ .4P  l$l
+2013-10-23 10:00:46	--	-         |                      ?$$'   l$l                         |
+2013-10-23 10:00:46	--	-        | |                            :$:                        | |
+2013-10-23 10:00:46	--	-      -  |  -                           !                       -  |  -
+2013-10-23 10:00:46	--	-    -- --+-- --                                               -- --+-- --
+2013-10-23 10:00:46	--	-      -  |  -                                                   -  |  -
+2013-10-23 10:00:46	--	-        | |                                                       | |
+2013-10-23 10:00:46	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-23 10:00:46	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-23 10:00:46	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-23 10:00:46	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-23 10:00:47	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-23 10:00:47	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-23 10:00:47	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-23 10:00:47	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-23 10:00:47	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-23 10:00:47	--	-
+2013-10-23 10:00:47	--	-                            ImaginaryNET IRC Network
+2013-10-23 10:00:47	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-23 10:00:47	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-23 10:00:47	--	End of /MOTD command.
+2013-10-23 10:36:56	--	irc: disconnected from server
+2013-10-24 10:26:58	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-24 10:26:58	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-24 10:26:58	--	*** Processing connection to gl.is
+2013-10-24 10:26:58	--	*** Looking up your hostname...
+2013-10-24 10:26:58	--	*** Checking Ident
+2013-10-24 10:26:58	--	*** No Ident response
+2013-10-24 10:26:59	--	*** Couldn't look up your hostname
+2013-10-24 10:26:59	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-24 10:26:59	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-24 10:26:59	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-24 10:26:59	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-24 10:26:59	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-24 10:26:59	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-24 10:26:59	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-24 10:26:59	--	There are 28 users and 82 invisible on 5 servers
+2013-10-24 10:26:59	--	14 :IRC Operators online
+2013-10-24 10:26:59	--	73 :channels formed
+2013-10-24 10:26:59	--	I have 29 clients and 1 servers
+2013-10-24 10:26:59	--	29 35 :Current local users 29, max 35
+2013-10-24 10:26:59	--	110 124 :Current global users 110, max 124
+2013-10-24 10:26:59	--	Highest connection count: 36 (35 clients) (1319 connections received)
+2013-10-24 10:26:59	--	- gl.is Message of the Day -
+2013-10-24 10:26:59	--	-
+2013-10-24 10:26:59	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-24 10:26:59	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-24 10:26:59	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-24 10:26:59	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-24 10:26:59	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-24 10:26:59	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-24 10:26:59	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-24 10:26:59	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-24 10:26:59	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-24 10:26:59	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-24 10:26:59	--	-                               1$ .4P  l$l
+2013-10-24 10:26:59	--	-         |                      ?$$'   l$l                         |
+2013-10-24 10:26:59	--	-        | |                            :$:                        | |
+2013-10-24 10:26:59	--	-      -  |  -                           !                       -  |  -
+2013-10-24 10:26:59	--	-    -- --+-- --                                               -- --+-- --
+2013-10-24 10:26:59	--	-      -  |  -                                                   -  |  -
+2013-10-24 10:26:59	--	-        | |                                                       | |
+2013-10-24 10:26:59	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-24 10:26:59	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-24 10:26:59	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-24 10:26:59	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-24 10:26:59	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-24 10:26:59	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-24 10:26:59	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-24 10:26:59	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-24 10:26:59	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-24 10:26:59	--	-
+2013-10-24 10:26:59	--	-                            ImaginaryNET IRC Network
+2013-10-24 10:26:59	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-24 10:26:59	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-24 10:26:59	--	-
+2013-10-24 10:26:59	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-24 10:26:59	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-24 10:26:59	--	-
+2013-10-24 10:26:59	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-24 10:26:59	--	End of /MOTD command.
+2013-10-24 12:45:25	--	irc: disconnected from server
+2013-10-24 12:45:43	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-24 12:45:43	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-24 12:45:43	--	*** Processing connection to blip2.net
+2013-10-24 12:45:43	--	*** Looking up your hostname...
+2013-10-24 12:45:43	--	*** Checking Ident
+2013-10-24 12:45:43	--	*** No Ident response
+2013-10-24 12:45:43	--	*** Couldn't look up your hostname
+2013-10-24 12:45:43	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-24 12:45:43	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-24 12:45:43	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-24 12:45:43	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-24 12:45:43	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-24 12:45:43	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-24 12:45:43	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-24 12:45:43	--	There are 33 users and 83 invisible on 5 servers
+2013-10-24 12:45:43	--	14 :IRC Operators online
+2013-10-24 12:45:43	--	73 :channels formed
+2013-10-24 12:45:43	--	I have 35 clients and 3 servers
+2013-10-24 12:45:43	--	35 45 :Current local users 35, max 45
+2013-10-24 12:45:43	--	116 124 :Current global users 116, max 124
+2013-10-24 12:45:43	--	Highest connection count: 48 (45 clients) (1746 connections received)
+2013-10-24 12:45:43	--	- blip2.net Message of the Day -
+2013-10-24 12:45:43	--	-
+2013-10-24 12:45:43	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-24 12:45:43	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-24 12:45:43	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-24 12:45:43	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-24 12:45:43	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-24 12:45:43	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-24 12:45:43	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-24 12:45:43	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-24 12:45:43	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-24 12:45:43	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-24 12:45:43	--	-                               1$ .4P  l$l
+2013-10-24 12:45:43	--	-         |                      ?$$'   l$l                         |
+2013-10-24 12:45:43	--	-        | |                            :$:                        | |
+2013-10-24 12:45:43	--	-      -  |  -                           !                       -  |  -
+2013-10-24 12:45:43	--	-    -- --+-- --                                               -- --+-- --
+2013-10-24 12:45:43	--	-      -  |  -                                                   -  |  -
+2013-10-24 12:45:43	--	-        | |                                                       | |
+2013-10-24 12:45:43	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-24 12:45:43	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-24 12:45:43	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-24 12:45:43	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-24 12:45:43	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-24 12:45:43	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-24 12:45:43	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-24 12:45:43	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-24 12:45:43	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-24 12:45:43	--	-
+2013-10-24 12:45:43	--	-                            ImaginaryNET IRC Network
+2013-10-24 12:45:43	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-24 12:45:43	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-24 12:45:43	--	End of /MOTD command.
+2013-10-25 00:58:03	=!=	irc: reading data on socket: error 110 Connection timed out
+2013-10-25 00:58:03	--	irc: disconnecting from server...
+2013-10-25 00:58:03	--	irc: disconnected from server
+2013-10-25 00:58:03	--	irc: reconnecting to server in 10 seconds
+2013-10-25 00:58:13	--	irc: reconnecting to server...
+2013-10-25 00:58:13	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-25 00:59:13	=!=	irc: timeout
+2013-10-25 00:59:13	--	irc: reconnecting to server in 20 seconds
+2013-10-25 00:59:33	--	irc: reconnecting to server...
+2013-10-25 00:59:33	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-25 01:00:33	=!=	irc: timeout
+2013-10-25 01:00:33	--	irc: reconnecting to server in 40 seconds
+2013-10-25 01:01:13	--	irc: reconnecting to server...
+2013-10-25 01:01:13	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-25 01:02:13	=!=	irc: timeout
+2013-10-25 01:02:13	--	irc: reconnecting to server in 1 minute, 20 seconds
+2013-10-25 01:03:33	--	irc: reconnecting to server...
+2013-10-25 01:03:33	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-25 01:04:33	=!=	irc: timeout
+2013-10-25 01:04:33	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2013-10-25 01:07:13	--	irc: reconnecting to server...
+2013-10-25 01:07:13	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-25 01:08:13	=!=	irc: timeout
+2013-10-25 01:08:13	--	irc: reconnecting to server in 5 minutes, 20 seconds
+2013-10-25 01:13:33	--	irc: reconnecting to server...
+2013-10-25 01:13:33	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-25 01:14:33	=!=	irc: timeout
+2013-10-25 01:14:33	--	irc: reconnecting to server in 10 minutes, 40 seconds
+2013-10-25 01:25:13	--	irc: reconnecting to server...
+2013-10-25 01:25:13	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-25 01:26:13	=!=	irc: timeout
+2013-10-25 01:26:13	--	irc: reconnecting to server in 21 minutes, 20 seconds
+2013-10-25 01:47:33	--	irc: reconnecting to server...
+2013-10-25 01:47:33	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-25 01:48:33	=!=	irc: timeout
+2013-10-25 01:48:33	--	irc: reconnecting to server in 30 minutes
+2013-10-25 02:18:33	--	irc: reconnecting to server...
+2013-10-25 02:18:33	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-25 02:19:33	=!=	irc: timeout
+2013-10-25 02:19:33	--	irc: reconnecting to server in 30 minutes
+2013-10-25 02:49:33	--	irc: reconnecting to server...
+2013-10-25 02:49:33	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-25 02:50:33	=!=	irc: timeout
+2013-10-25 02:50:33	--	irc: reconnecting to server in 30 minutes
+2013-10-25 11:37:57	--	irc: reconnecting to server...
+2013-10-25 11:37:57	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-25 11:37:57	=!=	irc: address "irc.imaginarynet.org.uk" not found
+2013-10-25 11:37:57	=!=	irc: error: Name or service not known
+2013-10-25 11:37:57	--	irc: reconnecting to server in 30 minutes
+2013-10-25 12:07:57	--	irc: reconnecting to server...
+2013-10-25 12:07:57	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-25 12:07:57	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-25 12:07:57	--	*** Processing connection to blip2.net
+2013-10-25 12:07:57	--	*** Looking up your hostname...
+2013-10-25 12:07:57	--	*** Checking Ident
+2013-10-25 12:07:57	--	*** No Ident response
+2013-10-25 12:07:57	--	*** Couldn't look up your hostname
+2013-10-25 12:07:57	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-25 12:07:57	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-25 12:07:57	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-25 12:07:57	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-25 12:07:57	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-25 12:07:57	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-25 12:07:57	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-25 12:07:57	--	There are 35 users and 83 invisible on 5 servers
+2013-10-25 12:07:57	--	14 :IRC Operators online
+2013-10-25 12:07:57	--	73 :channels formed
+2013-10-25 12:07:57	--	I have 36 clients and 3 servers
+2013-10-25 12:07:57	--	36 45 :Current local users 36, max 45
+2013-10-25 12:07:57	--	118 124 :Current global users 118, max 124
+2013-10-25 12:07:57	--	Highest connection count: 48 (45 clients) (1784 connections received)
+2013-10-25 12:07:57	--	- blip2.net Message of the Day -
+2013-10-25 12:07:57	--	-
+2013-10-25 12:07:57	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-25 12:07:57	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-25 12:07:57	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-25 12:07:57	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-25 12:07:57	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-25 12:07:57	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-25 12:07:57	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-25 12:07:57	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-25 12:07:57	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-25 12:07:57	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-25 12:07:57	--	-                               1$ .4P  l$l
+2013-10-25 12:07:57	--	-         |                      ?$$'   l$l                         |
+2013-10-25 12:07:57	--	-        | |                            :$:                        | |
+2013-10-25 12:07:57	--	-      -  |  -                           !                       -  |  -
+2013-10-25 12:07:57	--	-    -- --+-- --                                               -- --+-- --
+2013-10-25 12:07:57	--	-      -  |  -                                                   -  |  -
+2013-10-25 12:07:57	--	-        | |                                                       | |
+2013-10-25 12:07:57	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-25 12:07:57	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-25 12:07:57	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-25 12:07:57	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-25 12:07:57	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-25 12:07:57	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-25 12:07:57	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-25 12:07:57	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-25 12:07:57	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-25 12:07:57	--	-
+2013-10-25 12:07:57	--	-                            ImaginaryNET IRC Network
+2013-10-25 12:07:57	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-25 12:07:57	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-25 12:07:57	--	End of /MOTD command.
+2013-10-27 09:50:27	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-27 09:50:27	--	irc: disconnecting from server...
+2013-10-27 09:50:27	--	irc: disconnected from server
+2013-10-27 09:50:27	--	irc: reconnecting to server in 10 seconds
+2013-10-27 09:50:37	--	irc: reconnecting to server...
+2013-10-27 09:50:37	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-27 09:50:37	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-27 09:50:37	--	*** Processing connection to blip2.net
+2013-10-27 09:50:37	--	*** Looking up your hostname...
+2013-10-27 09:50:37	--	*** Checking Ident
+2013-10-27 09:50:37	--	*** No Ident response
+2013-10-27 09:50:37	--	*** Couldn't look up your hostname
+2013-10-27 09:50:37	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-27 09:50:37	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-27 09:50:37	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-27 09:50:37	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-27 09:50:37	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-27 09:50:37	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-27 09:50:37	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-27 09:50:37	--	There are 28 users and 80 invisible on 5 servers
+2013-10-27 09:50:37	--	14 :IRC Operators online
+2013-10-27 09:50:37	--	73 :channels formed
+2013-10-27 09:50:37	--	I have 31 clients and 3 servers
+2013-10-27 09:50:37	--	31 45 :Current local users 31, max 45
+2013-10-27 09:50:37	--	108 124 :Current global users 108, max 124
+2013-10-27 09:50:37	--	Highest connection count: 48 (45 clients) (1853 connections received)
+2013-10-27 09:50:37	--	- blip2.net Message of the Day -
+2013-10-27 09:50:37	--	-
+2013-10-27 09:50:37	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-27 09:50:37	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-27 09:50:37	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-27 09:50:37	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-27 09:50:37	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-27 09:50:37	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-27 09:50:37	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-27 09:50:37	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-27 09:50:37	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-27 09:50:37	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-27 09:50:37	--	-                               1$ .4P  l$l
+2013-10-27 09:50:37	--	-         |                      ?$$'   l$l                         |
+2013-10-27 09:50:37	--	-        | |                            :$:                        | |
+2013-10-27 09:50:37	--	-      -  |  -                           !                       -  |  -
+2013-10-27 09:50:37	--	-    -- --+-- --                                               -- --+-- --
+2013-10-27 09:50:37	--	-      -  |  -                                                   -  |  -
+2013-10-27 09:50:37	--	-        | |                                                       | |
+2013-10-27 09:50:37	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-27 09:50:37	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-27 09:50:37	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-27 09:50:37	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-27 09:50:38	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-27 09:50:38	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-27 09:50:38	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-27 09:50:38	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-27 09:50:38	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-27 09:50:38	--	-
+2013-10-27 09:50:38	--	-                            ImaginaryNET IRC Network
+2013-10-27 09:50:38	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-27 09:50:38	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-27 09:50:38	--	End of /MOTD command.
+2013-10-29 00:50:23	--	irc: disconnected from server
+2013-10-29 00:52:40	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-29 00:53:40	=!=	irc: timeout
+2013-10-29 00:53:40	--	irc: reconnecting to server in 10 seconds
+2013-10-29 00:53:50	--	irc: reconnecting to server...
+2013-10-29 00:53:50	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-29 00:54:05	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-29 00:54:05	--	*** Processing connection to blip2.net
+2013-10-29 00:54:05	--	*** Looking up your hostname...
+2013-10-29 00:54:05	--	*** Checking Ident
+2013-10-29 00:54:05	--	*** No Ident response
+2013-10-29 00:54:05	--	*** Couldn't look up your hostname
+2013-10-29 00:54:05	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-29 00:54:05	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-29 00:54:05	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-29 00:54:05	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-29 00:54:05	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-29 00:54:05	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-29 00:54:05	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-29 00:54:05	--	There are 30 users and 82 invisible on 5 servers
+2013-10-29 00:54:05	--	14 :IRC Operators online
+2013-10-29 00:54:05	--	73 :channels formed
+2013-10-29 00:54:05	--	I have 32 clients and 3 servers
+2013-10-29 00:54:05	--	32 45 :Current local users 32, max 45
+2013-10-29 00:54:05	--	112 124 :Current global users 112, max 124
+2013-10-29 00:54:05	--	Highest connection count: 48 (45 clients) (1914 connections received)
+2013-10-29 00:54:05	--	- blip2.net Message of the Day -
+2013-10-29 00:54:05	--	-
+2013-10-29 00:54:05	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-29 00:54:05	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-29 00:54:05	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-29 00:54:05	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-29 00:54:05	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-29 00:54:05	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-29 00:54:05	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-29 00:54:05	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-29 00:54:05	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-29 00:54:05	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-29 00:54:05	--	-                               1$ .4P  l$l
+2013-10-29 00:54:05	--	-         |                      ?$$'   l$l                         |
+2013-10-29 00:54:05	--	-        | |                            :$:                        | |
+2013-10-29 00:54:05	--	-      -  |  -                           !                       -  |  -
+2013-10-29 00:54:05	--	-    -- --+-- --                                               -- --+-- --
+2013-10-29 00:54:06	--	-      -  |  -                                                   -  |  -
+2013-10-29 00:54:06	--	-        | |                                                       | |
+2013-10-29 00:54:06	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-29 00:54:06	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-29 00:54:06	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-29 00:54:06	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-29 00:54:06	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-29 00:54:06	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-29 00:54:06	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-29 00:54:06	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-29 00:54:06	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-29 00:54:06	--	-
+2013-10-29 00:54:06	--	-                            ImaginaryNET IRC Network
+2013-10-29 00:54:06	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-29 00:54:06	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-29 00:54:06	--	End of /MOTD command.
+2013-10-29 07:42:56	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-29 07:42:56	--	irc: disconnecting from server...
+2013-10-29 07:42:56	--	irc: disconnected from server
+2013-10-29 07:42:56	--	irc: reconnecting to server in 10 seconds
+2013-10-29 07:43:06	--	irc: reconnecting to server...
+2013-10-29 07:43:06	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-29 07:43:06	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-29 07:43:06	--	*** Processing connection to gl.is
+2013-10-29 07:43:06	--	*** Looking up your hostname...
+2013-10-29 07:43:06	--	*** Checking Ident
+2013-10-29 07:43:06	--	*** No Ident response
+2013-10-29 07:43:06	--	*** Couldn't look up your hostname
+2013-10-29 07:43:06	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-29 07:43:06	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-29 07:43:06	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-29 07:43:06	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-29 07:43:06	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-29 07:43:06	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-29 07:43:06	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-29 07:43:06	--	There are 25 users and 81 invisible on 5 servers
+2013-10-29 07:43:06	--	14 :IRC Operators online
+2013-10-29 07:43:06	--	73 :channels formed
+2013-10-29 07:43:06	--	I have 29 clients and 1 servers
+2013-10-29 07:43:06	--	29 35 :Current local users 29, max 35
+2013-10-29 07:43:06	--	106 124 :Current global users 106, max 124
+2013-10-29 07:43:06	--	Highest connection count: 36 (35 clients) (1464 connections received)
+2013-10-29 07:43:06	--	- gl.is Message of the Day -
+2013-10-29 07:43:06	--	-
+2013-10-29 07:43:06	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-29 07:43:06	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-29 07:43:06	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-29 07:43:06	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-29 07:43:06	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-29 07:43:06	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-29 07:43:06	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-29 07:43:06	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-29 07:43:06	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-29 07:43:06	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-29 07:43:06	--	-                               1$ .4P  l$l
+2013-10-29 07:43:06	--	-         |                      ?$$'   l$l                         |
+2013-10-29 07:43:06	--	-        | |                            :$:                        | |
+2013-10-29 07:43:06	--	-      -  |  -                           !                       -  |  -
+2013-10-29 07:43:06	--	-    -- --+-- --                                               -- --+-- --
+2013-10-29 07:43:06	--	-      -  |  -                                                   -  |  -
+2013-10-29 07:43:06	--	-        | |                                                       | |
+2013-10-29 07:43:06	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-29 07:43:06	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-29 07:43:06	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-29 07:43:06	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-29 07:43:06	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-29 07:43:06	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-29 07:43:06	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-29 07:43:06	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-29 07:43:06	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-29 07:43:06	--	-
+2013-10-29 07:43:06	--	-                            ImaginaryNET IRC Network
+2013-10-29 07:43:06	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-29 07:43:06	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-29 07:43:06	--	-
+2013-10-29 07:43:06	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-29 07:43:06	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-29 07:43:06	--	-
+2013-10-29 07:43:06	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-29 07:43:06	--	End of /MOTD command.
+2013-10-29 22:24:34	--	irc: disconnected from server
+2013-10-29 22:25:25	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-29 22:25:25	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-10-29 22:25:25	--	*** Processing connection to gl.is
+2013-10-29 22:25:25	--	*** Looking up your hostname...
+2013-10-29 22:25:25	--	*** Checking Ident
+2013-10-29 22:25:25	--	*** Couldn't look up your hostname
+2013-10-29 22:25:26	--	*** No Ident response
+2013-10-29 22:25:26	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-29 22:25:26	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-10-29 22:25:26	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-10-29 22:25:26	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-29 22:25:26	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-29 22:25:26	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-29 22:25:26	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-29 22:25:26	--	There are 33 users and 83 invisible on 5 servers
+2013-10-29 22:25:26	--	14 :IRC Operators online
+2013-10-29 22:25:26	--	74 :channels formed
+2013-10-29 22:25:26	--	I have 32 clients and 1 servers
+2013-10-29 22:25:26	--	32 35 :Current local users 32, max 35
+2013-10-29 22:25:26	--	116 124 :Current global users 116, max 124
+2013-10-29 22:25:26	--	Highest connection count: 36 (35 clients) (1493 connections received)
+2013-10-29 22:25:26	--	- gl.is Message of the Day -
+2013-10-29 22:25:26	--	-
+2013-10-29 22:25:26	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-29 22:25:26	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-29 22:25:26	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-29 22:25:26	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-29 22:25:26	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-29 22:25:26	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-29 22:25:26	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-29 22:25:26	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-29 22:25:26	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-29 22:25:26	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-29 22:25:26	--	-                               1$ .4P  l$l
+2013-10-29 22:25:26	--	-         |                      ?$$'   l$l                         |
+2013-10-29 22:25:26	--	-        | |                            :$:                        | |
+2013-10-29 22:25:26	--	-      -  |  -                           !                       -  |  -
+2013-10-29 22:25:26	--	-    -- --+-- --                                               -- --+-- --
+2013-10-29 22:25:26	--	-      -  |  -                                                   -  |  -
+2013-10-29 22:25:26	--	-        | |                                                       | |
+2013-10-29 22:25:26	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-29 22:25:26	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-29 22:25:26	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-29 22:25:26	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-29 22:25:26	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-29 22:25:26	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-29 22:25:26	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-29 22:25:26	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-29 22:25:26	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-29 22:25:26	--	-
+2013-10-29 22:25:26	--	-                            ImaginaryNET IRC Network
+2013-10-29 22:25:26	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-10-29 22:25:26	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-29 22:25:26	--	-
+2013-10-29 22:25:26	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-10-29 22:25:26	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-10-29 22:25:26	--	-
+2013-10-29 22:25:26	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-10-29 22:25:26	--	End of /MOTD command.
+2013-10-29 22:27:01	--	irc: disconnected from server
+2013-10-29 22:27:35	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-29 22:27:35	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-29 22:27:35	--	*** Processing connection to blip2.net
+2013-10-29 22:27:35	--	*** Looking up your hostname...
+2013-10-29 22:27:35	--	*** Checking Ident
+2013-10-29 22:27:35	--	*** No Ident response
+2013-10-29 22:27:35	--	*** Couldn't look up your hostname
+2013-10-29 22:27:36	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-10-29 22:27:36	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-29 22:27:36	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-29 22:27:36	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-29 22:27:36	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-29 22:27:36	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-29 22:27:36	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-29 22:27:36	--	There are 33 users and 83 invisible on 5 servers
+2013-10-29 22:27:36	--	14 :IRC Operators online
+2013-10-29 22:27:36	--	74 :channels formed
+2013-10-29 22:27:36	--	I have 33 clients and 3 servers
+2013-10-29 22:27:36	--	33 45 :Current local users 33, max 45
+2013-10-29 22:27:36	--	116 124 :Current global users 116, max 124
+2013-10-29 22:27:36	--	Highest connection count: 48 (45 clients) (1961 connections received)
+2013-10-29 22:27:36	--	- blip2.net Message of the Day -
+2013-10-29 22:27:36	--	-
+2013-10-29 22:27:36	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-29 22:27:36	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-29 22:27:36	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-29 22:27:36	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-29 22:27:36	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-29 22:27:36	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-29 22:27:36	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-29 22:27:36	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-29 22:27:36	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-29 22:27:36	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-29 22:27:36	--	-                               1$ .4P  l$l
+2013-10-29 22:27:36	--	-         |                      ?$$'   l$l                         |
+2013-10-29 22:27:36	--	-        | |                            :$:                        | |
+2013-10-29 22:27:36	--	-      -  |  -                           !                       -  |  -
+2013-10-29 22:27:36	--	-    -- --+-- --                                               -- --+-- --
+2013-10-29 22:27:36	--	-      -  |  -                                                   -  |  -
+2013-10-29 22:27:36	--	-        | |                                                       | |
+2013-10-29 22:27:36	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-29 22:27:36	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-29 22:27:36	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-29 22:27:36	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-29 22:27:36	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-29 22:27:36	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-29 22:27:36	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-29 22:27:36	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-29 22:27:36	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-29 22:27:36	--	-
+2013-10-29 22:27:36	--	-                            ImaginaryNET IRC Network
+2013-10-29 22:27:36	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-29 22:27:36	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-29 22:27:36	--	End of /MOTD command.
+2013-10-29 23:14:47	--	hamhut|+1: Erroneous Nickname
+2013-10-31 11:02:17	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-10-31 11:02:17	--	irc: disconnecting from server...
+2013-10-31 11:02:17	--	irc: disconnected from server
+2013-10-31 11:02:17	--	irc: reconnecting to server in 10 seconds
+2013-10-31 11:02:27	--	irc: reconnecting to server...
+2013-10-31 11:02:27	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-10-31 11:02:31	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-10-31 11:02:31	--	*** Processing connection to blip2.net
+2013-10-31 11:02:31	--	*** Looking up your hostname...
+2013-10-31 11:02:31	--	*** Checking Ident
+2013-10-31 11:02:31	--	*** No Ident response
+2013-10-31 11:02:31	--	*** Couldn't look up your hostname
+2013-10-31 11:02:31	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut|off
+2013-10-31 11:02:31	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-10-31 11:02:31	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-10-31 11:02:31	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-10-31 11:02:31	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-10-31 11:02:31	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-10-31 11:02:31	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-10-31 11:02:31	--	There are 30 users and 81 invisible on 5 servers
+2013-10-31 11:02:31	--	14 :IRC Operators online
+2013-10-31 11:02:31	--	74 :channels formed
+2013-10-31 11:02:31	--	I have 31 clients and 3 servers
+2013-10-31 11:02:31	--	31 45 :Current local users 31, max 45
+2013-10-31 11:02:31	--	111 124 :Current global users 111, max 124
+2013-10-31 11:02:31	--	Highest connection count: 48 (45 clients) (2017 connections received)
+2013-10-31 11:02:31	--	- blip2.net Message of the Day -
+2013-10-31 11:02:31	--	-
+2013-10-31 11:02:31	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-10-31 11:02:31	--	-       `$$$$$'                                                   7$$   $$P
+2013-10-31 11:02:31	--	-        $$$$                           a$s                        `$&  $$'
+2013-10-31 11:02:31	--	-        $$P                          ,$###$.                       `$& $$
+2013-10-31 11:02:31	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-10-31 11:02:31	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-10-31 11:02:31	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-10-31 11:02:31	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-10-31 11:02:31	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-10-31 11:02:31	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-10-31 11:02:31	--	-                               1$ .4P  l$l
+2013-10-31 11:02:31	--	-         |                      ?$$'   l$l                         |
+2013-10-31 11:02:31	--	-        | |                            :$:                        | |
+2013-10-31 11:02:31	--	-      -  |  -                           !                       -  |  -
+2013-10-31 11:02:31	--	-    -- --+-- --                                               -- --+-- --
+2013-10-31 11:02:31	--	-      -  |  -                                                   -  |  -
+2013-10-31 11:02:31	--	-        | |                                                       | |
+2013-10-31 11:02:31	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-10-31 11:02:31	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-10-31 11:02:31	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-10-31 11:02:31	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-10-31 11:02:32	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-10-31 11:02:32	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-10-31 11:02:32	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-10-31 11:02:32	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-10-31 11:02:32	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-10-31 11:02:32	--	-
+2013-10-31 11:02:32	--	-                            ImaginaryNET IRC Network
+2013-10-31 11:02:32	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-10-31 11:02:32	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-10-31 11:02:32	--	End of /MOTD command.
+2013-10-31 11:29:43	--	Channel Users  Name
+2013-10-31 11:29:43	--	#kitb(1)
+2013-10-31 11:29:43	--	#TenQPA(1)
+2013-10-31 11:29:43	--	#mhnspam(1)
+2013-10-31 11:29:43	--	#inf3(1): Come with us on a mystical journey through time and space (and coursework)!!
+2013-10-31 11:29:43	--	#eufdes(2)
+2013-10-31 11:29:43	--	#lambda(1)
+2013-10-31 11:29:43	--	#colomon(1)
+2013-10-31 11:29:43	--	#london(1): DMZ on the 5th of march
+2013-10-31 11:29:43	--	#forevealone(1)
+2013-10-31 11:29:43	--	#mhn(2)
+2013-10-31 11:29:43	--	#dubstep(1)
+2013-10-31 11:29:43	--	#nfip(1)
+2013-10-31 11:29:43	--	#somestupidradio(1)
+2013-10-31 11:29:43	--	#outside(1): λλλλλλλλλλλλλλλλλλλλλλλλλλλ
+2013-10-31 11:29:43	--	#conx(6)
+2013-10-31 11:29:43	--	#test-awesome(1)
+2013-10-31 11:29:43	--	#camelCaseIsAweSome(8): under_score_case_is_awe_some_too
+2013-10-31 11:29:43	--	#nomed(1)
+2013-10-31 11:29:43	--	#thepanel(1)
+2013-10-31 11:29:43	--	#spoilers(1)
+2013-10-31 11:29:43	--	#chitchat(2)
+2013-10-31 11:29:43	--	#drwho(2)
+2013-10-31 11:29:43	--	#techmeetup(1)
+2013-10-31 11:29:43	--	#ciddermoo(1)
+2013-10-31 11:29:43	--	#mi4(1): Mi4. Yes, Mi4. | In other news Mi3 results out | It's a free country, mostly
+2013-10-31 11:29:43	--	#compsoc-minecraft(1): Compsoc <3 Minecraft
+2013-10-31 11:29:43	--	#fucking-2a(1)
+2013-10-31 11:29:43	--	#fucking-cs(1)
+2013-10-31 11:29:43	--	#sexyteim(1): #sexyteim - Not +s and proud of it! | Warning, not suitable for prudes.
+2013-10-31 11:29:43	--	#webteam(1): Committee changeover-period mentality engaged
+2013-10-31 11:29:43	--	#mi3(1): Maths!
+2013-10-31 11:29:43	--	#TheGame(1)
+2013-10-31 11:29:43	--	#compsoc-committee(1)
+2013-10-31 11:29:43	--	#mi2(1)
+2013-10-31 11:29:43	--	#compsocguys(1): BREAKFAST STEAK!
+2013-10-31 11:29:43	--	#mi1(1)
+2013-10-31 11:29:43	--	#bat-channel(1): BATS! Bats! Bats! Bats! | Yeah, still indulging all your rarr movie-commentary needs. (because that's a thing we all know you have.)
+2013-10-31 11:29:43	--	#at-team(1): In 2011 a crack geek unit was sent to AT by KK for a coursework they had to submit. These men promptly escaped from a minimum security lift to level 5. Today, still wanted by the ITO, they survive as coders of fortune. If you're available, noone else can help, so if you can find them, maybe lend a hand?
+2013-10-31 11:29:43	--	#zombeh(1): Proposed system/setting combos: GURPS/Starcraft, OD&D/Dragon Age, Pathfinder/Dark Sun, Eclipse Phase/Eclipse Phase, Call of Cthulhu/Call of Cthulhu, Mage: OWOD/OWOD.
+2013-10-31 11:29:43	--	#hugteim(1): ALL HUGS ALL THE TEIM
+2013-10-31 11:29:43	--	#cuptiem(1): ALL THE BAGPIPES ALL THE TIME
+2013-10-31 11:29:43	--	#fetsoc(1): Edinburgh FetSoc - not just for students any more!
+2013-10-31 11:29:43	--	#cascaders(6): Wherein knowledge cascades (har har) down from older years to younger ones. Ask/answer away! (Protip: sit in AT5 with a cuddly toy on your monitor if willing to answer there)
+2013-10-31 11:29:43	--	#gw2(3)
+2013-10-31 11:29:43	--	#inf4(2): Weekly trips to the Job Centre will begin next Tuesday.
+2013-10-31 11:29:43	--	#nethack(3)
+2013-10-31 11:29:43	--	#killindoodz(3): Helicopters and jets fell from the heavens above, as if no one on either side of the battle had been trained to operate the vehicles.
+2013-10-31 11:29:43	--	#pst(2)
+2013-10-31 11:29:43	--	#inf2(6): Inf2c-cs, Inf2a and more. Help isn't instant. Wait around
+2013-10-31 11:29:43	--	#zen(3): Scandinavian Hot Chocolates: To be announced! : Just get stuff done, don't stress about it.
+2013-10-31 11:29:43	--	#inf1(15): Share code by pasting it on https://gist.github.com | Ask your question, we are listening. **You may have to wait for an answer.**
+2013-10-31 11:29:43	--	#colo(8): SHUTDOWN HAPPENING: 0100-0300 10/10/11. NEVAR FORGET. Rebooted 02/10/10 for power maintenance | We are acutely aware of the importance of connectivity to a hosting facility.
+2013-10-31 11:29:43	--	#vim(5): vim vim vim vim omg  http://vim-adventures.com/
+2013-10-31 11:29:43	--	#rsspam(9): my buttminal was not wide enough to show all the notifications
+2013-10-31 11:29:43	--	#edlol(4)
+2013-10-31 11:29:43	--	#general(4)
+2013-10-31 11:29:43	--	#geeking(15): 04:17 <@thom> i have sold out and moved to burrito land.
+2013-10-31 11:29:43	--	#aasoc(4): #aasoc - Edinburgh University Anime and Animation Society - http://aasoc.wordpress.com/
+2013-10-31 11:29:43	--	#phd(4): happy autumn
+2013-10-31 11:29:43	--	#sciffy(11): Edinburgh University Science Fiction and Fantasy Society! | www.sciffy.co.uk | Series nights every Thursday, 19:00-21:00, Appleton Tower LT4 | Film nights on Saturdays at 105/7 Buccleuch St. from 20:00
+2013-10-31 11:29:43	--	#gamesoc(12): All hail our new Overlord Tasha
+2013-10-31 11:29:43	--	#imaginary(10): cowu.be needs to run the correct ircd on startup... please delete the config of the old one
+2013-10-31 11:29:43	--	#flatflatflat(1): cheese: you haven't yet changed the boiler clock's time | gas and electricity bill funtimes. ~£48.875 each, to rarr by the 11th of november plx
+2013-10-31 11:29:43	--	#tardis(44): Tardis :: Things are broken after some updates - we're working on it...
+2013-10-31 11:29:43	--	#compsoc(38): COMPSOC <3 YOU (The website lives!) http://comp-soc.com/
+2013-10-31 11:29:43	--	End of /LIST
+2013-11-01 12:39:36	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2013-11-01 12:39:36	--	irc: disconnecting from server...
+2013-11-01 12:39:37	--	irc: disconnected from server
+2013-11-01 12:39:37	--	irc: reconnecting to server in 10 seconds
+2013-11-01 12:39:47	--	irc: reconnecting to server...
+2013-11-01 12:39:47	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-11-01 12:39:48	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-11-01 12:39:48	--	*** Processing connection to gl.is
+2013-11-01 12:39:48	--	*** Looking up your hostname...
+2013-11-01 12:39:48	--	*** Checking Ident
+2013-11-01 12:39:48	--	*** No Ident response
+2013-11-01 12:39:48	--	*** Couldn't look up your hostname
+2013-11-01 12:39:48	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-11-01 12:39:48	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-11-01 12:39:48	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-11-01 12:39:48	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-11-01 12:39:48	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-11-01 12:39:48	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-11-01 12:39:48	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-11-01 12:39:48	--	There are 35 users and 82 invisible on 5 servers
+2013-11-01 12:39:48	--	14 :IRC Operators online
+2013-11-01 12:39:48	--	73 :channels formed
+2013-11-01 12:39:48	--	I have 30 clients and 1 servers
+2013-11-01 12:39:48	--	30 35 :Current local users 30, max 35
+2013-11-01 12:39:48	--	117 124 :Current global users 117, max 124
+2013-11-01 12:39:48	--	Highest connection count: 36 (35 clients) (1562 connections received)
+2013-11-01 12:39:48	--	- gl.is Message of the Day -
+2013-11-01 12:39:48	--	-
+2013-11-01 12:39:48	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-11-01 12:39:48	--	-       `$$$$$'                                                   7$$   $$P
+2013-11-01 12:39:48	--	-        $$$$                           a$s                        `$&  $$'
+2013-11-01 12:39:48	--	-        $$P                          ,$###$.                       `$& $$
+2013-11-01 12:39:48	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-11-01 12:39:48	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-11-01 12:39:48	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-11-01 12:39:48	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-11-01 12:39:48	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-11-01 12:39:48	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-11-01 12:39:48	--	-                               1$ .4P  l$l
+2013-11-01 12:39:48	--	-         |                      ?$$'   l$l                         |
+2013-11-01 12:39:48	--	-        | |                            :$:                        | |
+2013-11-01 12:39:48	--	-      -  |  -                           !                       -  |  -
+2013-11-01 12:39:48	--	-    -- --+-- --                                               -- --+-- --
+2013-11-01 12:39:48	--	-      -  |  -                                                   -  |  -
+2013-11-01 12:39:48	--	-        | |                                                       | |
+2013-11-01 12:39:48	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-11-01 12:39:48	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-11-01 12:39:48	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-11-01 12:39:48	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-11-01 12:39:49	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-11-01 12:39:49	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-11-01 12:39:49	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-11-01 12:39:49	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-11-01 12:39:49	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-11-01 12:39:49	--	-
+2013-11-01 12:39:49	--	-                            ImaginaryNET IRC Network
+2013-11-01 12:39:49	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-11-01 12:39:49	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-11-01 12:39:49	--	-
+2013-11-01 12:39:49	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-11-01 12:39:49	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-11-01 12:39:49	--	-
+2013-11-01 12:39:49	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-11-01 12:39:49	--	End of /MOTD command.
+2013-11-01 18:27:00	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-11-01 18:28:00	=!=	irc: timeout
+2013-11-01 18:28:00	--	irc: reconnecting to server in 10 seconds
+2013-11-01 18:28:10	--	irc: reconnecting to server...
+2013-11-01 18:28:10	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-11-01 18:28:10	--	irc: connected to irc.imaginarynet.org.uk/6667 (37.187.18.114)
+2013-11-01 18:28:11	--	*** Processing connection to gl.is
+2013-11-01 18:28:11	--	*** Looking up your hostname...
+2013-11-01 18:28:11	--	*** Checking Ident
+2013-11-01 18:28:11	--	*** No Ident response
+2013-11-01 18:28:11	--	*** Couldn't look up your hostname
+2013-11-01 18:28:11	--	irc: nickname "hamhut" is already in use, trying nickname "hamhut1"
+2013-11-01 18:28:11	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut1
+2013-11-01 18:28:11	--	Your host is gl.is[37.187.18.114/6667], running version ircd-ratbox-3.0.8
+2013-11-01 18:28:11	--	This server was created Fri Aug 9 2013 at 22:11:41 BST
+2013-11-01 18:28:11	--	gl.is ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-11-01 18:28:11	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-11-01 18:28:11	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-11-01 18:28:11	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-11-01 18:28:11	--	There are 35 users and 82 invisible on 5 servers
+2013-11-01 18:28:11	--	14 :IRC Operators online
+2013-11-01 18:28:11	--	73 :channels formed
+2013-11-01 18:28:11	--	I have 32 clients and 1 servers
+2013-11-01 18:28:11	--	32 35 :Current local users 32, max 35
+2013-11-01 18:28:11	--	117 124 :Current global users 117, max 124
+2013-11-01 18:28:11	--	Highest connection count: 36 (35 clients) (1571 connections received)
+2013-11-01 18:28:11	--	- gl.is Message of the Day -
+2013-11-01 18:28:11	--	-
+2013-11-01 18:28:11	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-11-01 18:28:11	--	-       `$$$$$'                                                   7$$   $$P
+2013-11-01 18:28:11	--	-        $$$$                           a$s                        `$&  $$'
+2013-11-01 18:28:11	--	-        $$P                          ,$###$.                       `$& $$
+2013-11-01 18:28:11	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-11-01 18:28:11	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-11-01 18:28:11	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-11-01 18:28:11	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-11-01 18:28:11	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-11-01 18:28:11	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-11-01 18:28:11	--	-                               1$ .4P  l$l
+2013-11-01 18:28:11	--	-         |                      ?$$'   l$l                         |
+2013-11-01 18:28:11	--	-        | |                            :$:                        | |
+2013-11-01 18:28:11	--	-      -  |  -                           !                       -  |  -
+2013-11-01 18:28:11	--	-    -- --+-- --                                               -- --+-- --
+2013-11-01 18:28:11	--	-      -  |  -                                                   -  |  -
+2013-11-01 18:28:11	--	-        | |                                                       | |
+2013-11-01 18:28:11	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-11-01 18:28:11	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-11-01 18:28:11	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-11-01 18:28:11	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-11-01 18:28:11	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-11-01 18:28:11	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-11-01 18:28:11	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-11-01 18:28:11	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-11-01 18:28:11	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-11-01 18:28:11	--	-
+2013-11-01 18:28:11	--	-                            ImaginaryNET IRC Network
+2013-11-01 18:28:11	--	-           irc.imaginarynet.org.uk  Ports: 6667,6669  SSL: 6000,6697
+2013-11-01 18:28:11	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-11-01 18:28:11	--	-
+2013-11-01 18:28:11	--	-          Nac Mac Feegle!  The Wee Free Men!  Nae king!  Nae quin!
+2013-11-01 18:28:11	--	-            Nae laird!  Nae master!  We willna' be fooled again!
+2013-11-01 18:28:11	--	-
+2013-11-01 18:28:11	--	- http://en.wikipedia.org/wiki/Edible_dormouse
+2013-11-01 18:28:11	--	End of /MOTD command.
+2013-11-03 13:02:10	--	irc: disconnected from server
+2013-11-03 13:26:48	--	irc: connecting to server irc.imaginarynet.org.uk/6667...
+2013-11-03 13:26:48	--	irc: connected to irc.imaginarynet.org.uk/6667 (5.39.84.11)
+2013-11-03 13:26:48	--	*** Processing connection to blip2.net
+2013-11-03 13:26:48	--	*** Looking up your hostname...
+2013-11-03 13:26:48	--	*** Checking Ident
+2013-11-03 13:26:48	--	*** No Ident response
+2013-11-03 13:26:48	--	*** Couldn't look up your hostname
+2013-11-03 13:26:49	--	Welcome to the ImaginaryNet Internet Relay Chat Network hamhut
+2013-11-03 13:26:49	--	Your host is blip2.net[5.39.84.11/6667], running version ircd-ratbox-3.0.7
+2013-11-03 13:26:49	--	This server was created Mon Dec 31 2012 at 23:05:59 GMT
+2013-11-03 13:26:49	--	blip2.net ircd-ratbox-3.0.7 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2013-11-03 13:26:49	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstSr CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:50 MODES=4 NETWORK=ImaginaryNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2013-11-03 13:26:49	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=30 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 :are supported by this server
+2013-11-03 13:26:49	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:1,NOTICE:1,ACCEPT:,MONITOR: :are supported by this server
+2013-11-03 13:26:49	--	There are 32 users and 81 invisible on 5 servers
+2013-11-03 13:26:49	--	14 :IRC Operators online
+2013-11-03 13:26:49	--	75 :channels formed
+2013-11-03 13:26:49	--	I have 32 clients and 3 servers
+2013-11-03 13:26:49	--	32 45 :Current local users 32, max 45
+2013-11-03 13:26:49	--	113 124 :Current global users 113, max 124
+2013-11-03 13:26:49	--	Highest connection count: 48 (45 clients) (2127 connections received)
+2013-11-03 13:26:49	--	- blip2.net Message of the Day -
+2013-11-03 13:26:49	--	-
+2013-11-03 13:26:49	--	-     `$$$$$$$$P'                                               `$$$P `$$$$$'
+2013-11-03 13:26:49	--	-       `$$$$$'                                                   7$$   $$P
+2013-11-03 13:26:49	--	-        $$$$                           a$s                        `$&  $$'
+2013-11-03 13:26:49	--	-        $$P                          ,$###$.                       `$& $$
+2013-11-03 13:26:49	--	-       .$$                     a$$$s `$###$' a$$$s                  `$$$$
+2013-11-03 13:26:49	--	-      .$$              a$$s   aP    $  "$"  !'   `$    a$$s           $$$
+2013-11-03 13:26:49	--	-     s$$l   a$   $s   '    $  $&   .$&     4$     $&  '    $  $a$$s   %$$%
+2013-11-03 13:26:49	--	-   ,$$$$$. $$$$a$$$$ .$$$$$$&  `$$$$$$  i  7$     $P .$$$$$$& 4$' 7' 4$$$$$.
+2013-11-03 13:26:49	--	- ,$$$$$$$l $& `$' 4$ 7$'  `$$      `$P  A   !    $'  7$'  1$$ 7$   ,4$$$$$$$&.
+2013-11-03 13:26:49	--	-            `$ ' $'   `$a$' 7    o  $  :$:            `$a$' 7 '7
+2013-11-03 13:26:49	--	-                               1$ .4P  l$l
+2013-11-03 13:26:49	--	-         |                      ?$$'   l$l                         |
+2013-11-03 13:26:49	--	-        | |                            :$:                        | |
+2013-11-03 13:26:49	--	-      -  |  -                           !                       -  |  -
+2013-11-03 13:26:49	--	-    -- --+-- --                                               -- --+-- --
+2013-11-03 13:26:49	--	-      -  |  -                                                   -  |  -
+2013-11-03 13:26:49	--	-        | |                                                       | |
+2013-11-03 13:26:49	--	-         |           `$$$$$$$P' `$$$$$P'   $$$$$$$$$$$s.           |
+2013-11-03 13:26:49	--	-                       `$$$$$     $$$'   .$$T$$$$$$$$T$$a.
+2013-11-03 13:26:49	--	-      a$$$$Lio,         $$$$$.    $$ ,/   \. `?$$$$'           ,oiL$$$$a
+2013-11-03 13:26:49	--	-     $P     `$$$o.      $$P`$$.  $$ ,#.$"$.#. `$$$l         .o$$$'     P$
+2013-11-03 13:26:49	--	-     '        $$$$$$hss.$$ss`$$.$Pa$#$$   $s#$s$$$:ssssssd$$$$$$        `
+2013-11-03 13:26:49	--	-     .        $$$$$$P".$$'"""`$$$l"$#$$$$$$'#$"$$$$."""""?$$$$$$        .
+2013-11-03 13:26:49	--	-     $s     .$$$*'   $$$|     |$$$  `#q   .#' .$$$$$.       `*$$$.     s$
+2013-11-03 13:26:49	--	-      ?$$$$P!*'    ,$$$$$.   .$$$$,  `\"$"/' .$$$$$$$s.        `*!P$$$$?
+2013-11-03 13:26:49	--	-                  .$$$$$$!. .!$$$$$$.      .$$$$$$$$$$$$s.
+2013-11-03 13:26:49	--	-
+2013-11-03 13:26:49	--	-                            ImaginaryNET IRC Network
+2013-11-03 13:26:49	--	-              irc.imaginarynet.org.uk Ports: 6667,6669 SSL:6000,6679
+2013-11-03 13:26:49	--	-   For help and support join #imaginary or email support@imaginarynet.org.uk
+2013-11-03 13:26:49	--	End of /MOTD command.

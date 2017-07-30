@@ -1,0 +1,27 @@
+[user]
+	name = Hamish Hutchings
+	email = moredhel@aoeu.me
+	signingkey = 4EB572F4
+[alias]
+    co = checkout
+    s = status
+    d = diff --color
+    a = add
+    cm = commit
+    l = log --color
+    b = branch
+    mt = mergetool
+[color]
+	ui = true
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
+[mergetool]
+	prompt = false
+[core]
+	autocrlf = input
+	excludesfile = /Users/moredhel/.gitignore_global
+[push]
+	default = simple
+[rerere]
+	enabled = 1

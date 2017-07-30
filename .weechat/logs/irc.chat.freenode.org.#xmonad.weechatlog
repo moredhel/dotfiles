@@ -1,0 +1,521 @@
+2013-11-04 00:13:18	-->	hamhut1 (~hamhut@188.74.85.230) has joined #xmonad
+2013-11-04 00:13:18	--	Topic for #xmonad is "xmonad: the tiling window manager with formally proven extensions | xmonad 0.11 released!  (changes http://www.haskell.org/haskellwiki/Xmonad/Notable_changes_since_0.10) | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2013-11-04 00:13:18	--	Topic set by aavogt (~aavogt@209.151.139.222) on Tue, 01 Jan 2013 01:35:53
+2013-11-04 00:13:18	--	Nicks #xmonad: [+lambdabot +preflex [Neurotic] \q _1126 _flow_ _retroj a00001 AbiBuccaneer adimit ajn142 albel727 alexander__b AlexanderS amphi And1 andrewsw anekos_ ankan arcke aristid asante asfethan Athas azk b2coutts bartbes Belgarion0 bgamari bogner Bowel brandonw Bruners bxc byorgey codehero CommunistWitchDr creek Dan39 Dashkal davorak_ deebo defragger dmwit dr_bs drbean drewr dropdrive drubin_ dschoepe dustjn dweller edran eean eelco Eimann Elision emid enthropy epta ErhardtMundt ezeike felipe_ fikusz fionnan fizzie floatingman flor FreeFull FrostyX ft funfunctor Fuuzetsu geekosaur gereedy Ghoul_ haasn hamhut1 hamishmack happy0 Hardolaf hvr identity insatsu ISF ivan\ ixian ixti janLo Javafant jdost jdpage jnylen_ joachifm_ joenba7 joko joogi jrib juhp jusa_ k00mi kanzure kekimmo kenyon Khazix Khol kirin` KiSM kmicu Kron Kurostrom kylcarte lazard levi` Liskni_si ljungk Lothario lpaste luksow m3ga MarconM mary5030 MasseR master_o1_master mattp_ mauke mdeboard mendez mephx michaelnorrish milessabin mimi_vx_ mitz mixi ml| MrElendig MrGarlic musicalchair Myk267 n_b Nahra Namegduf Neqoxec nicoo nisstyre noam noplamodo notdan novas0x2a ntelford nuba oahong og01_ OODavo owain p1 p_l Paul-S pdxleif peder pharaun pi8027 pnielsen prattmic rawtass rekahsoft rgr rieper rizumu Rockj rudi_s runde ryanakca ryjm Rylee s4msung saep sdx23 slack1256 slobo Snarlg_ speakman sperber SpiderPig srhb stianhj T_X taihen tessier theDon TheUC threesome thunderrd tkln tlonim Tordek Ulrar upgrayeddd vehk Vq wagle webframp wennergr whaletechno Wieschie wookiehangover worch wting wto yac yenida Yetanothl yosafbridge zakalwe zenoli]
+2013-11-04 00:13:18	--	Channel #xmonad: 215 nicks (0 ops, 2 voices, 213 normals)
+2013-11-04 00:13:20	--	Mode #xmonad [+cnt]
+2013-11-04 00:13:20	--	Channel created on Wed, 25 Apr 2007 05:33:15
+2013-11-04 00:13:29	--	URL for #xmonad: http://xmonad.org
+2013-11-04 00:16:09	<--	luksow (~luke@apn-95-41-22-4.dynamic.gprs.plus.pl) has quit (Quit: Wychodzi)
+2013-11-04 00:16:37	<--	wennergr (~tobias@c-69-181-16-187.hsd1.ca.comcast.net) has quit (Ping timeout: 248 seconds)
+2013-11-04 00:19:15	hamhut1	anyone on? I have an xmonad/dzen2 problem. My  xmonad randomly (I haven't yet found a cause) hangs. The only way to fix it is with a second dzen I have running, I have set a clickable space that does 'killall dzen2 && xmonad --recompile && xmonad --restart'
+2013-11-04 00:20:30	geekosaur	99% of unexpained hangs are covered by http://www.haskell.org/haskellwiki/Xmonad/Frequently_asked_questions#XMonad_stops_but_the_current_window_still_responds_to_keys
+2013-11-04 00:20:46	geekosaur	(unless you use unclutter, in which case it's very likely to involve that)
+2013-11-04 00:21:00	hamhut1	ah, I use unclutter
+2013-11-04 00:21:46	geekosaur	unclutter breaks a whole bunch of rules and can potentially cause any window manager to hang, but xmonad and dwm are especially vulnerable to tripping over it
+2013-11-04 00:21:53	geekosaur	http://www.haskell.org/haskellwiki/Xmonad/Frequently_asked_questions#XMonad_stops_responding_to_keys_.28usually_due_to_unclutter.29
+2013-11-04 00:23:05	hamhut1	perfect, thanks, I was looking for useful logs but couldn't find anything
+2013-11-04 00:30:32	<--	threesome (~threesome@ip-94-113-13-143.net.upcbroadband.cz) has quit (Ping timeout: 260 seconds)
+2013-11-04 00:38:22	<--	mary5030 (~mary5030@107-193-220-128.lightspeed.austtx.sbcglobal.net) has quit (Remote host closed the connection)
+2013-11-04 00:52:55	-->	MuffinMan` (~steve.hol@dh207-76-194.xnet.hr) has joined #xmonad
+2013-11-04 01:11:30	-->	mary5030 (~mary5030@107-193-220-128.lightspeed.austtx.sbcglobal.net) has joined #xmonad
+2013-11-04 01:20:12	-->	wennergr (~tobias@c-69-181-16-187.hsd1.ca.comcast.net) has joined #xmonad
+2013-11-04 01:28:17	--	CommunistWitchDr is now known as CommunistWitchCo
+2013-11-04 01:28:24	--	CommunistWitchCo is now known as CommunistCoonDr
+2013-11-04 01:30:08	--	CommunistCoonDr is now known as CommunistWitchDr
+2013-11-04 01:35:59	-->	herself (herself@k5.unixstorm.org) has joined #xmonad
+2013-11-04 01:51:00	<--	MuffinMan` (~steve.hol@dh207-76-194.xnet.hr) has quit (Quit: sava krpa sava)
+2013-11-04 01:52:16	<--	edran (~edran@cpat001.wlan.net.ed.ac.uk) has quit (Ping timeout: 245 seconds)
+2013-11-04 02:05:19	<--	slack1256 (~slack@181-160-196-154.baf.movistar.cl) has quit (Quit: Konversation terminated!)
+2013-11-04 02:06:17	-->	Paul-S_ (~paul@212-139-42-52.dynamic.dsl.as9105.com) has joined #xmonad
+2013-11-04 02:09:09	<--	Paul-S (~paul@subtle/user/Paul-S) has quit (Ping timeout: 248 seconds)
+2013-11-04 02:11:51	<--	alexander__b (~alexander@fsf/member/alexanderb) has quit (Ping timeout: 252 seconds)
+2013-11-04 02:18:29	<--	ryjm (~ryjm@cpe-98-14-250-73.nyc.res.rr.com) has quit (Ping timeout: 240 seconds)
+2013-11-04 02:33:46	-->	alexander__b (~alexander@107.4.189.109.customer.cdi.no) has joined #xmonad
+2013-11-04 02:47:18	<--	mary5030 (~mary5030@107-193-220-128.lightspeed.austtx.sbcglobal.net) has quit (Remote host closed the connection)
+2013-11-04 02:47:26	<--	ixti (~ixti@84.123.149.236.dyn.user.ono.com) has quit (Ping timeout: 240 seconds)
+2013-11-04 02:48:41	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2013-11-04 02:49:43	<--	wennergr (~tobias@c-69-181-16-187.hsd1.ca.comcast.net) has quit (Ping timeout: 245 seconds)
+2013-11-04 02:53:17	<--	nisstyre (~yours@oftn/member/Nisstyre) has quit (Quit: Leaving)
+2013-11-04 02:56:51	-->	Plouj- (~Plouj@75-119-226-70.dsl.teksavvy.com) has joined #xmonad
+2013-11-04 02:57:12	Plouj-	Just upgraded to Ubuntu Saucy and for some reason mod-space doesn't switch layouts anymore. Any clues?
+2013-11-04 03:03:36	geekosaur	something else is probably grabbing it. I haven't figured out what's grabbing mod-p on my SL6+Xfce yet...
+2013-11-04 03:06:13	Plouj-	Interestingly, other mod-* key combinations still work
+2013-11-04 03:06:25	Plouj-	Which makes me think it's not exactly this problem: http://askubuntu.com/questions/113207/cant-bind-gnome-do-to-super-space-or-ctrlaltspace
+2013-11-04 03:06:28	--	Plouj- is now known as Plouj
+2013-11-04 03:12:35	geekosaur	right, but there are other possibilities. one that comes to mind is that something has grabbed it to switch keyboard layouts or something
+2013-11-04 03:18:20	-->	mary5030 (~mary5030@107-193-220-128.lightspeed.austtx.sbcglobal.net) has joined #xmonad
+2013-11-04 03:37:27	-->	nco71 (~nco71@host-212.139-43-115.dynamic.totalbb.net.tw) has joined #xmonad
+2013-11-04 03:44:38	<--	Kron (~Kron@70.52.162.52) has quit (Quit: Kron awayyyyy!)
+2013-11-04 03:44:55	-->	Kron (~Kron@70.52.162.52) has joined #xmonad
+2013-11-04 03:49:47	<--	MarconM (~Marcelo@unaffiliated/marconm) has quit (Quit: Fui embora)
+2013-11-04 03:58:17	<--	rgr (~user@f054173076.adsl.alicedsl.de) has quit (Read error: Connection reset by peer)
+2013-11-04 03:58:47	-->	rgr (~user@f050183201.adsl.alicedsl.de) has joined #xmonad
+2013-11-04 04:01:39	<--	mary5030 (~mary5030@107-193-220-128.lightspeed.austtx.sbcglobal.net) has quit (Remote host closed the connection)
+2013-11-04 04:16:44	-->	ryjm (~ryjm@cpe-98-14-250-73.nyc.res.rr.com) has joined #xmonad
+2013-11-04 04:18:45	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 248 seconds)
+2013-11-04 04:38:44	-->	mary5030 (~mary5030@107-193-220-128.lightspeed.austtx.sbcglobal.net) has joined #xmonad
+2013-11-04 04:40:55	<--	epta (~yep@toje.ws) has quit (Ping timeout: 265 seconds)
+2013-11-04 04:41:10	-->	epta (~yep@toje.ws) has joined #xmonad
+2013-11-04 04:42:09	-->	wennergr (~tobias@c-69-181-16-187.hsd1.ca.comcast.net) has joined #xmonad
+2013-11-04 04:47:52	<--	mauke (~mauke@p3m/member/mauke) has quit (Disconnected by services)
+2013-11-04 04:48:01	-->	mauke (~mauke@p3m/member/mauke) has joined #xmonad
+2013-11-04 04:48:58	-->	elkorn (~elkorn@89-73-160-72.dynamic.chello.pl) has joined #xmonad
+2013-11-04 04:49:39	-->	preflex_ (~preflex@unaffiliated/mauke/bot/preflex) has joined #xmonad
+2013-11-04 04:49:39	--	Mode #xmonad [+v preflex_] by ChanServ
+2013-11-04 04:51:03	<--	preflex (~preflex@unaffiliated/mauke/bot/preflex) has quit (Ping timeout: 272 seconds)
+2013-11-04 04:51:05	--	preflex_ is now known as preflex
+2013-11-04 04:51:28	<--	ISF (~ivan@201.82.72.64) has quit (Ping timeout: 240 seconds)
+2013-11-04 05:09:27	<--	mary5030 (~mary5030@107-193-220-128.lightspeed.austtx.sbcglobal.net) has quit (Remote host closed the connection)
+2013-11-04 05:10:27	-->	mary5030 (~mary5030@107-193-220-128.lightspeed.austtx.sbcglobal.net) has joined #xmonad
+2013-11-04 05:19:42	<--	mary5030 (~mary5030@107-193-220-128.lightspeed.austtx.sbcglobal.net) has quit (Remote host closed the connection)
+2013-11-04 05:20:49	<--	michaelnorrish (~michaeln@nicta0001201181cb1feff36eb96c.ptr-ipv6.nicta.net) has quit (Quit: Leaving.)
+2013-11-04 05:27:05	<--	Myk267 (~myk@unaffiliated/myk267) has quit (Quit: Myk267)
+2013-11-04 05:38:13	<--	Kron (~Kron@70.52.162.52) has quit (Quit: Kron awayyyyy!)
+2013-11-04 05:38:54	-->	Kron (~Kron@70.52.162.52) has joined #xmonad
+2013-11-04 05:43:37	-->	favonia (~favonia@pool-71-126-46-156.pitbpa.east.verizon.net) has joined #xmonad
+2013-11-04 05:43:38	<--	favonia (~favonia@pool-71-126-46-156.pitbpa.east.verizon.net) has quit (Changing host)
+2013-11-04 05:43:39	-->	favonia (~favonia@pdpc/supporter/student/favonia) has joined #xmonad
+2013-11-04 05:49:02	-->	HuMu (~Huub@197.155.139.50) has joined #xmonad
+2013-11-04 05:49:35	-->	stepnem (~stepnem@internet2.cznet.cz) has joined #xmonad
+2013-11-04 05:53:00	-->	ISF (~ivan@201.82.72.64) has joined #xmonad
+2013-11-04 05:55:10	-->	HuMu_ (~Huub@197.155.139.50) has joined #xmonad
+2013-11-04 05:55:15	<--	favonia (~favonia@pdpc/supporter/student/favonia) has quit (Quit: Leaving)
+2013-11-04 05:55:23	<--	ryjm (~ryjm@cpe-98-14-250-73.nyc.res.rr.com) has quit (Ping timeout: 272 seconds)
+2013-11-04 06:02:36	-->	Myk267 (~myk@unaffiliated/myk267) has joined #xmonad
+2013-11-04 06:13:12	<--	enthropy (~aavogt@CPE00222d67ba9d-CM00222d67ba99.cpe.net.cable.rogers.com) has quit (Quit: WeeChat 0.3.7)
+2013-11-04 06:14:01	<--	HuMu_ (~Huub@197.155.139.50) has quit (Ping timeout: 272 seconds)
+2013-11-04 06:14:10	<--	srhb (~srhb@static.101.127.47.78.clients.your-server.de) has quit (Ping timeout: 245 seconds)
+2013-11-04 06:14:55	-->	srhb (~srhb@static.101.127.47.78.clients.your-server.de) has joined #xmonad
+2013-11-04 06:19:55	<--	preflex (~preflex@unaffiliated/mauke/bot/preflex) has quit (Read error: Operation timed out)
+2013-11-04 06:21:39	<--	mauke (~mauke@p3m/member/mauke) has quit (Read error: Operation timed out)
+2013-11-04 06:22:32	-->	preflex (~preflex@unaffiliated/mauke/bot/preflex) has joined #xmonad
+2013-11-04 06:22:32	--	Mode #xmonad [+v preflex] by ChanServ
+2013-11-04 06:22:55	-->	mauke (~mauke@p3m/member/mauke) has joined #xmonad
+2013-11-04 06:39:55	-->	HuMu_ (~Huub@197.155.139.50) has joined #xmonad
+2013-11-04 06:40:39	-->	ThomasLocke (~ThomasLoc@pdpc/supporter/active/thomaslocke) has joined #xmonad
+2013-11-04 06:51:05	<--	elkorn (~elkorn@89-73-160-72.dynamic.chello.pl) has quit (Remote host closed the connection)
+2013-11-04 06:53:16	-->	nisstyre (~yours@oftn/member/Nisstyre) has joined #xmonad
+2013-11-04 07:08:01	<--	Kron (~Kron@70.52.162.52) has quit (Quit: Kron awayyyyy!)
+2013-11-04 07:10:47	<--	ISF (~ivan@201.82.72.64) has quit (Ping timeout: 240 seconds)
+2013-11-04 07:12:26	-->	yitz (~abba@line236.adsl.actcom.co.il) has joined #xmonad
+2013-11-04 07:15:26	<--	milessabin (~miles@host109-150-91-22.range109-150.btcentralplus.com) has quit (Ping timeout: 245 seconds)
+2013-11-04 07:15:49	<--	srhb (~srhb@static.101.127.47.78.clients.your-server.de) has quit (Ping timeout: 272 seconds)
+2013-11-04 07:16:25	-->	srhb (~srhb@78.47.127.101) has joined #xmonad
+2013-11-04 07:20:53	<--	codehero (codehero@irc.coding4coffee.org) has quit (Ping timeout: 272 seconds)
+2013-11-04 07:23:06	-->	codehero (codehero@irc.coding4coffee.org) has joined #xmonad
+2013-11-04 07:24:15	<--	wennergr (~tobias@c-69-181-16-187.hsd1.ca.comcast.net) has quit (Ping timeout: 246 seconds)
+2013-11-04 07:25:02	<--	HuMu_ (~Huub@197.155.139.50) has quit (Ping timeout: 240 seconds)
+2013-11-04 07:25:32	-->	hoschi (~hoschi@31-17-43-1-dynip.superkabel.de) has joined #xmonad
+2013-11-04 07:26:27	<--	yitz (~abba@line236.adsl.actcom.co.il) has quit (Quit: Lost terminal)
+2013-11-04 07:26:41	<--	HuMu (~Huub@197.155.139.50) has quit (Quit: Lost terminal)
+2013-11-04 07:30:48	<--	FreeFull (~freefull@defocus/sausage-lover) has quit
+2013-11-04 07:37:22	<--	alexander__b (~alexander@107.4.189.109.customer.cdi.no) has quit (Changing host)
+2013-11-04 07:37:22	-->	alexander__b (~alexander@fsf/member/alexanderb) has joined #xmonad
+2013-11-04 07:49:11	-->	simukis_ (~simukis_@78.63.244.234) has joined #xmonad
+2013-11-04 07:51:24	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 07:55:11	<--	simukis_ (~simukis_@78.63.244.234) has quit (Ping timeout: 245 seconds)
+2013-11-04 07:55:50	<--	nisstyre (~yours@oftn/member/Nisstyre) has quit (Ping timeout: 240 seconds)
+2013-11-04 08:01:41	-->	untaken (~untaken@92.60.112.7) has joined #xmonad
+2013-11-04 08:06:04	-->	ryjm (~ryjm@cpe-98-14-250-73.nyc.res.rr.com) has joined #xmonad
+2013-11-04 08:12:31	<--	ryjm (~ryjm@cpe-98-14-250-73.nyc.res.rr.com) has quit (Ping timeout: 245 seconds)
+2013-11-04 08:18:44	<--	mauke (~mauke@p3m/member/mauke) has quit (Disconnected by services)
+2013-11-04 08:18:54	-->	mauke (~mauke@p3m/member/mauke) has joined #xmonad
+2013-11-04 08:19:25	-->	preflex_ (~preflex@unaffiliated/mauke/bot/preflex) has joined #xmonad
+2013-11-04 08:19:25	--	Mode #xmonad [+v preflex_] by ChanServ
+2013-11-04 08:21:01	<--	preflex (~preflex@unaffiliated/mauke/bot/preflex) has quit (Ping timeout: 245 seconds)
+2013-11-04 08:21:12	--	preflex_ is now known as preflex
+2013-11-04 08:32:15	<--	whaletechno (~whaletech@unaffiliated/whaletechno) has quit (Quit: ha det bra)
+2013-11-04 08:39:44	-->	oo_miguel (~miguel@87-207-228-147.dynamic.chello.pl) has joined #xmonad
+2013-11-04 08:41:25	-->	kelnoky (~shao@dslb-088-070-188-107.pools.arcor-ip.net) has joined #xmonad
+2013-11-04 08:44:07	-->	FLHerne (~FLHerne@dsl-217-155-24-22.zen.co.uk) has joined #xmonad
+2013-11-04 08:49:32	-->	simukis_ (~simukis_@gk.mif.vu.lt) has joined #xmonad
+2013-11-04 09:01:31	<--	HuMu (~Huub@196.200.53.13) has quit (Ping timeout: 240 seconds)
+2013-11-04 09:15:15	-->	plotr (~name@unaffiliated/plotr) has joined #xmonad
+2013-11-04 09:17:18	<--	FLHerne (~FLHerne@dsl-217-155-24-22.zen.co.uk) has left #xmonad ("Konversation terminated!")
+2013-11-04 09:18:22	-->	FLHerne (~FLHerne@dsl-217-155-24-22.zen.co.uk) has joined #xmonad
+2013-11-04 09:18:53	<--	funfunctor (~functorfu@101.164.33.212) has quit (Ping timeout: 245 seconds)
+2013-11-04 09:19:35	<--	creek (~creek@unaffiliated/creek) has quit (Ping timeout: 272 seconds)
+2013-11-04 09:20:38	<--	joko (~joko@147.102.37.22) has quit (Ping timeout: 264 seconds)
+2013-11-04 09:23:04	-->	functorfun (~functorfu@101.164.33.212) has joined #xmonad
+2013-11-04 09:23:05	--	functorfun is now known as funfunctor
+2013-11-04 09:27:47	<--	untaken (~untaken@92.60.112.7) has quit (Remote host closed the connection)
+2013-11-04 09:29:32	-->	untaken (~untaken@92.60.112.7) has joined #xmonad
+2013-11-04 09:29:53	<--	rekahsoft (~rekahsoft@135.23.121.235) has quit (Read error: Operation timed out)
+2013-11-04 09:37:28	<--	kelnoky (~shao@dslb-088-070-188-107.pools.arcor-ip.net) has quit (Ping timeout: 240 seconds)
+2013-11-04 09:38:08	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 09:49:11	-->	luksow (~luke@afji248.neoplus.adsl.tpnet.pl) has joined #xmonad
+2013-11-04 09:50:08	<--	simukis_ (~simukis_@gk.mif.vu.lt) has quit (Ping timeout: 240 seconds)
+2013-11-04 09:53:31	<--	mendez (~mendez@electricabac.us) has quit (Ping timeout: 272 seconds)
+2013-11-04 09:57:05	-->	threesome (~threesome@ip-94-113-13-143.net.upcbroadband.cz) has joined #xmonad
+2013-11-04 09:57:35	<--	HuMu (~Huub@196.200.53.13) has quit (Ping timeout: 272 seconds)
+2013-11-04 10:03:13	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 10:08:05	<--	HuMu (~Huub@196.200.53.13) has quit (Ping timeout: 272 seconds)
+2013-11-04 10:08:36	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 10:09:59	<--	levi` (~user@c-174-52-89-43.hsd1.ut.comcast.net) has quit (Ping timeout: 272 seconds)
+2013-11-04 10:13:05	<--	HuMu (~Huub@196.200.53.13) has quit (Ping timeout: 245 seconds)
+2013-11-04 10:22:57	-->	edran (~edran@188.74.74.133) has joined #xmonad
+2013-11-04 10:25:14	<--	stianhj (~stianhj@16.89-11-19.nextgentel.com) has quit (Quit: WeeChat 0.4.2)
+2013-11-04 10:28:33	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 10:29:28	-->	whaletechno (~whaletech@unaffiliated/whaletechno) has joined #xmonad
+2013-11-04 10:29:51	<--	HuMu (~Huub@196.200.53.13) has quit (Remote host closed the connection)
+2013-11-04 10:36:06	-->	creek (~creek@unaffiliated/creek) has joined #xmonad
+2013-11-04 10:48:01	-->	kelnoky (~shao@dslb-088-070-188-107.pools.arcor-ip.net) has joined #xmonad
+2013-11-04 10:48:06	<--	edran (~edran@188.74.74.133) has quit (Ping timeout: 245 seconds)
+2013-11-04 10:49:47	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 10:58:36	-->	joko (~joko@147.102.37.22) has joined #xmonad
+2013-11-04 11:05:50	<--	HuMu (~Huub@196.200.53.13) has quit (Remote host closed the connection)
+2013-11-04 11:07:18	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 11:11:45	Rockj	geekosaur: mod-p on your laptop? could be hardware thingie for "swap to projector" that windows managed to push on manufactors btw.
+2013-11-04 11:12:29	Rockj	but that's easily detectable by xev I think
+2013-11-04 11:21:48	-->	edran (~edran@cpat003.wlan.net.ed.ac.uk) has joined #xmonad
+2013-11-04 11:25:49	-->	ziviani (~ziviani@201-27-159-32.dsl.telesp.net.br) has joined #xmonad
+2013-11-04 11:31:48	-->	simukis_ (~simukis_@88-119-48-95.static.zebra.lt) has joined #xmonad
+2013-11-04 11:41:49	<--	HuMu (~Huub@196.200.53.13) has quit (Ping timeout: 272 seconds)
+2013-11-04 11:41:50	<--	MasseR (~masse@82.192.74.13) has quit (Ping timeout: 240 seconds)
+2013-11-04 11:42:15	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 11:44:47	<--	creek (~creek@unaffiliated/creek) has quit (Quit: See Yal!)
+2013-11-04 11:45:10	-->	creek (~creek@unaffiliated/creek) has joined #xmonad
+2013-11-04 11:46:50	-->	MasseR (~masse@82.192.74.13) has joined #xmonad
+2013-11-04 11:47:39	<--	HuMu (~Huub@196.200.53.13) has quit (Ping timeout: 260 seconds)
+2013-11-04 11:49:39	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 11:53:48	<--	HuMu (~Huub@196.200.53.13) has quit (Ping timeout: 240 seconds)
+2013-11-04 11:54:32	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 11:55:42	Plouj	Oh my! I found exactly what was grabbing super-space for me: the new Text Entry thing. Thankfully it even had an icon in the system tray so I eventually found it and its settings and subsequently disabled its keyboard shortcuts.
+2013-11-04 12:11:28	<--	MasseR (~masse@82.192.74.13) has quit (Ping timeout: 240 seconds)
+2013-11-04 12:12:22	Rockj	geekosaur: I'm btw 99.9% sure it is bug #559 btw regarding gnome/gtk and xmonad
+2013-11-04 12:12:41	Rockj	because if I swap the gtk app outside desktop and back, it redraws correctly
+2013-11-04 12:17:15	-->	MasseR (~masse@82.192.74.13) has joined #xmonad
+2013-11-04 12:18:54	-->	igor- (~igor@200.239.65.110) has joined #xmonad
+2013-11-04 12:22:16	-->	HuMu_ (~Huub@197.155.139.50) has joined #xmonad
+2013-11-04 12:36:33	<--	FLHerne (~FLHerne@dsl-217-155-24-22.zen.co.uk) has quit (Ping timeout: 272 seconds)
+2013-11-04 12:41:23	<--	edran (~edran@cpat003.wlan.net.ed.ac.uk) has quit (Ping timeout: 245 seconds)
+2013-11-04 12:45:00	-->	FLHerne (~FLHerne@dsl-217-155-24-22.zen.co.uk) has joined #xmonad
+2013-11-04 12:45:09	<--	MasseR (~masse@82.192.74.13) has quit (Ping timeout: 272 seconds)
+2013-11-04 12:46:08	-->	edran (~edran@cpat001.wlan.net.ed.ac.uk) has joined #xmonad
+2013-11-04 12:46:34	-->	MasseR (~masse@82.192.74.13) has joined #xmonad
+2013-11-04 12:50:01	<--	HuMu (~Huub@196.200.53.13) has quit (Ping timeout: 245 seconds)
+2013-11-04 12:51:11	-->	elkorn (~elkorn@78.133.254.90) has joined #xmonad
+2013-11-04 12:53:21	<--	MasseR (~masse@82.192.74.13) has quit (Ping timeout: 245 seconds)
+2013-11-04 12:53:57	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 12:54:57	<--	igor- (~igor@200.239.65.110) has quit (Ping timeout: 240 seconds)
+2013-11-04 12:56:05	-->	MasseR (~masse@82.192.74.13) has joined #xmonad
+2013-11-04 12:58:03	<--	untaken (~untaken@92.60.112.7) has quit (Read error: Connection reset by peer)
+2013-11-04 12:59:21	<--	funfunctor (~functorfu@101.164.33.212) has quit (Ping timeout: 245 seconds)
+2013-11-04 12:59:37	-->	untaken (~untaken@92.60.112.7) has joined #xmonad
+2013-11-04 13:00:19	-->	amahon (~andrew@ool-182dace4.dyn.optonline.net) has joined #xmonad
+2013-11-04 13:04:45	-->	igor- (~igor@200.239.65.110) has joined #xmonad
+2013-11-04 13:05:23	-->	yc4891 (~yc4891@58.251.146.202) has joined #xmonad
+2013-11-04 13:06:34	-->	functorfun (~functorfu@101.164.33.212) has joined #xmonad
+2013-11-04 13:06:35	--	functorfun is now known as funfunctor
+2013-11-04 13:07:16	<--	mixi (~mixi@exherbo/developer/mixi) has quit (Ping timeout: 245 seconds)
+2013-11-04 13:07:38	<--	codehero (codehero@irc.coding4coffee.org) has quit (Ping timeout: 245 seconds)
+2013-11-04 13:07:41	<--	haasn (~nand@2a01:4f8:d13:5245::2) has quit (Ping timeout: 245 seconds)
+2013-11-04 13:08:08	-->	codehero (codehero@irc.coding4coffee.org) has joined #xmonad
+2013-11-04 13:09:11	-->	mixi (~mixi@exherbo/developer/mixi) has joined #xmonad
+2013-11-04 13:09:38	-->	haasn (~nand@2a01:4f8:d13:5245::2) has joined #xmonad
+2013-11-04 13:12:50	-->	ixti (~ixti@84.123.149.236.dyn.user.ono.com) has joined #xmonad
+2013-11-04 13:16:48	<--	herself (herself@k5.unixstorm.org) has quit (Ping timeout: 245 seconds)
+2013-11-04 13:23:30	Rockj	geekosaur: funny, gtk3 goes derpderp by just setting wmname to anything else then "null"
+2013-11-04 13:23:35	Rockj	or what the default value is
+2013-11-04 13:51:54	<--	floatingman (~dnewman@c-68-47-207-131.hsd1.tn.comcast.net) has quit (Read error: Connection reset by peer)
+2013-11-04 14:00:33	-->	herself (herself@k5.unixstorm.org) has joined #xmonad
+2013-11-04 14:04:21	<--	edran (~edran@cpat001.wlan.net.ed.ac.uk) has quit (Ping timeout: 248 seconds)
+2013-11-04 14:05:29	<--	thunderrd (~thunderrd@119.42.94.226) has quit (Ping timeout: 272 seconds)
+2013-11-04 14:13:46	<--	elkorn (~elkorn@78.133.254.90) has quit (Remote host closed the connection)
+2013-11-04 14:13:59	<--	yc4891 (~yc4891@58.251.146.202) has quit (Ping timeout: 240 seconds)
+2013-11-04 14:15:17	-->	elkorn (~elkorn@78.133.254.90) has joined #xmonad
+2013-11-04 14:18:28	-->	thunderrd (~thunderrd@119.42.79.250) has joined #xmonad
+2013-11-04 14:19:20	<--	juhp (~petersen@redhat/juhp) has quit (Quit: Ex-Chat)
+2013-11-04 14:26:05	<--	oo_miguel (~miguel@87-207-228-147.dynamic.chello.pl) has quit (Quit: leaving)
+2013-11-04 14:27:57	geekosaur	EwmhDesktops sets it to "xmonad" and gtk3 seems to work fine with that
+2013-11-04 14:28:54	geekosaur	don't use suckless wmname to set it though, that *will* break gtk (it sets the WM window to be the root window instead of creating a dummy window per the EWMH spec)
+2013-11-04 14:33:26	<--	m3ga (~erikd@12.162.78.234) has quit (Ping timeout: 240 seconds)
+2013-11-04 14:36:53	<--	HuMu (~Huub@196.200.53.13) has quit (Ping timeout: 272 seconds)
+2013-11-04 14:39:24	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 14:39:40	<--	simukis_ (~simukis_@88-119-48-95.static.zebra.lt) has quit (Quit: simukis_)
+2013-11-04 14:39:47	<--	ml| (~ml|@unaffiliated/ml/x-3958674) has quit (Quit: WeeChat 0.4.2)
+2013-11-04 14:40:09	-->	ml| (~ml|@unaffiliated/ml/x-3958674) has joined #xmonad
+2013-11-04 14:47:28	Rockj	btw, when spawning xmonad from xsession , doesn't that simple make it my window manager (WM) ? ref https://code.google.com/p/xmonad/issues/detail?id=559#c8
+2013-11-04 14:48:55	Rockj	or is it metacity as it is mentioned in x-window-manager ? hm.
+2013-11-04 14:49:31	geekosaur	I think they're asking about which jvm, not which window manager
+2013-11-04 14:49:36	Rockj	I guess it would be metacity if I haven't had a .xsession.
+2013-11-04 14:49:43	Rockj	oh
+2013-11-04 14:50:15	geekosaur	but .xsession ignores all the gnomey session manager stuff completely (unless you run gnome-session in it) so you're getting the window manager you run in there
+2013-11-04 14:50:58	-->	edran (~edran@cpat001.wlan.net.ed.ac.uk) has joined #xmonad
+2013-11-04 14:51:22	-->	yc4891 (~yc4891@58.251.146.202) has joined #xmonad
+2013-11-04 14:53:01	-->	pmade (~pmade@c-67-177-207-230.hsd1.co.comcast.net) has joined #xmonad
+2013-11-04 14:53:05	geekosaur	beyond versions, there's oracle, openjdk, and IBM's implementation
+2013-11-04 14:53:34	geekosaur	openjdk is the one that plays best with non-reparenting window managers (provided you set the environment variable)
+2013-11-04 14:54:19	geekosaur	IBM's is rather buggy so not very widely used
+2013-11-04 14:54:56	Rockj	yeah, but my experience is that PyCharm only works with JDK1.6 from oracle
+2013-11-04 14:55:09	Rockj	at least earlier it was a known bug with jdk7 and xmonad
+2013-11-04 14:56:24	Rockj	http://absint.online.ntnu.no/~norangsh/scrot/screenshoot-20131104_155551.png
+2013-11-04 14:57:00	Rockj	same result with JDK6 and 7 from Oracle
+2013-11-04 14:57:05	Rockj	and with OpenJDK it just crashes
+2013-11-04 14:58:56	Rockj	geekosaur: I normally run gnome-session with xmonad, and disable the panels so I get gksudo , audio controls etc.
+2013-11-04 14:59:23	Rockj	but atm I'm just trying to get my xmonad up and running as it should with java and normal running of gnome applications
+2013-11-04 14:59:44	Rockj	which means I have to run gnome-settings-daemon or what it is my self to ensure I get some settings the gnome apps is looking for
+2013-11-04 15:00:29	geekosaur	ok. the x-window-manager thing is just gnome declaring its default window manager, except in the display manager session config which is where a gnome+xmonad session would specify that it is using xmonad as the window manager component
+2013-11-04 15:02:24	Rockj	but it looks like #8 have gotten it to work tho, so I'm rather curious now.
+2013-11-04 15:02:52	Rockj	I'll go fetch latest JDK7, incase its fixed in some late late revision of jdk7
+2013-11-04 15:02:54	Rockj	from oracle
+2013-11-04 15:05:23	<--	ziviani (~ziviani@201-27-159-32.dsl.telesp.net.br) has quit (Quit: Quitting)
+2013-11-04 15:08:16	-->	mary5030 (~mary5030@of1-nat2.aus1.rackspace.com) has joined #xmonad
+2013-11-04 15:10:23	-->	cfricke (~cfricke@96.45.197.22) has joined #xmonad
+2013-11-04 15:13:37	-->	rlb (~user@66-90-217-50.dyn.grandenetworks.net) has joined #xmonad
+2013-11-04 15:14:24	rlb	Is there an easy way to add a fixed vertical offset to a "doSideFloat NW"? i.e. "[className =? "Gitk" --> doSideFloat NW]".
+2013-11-04 15:16:28	geekosaur	not as such. but those are really just shortened forms of doFloatDep
+2013-11-04 15:16:48	<--	ErhardtMundt (~Lawrence@host252-173-dynamic.40-79-r.retail.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2013-11-04 15:17:28	geekosaur	where for the NW case it replaces the X and Y offsets in the passed RationalRect with 0.
+2013-11-04 15:17:48	rlb	geekosaur: ok, thanks, should have looked that up.
+2013-11-04 15:21:05	<--	ThomasLocke (~ThomasLoc@pdpc/supporter/active/thomaslocke) has quit (Quit: Leaving)
+2013-11-04 15:21:33	-->	seschwar (~seschwar@unaffiliated/seschwar) has joined #xmonad
+2013-11-04 15:21:48	<--	amahon (~andrew@ool-182dace4.dyn.optonline.net) has quit (Quit: WeeChat 0.4.2)
+2013-11-04 15:27:09	<--	yc4891 (~yc4891@58.251.146.202) has quit (Ping timeout: 265 seconds)
+2013-11-04 15:30:54	<--	epta (~yep@toje.ws) has quit (Quit: leaving)
+2013-11-04 15:34:16	Rockj	bah, google code really needs an edit comment
+2013-11-04 15:34:25	Rockj	if less then 2min since submit
+2013-11-04 15:35:25	<--	edran (~edran@cpat001.wlan.net.ed.ac.uk) has quit (Ping timeout: 245 seconds)
+2013-11-04 15:35:40	Rockj	meh, it works as long as it doesn't get confused with "now it works" as gnome window redraw is still an issue with setWmName or takeTopFocus activated.
+2013-11-04 15:36:23	geekosaur	o.O takeTopFocus should have nothing whatsoever to do with redraw
+2013-11-04 15:36:41	<--	notdan (~h@unaffiliated/notdan) has quit (Ping timeout: 272 seconds)
+2013-11-04 15:37:39	Rockj	it does. I've tried leaving setWMName out of it and only use takeTopFocus... still happens
+2013-11-04 15:39:58	-->	oo_miguel (~miguel@87-207-228-147.dynamic.chello.pl) has joined #xmonad
+2013-11-04 15:40:58	oo_miguel	can I somehow turn off the tiling mode for one of my workspaces?
+2013-11-04 15:41:18	Rockj	geekosaur: https://github.com/norrs/dotfiles/blob/master/dot.xmonad/xmonad.hs  is rather simple as well.
+2013-11-04 15:41:47	-->	notdan (~h@unaffiliated/notdan) has joined #xmonad
+2013-11-04 15:42:04	plotr	oo_miguel: I usually just grab some window with mouse and pull it whenever I like
+2013-11-04 15:42:43	oo_miguel	plotr: It wokrs for me usually. but I have a java-websart window which does not work, I think its some buggy implementation
+2013-11-04 15:43:01	oo_miguel	and the content of the window is not properly displayed under xmonad
+2013-11-04 15:43:11	oo_miguel	while it works in convetnional window managers
+2013-11-04 15:43:37	plotr	ahh, java is always a pain - the for some reason completely fail to follow standards
+2013-11-04 15:43:38	oo_miguel	What if I want the window to initialize in its "desired" dimensions
+2013-11-04 15:44:24	oo_miguel	plotr: Do you think its javas fault? or bad ui design of the app in question?
+2013-11-04 15:44:34	Rockj	oo_miguel: which jvm do you use? and which libgtk3 do you have?
+2013-11-04 15:44:35	plotr	I would try to grab window properties through xprop and add it to exclusion list which gets doFloat by default
+2013-11-04 15:44:53	geekosaur	oo_miguel, java doesn't work quite right with non-reparenting window managers, see http://www.haskell.org/haskellwiki/Xmonad/Frequently_asked_questions#Preferred_Method
+2013-11-04 15:45:13	oo_miguel	Rockj: OpenJDK Runtime Environment (IcedTea 2.3.10) (7u25-2.3.10-1~deb7u1)
+2013-11-04 15:45:45	oo_miguel	i A libgtk-3-0
+2013-11-04 15:46:00	geekosaur	also java doesnt have useful window properties as the AWT exposes no way to set even WM_CLASS much less others
+2013-11-04 15:46:09	geekosaur	(yet another way java is noncompliant with standards)
+2013-11-04 15:46:25	oo_miguel	ill ahve a look at the link geekosaur gave me.
+2013-11-04 15:46:29	oo_miguel	thank you everybody
+2013-11-04 15:46:57	Rockj	oo_miguel: do that, should be an environment variable you should set which openjdk respects and helps the drawing of java ui if I understand it correctly.
+2013-11-04 15:47:09	Rockj	all in the faq. :]
+2013-11-04 15:47:44	geekosaur	that's what I pointed to
+2013-11-04 15:48:09	geekosaur	things would be so much easier if AWT weren't completely derp
+2013-11-04 15:48:26	Rockj	:-/
+2013-11-04 15:48:27	oo_miguel	wow
+2013-11-04 15:48:44	oo_miguel	with _JAVA_AWT_WM_NONREPARENTING=1  it works like a dream :)
+2013-11-04 15:49:02	oo_miguel	I did not believe this will really work ;) thanks a lot again
+2013-11-04 15:50:28	-->	Kron (~Kron@70.52.162.52) has joined #xmonad
+2013-11-04 15:54:14	<--	HuMu (~Huub@196.200.53.13) has quit (Ping timeout: 240 seconds)
+2013-11-04 15:56:25	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 15:57:07	-->	jeapostrophe (~jay@lallab.cs.byu.edu) has joined #xmonad
+2013-11-04 15:57:07	<--	jeapostrophe (~jay@lallab.cs.byu.edu) has quit (Changing host)
+2013-11-04 15:57:07	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2013-11-04 15:57:10	<--	Neqoxec (~Neqoxec@c-24-20-18-151.hsd1.or.comcast.net) has quit (Quit: Lost terminal)
+2013-11-04 15:58:25	<--	KiSM (~KiSM@CPE-121-221-218-104.lns7.pie.bigpond.net.au) has quit (Read error: Connection reset by peer)
+2013-11-04 16:00:34	creek	Is there a way to add somethig like a "desktop" terminal on xmonad? I had the idea that I have somewhat transparent terminals and than I could have a tail -f /var/log/messages or some log in the background so I see whats up.
+2013-11-04 16:01:09	creek	Maybe it'll be too messy..
+2013-11-04 16:01:29	<--	HuMu (~Huub@196.200.53.13) has quit (Ping timeout: 272 seconds)
+2013-11-04 16:01:41	Rockj	geekosaur: icccmfocus with takeTopFocus probably bugs due to it actually do  setWMName "LG3D"
+2013-11-04 16:01:47	Rockj	geekosaur: http://xmonad.org/xmonad-docs/xmonad-contrib/src/XMonad-Hooks-ICCCMFocus.html :-p
+2013-11-04 16:03:06	geekosaur	oh sigh, that should not be doing the setWMName...
+2013-11-04 16:03:25	creek	maybe tail the auth log could be nice to have running on the desktop.
+2013-11-04 16:03:28	geekosaur	didn't we learn better than that (setting it every logHook run) back in 0.9???
+2013-11-04 16:03:46	Rockj	geekosaur: but it mentions about it being merged in issue 177?
+2013-11-04 16:03:53	Rockj	maybe it's depricated stuff , hm
+2013-11-04 16:04:13	geekosaur	no, the setWMname in every loghook was a bug in the original EwmhDesktops
+2013-11-04 16:04:32	geekosaur	apparently we reintroduced it in takeTopFocus, sigh
+2013-11-04 16:05:53	Rockj	https://code.google.com/p/xmonad/issues/detail?id=177#c121
+2013-11-04 16:06:12	Rockj	I should probably remove the import anyway, but #123 at least confirms what my experience have been
+2013-11-04 16:06:22	Rockj	that's it only been working for JDK 1.6 from oracle.
+2013-11-04 16:07:22	Rockj	confusing, I'll remove the import (since takeTopFocus is shipped in contrib if I understand this correctly) and see if it still causes gtk3 being meh.
+2013-11-04 16:07:29	-->	HuMu (~Huub@196.200.53.13) has joined #xmonad
+2013-11-04 16:08:03	geekosaur	oh, if you're running 0.11 you should not use the contrib and takeTopFocus is in core
+2013-11-04 16:08:09	geekosaur	the contrib was only for older versions
+2013-11-04 16:08:26	geekosaur	the core one won't be running setWMName since *that* is also a contrib
+2013-11-04 16:11:09	Rockj	aha.
+2013-11-04 16:11:32	Rockj	if stupid pycharm would just run with openjdk :-/
+2013-11-04 16:19:21	plotr	java - write once, fail everywhere :)
+2013-11-04 16:21:06	mdeboard	Rockj: Are you still having issues?
+2013-11-04 16:21:13	mdeboard	Rockj: I mean, since you last said something
+2013-11-04 16:21:40	Rockj	mdeboard: mhm, don't really have any guess on what to try next.
+2013-11-04 16:21:46	-->	FreeFull (~freefull@defocus/sausage-lover) has joined #xmonad
+2013-11-04 16:21:55	-->	ccokee (~coke@n109132.unileon.es) has joined #xmonad
+2013-11-04 16:22:09	mdeboard	Rockj: I haven't read through all the chat log, are you just having problems getting idea to run without the windows getting all screwy?
+2013-11-04 16:22:31	Rockj	mdeboard: lets see if we can wrap it up in one line for you:
+2013-11-04 16:23:03	-->	amahon (~andrew@38.117.157.37) has joined #xmonad
+2013-11-04 16:23:43	<--	igor- (~igor@200.239.65.110) has quit (Ping timeout: 240 seconds)
+2013-11-04 16:25:07	Rockj	mdeboard: gnome 3.8? doesn't like setWMName and makes all libgtk3 apps having issue with redrawing as mentioned in #559 ( https://code.google.com/p/xmonad/issues/detail?id=559 ). Removing setWMName and your back to basics with how to get java windows with Oracle JVM to draw properly and not turn into grey windows ( http://absint.online.ntnu.no/~norangsh/scrot/screenshoot-20131104_155551.png ) . OpenJDK users
+2013-11-04 16:25:10	Rockj	seems to be able to solve this with the nonreparenting environment variable but that doesn't help me :(
+2013-11-04 16:25:19	-->	ziviani (~ziviani@201-27-159-32.dsl.telesp.net.br) has joined #xmonad
+2013-11-04 16:27:40	mdeboard	Why doesn't it help you?
+2013-11-04 16:27:47	mdeboard	And where did you set it?
+2013-11-04 16:28:24	Rockj	the environment variable is only respected by openjdk, pycharm require oracle jdk
+2013-11-04 16:28:33	mdeboard	Well let me cut to the chase. I put ``export _JAVA_AWT_WM_NONREPARENTING=1`` in the ``idea.sh`` script that comes with idea. This solved the problem for me.
+2013-11-04 16:28:36	mdeboard	Ahh
+2013-11-04 16:28:44	mdeboard	That's a bummer.
+2013-11-04 16:29:00	Rockj	pycharm wont even start with openjdk, I suspect maybe newer version of idea might do the same?
+2013-11-04 16:29:01	mdeboard	pycharm *requires* it or it just tells you there's display issues if you don't use oracle jdk?
+2013-11-04 16:29:05	mdeboard	Damn that's a bummer
+2013-11-04 16:29:18	mdeboard	I just installed latest version last week :\
+2013-11-04 16:29:22	mdeboard	of idea, not pycharm
+2013-11-04 16:29:58	Rockj	Ill try IDEA as well, give me a minute to donwload
+2013-11-04 16:30:29	mdeboard	I get a warning about idea might experience display issues using openjdk but honestly I've never had a problem
+2013-11-04 16:30:30	Rockj	https://gist.github.com/norrs/7305249
+2013-11-04 16:30:48	-->	Alice3 (~Alice@cpc18-grim14-2-0-cust478.12-3.cable.virginm.net) has joined #xmonad
+2013-11-04 16:31:18	Rockj	$ env | grep _JAVA
+2013-11-04 16:31:20	Rockj	_JAVA_AWT_WM_NONREPARENTING=1
+2013-11-04 16:31:34	mdeboard	Try putting it in idea.sh, for real
+2013-11-04 16:32:09	mdeboard	This is assuming you're using idea.sh to launch idea on way or another
+2013-11-04 16:32:51	Rockj	shouldn't matter, it's spawned by the current shell which inherience the env.
+2013-11-04 16:33:08	Rockj	anyhow, I tried it and doesn't work :)
+2013-11-04 16:33:23	mdeboard	bummer
+2013-11-04 16:33:32	mdeboard	I got nothin', sorry
+2013-11-04 16:34:13	mdeboard	I use your selection 0 there (that's the only one I've got installed)
+2013-11-04 16:35:20	Rockj	Exception in thread "main" java.awt.HeadlessException: Unable to detect graphics environment
+2013-11-04 16:35:21	Rockj	wat :S
+2013-11-04 16:35:28	Rockj	I get with idea.
+2013-11-04 16:37:52	Rockj	could be due to systemd? hm
+2013-11-04 16:41:06	Rockj	that error doesn't happen with jdk6 with oracle but still grey windows with idea as well
+2013-11-04 16:41:14	Rockj	s/with/from/
+2013-11-04 16:43:27	-->	simukis_ (~simukis_@78.63.244.234) has joined #xmonad
+2013-11-04 16:46:59	<--	Myk267 (~myk@unaffiliated/myk267) has quit (Ping timeout: 272 seconds)
+2013-11-04 16:47:57	geekosaur	urgh, probably need to get nixnote going in this vm. which means I will probably get my first hand experience with this java issue and possibly the gtk3 conflict...
+2013-11-04 16:49:18	<--	elkorn (~elkorn@78.133.254.90) has quit (Remote host closed the connection)
+2013-11-04 16:53:13	Rockj	geekosaur: digging into it this evening?
+2013-11-04 16:54:04	geekosaur	good question. the VM is for work but not in a direct way, so I'm working on it when I can
+2013-11-04 16:54:57	-->	edran (~edran@cpat001.wlan.net.ed.ac.uk) has joined #xmonad
+2013-11-04 16:57:52	<--	HuMu (~Huub@196.200.53.13) has quit (Quit: Lost terminal)
+2013-11-04 16:59:38	-->	ErhardtMundt (~Lawrence@host252-173-dynamic.40-79-r.retail.telecomitalia.it) has joined #xmonad
+2013-11-04 16:59:48	-->	mendez (~mendez@electricabac.us) has joined #xmonad
+2013-11-04 16:59:50	-->	jetho (~jens@2a00:1230:a7d8:0:218:f3ff:fe93:c732) has joined #xmonad
+2013-11-04 17:09:29	<--	nco71 (~nco71@host-212.139-43-115.dynamic.totalbb.net.tw) has quit (Remote host closed the connection)
+2013-11-04 17:10:36	<--	luksow (~luke@afji248.neoplus.adsl.tpnet.pl) has quit (Quit: Wychodzi)
+2013-11-04 17:10:48	-->	stianhj (~stianhj@16.89-11-19.nextgentel.com) has joined #xmonad
+2013-11-04 17:21:58	Rockj	ok, I'm interessted in solutions for running Oracle JDK at least, hehe ;-)
+2013-11-04 17:23:45	<--	kelnoky (~shao@dslb-088-070-188-107.pools.arcor-ip.net) has quit (Read error: Operation timed out)
+2013-11-04 17:29:51	-->	ryjm (~ryjm@cpe-98-14-250-73.nyc.res.rr.com) has joined #xmonad
+2013-11-04 17:34:10	<--	ryjm (~ryjm@cpe-98-14-250-73.nyc.res.rr.com) has quit (Ping timeout: 245 seconds)
+2013-11-04 17:35:52	-->	elkorn (~elkorn@89-73-160-72.dynamic.chello.pl) has joined #xmonad
+2013-11-04 17:36:37	<--	pi8027 (~pi8027@www2480uf.sakura.ne.jp) has quit (Excess Flood)
+2013-11-04 17:36:59	-->	pi8027 (~pi8027@www2480uf.sakura.ne.jp) has joined #xmonad
+2013-11-04 17:39:19	<--	elkorn (~elkorn@89-73-160-72.dynamic.chello.pl) has quit (Remote host closed the connection)
+2013-11-04 17:40:15	-->	igor- (~igor@200.239.65.110) has joined #xmonad
+2013-11-04 17:42:53	-->	elkorn (~elkorn@89-73-160-72.dynamic.chello.pl) has joined #xmonad
+2013-11-04 17:43:45	-->	ryjm (~ryjm@cpe-98-14-250-73.nyc.res.rr.com) has joined #xmonad
+2013-11-04 17:49:18	<--	creek (~creek@unaffiliated/creek) has quit (Quit: See Yal!)
+2013-11-04 17:50:53	<--	oo_miguel (~miguel@87-207-228-147.dynamic.chello.pl) has quit (Quit: leaving)
+2013-11-04 17:52:39	-->	creek (~creek@unaffiliated/creek) has joined #xmonad
+2013-11-04 17:52:47	<--	creek (~creek@unaffiliated/creek) has quit (Client Quit)
+2013-11-04 17:53:25	-->	tremon (~aschuring@d594e6a3.dsl.concepts.nl) has joined #xmonad
+2013-11-04 17:55:32	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 265 seconds)
+2013-11-04 17:57:46	-->	enthropy (~aavogt@CPE00222d67ba9d-CM00222d67ba99.cpe.net.cable.rogers.com) has joined #xmonad
+2013-11-04 17:59:07	-->	jens (~jens@2a00:1230:a7d8:0:21f:3cff:fea3:72e6) has joined #xmonad
+2013-11-04 17:59:32	--	jens is now known as Guest30514
+2013-11-04 18:01:53	-->	Myk267 (~myk@unaffiliated/myk267) has joined #xmonad
+2013-11-04 18:08:31	-->	Kiryx (~Kiryx@80.50.228.98) has joined #xmonad
+2013-11-04 18:09:04	-->	wennergr (~tobias@209.49.110.163) has joined #xmonad
+2013-11-04 18:17:13	<--	FLHerne (~FLHerne@dsl-217-155-24-22.zen.co.uk) has quit (Ping timeout: 245 seconds)
+2013-11-04 18:21:39	<--	plotr (~name@unaffiliated/plotr) has quit (Quit: Leaving.)
+2013-11-04 18:25:46	<--	Guest30514 (~jens@2a00:1230:a7d8:0:21f:3cff:fea3:72e6) has quit (Quit: WeeChat 0.4.2)
+2013-11-04 18:27:35	-->	jimelcuervo (~alejandro@116.Red-83-39-70.dynamicIP.rima-tde.net) has joined #xmonad
+2013-11-04 18:41:11	<--	simukis_ (~simukis_@78.63.244.234) has quit (Quit: simukis_)
+2013-11-04 18:42:55	<--	igor- (~igor@200.239.65.110) has quit (Quit: WeeChat 0.4.2)
+2013-11-04 18:46:38	-->	jonascj (~jonas@0x4dd5cd09.adsl.cybercity.dk) has joined #xmonad
+2013-11-04 18:47:05	jonascj	Hi all. Can anyone recommend some good xmonad+xmobar color schemes?
+2013-11-04 18:47:12	jonascj	*light color schemes
+2013-11-04 18:50:13	<--	edran (~edran@cpat001.wlan.net.ed.ac.uk) has quit (Ping timeout: 272 seconds)
+2013-11-04 18:52:00	-->	codygman (~cody@dsl081-114-015.dfw1.dsl.speakeasy.net) has joined #xmonad
+2013-11-04 18:57:15	-->	jeapostrophe (~jay@lallab.cs.byu.edu) has joined #xmonad
+2013-11-04 18:57:18	<--	jeapostrophe (~jay@lallab.cs.byu.edu) has quit (Changing host)
+2013-11-04 18:57:18	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2013-11-04 18:58:55	<--	ccokee (~coke@n109132.unileon.es) has quit (Quit: leaving)
+2013-11-04 19:00:25	<--	Plouj (~Plouj@75-119-226-70.dsl.teksavvy.com) has left #xmonad ("oy")
+2013-11-04 19:14:24	<--	kylcarte (~kylcarte@2601:7:700:462:a00:27ff:fe95:4c1c) has quit (Quit: Leaving.)
+2013-11-04 19:14:46	-->	kylcarte (~kylcarte@2601:7:700:462:a00:27ff:fe95:4c1c) has joined #xmonad
+2013-11-04 19:25:27	kmicu	solarized light
+2013-11-04 19:25:36	<--	Kron (~Kron@70.52.162.52) has quit (Quit: Kron awayyyyy!)
+2013-11-04 19:27:22	-->	igor- (~igor@200.239.65.110) has joined #xmonad
+2013-11-04 19:31:00	-->	Neqoxec (~Neqoxec@c-24-20-18-151.hsd1.or.comcast.net) has joined #xmonad
+2013-11-04 19:38:51	-->	novas0x2a|laptop (~mike@womp.fihn.net) has joined #xmonad
+2013-11-04 19:49:28	-->	edran (~edran@188.74.74.19) has joined #xmonad
+2013-11-04 20:11:12	saep	I've written a small (very basic) ~/.Xresources parser that extracts a color scheme. That is then used to start trayer/xmobar with those colors. :x
+2013-11-04 20:13:19	geekosaur	rather than write a parser, there are bindings to the Xrm functions so you can extract them properly
+2013-11-04 20:16:04	<--	enthropy (~aavogt@CPE00222d67ba9d-CM00222d67ba99.cpe.net.cable.rogers.com) has quit (Quit: WeeChat 0.3.7)
+2013-11-04 20:19:34	<--	codygman (~cody@dsl081-114-015.dfw1.dsl.speakeasy.net) has quit (Ping timeout: 245 seconds)
+2013-11-04 20:19:52	jonascj	 kmicu So something like this: http://datamaskinen.medeltiden.org/xmonad-urxvt-emacs-solarized.html ?
+2013-11-04 20:24:44	-->	creek (~creek@unaffiliated/creek) has joined #xmonad
+2013-11-04 20:30:30	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 240 seconds)
+2013-11-04 20:42:38	<--	hoschi (~hoschi@31-17-43-1-dynip.superkabel.de) has quit (Remote host closed the connection)
+2013-11-04 20:46:32	-->	nisstyre (~yours@oftn/member/Nisstyre) has joined #xmonad
+2013-11-04 20:49:08	-->	milessabin (~miles@host109-150-91-22.range109-150.btcentralplus.com) has joined #xmonad
+2013-11-04 20:50:04	<--	cfricke (~cfricke@96.45.197.22) has quit (Quit: leaving)
+2013-11-04 20:54:12	-->	cfricke (~cfricke@96.45.197.22) has joined #xmonad
+2013-11-04 20:55:42	-->	rekahsoft (~rekahsoft@135.23.121.235) has joined #xmonad
+2013-11-04 20:57:50	<--	elkorn (~elkorn@89-73-160-72.dynamic.chello.pl) has quit (Remote host closed the connection)
+2013-11-04 20:58:56	-->	ISF (~ivan@201.82.72.64) has joined #xmonad
+2013-11-04 21:01:08	<--	edran (~edran@188.74.74.19) has quit (Ping timeout: 265 seconds)
+2013-11-04 21:02:48	kmicu	jonascj: yes, but I do not use any borders in my xmonad setup http://screencloud.net//img/screenshots/fa4900e3fa04af4e4238209c180f7807.png
+2013-11-04 21:04:04	-->	FLHerne (~FLHerne@dsl-217-155-24-22.zen.co.uk) has joined #xmonad
+2013-11-04 21:04:15	kmicu	And also most of the time my xmobar is hidden.
+2013-11-04 21:07:50	<--	Kiryx (~Kiryx@80.50.228.98) has quit (Ping timeout: 240 seconds)
+2013-11-04 21:08:11	-->	Kron (~Kron@70.52.162.52) has joined #xmonad
+2013-11-04 21:10:28	<--	Ghoul_ (uid6924@gateway/web/irccloud.com/x-jgnfrphgpoxhicxl) has quit (Remote host closed the connection)
+2013-11-04 21:10:28	<--	Wieschie (uid14247@gateway/web/irccloud.com/x-houyexpyswznbqmd) has quit (Remote host closed the connection)
+2013-11-04 21:14:11	<--	creek (~creek@unaffiliated/creek) has quit (Ping timeout: 252 seconds)
+2013-11-04 21:14:35	<--	igor- (~igor@200.239.65.110) has quit (Ping timeout: 245 seconds)
+2013-11-04 21:15:08	jonascj	Does anyone know how I can check what optoins xmobar was compiled with? I'm in doubht whether or not my xmobar have xft support
+2013-11-04 21:15:12	-->	creek (~creek@unaffiliated/creek) has joined #xmonad
+2013-11-04 21:19:02	<--	upgrayeddd (uid2969@gateway/web/irccloud.com/x-rmjctttgkzpbzelj) has quit (Remote host closed the connection)
+2013-11-04 21:19:49	-->	igor- (~igor@200.239.65.110) has joined #xmonad
+2013-11-04 21:21:57	-->	jeapostrophe (~jay@69.169.141.110.provo.static.broadweavenetworks.net) has joined #xmonad
+2013-11-04 21:21:57	<--	jeapostrophe (~jay@69.169.141.110.provo.static.broadweavenetworks.net) has quit (Changing host)
+2013-11-04 21:21:58	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2013-11-04 21:22:45	<--	[Neurotic] (uid10123@gateway/web/irccloud.com/x-glyzkhwletzhtuzt) has quit (Remote host closed the connection)
+2013-11-04 21:22:45	<--	MrGarlic (uid11626@gateway/web/irccloud.com/x-jlekjduawkwnooth) has quit (Remote host closed the connection)
+2013-11-04 21:27:22	<--	jimelcuervo (~alejandro@116.Red-83-39-70.dynamicIP.rima-tde.net) has quit (Quit: Lost terminal)
+2013-11-04 21:28:21	-->	nomeata (nobody@nomeata.de) has joined #xmonad
+2013-11-04 21:28:50	<--	HuMu_ (~Huub@197.155.139.50) has quit (Quit: Lost terminal)
+2013-11-04 21:30:21	<--	jonascj (~jonas@0x4dd5cd09.adsl.cybercity.dk) has quit (Quit: Lost terminal)
+2013-11-04 21:33:02	-->	floatingman (~dnewman@c-68-47-207-131.hsd1.tn.comcast.net) has joined #xmonad
+2013-11-04 21:37:45	-->	kelnoky (~shao@dslb-088-070-188-107.pools.arcor-ip.net) has joined #xmonad
+2013-11-04 21:38:55	<--	igor- (~igor@200.239.65.110) has quit (Quit: WeeChat 0.4.2)
+2013-11-04 21:40:43	-->	mary5030_ (~mary5030@50.56.230.39) has joined #xmonad
+2013-11-04 21:40:53	<--	mary5030_ (~mary5030@50.56.230.39) has quit (Remote host closed the connection)
+2013-11-04 21:41:29	-->	mary5030_ (~mary5030@72.32.115.231) has joined #xmonad
+2013-11-04 21:41:51	<--	mary5030 (~mary5030@of1-nat2.aus1.rackspace.com) has quit (Ping timeout: 272 seconds)
+2013-11-04 21:44:57	<--	tremon (~aschuring@d594e6a3.dsl.concepts.nl) has quit (Read error: No route to host)
+2013-11-04 21:45:45	-->	tremon (~aschuring@d594e6a3.dsl.concepts.nl) has joined #xmonad
+2013-11-04 21:53:02	<--	FLHerne (~FLHerne@dsl-217-155-24-22.zen.co.uk) has quit (Ping timeout: 264 seconds)
+2013-11-04 21:59:49	-->	sheilong (~sabayonus@unaffiliated/sheilong) has joined #xmonad
+2013-11-04 22:08:23	-->	mary5030 (~mary5030@of1-nat2.aus1.rackspace.com) has joined #xmonad
+2013-11-04 22:10:50	<--	mary5030_ (~mary5030@72.32.115.231) has quit (Ping timeout: 252 seconds)
+2013-11-04 22:11:14	-->	Ghoul_ (uid6924@gateway/web/irccloud.com/x-xqexsouabiraglqk) has joined #xmonad
+2013-11-04 22:12:14	-->	jonascj (~jonas@0x4dd5cd09.adsl.cybercity.dk) has joined #xmonad
+2013-11-04 22:15:03	jonascj	Does anyone know if "xft" and "follow focus" for dmenu works together?
+2013-11-04 22:15:24	<--	ziviani (~ziviani@201-27-159-32.dsl.telesp.net.br) has quit (Quit: Quitting)
+2013-11-04 22:15:36	-->	michaelnorrish (~michaeln@nicta00012011bc4b279de44ffa19.ptr-ipv6.nicta.net) has joined #xmonad
+2013-11-04 22:15:51	<--	stepnem (~stepnem@internet2.cznet.cz) has quit (Ping timeout: 245 seconds)
+2013-11-04 22:16:58	-->	stepnem (~stepnem@internet2.cznet.cz) has joined #xmonad
+2013-11-04 22:19:45	-->	Wieschie (~uid14247@gateway/web/irccloud.com/x-tsjtkwztdguasdqd) has joined #xmonad
+2013-11-04 22:26:25	-->	master_of_master (~master_of@p4FD7B894.dip0.t-ipconnect.de) has joined #xmonad
+2013-11-04 22:26:41	<--	tremon (~aschuring@d594e6a3.dsl.concepts.nl) has quit (Quit: getting boxed in)
+2013-11-04 22:28:26	-->	codygman (~cody@pool-71-252-234-36.dllstx.fios.verizon.net) has joined #xmonad
+2013-11-04 22:28:38	<--	hvr (~hvr@h081217016230.dyn.cm.kabsi.at) has quit (Ping timeout: 240 seconds)
+2013-11-04 22:29:26	<--	master_o1_master (~master_of@p4FF24AA0.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2013-11-04 22:46:00	-->	upgrayeddd (uid2969@gateway/web/irccloud.com/x-vdkhgiounrhavzwt) has joined #xmonad
+2013-11-04 22:55:57	<--	kelnoky (~shao@dslb-088-070-188-107.pools.arcor-ip.net) has quit (Ping timeout: 245 seconds)
+2013-11-04 23:01:32	<--	nomeata (nobody@nomeata.de) has quit (Quit: Client exiting)
+2013-11-04 23:06:20	<--	Alice3 (~Alice@cpc18-grim14-2-0-cust478.12-3.cable.virginm.net) has quit
+2013-11-04 23:07:05	<--	Myk267 (~myk@unaffiliated/myk267) has quit (Ping timeout: 272 seconds)
+2013-11-04 23:07:08	<--	rgr (~user@f050183201.adsl.alicedsl.de) has quit (Remote host closed the connection)
+2013-11-04 23:08:05	-->	hvr (~hvr@h081217016230.dyn.cm.kabsi.at) has joined #xmonad
+2013-11-04 23:15:37	<--	jetho (~jens@2a00:1230:a7d8:0:218:f3ff:fe93:c732) has quit (Quit: WeeChat 0.4.2)
+2013-11-04 23:15:44	<--	mary5030 (~mary5030@of1-nat2.aus1.rackspace.com) has quit (Ping timeout: 252 seconds)
+2013-11-04 23:28:26	<--	hvr (~hvr@h081217016230.dyn.cm.kabsi.at) has quit (Ping timeout: 264 seconds)
+2013-11-04 23:34:08	<--	kylcarte (~kylcarte@2601:7:700:462:a00:27ff:fe95:4c1c) has quit (Quit: Leaving.)
+2013-11-04 23:34:25	-->	kylcarte (~kylcarte@2601:7:700:462:a00:27ff:fe95:4c1c) has joined #xmonad

@@ -1,0 +1,41 @@
+2013-11-01 21:17:21	-->	hamhut1 (~hamhut@188.74.85.230) has joined #netflix-desktop
+2013-11-01 21:17:21	--	Topic for #netflix-desktop is "Welcome to #Netflix-Desktop! We'll help you out if we can.  For official support please go to: https://bugs.launchpad.net/netflix-desktop For information about the Netflix Desktop App for Ubuntu please go to http://www.iheartubuntu.com/2012/11/ppa-for-netflix-desktop-app.html New release available in the PPA to address frame rate issues!"
+2013-11-01 21:17:21	--	Topic set by OpenSorce (~opensorce@216.47.200.235) on Thu, 20 Dec 2012 10:06:17
+2013-11-01 21:17:21	--	Nicks #netflix-desktop: [@ChanServ anish hamhut1 jrabbit MostEvilRoey]
+2013-11-01 21:17:21	--	Channel #netflix-desktop: 5 nicks (1 op, 0 voices, 4 normals)
+2013-11-01 21:17:23	--	Mode #netflix-desktop [+cnt]
+2013-11-01 21:17:24	--	Channel created on Mon, 26 Nov 2012 08:20:06
+2013-11-01 21:17:27	--	You are now known as hamhut
+2013-11-01 21:18:33	hamhut	anish, just installed your package from the aur and am having problems with loading videos. I'll give you a rundown of what I did.
+2013-11-01 21:19:38	anish	sure
+2013-11-01 21:19:45	hamhut	I installed using yaourt from the aur. everything installed smoothly.
+2013-11-01 21:20:10	anish	ok, you get netflix-desktop installed fine too I guess ?
+2013-11-01 21:20:27	hamhut	yeah, it starts up with netflix-desktop
+2013-11-01 21:20:32	hamhut	with one error
+2013-11-01 21:20:33	hamhut	Failed to open connection to "session" message bus: Failed to connect to socket /tmp/dbus-TbcK0r8GtZ: Connection refused
+2013-11-01 21:21:07	hamhut	don't know how important that is... But I tried running with root too, I get the same error
+2013-11-01 21:21:33	hamhut	(I'll give you the error code now)
+2013-11-01 21:22:04	hamhut	So when I load a movie, it shows a netflix page with a loading bar which stops at 4%
+2013-11-01 21:22:45	hamhut	then  a grey screen pops up saying that 'something went wrong' with error code 'N8102-106'
+2013-11-01 21:25:23	anish	hamhut: so N8102-106 is actually a network error for netflix
+2013-11-01 21:25:31	anish	have you tried running the silverlight test first /
+2013-11-01 21:27:43	hamhut	nope, how would I do that?
+2013-11-01 21:28:31	anish	hamhut: http://bubblemark.com/sl3/TestPage.html
+2013-11-01 21:29:46	hamhut	okay, I have bubbles, it seems to be working
+2013-11-01 21:33:43	hamhut	I'm looking in the settings for silverlight and it's only allowing a 1mb quota for netflix... is there a way to change this or does it not matter?
+2013-11-01 21:34:40	anish	doesn't matter
+2013-11-01 21:34:53	anish	more of a bandwidth issue I think
+2013-11-01 21:35:00	anish	maybe reset the modem ?
+2013-11-01 21:35:21	anish	basically, if silverlight is up and running, the issue is not from netflix-desktop
+2013-11-01 21:37:11	hamhut	okay, I'll try a computer reboot, It might be my crappy isp I haven't got it working in a vm either, but that's because my computer can hardly run windows in a vm in the first place
+2013-11-01 21:37:31	hamhut	okay, I'll have a fiddle
+2013-11-01 21:44:03	anish	run a speedtest inside the n-d firefox
+2013-11-01 21:58:09	hamhut	okay, just need to install flash
+2013-11-01 22:04:08	hamhut	am having trouble installing flash for wine... shouldn't I just be able to got to adobe.com and install from there?
+2013-11-01 22:06:30	hamhut	nvm, found an html5 one
+2013-11-01 22:07:21	hamhut	1 mbps, should be around 30... but that should be enough I think
+2013-11-01 22:07:33	anish	1 seems dicey for netflix
+2013-11-01 22:09:18	hamhut	okay, but it should still be able to start streaming I think, I'll try again in a little bit. see if it helps when people go to sleep
+2013-11-01 22:39:11	anish	so you  _should_ be able to if you follow this https://support.netflix.com/en/node/306
+2013-11-01 23:20:38	hamhut	okay thanks, will have a look at it
+2013-11-03 13:02:10	--	irc: disconnected from server

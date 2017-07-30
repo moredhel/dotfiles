@@ -1,0 +1,13 @@
+DEBS_avail
+*~
+xmonad-i386-linux
+.oh-my-zsh/cache/*
+.emacs.d/elpa
+.emacs.d/.emacs.desktop*
+.emacs.d/.python-environments
+.emacs.d/ac-comphist.dat
+.emacs.d/notes
+.emacs.d/todo
+.emacs.d/snippets
+.emacs.d/tramp
+.emacs.d/url
