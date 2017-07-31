@@ -1,9 +1,6 @@
-with import <nixpkgs> {};
-stdenv.mkDerivation rec {
-  name = "env";
-  env = buildEnv { name = name; paths = buildInputs; };
-  buildInputs = [
-    emacs
-    git
-  ];
-}
+with import <nixpkgs> {}; { inherit nix
+emacs
+git
+jq
+mu
+;}

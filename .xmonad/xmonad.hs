@@ -270,7 +270,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   , ((modm, xK_period), sendMessage (IncMasterN (-1)))
 
   -- Open Dmenu
-  , ((modm, xK_p), spawn "rofi -combi-modi window,drun -show combi -modi combi")
+  , ((modm, xK_p), spawn "rofi -combi-modi window,drun,run -show combi -modi combi")
 
   , ((modm .|. shiftMask, xK_q), io (exitWith ExitSuccess)) -- Quit xmonad.
 
