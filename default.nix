@@ -3,4 +3,5 @@ emacs
 git
 jq
 mu
+ag
 ;}
