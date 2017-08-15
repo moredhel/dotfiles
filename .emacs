@@ -10,6 +10,10 @@
   (package-install 'use-package))
 
 
+;; non-specific functionality
+(setq vc-follow-symlinks t)
+(load-theme 'whiteboard)
+
 ;; custom functions & variables
 (let ((mu4epath
        (concat
@@ -30,6 +34,9 @@
 (use-package mu4e
   :no-require t
   :config
+  (setq user-full-name "Hamish Hutchings")
+  (setq user-mail-address "hamish@aoeu.me")
+  (setq message-kill-buffer-on-exit t)
   (setq mu4e-change-filenames-when-moving t)
   (setq mu4e-compose-format-flowed t)
   (setq mu4e-headers-date-format "%Y-%m-%d %H:%M")
@@ -49,13 +56,14 @@
        (:from          .  22)
        (:subject       .  nil))) ;; alternatively, use :thread-subject
   (setq mu4e-get-mail-command "mbsync -aq")
-  (setq message-kill-buffer-on-exit t))
+  (setq message-kill-buffer-on-exit t)
+  (add-to-list 'mu4e-view-actions '("ViewInBrowser" . mu4e-action-view-in-browser) t))
 
-(use-package solarized-theme
-  :ensure t
-  :no-require t
-  :config
-  (load-theme 'solarized-dark t))
+;; (use-package solarized-theme
+;;   :ensure t
+;;   :no-require t
+;;   :config
+;;   (load-theme 'solarized-dark t))
 
 (use-package magit
   :ensure t)
@@ -66,7 +74,7 @@
 (use-package evil-leader
   :ensure t
   :config
-  (global-evil-leader-mode)
+  (global-evil-leader-mode t)
   (evil-leader/set-leader "<SPC>")
   (evil-leader/set-key
     "Bd"  'evil-delete-buffer
@@ -74,12 +82,17 @@
     "b"  'helm-buffers-list
     "kb" 'kill-buffer
     "gs" 'magit-status
+
+    ;; org
     "mp" 'org-mobile-push
     "mg" 'org-mobile-pull-switch
     "r"  'org-capture
     "cj" 'org-clock-goto
+
+    ;; mail
+    "mc" 'mu4e-compose-new
     "mm" 'mu4e
-    "mU" 'mu4e-update-mail-and-index)
+    "mU" 'mu4e-update-mail-and-index))
 
 (use-package evil
   :ensure t
@@ -93,6 +106,21 @@
 (use-package find-file-in-project)
 (use-package idle-highlight-mode :ensure t)
 
+
+(use-package org-mu4e
+  :config
+  (setq org-mu4e-link-query-in-headers-mode nil)
+  (setq org-capture-templates
+        '(
+          ;; default todo
+          ("t" "todo" entry (file+headline "~/org/notes.org" "Tasks")
+           "* TODO %?\n%a\n")
+          ;; custom todo for emails
+          ("m" "mail" entry (file+headline "~/org/notes.org" "Tasks")
+           "* TODO %? :mail:
+            SCHEDULED: %(org-insert-time-stamp(org-read-date nil t \"+0d\"))
+            %a"))))
+
 (use-package org
   :config
   (global-set-key "\C-cl" 'org-store-link)
@@ -103,6 +131,8 @@
   ;; org-mode generic
   (setq org-default-notes-file "~/org/notes.org")
   ;; (setq org-agenda-files '("~/org"))
+  (setq org-agenda-window-setup 'only-window)
+  (setq org-agenda-skip-scheduled-if-done t)
   (setq org-agenda-start-on-weekday 0) ;; change start day to Sunday
   (setq org-agenda-files '("~/org/notes.org"
                            "~/org/life.org"
@@ -122,13 +152,25 @@
   (setq org-todo-keywords
         '((sequence "TODO" "DOING" "|" "DONE" "DELEGATED")))
 
+  (setq org-stuck-projects
+        (quote
+         ("+project/-DONE"
+          ("DOING")
+          ("unstick")
+          "")))
+
   ;; custom agenda filters
   (setq org-agenda-custom-commands
-        '(("w" tags "+work")
-          ("tw" tags-todo "+work")
-          ("rw" tags-tree "+work")
-          ("W" tags "-work")
-          ("tW" tags-todo "-work")))
+        '(("ph" tags-todo "+PRIORITY={A}"
+           ((org-agenda-overriding-header "High Priority")))
+          ;; Show all tags that need to be done
+          ;; of a higher level
+          ("wH" tags-todo "LEVEL<3+work"
+           ((org-agenda-overriding-header "Overview")))
+          ("tw" tags-todo "+work"
+           ((org-agenda-overriding-header "Work")))
+          ("tW" tags-todo "-work"
+           ((org-agenda-overriding-header "Non-Work")))))
 
   ;; setup org-mobile stuffs!
   (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg/")
@@ -190,14 +232,23 @@
   (add-hook 'yaml-mode-hook
             (lambda ()
               (define-key yaml-mode-map "\C-m" 'newline-and-indent))))
+
+(use-package nix-mode
+  :no-require t)
+
+(use-package dockerfile-mode
+  :no-require t)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(package-selected-packages
    (quote
-    (enh-ruby-mode nix-mode notmuch yaml-mode use-package swiper solarized-theme smex scpaste rust-mode paredit org-mobile-sync org-bullets markdown-mode magit ido-ubiquitous idle-highlight-mode helm find-file-in-project evil-leader better-defaults))))
+    (dockerfile-mode org-evil evil-org enh-ruby-mode nix-mode notmuch yaml-mode use-package swiper solarized-theme smex scpaste rust-mode paredit org-mobile-sync org-bullets markdown-mode magit ido-ubiquitous idle-highlight-mode helm find-file-in-project evil-leader better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
