@@ -1,7 +1,11 @@
 with import <nixpkgs> {}; { inherit nix
+ag
 emacs
 git
+htop
 jq
 mu
-ag
+nox
+pigz
+postfix
 ;}

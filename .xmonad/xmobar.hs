@@ -23,10 +23,10 @@ Config { font = "-misc-fixed-*-*-*-*-13-*-*-*-*-*-*-*"
 			    -- charged status
 			    , "-i"	, "<fc=#006000>Charged</fc>"
 			    ] 50
-                    , Run Com "/data/bin/hit-count.sh" [] "cache" 600
+                    , Run Com "/data/bin/email.sh" [] "msgs" 300
                     , Run StdinReader
        ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }  <fc=darkorange>%date%</fc> { %dynnetwork% (<fc=darkorange>%cache%</fc>) | %cpu% | Mem: %memory% | %battery%"
+       , template = "%StdinReader% }  <fc=darkorange>%date%</fc> | %msgs% { %dynnetwork% | %cpu% | Mem: %memory% | %battery%"
        }
