@@ -26,6 +26,11 @@
          (file-directory-p mu4epath))
     (add-to-list 'load-path mu4epath)))
 
+(defun my-org-mobile-push ()
+  (interactive)
+  (org-mobile-push)
+  (org-icalendar-combine-agenda-files))
+
 (defun org-mobile-pull-switch ()
   (interactive)
   (org-mobile-pull)
@@ -79,12 +84,15 @@
   (evil-leader/set-key
     "Bd"  'evil-delete-buffer
     "w"  'save-buffer
-    "b"  'helm-buffers-list
+    "bb"  'helm-buffers-list
+    "bs"  #'(lambda () (message "Enable me *scratch*"))
+    "oo"  'other-frame
     "kb" 'kill-buffer
     "gs" 'magit-status
+    "/"  'helm-projectile-ag
 
     ;; org
-    "mp" 'org-mobile-push
+    "mp" 'my-org-mobile-push
     "mg" 'org-mobile-pull-switch
     "r"  'org-capture
     "cj" 'org-clock-goto
@@ -92,7 +100,7 @@
     ;; mail
     "mc" 'mu4e-compose-new
     "mm" 'mu4e
-    "mU" 'mu4e-update-mail-and-index))
+    "mU" 'mu4e-update-mail-and-index)
 
 (use-package evil
   :ensure t
@@ -129,6 +137,7 @@
   (global-set-key "\C-cb" 'org-iswitchb)
 
   ;; org-mode generic
+  (setq org-icalendar-combined-agenda-file "~/Dropbox/Apps/MobileOrg/org.ics")
   (setq org-default-notes-file "~/org/notes.org")
   ;; (setq org-agenda-files '("~/org"))
   (setq org-agenda-window-setup 'only-window)
@@ -156,13 +165,19 @@
         (quote
          ("+project/-DONE"
           ("DOING")
-          ("unstick")
+          ("unstick"
+           "onhold"
+           "actionable")
           "")))
+
+  (setq org-tags-exclude-from-inheritance '("project"))
 
   ;; custom agenda filters
   (setq org-agenda-custom-commands
         '(("ph" tags-todo "+PRIORITY={A}"
            ((org-agenda-overriding-header "High Priority")))
+          ("pp" tags-todo "+project"
+           ((org-agenda-overriding-header "Projects")))
           ;; Show all tags that need to be done
           ;; of a higher level
           ("wH" tags-todo "LEVEL<3+work"
@@ -212,10 +227,32 @@
   (helm-mode)
   (global-set-key (kbd "M-x") 'helm-M-x))
 
+(use-package helm-ag
+  :ensure t)
+
+(use-package helm-projectile
+  :ensure t
+  :config
+  (setq projectile-completion-system 'helm)
+  (helm-projectile-on))
+
+(use-package projectile
+  :ensure t
+  :config
+  (projectile-global-mode))
+
+(use-package autocomplete
+  :ensure t
+  :config
+  (ac-config-default)
+  (global-auto-complete-mode))
+
 ;; start the server
 ;; (server-start)
 
 ;; language specific configs
+(use-package go-mode
+  :no-require t)
 
 (use-package markdown-mode
   :ensure t
@@ -243,12 +280,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(package-selected-packages
    (quote
-    (dockerfile-mode org-evil evil-org enh-ruby-mode nix-mode notmuch yaml-mode use-package swiper solarized-theme smex scpaste rust-mode paredit org-mobile-sync org-bullets markdown-mode magit ido-ubiquitous idle-highlight-mode helm find-file-in-project evil-leader better-defaults))))
+    (helm-ag helm-projectile projectile auto-complete go-mode go yaml-mode use-package swiper solarized-theme smex scpaste rust-mode paredit org-mobile-sync org-evil org-bullets notmuch nix-mode markdown-mode magit ido-ubiquitous idle-highlight-mode helm find-file-in-project evil-leader enh-ruby-mode dockerfile-mode better-defaults)))
+ '(send-mail-function (quote sendmail-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
