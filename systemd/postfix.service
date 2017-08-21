@@ -1,0 +1,17 @@
+[Unit]
+Description=Postfix Mail Transport Agent
+After=syslog.target network.target
+Conflicts=sendmail.service exim.service
+
+[Service]
+Type=forking
+# PIDFile=/var/spool/postfix/pid/master.pid
+# EnvironmentFile=-/etc/sysconfig/network
+# ExecStartPre=-/usr/libexec/postfix/aliasesdb
+# ExecStartPre=-/usr/libexec/postfix/chroot-update
+ExecStart=/home/moredhel/.nix-profile/bin/postfix start
+ExecReload=/home/moredhel/.nix-profile/bin/postfix reload
+ExecStop=/home/moredhel/.nix-profile/bin/postfix stop
+
+[Install]
+WantedBy=multi-user.target
