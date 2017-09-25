@@ -2,6 +2,8 @@
 -- Author: Vic Fryzel
 -- http://github.com/vicfryzel/xmonad-config
 
+module Main (main) where
+
 import Control.Monad (liftM2)
 import System.IO
 import System.Exit
@@ -10,6 +12,7 @@ import XMonad.Actions.CopyWindow --check
 import XMonad.Actions.CycleWS --check
 import XMonad.Actions.UpdatePointer
 import XMonad.Actions.Warp
+import XMonad.Config.Desktop
 import Graphics.X11.ExtraTypes.XF86
 import XMonad.Hooks.DynamicLog --check
 import XMonad.Hooks.EwmhDesktops --check
@@ -17,13 +20,17 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers --check
 import XMonad.Hooks.Script
 import XMonad.Hooks.SetWMName
+import XMonad.Layout.BinarySpacePartition (emptyBSP)
 import XMonad.Layout.Fullscreen --check
 import XMonad.Layout.NoBorders --check
+import XMonad.Layout.ResizableTile (ResizableTall(..))
 import XMonad.Layout.Spiral --check
 import XMonad.Layout.Tabbed --check
 import XMonad.Layout.ThreeColumns --check
+import XMonad.Layout.ToggleLayouts (ToggleLayout(..), toggleLayouts)
 import XMonad.Layout.Spacing --check
 import XMonad.Prompt
+import XMonad.Prompt.ConfirmPrompt
 import XMonad.Prompt.RunOrRaise
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig
@@ -33,17 +40,22 @@ import qualified Data.Map        as M
 
 
 -- Terminal
-myTerminal = "urxvtcd"
+myTerminal = "gnome-terminal"
 
 
 scratchpads = [
-	NS "term" "xfce4-terminal --role=scratchpad" (role =? "scratchpad") (customFloating $ W.RationalRect (1/12) (1/12) (5/6) (5/6)),
+	NS "term" "gnome-terminal --role irc -- weechat" (role =? "irc") (customFloating $ W.RationalRect (1/12) (1/12) (5/6) (5/6)),
 	NS "irc" "xfce4-terminal --role=irc" (role =? "irc") (customFloating $ W.RationalRect (1/12) (1/12) (5/6) (5/6)),
 	NS "applaunch" "xfce4-appfinder -c" (title =? "Application Finder") defaultFloating ,
 	NS "notes" "gvim --role notes ~/Dropbox/notes/notes.otl" (role =? "notes") (customFloating $ W.RationalRect (0) (1/20) (2/4) (9/10))]
 		where role = stringProperty "WM_WINDOW_ROLE"
 
-
+myXPConfig = def
+  { position          = Top
+  , alwaysHighlight   = True
+  , promptBorderWidth = 0
+  , font              = "xft:monospace:size=9"
+  }
 
 ------------------------------------------------------------------------
 -- Workspaces
@@ -126,14 +138,17 @@ myManageHook = composeAll
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 --
-myLayout = avoidStruts
-    myTiled |||
-    Tall 1 (3/100) (3/10) |||
+-- myLayout = avoidStruts
+    -- myTiled |||
+    -- Tall 1 (3/100) (3/10) |||
     -- Tall 1 (100/100) (1/2) |||
-    Mirror (Tall 1 (3/100) (1/2)) |||
-    noBorders (fullscreenFull Full)
+    -- Mirror (Tall 1 (3/100) (1/2)) |||
+    -- noBorders (fullscreenFull Full)
 
-myTiled = Tall 1 (3/100) (3/5) -- (6/7)
+-- myTiled = Tall 1 (3/100) (3/5) -- (6/7)
+myLayout = toggleLayouts (noBorders Full) others
+  where
+    others = avoidStruts $ ResizableTall 1 (1.5/100) (3/5) [] ||| (avoidStruts $ emptyBSP)
 
 ------------------------------------------------------------------------
 -- Colors and borders
@@ -181,7 +196,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   [ ((modm .|. shiftMask, xK_Return),	 spawn $ XMonad.terminal conf)
 
   -- Lock the screen using xscreensaver.
-  , ((modm .|. controlMask, xK_l), spawn "dm-tool lock")
+  , ((modm .|. controlMask, xK_l), spawn "xautolock -locknow")
 
   -- Launch dmenu via yeganesh.
   -- Use this to launch programs without a key binding.
@@ -200,7 +215,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   , ((modm .|. controlMask .|. shiftMask, xK_p), spawn "screenshot")
 
   -- Play/Pause mpd
-  , ((modm , xK_a), spawn "mpc toggle")
+  -- , ((modm , xK_a), spawn "mpc toggle")
 
   , ((0 , xK_F1), namedScratchpadAction scratchpads "term")
 
@@ -272,12 +287,14 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   -- Open Dmenu
   , ((modm, xK_p), spawn "rofi -combi-modi window,drun,run -show combi -modi combi")
 
-  , ((modm .|. shiftMask, xK_q), io (exitWith ExitSuccess)) -- Quit xmonad.
+  -- , ((modm .|. shiftMask, xK_q), io (exitWith ExitSuccess)) -- Quit xmonad.
+  , ((modm .|. shiftMask, xK_q), confirmPrompt myXPConfig "exit" (io exitSuccess)) -- Quit xmonad.
 
   -- Restart xmonad.
   , ((modm, xK_q), restart "xmonad" True)
 
-  , ((modm , xK_dollar), sendMessage ToggleStruts)
+  -- , ((modm , xK_a), sendMessage ToggleStruts)
+  , ((modm, xK_a), sendMessage (Toggle "Full"))
   ]
   ++
 
@@ -348,7 +365,7 @@ pointerIgnore = [ className =? "Xfce4-notifyd"
     , stringProperty "WM_NAME" =? "File Operation Progress"
     ]
 -- myUpdatePointer = updatePointer (Relative 0.95 0.95)
-myTrayer = "trayer --edge top --height 17 --width 8 --align right --transparent true --alpha 0 --tint '0x141314'"
+-- myTrayer = "trayer --edge top --height 14.5 --width 8 --align right --transparent true --alpha 0 --tint '0x141314' --monitor 1"
 
 ------------------------------------------------------------------------
 -- Run xmonad with all the defaults we set up.
@@ -357,8 +374,8 @@ main = do
   -- conf <- dzen defaultConfig
   -- status <- spawnPipe "killall conky; conky -c ~/.xmonad/menu_conky.conf | dzen2 -ta r -fn 'Terminus:size=8' -h 12 -x 700 -e 'button1=menuexec'; killall conky"
   -- xmproc <- spawnPipe "dzen2 -ta l -fn 'Terminus:size=8' -h 12 -e 'button1=menuexec'"  -- "xmobar ~/.xmonad/xmobar.hs"
-  xmproc <- spawnPipe "xmobar ~/.xmonad/xmobar.hs"
-  trayer <- spawnPipe myTrayer
+  xmproc <- spawnPipe "xmobar --dock ~/.xmonad/xmobar.hs"
+  -- trayer <- spawnPipe myTrayer
   xmonad $ ewmh defaults {
       logHook = myLogHook xmproc -- >> myUpdatePointer -- <+>
                 -- myLogHook status
@@ -391,7 +408,7 @@ myLogHook xmproc = do
 --
 -- No need to modify this.
 --
-defaults = defaultConfig {
+defaults = desktopConfig {
     -- simple stuff
     terminal           = myTerminal,
     focusFollowsMouse  = myFocusFollowsMouse,

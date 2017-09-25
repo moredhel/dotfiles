@@ -1,17 +1,17 @@
-Config { font = "-misc-fixed-*-*-*-*-13-*-*-*-*-*-*-*"
+Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
        , bgColor = "#141314"
        , fgColor = "#a39b84"
        , position = TopP 0 109
        , lowerOnStart = True
        , commands = [
                       Run DynNetwork ["-L","1000","-H","5000","--normal","darkorange","--high","darkred"] 10
-                    , Run Cpu ["-L","10","-H","50","--low","darkgreen","--normal","darkorange","--high","darkred"] 10
-                    , Run Memory ["-t","<usedratio>%", "-L","30", "-H","75","--low", "darkgreen","--normal","darkorange", "--high","darkred"] 10
+                    , Run Cpu ["-L","10","-H","50","--low","darkgreen","--normal","darkorange","--high","red"] 10
+                    , Run Memory ["-t","<usedratio>%", "-L","30", "-H","80","--low", "darkgreen","--normal","darkorange", "--high","darkred"] 10
                     , Run Date "%a %b %_d %Y %H:%M" "date" 600
 		    , Run Battery        [ "--template" , "Batt: <acstatus>"
 			    , "--Low"      , "10"        -- units: %
 			    , "--High"     , "80"        -- units: %
-			    , "--low"      , "darkred"
+			    , "--low"      , "red"
 			    , "--normal"   , "darkorange"
 			    , "--high"     , "darkgreen"
 

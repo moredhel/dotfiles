@@ -36,32 +36,46 @@
   (org-mobile-pull)
   (switch-to-buffer "from-mobile.org"))
 
+(defun switch-to-scratch ()
+  (interactive)
+  (switch-to-buffer "*scratch*"))
+
+;; this may need to be moved into the helm use-package section.
+(defun helm-save-and-paste ()
+  (interactive)
+  (kill-new (x-get-clipboard))
+  (helm-show-kill-ring))
+
+;; move this somewhere more useful...
+(global-set-key (kbd "M-p") 'helm-save-and-paste)
+
 (use-package mu4e
   :no-require t
   :config
-  (setq user-full-name "Hamish Hutchings")
-  (setq user-mail-address "hamish@aoeu.me")
-  (setq message-kill-buffer-on-exit t)
-  (setq mu4e-change-filenames-when-moving t)
-  (setq mu4e-compose-format-flowed t)
-  (setq mu4e-headers-date-format "%Y-%m-%d %H:%M")
-  (setq mu4e-view-show-addresses 't)
-  (setq mu4e-maildir "~/mail")
-  (setq mu4e-user-mail-address-list '("hamish@aoeu.me"
+  (setq user-full-name "Hamish Hutchings"
+        user-mail-address "hamish@aoeu.me"
+        message-kill-buffer-on-exit t
+        mu4e-change-filenames-when-moving t
+        mu4e-compose-format-flowed t
+        mu4e-headers-date-format "%Y-%m-%d %H:%M"
+        mu4e-view-show-addresses 't
+        mu4e-maildir "~/mail"
+        mu4e-user-mail-address-list '("hamish@aoeu.me"
                                       "moredhel@aoeu.me"
                                       "hamhut@hamhut1066.com"
-                                      "hamish.hutchings@container-solutions.com"))
-  (setq mu4e-sent-folder   "/Sent"
+                                      "hamish.hutchings@container-solutions.com")
+        mu4e-sent-folder   "/Sent"
         mu4e-drafts-folder "/Drafts"
         mu4e-trash-folder  "/Deferred"
-        mu4e-refile-folder "/Archive")
-  (setq mu4e-headers-fields
-    '( (:date          .  25)    ;; alternatively, use :human-date
-       (:flags         .   6)
-       (:from          .  22)
-       (:subject       .  nil))) ;; alternatively, use :thread-subject
-  (setq mu4e-get-mail-command "mbsync -aq")
-  (setq message-kill-buffer-on-exit t)
+        mu4e-refile-folder "/Archive"
+        mu4e-headers-fields
+        '( (:date          .  25)    ;; alternatively, use :human-date
+           (:flags         .   6)
+           (:from          .  22)
+           (:subject       .  nil)) ;; alternatively, use :thread-subject
+        mu4e-get-mail-command "mbsync -aq"
+        message-kill-buffer-on-exit t
+        mu4e-html2text-command "html2text -width 72 -nobs")
   (add-to-list 'mu4e-view-actions '("ViewInBrowser" . mu4e-action-view-in-browser) t))
 
 ;; (use-package solarized-theme
@@ -82,10 +96,13 @@
   (global-evil-leader-mode t)
   (evil-leader/set-leader "<SPC>")
   (evil-leader/set-key
-    "Bd"  'evil-delete-buffer
+    "q"  'delete-frame
+    "bd"  'evil-delete-buffer
     "w"  'save-buffer
+    "pb"  'helm-projectile-switch-to-buffer
+    "pf" 'projectile-find-file
     "bb"  'helm-buffers-list
-    "bs"  #'(lambda () (message "Enable me *scratch*"))
+    "bs"  'switch-to-scratch
     "oo"  'other-frame
     "kb" 'kill-buffer
     "gs" 'magit-status
@@ -96,12 +113,12 @@
     "mg" 'org-mobile-pull-switch
     "r"  'org-capture
     "cj" 'org-clock-goto
+    "cr" 'org-resolve-clocks
 
     ;; mail
     "mc" 'mu4e-compose-new
     "mm" 'mu4e
-    "mU" 'mu4e-update-mail-and-index)
-
+    "mU" 'mu4e-update-mail-and-index))
 (use-package evil
   :ensure t
   :config
@@ -129,6 +146,11 @@
             SCHEDULED: %(org-insert-time-stamp(org-read-date nil t \"+0d\"))
             %a"))))
 
+(use-package org-journal
+  :config
+  (setq org-journal-dir "~/org/journal/"
+        org-journal-file-format "%Y%m%d.org"))
+
 (use-package org
   :config
   (global-set-key "\C-cl" 'org-store-link)
@@ -136,17 +158,24 @@
   (global-set-key "\C-cc" 'org-capture)
   (global-set-key "\C-cb" 'org-iswitchb)
 
+  ;; org-icalendar
+  (setq org-icalendar-combined-agenda-file "~/Dropbox/Apps/MobileOrg/org.ics"
+        org-icalendar-include-todo t
+        org-icalendar-use-deadline '(event-if-todo event-if-not-todo todo-due)
+        org-icalendar-use-scheduled '(event-if-todo event-if-not-todo todo-start)
+        org-icalendar-with-timestamps t
+        org-icalendar-alarm-time 30)
+
   ;; org-mode generic
-  (setq org-icalendar-combined-agenda-file "~/Dropbox/Apps/MobileOrg/org.ics")
   (setq org-default-notes-file "~/org/notes.org")
-  ;; (setq org-agenda-files '("~/org"))
   (setq org-agenda-window-setup 'only-window)
   (setq org-agenda-skip-scheduled-if-done t)
   (setq org-agenda-start-on-weekday 0) ;; change start day to Sunday
   (setq org-agenda-files '("~/org/notes.org"
                            "~/org/life.org"
                            "~/org/life-media.org"
-                           "~/org/CS"))
+                           "~/org/CS"
+                           "~/org/journal/"))
 
   (setq org-refile-use-outline-path 'full-file-path)
   (setq org-outline-complete-in-steps nil)
@@ -159,11 +188,11 @@
           (org-agenda-files :maxlevel . 9)))
 
   (setq org-todo-keywords
-        '((sequence "TODO" "DOING" "|" "DONE" "DELEGATED")))
+        '((sequence "TODO" "DOING" "|" "DONE" "DELEGATED" "ABANDONED")))
 
   (setq org-stuck-projects
         (quote
-         ("+project/-DONE"
+         ("+project/-DONE-ABANDONED"
           ("DOING")
           ("unstick"
            "onhold"
@@ -241,11 +270,20 @@
   :config
   (projectile-global-mode))
 
-(use-package autocomplete
+(use-package company
   :ensure t
   :config
-  (ac-config-default)
-  (global-auto-complete-mode))
+  (add-hook 'after-init-hook 'global-company-mode)
+  (add-hook 'racer-mode-hook #'company-mode))
+
+(use-package racer
+  :ensure t
+  :config
+  (add-hook 'rust-mode-hook #'racer-mode)
+  (add-hook 'racer-mode-hook #'eldoc-mode)
+  (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
+  (setq racer-rust-src-path ""
+        racer-cmd "racer"))
 
 ;; start the server
 ;; (server-start)
@@ -280,9 +318,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+ '(org-agenda-files
+   (quote
+    ("~/org/journal/20170919.org" "~/org/notes.org" "~/org/life.org" "~/org/life-media.org" "/home/moredhel/org/CS/general.org" "/home/moredhel/org/journal/20170912.org" "/home/moredhel/org/journal/20170913.org" "/home/moredhel/org/journal/20170914.org")))
  '(package-selected-packages
    (quote
-    (helm-ag helm-projectile projectile auto-complete go-mode go yaml-mode use-package swiper solarized-theme smex scpaste rust-mode paredit org-mobile-sync org-evil org-bullets notmuch nix-mode markdown-mode magit ido-ubiquitous idle-highlight-mode helm find-file-in-project evil-leader enh-ruby-mode dockerfile-mode better-defaults)))
+    (org-journal company racer nix-sandbox auto-complete haskell-mode helm-ag helm-projectile projectile go-mode go yaml-mode use-package swiper solarized-theme smex scpaste rust-mode paredit org-mobile-sync org-evil org-bullets notmuch nix-mode markdown-mode magit ido-ubiquitous idle-highlight-mode helm find-file-in-project evil-leader enh-ruby-mode dockerfile-mode better-defaults)))
  '(send-mail-function (quote sendmail-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
