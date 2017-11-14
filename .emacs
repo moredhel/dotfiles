@@ -3,6 +3,7 @@
 (require 'package)
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+;;(add-to-list 'package-archives '("melpa" . "http://www.mirrorservice.org/sites/melpa.org/packages/"))
 
 (package-initialize)
 (unless (package-installed-p 'use-package)
@@ -14,6 +15,21 @@
 (setq vc-follow-symlinks t)
 (load-theme 'whiteboard)
 
+;; ----------- Nix ------------------
+(defun nix-shell-context (orig-func &rest args)
+  "Set a temporary environment with the correct paths to wrap default commands"
+  (let* ((nix-path (condition-case nil (nix-exec-path 
+                                        (nix-find-sandbox
+                                         (or  (file-name-directory (or  buffer-file-name "")) "/")))
+                     (error nil)))
+         (exec-path (or nix-path exec-path)))
+    (apply orig-func args)))
+
+;; Functions which need to have their context potentially changed
+(advice-add 'executable-find :around #'nix-shell-context)
+(advice-add 'rust--format-call :around #'nix-shell-context)
+
+;; ---------- End Nix --------------
 ;; custom functions & variables
 (let ((mu4epath
        (concat
@@ -85,17 +101,32 @@
 ;;   (load-theme 'solarized-dark t))
 
 (use-package magit
-  :ensure t)
+  :ensure t
+  :config
+  (setq
+   magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1))
 
 (use-package better-defaults :ensure t)
 (use-package better-defaults)
+
+;; custom keybindings
+(let ((map (make-sparse-keymap)))
+  (define-key map "gs" 'magit-status)
+  (define-key map "mm" 'mu4e)
+  (define-key map "/" 'helm-projectile-ag)
+  (define-key map "bs" 'switch-to-scratch)
+  ;; bind to Meta-Space
+  (define-key global-map (kbd "M-SPC") map))
 
 (use-package evil-leader
   :ensure t
   :config
   (global-evil-leader-mode t)
-  (evil-leader/set-leader "<SPC>")
+  (evil-leader/set-leader "<SPC>" "C-")
   (evil-leader/set-key
+    ;; toggles
+    "tt" 'whitespace-mode
+
     "q"  'delete-frame
     "bd"  'evil-delete-buffer
     "w"  'save-buffer
@@ -149,7 +180,7 @@
 (use-package org-journal
   :config
   (setq org-journal-dir "~/org/journal/"
-        org-journal-file-format "%Y%m%d.org"))
+        org-journal-file-format "%Y%m%d %a-%d-%b.org"))
 
 (use-package org
   :config
@@ -174,8 +205,7 @@
   (setq org-agenda-files '("~/org/notes.org"
                            "~/org/life.org"
                            "~/org/life-media.org"
-                           "~/org/CS"
-                           "~/org/journal/"))
+                           "~/org/CS"))
 
   (setq org-refile-use-outline-path 'full-file-path)
   (setq org-outline-complete-in-steps nil)
@@ -287,6 +317,7 @@
 
 ;; start the server
 ;; (server-start)
+(global-undo-tree-mode t)
 
 ;; language specific configs
 (use-package go-mode
@@ -326,7 +357,7 @@
     ("~/org/journal/20170919.org" "~/org/notes.org" "~/org/life.org" "~/org/life-media.org" "/home/moredhel/org/CS/general.org" "/home/moredhel/org/journal/20170912.org" "/home/moredhel/org/journal/20170913.org" "/home/moredhel/org/journal/20170914.org")))
  '(package-selected-packages
    (quote
-    (org-journal company racer nix-sandbox auto-complete haskell-mode helm-ag helm-projectile projectile go-mode go yaml-mode use-package swiper solarized-theme smex scpaste rust-mode paredit org-mobile-sync org-evil org-bullets notmuch nix-mode markdown-mode magit ido-ubiquitous idle-highlight-mode helm find-file-in-project evil-leader enh-ruby-mode dockerfile-mode better-defaults)))
+    (dr-racket-like-unicode racket-mode general protobuf-mode helm-nixos-options nixos-options nix-buffer org-journal company racer nix-sandbox auto-complete haskell-mode helm-ag helm-projectile projectile go-mode go yaml-mode use-package swiper solarized-theme smex scpaste rust-mode paredit org-mobile-sync org-evil org-bullets notmuch nix-mode markdown-mode magit ido-ubiquitous idle-highlight-mode helm find-file-in-project evil-leader enh-ruby-mode dockerfile-mode better-defaults)))
  '(send-mail-function (quote sendmail-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -334,3 +365,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'narrow-to-page 'disabled nil)
+(put 'narrow-to-region 'disabled nil)
