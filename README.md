@@ -1,6 +1,8 @@
 Hamhut1066's Dotfiles
 =====================
 
+**DEPRECATED:** now managed through nix, home-manager [moredhel/nur-packages](https://github.com/moredhel/nur-packages)
+
 __Config for my OS X__
 
 _A (hopefully) up to date record of all my dotfiles!_
