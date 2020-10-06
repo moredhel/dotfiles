@@ -4,13 +4,17 @@
 	signingkey = 4EB572F4
 [alias]
     co = checkout
-    s = status
+    s = status --short
+    ss = status
     d = diff --color
+    ds = diff --staged --color
     a = add
     cm = commit
     l = log --color
     b = branch
     mt = mergetool
+	short-recent = "for-each-ref --count=25 --sort=committerdate refs/heads/ --format='%(refname:short)'"
+	fco = "!git short-recent | fzf --print0 | xargs -0 -t git checkout"
 [color]
 	ui = true
 [merge]
@@ -20,7 +24,7 @@
 	prompt = false
 [core]
 	autocrlf = input
-	excludesfile = /Users/moredhel/.gitignore_global
+	excludesfile = /home/moredhel/.gitignore_global
 [push]
 	default = simple
 [rerere]
